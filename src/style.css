@@ -1,0 +1,919 @@
+/* ============================================================================
+ * IDENTIDADE VISUAL E SISTEMA DE LAYOUT — TERRA-ANALOG (NASA SPACE APPS 2026)
+ * Etapa 3: Interface Científica de 3 Regiões, Tipografia e Responsividade
+ * ============================================================================ */
+
+:root {
+  /* Paleta Espacial e Científica */
+  --bg-space-deep: #05070c;
+  --bg-space-void: #090d16;
+  --bg-panel-primary: rgba(13, 19, 32, 0.86);
+  --bg-panel-elevated: rgba(19, 28, 46, 0.78);
+  --bg-card-inner: rgba(8, 12, 21, 0.65);
+
+  /* Bordas e Divisores Técnicos */
+  --border-hairline: rgba(148, 163, 184, 0.14);
+  --border-highlight: rgba(56, 189, 248, 0.38);
+  --border-moon: rgba(203, 213, 225, 0.35);
+  --border-mars: rgba(249, 115, 22, 0.38);
+
+  /* Tipografia e Cores de Texto */
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  /* Acentos Semânticos */
+  --accent-earth: #38bdf8;
+  --accent-moon: #cbd5e1;
+  --accent-mars: #f97316;
+  --accent-warning: #eab308;
+  --accent-warning-bg: rgba(234, 179, 8, 0.1);
+  --accent-operational: #10b981;
+
+  /* Famílias Tipográficas */
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Dimensões Estruturais */
+  --left-sidebar-width: 264px;
+  --right-panel-width: 376px;
+  --panel-gap: 12px;
+  --panel-radius: 8px;
+  --transition-fast: 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Reset e Base */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-space-deep);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 1.45;
+  overflow: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#app {
+  width: 100vw;
+  height: 100dvh;
+  background:
+    radial-gradient(circle at 48% 50%, rgba(14, 30, 56, 0.35) 0%, transparent 65%),
+    var(--bg-space-deep);
+}
+
+/* ============================================================================
+ * GRID PRINCIPAL DE 3 REGIÕES
+ * ============================================================================ */
+
+.scientific-workspace-grid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: var(--left-sidebar-width) minmax(0, 1fr) var(--right-panel-width);
+  gap: var(--panel-gap);
+  padding: var(--panel-gap);
+}
+
+/* ============================================================================
+ * 1. REGIÃO ESQUERDA — LUA E MARTE EMPILHADOS
+ * ============================================================================ */
+
+.region-left-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: var(--bg-panel-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--panel-radius);
+  padding: 12px;
+  backdrop-filter: blur(12px);
+  min-height: 0;
+}
+
+.sidebar-section-header {
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border-hairline);
+}
+
+.sidebar-section-tag {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--accent-earth);
+  margin-bottom: 3px;
+}
+
+.sidebar-section-desc {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+}
+
+.celestial-stack {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 0;
+}
+
+.celestial-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card-inner);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 10px;
+  min-height: 0;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.celestial-card.accent-moon:hover,
+.celestial-card.accent-moon.is-selected {
+  border-color: var(--border-moon);
+}
+
+.celestial-card.accent-mars:hover,
+.celestial-card.accent-mars.is-selected {
+  border-color: var(--border-mars);
+}
+
+.celestial-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.celestial-code {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.celestial-name {
+  font-family: var(--font-display);
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.celestial-actions-group {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.celestial-micro-btn {
+  background: transparent;
+  color: var(--text-muted);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.celestial-micro-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(148, 163, 184, 0.45);
+}
+
+.celestial-inspect-btn {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.celestial-inspect-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--accent-earth);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+.celestial-viewport {
+  flex: 1;
+  position: relative;
+  width: 100%;
+  min-height: 120px;
+  border-radius: 4px;
+  background: radial-gradient(circle at center, #0e1525 0%, #05070c 100%);
+  border: 1px solid rgba(148, 163, 184, 0.08);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.celestial-viewport canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  cursor: grab;
+  outline: none;
+}
+
+.celestial-viewport canvas:active {
+  cursor: grabbing;
+}
+
+.celestial-interaction-hint {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 4;
+  pointer-events: none;
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: rgba(148, 163, 184, 0.72);
+  background: rgba(5, 7, 12, 0.68);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  padding: 2px 7px;
+  border-radius: 999px;
+  white-space: nowrap;
+  transition: opacity var(--transition-fast);
+}
+
+.celestial-viewport:hover .celestial-interaction-hint {
+  opacity: 0.25;
+}
+
+.celestial-stage-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+.celestial-sphere-preview {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.sphere-moon {
+  background: radial-gradient(circle at 32% 30%, #e2e8f0 0%, #94a3b8 48%, #334155 85%, #0f172a 100%);
+  box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.8), 0 0 18px rgba(203, 213, 225, 0.12);
+}
+
+.sphere-mars {
+  background: radial-gradient(circle at 32% 30%, #fdba74 0%, #ea580c 48%, #7c2d12 85%, #1c0a04 100%);
+  box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.8), 0 0 18px rgba(249, 115, 22, 0.15);
+}
+
+.celestial-stage-hint {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.celestial-metrics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 6px;
+  margin-top: 8px;
+  padding-top: 8px;
+  border-top: 1px solid var(--border-hairline);
+}
+
+.celestial-metric-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.celestial-metric-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-muted);
+}
+
+.celestial-metric-val {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ============================================================================
+ * 2. REGIÃO CENTRAL — PALCO DO GLOBO TERRESTRE 3D (PROTAGONISTA)
+ * ============================================================================ */
+
+.region-center-stage {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-space-void);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--panel-radius);
+  overflow: hidden;
+  min-width: 0;
+  min-height: 0;
+}
+
+/* Barra HUD Superior */
+.central-top-hud {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  right: 12px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 8px 14px;
+  background: var(--bg-panel-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.hud-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hud-status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--accent-operational);
+  box-shadow: 0 0 8px var(--accent-operational);
+}
+
+.hud-title-wrap {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.hud-app-name {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--text-primary);
+}
+
+.hud-edition-tag {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--accent-earth);
+}
+
+.hud-controls-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.hud-region-select {
+  background: rgba(13, 19, 32, 0.92);
+  color: var(--text-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-family: var(--font-mono);
+  font-size: 0.71rem;
+  cursor: pointer;
+  outline: none;
+  transition: border-color var(--transition-fast);
+}
+
+.hud-region-select:hover,
+.hud-region-select:focus {
+  border-color: var(--border-highlight);
+}
+
+.hud-control-btn {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 5px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.hud-control-btn:hover {
+  color: var(--text-primary);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.hud-control-btn.is-active {
+  color: var(--accent-earth);
+  border-color: var(--border-highlight);
+  background: rgba(56, 189, 248, 0.1);
+}
+
+/* Container Principal do Globo Terrestre (CesiumJS) */
+.cesium-globe-viewport {
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, rgba(16, 38, 72, 0.28) 0%, rgba(5, 7, 12, 0.96) 72%);
+}
+
+.cesium-globe-viewport .cesium-viewer,
+.cesium-globe-viewport .cesium-viewer-cesiumWidgetContainer,
+.cesium-globe-viewport .cesium-widget,
+.cesium-globe-viewport .cesium-widget canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+  outline: none;
+}
+
+/* Placeholder Orbital da Etapa 3 (substituído pelo canvas CesiumJS na Etapa 4) */
+.globe-stage-placeholder {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.orbital-ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 1px dashed rgba(56, 189, 248, 0.18);
+  pointer-events: none;
+}
+
+.ring-outer {
+  width: 340px;
+  height: 340px;
+}
+
+.ring-inner {
+  width: 260px;
+  height: 260px;
+  border-style: solid;
+  border-color: rgba(56, 189, 248, 0.12);
+}
+
+.earth-sphere-preview {
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 30%,
+    #38bdf8 0%,
+    #0284c7 35%,
+    #0f172a 78%,
+    #020617 100%
+  );
+  box-shadow:
+    inset -24px -24px 40px rgba(0, 0, 0, 0.85),
+    0 0 42px rgba(56, 189, 248, 0.18);
+  margin-bottom: 24px;
+}
+
+.stage-label-box {
+  position: relative;
+  z-index: 2;
+  max-width: 420px;
+  background: rgba(9, 13, 22, 0.82);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 12px 16px;
+  backdrop-filter: blur(8px);
+}
+
+.stage-label-badge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  color: var(--accent-earth);
+  letter-spacing: 0.08em;
+  margin-bottom: 4px;
+}
+
+.stage-label-title {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.stage-label-desc {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+/* Barra HUD Inferior de Telemetria */
+.central-bottom-hud {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  z-index: 20;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  padding: 8px 14px;
+  background: var(--bg-panel-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  backdrop-filter: blur(10px);
+}
+
+.telemetry-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.telemetry-label {
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  color: var(--text-muted);
+  letter-spacing: 0.06em;
+}
+
+.telemetry-value {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* ============================================================================
+ * 3. REGIÃO DIREITA — PAINEL DE INFORMAÇÕES CIENTÍFICAS E GEOGRÁFICAS
+ * ============================================================================ */
+
+.region-right-panel {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-panel-primary);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--panel-radius);
+  backdrop-filter: blur(12px);
+  min-height: 0;
+  overflow: hidden;
+}
+
+.info-panel-header {
+  padding: 14px 14px 12px;
+  border-bottom: 1px solid var(--border-hairline);
+  background: rgba(8, 12, 21, 0.45);
+}
+
+.info-platform-tag {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  font-weight: 600;
+  color: var(--accent-earth);
+  letter-spacing: 0.08em;
+  margin-bottom: 2px;
+}
+
+.info-platform-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}
+
+.info-platform-subtitle {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* Banner Obrigatório de Dados Demonstrativos */
+.info-placeholder-banner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  background: var(--accent-warning-bg);
+  border: 1px solid rgba(234, 179, 8, 0.35);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  color: var(--accent-warning);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.warning-banner-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent-warning);
+  flex-shrink: 0;
+}
+
+.info-profile-switcher {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.profile-switch-btn {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-hairline);
+  border-radius: 4px;
+  padding: 5px 6px;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.profile-switch-btn:hover {
+  color: var(--text-primary);
+}
+
+.profile-switch-btn.is-active {
+  color: var(--accent-earth);
+  border-color: var(--border-highlight);
+  background: rgba(56, 189, 248, 0.12);
+  font-weight: 600;
+}
+
+/* Corpo Rolável do Painel Direito */
+.info-panel-scroll-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(148, 163, 184, 0.25) transparent;
+}
+
+@keyframes panelFadePulse {
+  0% {
+    opacity: 0.65;
+    transform: translateY(2px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.info-panel-scroll-body.is-updating {
+  animation: panelFadePulse 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes cardCoordHighlight {
+  0% {
+    border-color: var(--accent-earth);
+    box-shadow: 0 0 14px rgba(56, 189, 248, 0.22);
+  }
+  100% {
+    border-color: var(--border-hairline);
+    box-shadow: none;
+  }
+}
+
+.info-section-card {
+  background: var(--bg-card-inner);
+  border: 1px solid var(--border-hairline);
+  border-radius: 6px;
+  padding: 10px 12px;
+  transition: border-color var(--transition-fast);
+}
+
+.info-section-card:hover {
+  border-color: rgba(148, 163, 184, 0.28);
+}
+
+.info-section-card.is-highlighted {
+  animation: cardCoordHighlight 1.4s ease-out;
+}
+
+.info-section-header {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.1);
+}
+
+.info-section-icon {
+  color: var(--accent-earth);
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+button:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--accent-earth);
+  outline-offset: 2px;
+}
+
+.info-section-code {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  color: var(--accent-earth);
+  background: rgba(56, 189, 248, 0.08);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.info-section-title {
+  flex: 1;
+  font-family: var(--font-display);
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.info-placeholder-pill {
+  font-family: var(--font-mono);
+  font-size: 0.58rem;
+  color: var(--text-muted);
+  border: 1px solid var(--border-hairline);
+  padding: 1px 5px;
+  border-radius: 3px;
+}
+
+.info-data-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info-data-row {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.info-data-label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  color: var(--text-muted);
+}
+
+.info-data-value {
+  font-size: 0.78rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+/* Subcartões de Comparação Lunar e Marciana */
+.comparison-blocks-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.comparison-subcard {
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: rgba(15, 23, 42, 0.55);
+  border-left: 3px solid var(--border-hairline);
+}
+
+.lunar-subcard {
+  border-left-color: var(--accent-moon);
+}
+
+.mars-subcard {
+  border-left-color: var(--accent-mars);
+}
+
+.comparison-subcard-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.comparison-planet-label {
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.comparison-score-badge {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 600;
+  color: var(--accent-earth);
+}
+
+.comparison-desc-text {
+  font-size: 0.76rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* ============================================================================
+ * 4. RESPONSIVIDADE (NOTEBOOKS COMPACTOS, TABLETS E TELAS MENORES)
+ * ============================================================================ */
+
+@media (max-width: 1240px) {
+  :root {
+    --left-sidebar-width: 228px;
+    --right-panel-width: 332px;
+  }
+}
+
+@media (max-width: 980px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+
+  #app {
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  .scientific-workspace-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(480px, 62vh) auto auto;
+    height: auto;
+  }
+
+  /* Mantém o Globo Terrestre no topo como protagonista em telas menores */
+  .region-center-stage {
+    order: 1;
+    min-height: 480px;
+  }
+
+  .region-left-sidebar {
+    order: 2;
+  }
+
+  .celestial-stack {
+    flex-direction: row;
+  }
+
+  .region-right-panel {
+    order: 3;
+    max-height: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .central-top-hud {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .central-bottom-hud {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .celestial-stack {
+    flex-direction: column;
+  }
+}

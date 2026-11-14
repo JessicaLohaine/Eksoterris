@@ -1,0 +1,19 @@
+{
+  "name": "projeto-nasa-space-apps-2026",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Plataforma Geoespacial 3D para Identificação de Ambientes Análogos Terrestres (Lua e Marte) — NASA Space Apps Challenge 2026",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cesium": "^1.123.0",
+    "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "vite": "^6.0.0"
+  }
+}

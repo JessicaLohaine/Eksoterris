@@ -1,0 +1,27 @@
+# Dependências
+node_modules/
+package-lock.json
+
+# Build de produção
+dist/
+dist-ssr/
+*.local
+
+# Ativos estáticos copiados automaticamente do CesiumJS (gerados no buildStart)
+public/cesium/
+
+# Variáveis de ambiente e segredos (NUNCA versionar credenciais)
+.env
+.env.*
+!.env.example
+
+# Logs e arquivos temporários
+logs/
+*.log
+npm-debug.log*
+
+# Diretórios de editores e sistema operacional
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
