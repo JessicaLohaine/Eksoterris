@@ -3,7 +3,7 @@
  * NASA Space Apps Challenge 2026
  */
 export const APP_CONFIG = Object.freeze({
-  appName: 'TERRA-ANALOG',
+  appName: 'Eksoterris',
   appSubtitle: 'Planetary Analog Research & Geospatial Platform',
   challengeEdition: 'NASA Space Apps Challenge 2026',
   version: '0.2.0-stage2',

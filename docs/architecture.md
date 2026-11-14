@@ -1,4 +1,4 @@
-# Arquitetura da Plataforma — TERRA-ANALOG (NASA Space Apps Challenge 2026)
+# Arquitetura da Plataforma — Eksoterris (NASA Space Apps Challenge 2026)
 
 ## 1. Visão Geral da Arquitetura Híbrida de Alta Resolução (CesiumJS + Three.js)
 

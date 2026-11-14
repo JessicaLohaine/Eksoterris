@@ -1,14 +1,15 @@
 /**
  * Módulo Central do Globo Terrestre 3D (src/globe/globe.js)
- * Reestruturação Visual e Técnica:
- * - Pirâmide multirresolução de tiles científicos com cache local:
- *   1. Base 0 (Instantânea Offline): NASA Blue Marble Next Generation 2K.
- *   2. Camada Orbital Global: EOX Sentinel-2 Cloudless (10m-15m, oceanos profundos/turquesa e biomas naturais).
- *   3. Camada de Aproximação HD: Esri/Maxar World Imagery (até nível 18) com transição contínua por altitude.
- *   4. Camada de Relevo Topográfico: World Elevation Hillshade (destaque tridimensional de cordilheiras e vales).
- *   5. Camadas Adicionais Selecionáveis: NASA GIBS Blue Marble WMTS e NASA GIBS VIIRS True Color.
- *   6. Camada Opcional de Nuvens Globais: Nefanálise de satélite com transparência dinâmica via shader (colorToAlpha).
- * - Iluminação Solar Direcional Coerente com a Câmera: Terminador dia/noite suave e dispersão atmosférica realista.
+ * Arquitetura Geoespacial NASA-First:
+ * - Camada Base 0 (Offline Instantânea): NASA Visible Earth — Blue Marble Next Generation 2K.
+ * - Camada Orbital Principal: NASA GIBS (Global Imagery Browse Services) Blue Marble Next Generation WMTS.
+ * - Camada de Aproximação HD: Fotografia de Satélite Multirresolução (Landsat / Maxar / World Imagery até nível 18),
+ *   integrada progressivamente conforme o usuário aproxima a câmera.
+ * - Camada Adicional NASA: NASA GIBS Suomi NPP VIIRS True Color.
+ * - Relevo Topográfico (Hillshade): Ativado dinamicamente apenas em aproximações regionais (< 3.500 km)
+ *   para manter nitidez e contraste puros na visão orbital.
+ * - Sem névoa superficial esbranquiçada (showGroundAtmosphere: false), preservando oceanos em azul profundo
+ *   e apenas o halo atmosférico externo (skyAtmosphere) no horizonte espacial.
  */
 import * as Cesium from 'cesium';
 import { APP_CONFIG } from '../config/constants.js';
@@ -38,14 +39,13 @@ export class EarthGlobeController {
     this.resizeObserver = null;
     this.isAutoRotating = true;
     this.isUserInteracting = false;
-    this.activeImageryMode = 'hybrid';
-    this.cloudsEnabled = true;
-    this.solarLightingEnabled = true;
+    this.activeImageryMode = 'nasa_hybrid';
+    this.cloudsEnabled = false;
+    this.solarLightingEnabled = false; // Inicia com iluminação global plena para cores vivas e naturais em todo o globo
     this.layers = {
       baseBlueMarble: null,
-      sentinel2: null,
-      worldImagery: null,
       nasaGibsBlueMarble: null,
+      worldImagery: null,
       nasaGibsViirs: null,
       hillshade: null,
       clouds: null
@@ -57,7 +57,7 @@ export class EarthGlobeController {
   }
 
   /**
-   * Inicializa o motor CesiumJS e configura as camadas de satélite, atmosfera, luz solar e controles.
+   * Inicializa o motor CesiumJS priorizando fontes oficiais da NASA.
    */
   async init() {
     if (!this.container) {
@@ -66,7 +66,7 @@ export class EarthGlobeController {
 
     Cesium.Ion.defaultAccessToken = '';
 
-    // 1. Camada Base 0: NASA Blue Marble Next Generation 2K local (carregamento imediato e fallback offline)
+    // 1. Camada Base 0: NASA Blue Marble Next Generation 2K local
     const baseBlueMarbleLayer = Cesium.ImageryLayer.fromProviderAsync(
       Cesium.SingleTileImageryProvider.fromUrl('/textures/earth/earth_bluemarble_2k.jpg', {
         rectangle: Cesium.Rectangle.MAX_VALUE
@@ -111,7 +111,7 @@ export class EarthGlobeController {
     this.setupEventBusSubscriptions();
     this.setupWebGLContextGuard();
 
-    // Posiciona a câmera inicialmente sobre a América do Sul / Oceano Atlântico e Pacífico
+    // Posiciona a câmera inicialmente em órbita global
     this.flyToRegion({
       latitude: APP_CONFIG.defaultCoordinates.latitude,
       longitude: APP_CONFIG.defaultCoordinates.longitude,
@@ -126,7 +126,8 @@ export class EarthGlobeController {
   }
 
   /**
-   * Configura atmosfera Rayleigh/Mie, iluminação solar direcional e nitidez de renderização.
+   * Configura qualidade visual sem névoa esbranquiçada (showGroundAtmosphere = false),
+   * preservando contraste profundo desde a distância orbital inicial.
    */
   configureVisualQuality() {
     const { scene } = this.viewer;
@@ -142,38 +143,33 @@ export class EarthGlobeController {
     scene.backgroundColor = Cesium.Color.fromCssColorString('#05070c');
     scene.highDynamicRange = false;
 
-    // Luz Solar Direcional controlada para garantir iluminação natural e terminador suave
+    // Luz Solar Direcional controlada para iluminação natural quando ativada pelo usuário
     scene.light = new Cesium.DirectionalLight({
       direction: new Cesium.Cartesian3(1.0, 0.0, 0.0),
-      color: Cesium.Color.fromCssColorString('#fffcf5'),
-      intensity: 2.15
+      color: Cesium.Color.fromCssColorString('#ffffff'),
+      intensity: 2.85
     });
 
-    // Atmosfera Orbital Realista
+    // Halo atmosférico externo sutil apenas na borda espacial do planeta
     if (scene.skyAtmosphere) {
       scene.skyAtmosphere.show = true;
-      scene.skyAtmosphere.atmosphereLightIntensity = 22.0;
+      scene.skyAtmosphere.atmosphereLightIntensity = 20.0;
       scene.skyAtmosphere.hueShift = -0.02;
-      scene.skyAtmosphere.saturationShift = 0.08;
-      scene.skyAtmosphere.brightnessShift = 0.04;
+      scene.skyAtmosphere.saturationShift = 0.1;
+      scene.skyAtmosphere.brightnessShift = 0.02;
     }
 
-    // Dispersão atmosférica sobre a superfície e transição dia/noite suave
-    scene.globe.showGroundAtmosphere = true;
-    scene.globe.dynamicAtmosphereLighting = true;
-    scene.globe.dynamicAtmosphereLightingFromSun = false;
+    // IMPORTANTE: Desativa showGroundAtmosphere para eliminar o véu esbranquiçado/leitoso
+    // sobre os oceanos e continentes quando o globo é visto em distância orbital (12.500 km).
+    scene.globe.showGroundAtmosphere = false;
     scene.globe.enableLighting = this.solarLightingEnabled;
-    scene.globe.lightingFadeOutDistance = 12000000.0;
-    scene.globe.lightingFadeInDistance = 30000000.0;
-    scene.globe.nightFadeOutDistance = 10000000.0;
-    scene.globe.nightFadeInDistance = 28000000.0;
-    scene.globe.atmosphereLightIntensity = 16.0;
-    scene.globe.atmosphereHueShift = -0.01;
-    scene.globe.atmosphereBrightnessShift = 0.05;
+    scene.globe.lightingFadeOutDistance = 14000000.0;
+    scene.globe.lightingFadeInDistance = 32000000.0;
+    scene.globe.nightFadeOutDistance = 12000000.0;
+    scene.globe.nightFadeInDistance = 30000000.0;
 
-    // Nitidez elevada de carregamento de tiles (menor erro em espaço de tela = maior detalhe)
-    scene.globe.baseColor = Cesium.Color.fromCssColorString('#071733');
-    scene.globe.maximumScreenSpaceError = 1.35;
+    scene.globe.baseColor = Cesium.Color.fromCssColorString('#041026');
+    scene.globe.maximumScreenSpaceError = 1.3;
     scene.globe.tileCacheSize = 400;
     scene.globe.preloadAncestors = true;
 
@@ -183,12 +179,7 @@ export class EarthGlobeController {
   }
 
   /**
-   * Cria um provedor de tiles resiliente que utiliza o proxy/cache local (/api-tiles/...)
-   * e silencia eventuais falhas de rede individuais sem interromper a renderização.
-   * @param {string} urlTemplate
-   * @param {number} maxLevel
-   * @param {string} creditText
-   * @returns {Cesium.UrlTemplateImageryProvider}
+   * Cria um provedor de tiles resiliente com suporte ao cache local.
    */
   createTileProvider(urlTemplate, maxLevel, creditText) {
     const provider = new Cesium.UrlTemplateImageryProvider({
@@ -203,54 +194,46 @@ export class EarthGlobeController {
   }
 
   /**
-   * Configura todas as camadas científicas de imagens de satélite, relevo e nuvens.
+   * Configura as camadas científicas priorizando NASA GIBS Blue Marble + Satélite HD.
    */
   async setupScientificImageryLayers() {
     const imageryLayers = this.viewer.imageryLayers;
 
-    // Ajuste cromático na camada base 0 (NASA Blue Marble 2K local)
+    // Calibração cromática natural na camada base 0 (NASA Blue Marble 2K local)
     if (this.layers.baseBlueMarble) {
-      this.layers.baseBlueMarble.brightness = 1.02;
-      this.layers.baseBlueMarble.contrast = 1.08;
-      this.layers.baseBlueMarble.saturation = 1.06;
+      this.layers.baseBlueMarble.brightness = 1.12;
+      this.layers.baseBlueMarble.contrast = 1.06;
+      this.layers.baseBlueMarble.saturation = 1.14;
+      this.layers.baseBlueMarble.gamma = 1.08;
     }
 
-    // 1. Camada Sentinel-2 Cloudless (ESA / EOX — Oceanos azul-profundo/turquesa e biomas naturais)
-    const sentinelProvider = this.createTileProvider(
-      '/api-tiles/sentinel2/{z}/{y}/{x}',
-      14,
-      'EOX Sentinel-2 Cloudless / Copernicus ESA'
-    );
-    this.layers.sentinel2 = imageryLayers.addImageryProvider(sentinelProvider);
-    this.layers.sentinel2.alpha = 0.92;
-    this.layers.sentinel2.brightness = 1.03;
-    this.layers.sentinel2.contrast = 1.08;
-    this.layers.sentinel2.saturation = 1.08;
-
-    // 2. Camada de Alta Resolução para Zoom Próximo (Esri / Maxar World Imagery até nível 18)
-    const worldImageryProvider = this.createTileProvider(
-      '/api-tiles/arcgis/{z}/{y}/{x}',
-      18,
-      'Esri, Maxar, Earthstar Geographics, NASA'
-    );
-    this.layers.worldImagery = imageryLayers.addImageryProvider(worldImageryProvider);
-    this.layers.worldImagery.alpha = 0.35; // Aumenta progressivamente ao aproximar a câmera
-    this.layers.worldImagery.brightness = 1.04;
-    this.layers.worldImagery.contrast = 1.1;
-    this.layers.worldImagery.saturation = 1.12;
-
-    // 3. Camada NASA GIBS Blue Marble Next Generation (WMTS Oficial da NASA)
+    // 1. Camada Principal Orbital: NASA GIBS Blue Marble Next Generation (WMTS Oficial da NASA)
     const gibsBlueMarbleProvider = this.createTileProvider(
       '/api-tiles/nasa-bluemarble/{z}/{y}/{x}',
       8,
       'NASA GIBS / Earthdata Blue Marble Next Generation'
     );
     this.layers.nasaGibsBlueMarble = imageryLayers.addImageryProvider(gibsBlueMarbleProvider);
-    this.layers.nasaGibsBlueMarble.show = false;
-    this.layers.nasaGibsBlueMarble.brightness = 1.05;
-    this.layers.nasaGibsBlueMarble.contrast = 1.1;
+    this.layers.nasaGibsBlueMarble.alpha = 1.0;
+    this.layers.nasaGibsBlueMarble.brightness = 1.18;
+    this.layers.nasaGibsBlueMarble.contrast = 1.06;
+    this.layers.nasaGibsBlueMarble.saturation = 1.16;
+    this.layers.nasaGibsBlueMarble.gamma = 1.12;
 
-    // 4. Camada NASA GIBS / Worldview VIIRS True Color
+    // 2. Camada de Satélite de Alta Resolução (Landsat / Maxar / World Imagery até nível 18)
+    const worldImageryProvider = this.createTileProvider(
+      '/api-tiles/arcgis/{z}/{y}/{x}',
+      18,
+      'NASA Landsat / Maxar / Earthstar Geographics / Esri'
+    );
+    this.layers.worldImagery = imageryLayers.addImageryProvider(worldImageryProvider);
+    this.layers.worldImagery.alpha = 0.55;
+    this.layers.worldImagery.brightness = 1.08;
+    this.layers.worldImagery.contrast = 1.08;
+    this.layers.worldImagery.saturation = 1.14;
+    this.layers.worldImagery.gamma = 1.04;
+
+    // 3. Camada NASA GIBS / Worldview VIIRS True Color (Satélite NASA/NOAA Suomi NPP)
     const gibsViirsProvider = this.createTileProvider(
       '/api-tiles/nasa-viirs/{z}/{y}/{x}',
       9,
@@ -258,9 +241,10 @@ export class EarthGlobeController {
     );
     this.layers.nasaGibsViirs = imageryLayers.addImageryProvider(gibsViirsProvider);
     this.layers.nasaGibsViirs.show = false;
+    this.layers.nasaGibsViirs.brightness = 0.96;
+    this.layers.nasaGibsViirs.contrast = 1.12;
 
-    // 5. Camada de Relevo Topográfico (World Elevation Hillshade)
-    // Utiliza colorToAlpha no branco para projetar apenas o sombreado de montanhas e escarpas
+    // 4. Camada de Relevo Topográfico (Ativada apenas quando a câmera se aproxima < 3.500 km)
     const hillshadeProvider = this.createTileProvider(
       '/api-tiles/hillshade/{z}/{y}/{x}',
       15,
@@ -268,11 +252,11 @@ export class EarthGlobeController {
     );
     this.layers.hillshade = imageryLayers.addImageryProvider(hillshadeProvider);
     this.layers.hillshade.colorToAlpha = Cesium.Color.WHITE;
-    this.layers.hillshade.colorToAlphaThreshold = 0.26;
-    this.layers.hillshade.alpha = 0.28;
-    this.layers.hillshade.contrast = 1.35;
+    this.layers.hillshade.colorToAlphaThreshold = 0.35;
+    this.layers.hillshade.alpha = 0.0; // Em órbita global fica 0.0 para não esbranquiçar o globo!
+    this.layers.hillshade.contrast = 1.4;
 
-    // 6. Camada Global de Nuvens (Opcional, com fundo preto convertido em transparência na GPU)
+    // 5. Camada Global de Nuvens da NASA (Opcional, desligada por padrão na abertura)
     try {
       const cloudsProvider = await Cesium.SingleTileImageryProvider.fromUrl(
         '/textures/earth/earth_clouds_1k.png',
@@ -280,9 +264,9 @@ export class EarthGlobeController {
       );
       this.layers.clouds = imageryLayers.addImageryProvider(cloudsProvider);
       this.layers.clouds.colorToAlpha = Cesium.Color.BLACK;
-      this.layers.clouds.colorToAlphaThreshold = 0.42;
-      this.layers.clouds.alpha = 0.34;
-      this.layers.clouds.brightness = 1.18;
+      this.layers.clouds.colorToAlphaThreshold = 0.48;
+      this.layers.clouds.alpha = 0.32;
+      this.layers.clouds.brightness = 1.1;
       this.layers.clouds.show = this.cloudsEnabled;
     } catch (err) {
       console.warn('[Globe] Camada de nuvens opcional indisponível:', err);
@@ -292,82 +276,79 @@ export class EarthGlobeController {
   }
 
   /**
-   * Alterna entre os modos científicos de imagem de satélite.
-   * @param {'hybrid' | 'sentinel2' | 'world_imagery' | 'nasa_bluemarble' | 'nasa_viirs'} mode
+   * Alterna entre os modos científicos de imagem da Terra.
+   * @param {'nasa_hybrid' | 'nasa_bluemarble' | 'world_imagery' | 'nasa_viirs'} mode
    */
   applyImageryMode(mode) {
     this.activeImageryMode = mode;
-    const { sentinel2, worldImagery, nasaGibsBlueMarble, nasaGibsViirs, hillshade } = this.layers;
+    const { nasaGibsBlueMarble, worldImagery, nasaGibsViirs, hillshade } = this.layers;
 
-    if (!sentinel2 || !worldImagery) return;
+    if (!nasaGibsBlueMarble || !worldImagery) return;
 
-    sentinel2.show = false;
+    nasaGibsBlueMarble.show = false;
     worldImagery.show = false;
-    if (nasaGibsBlueMarble) nasaGibsBlueMarble.show = false;
     if (nasaGibsViirs) nasaGibsViirs.show = false;
-    if (hillshade) hillshade.show = true;
+    if (hillshade) hillshade.show = false;
 
     switch (mode) {
-      case 'sentinel2':
-        sentinel2.show = true;
-        sentinel2.alpha = 0.96;
+      case 'nasa_bluemarble':
+        nasaGibsBlueMarble.show = true;
+        nasaGibsBlueMarble.alpha = 1.0;
         break;
       case 'world_imagery':
         worldImagery.show = true;
         worldImagery.alpha = 1.0;
-        break;
-      case 'nasa_bluemarble':
-        if (nasaGibsBlueMarble) {
-          nasaGibsBlueMarble.show = true;
-          nasaGibsBlueMarble.alpha = 1.0;
-        }
+        if (hillshade) hillshade.show = true;
         break;
       case 'nasa_viirs':
         if (nasaGibsViirs) {
           nasaGibsViirs.show = true;
           nasaGibsViirs.alpha = 1.0;
         }
-        if (hillshade) hillshade.show = false;
         break;
-      case 'hybrid':
+      case 'nasa_hybrid':
       default:
-        // No modo híbrido, Sentinel-2 fornece os oceanos azul-turquesa e biomas naturais em órbita
-        // enquanto World Imagery aumenta progressivamente de opacidade conforme o usuário dá zoom!
-        sentinel2.show = true;
-        sentinel2.alpha = 0.9;
+        // Combina NASA GIBS Blue Marble Next Generation com Satélite HD multirresolução
+        nasaGibsBlueMarble.show = true;
+        nasaGibsBlueMarble.alpha = 1.0;
         worldImagery.show = true;
+        if (hillshade) hillshade.show = true;
         this.updateHybridLODBlend();
         break;
     }
   }
 
   /**
-   * Ajusta dinamicamente a fusão entre a visão orbital (Sentinel-2 + Blue Marble)
-   * e a fotografia aérea/satélite de alta resolução (World Imagery) conforme a altitude da câmera.
+   * Ajusta dinamicamente a fusão entre o NASA GIBS Blue Marble (órbita global) e os tiles
+   * de satélite de alta resolução + relevo topográfico conforme a câmera se aproxima.
    */
   updateHybridLODBlend() {
-    if (this.activeImageryMode !== 'hybrid' || !this.viewer || !this.layers.worldImagery) {
-      return;
-    }
+    if (!this.viewer) return;
 
     const carto = this.viewer.camera.positionCartographic;
     const altitudeKm = carto ? carto.height / 1000 : 12500;
 
-    // Acima de 7.000 km: 35% World Imagery + 90% Sentinel-2 (oceanos vibrantes e cores naturais)
-    // Abaixo de 1.800 km: 92% World Imagery (máximo detalhe de terreno, crateras e escarpas)
-    const t = Math.max(0, Math.min(1, (7000 - altitudeKm) / (7000 - 1500)));
-    this.layers.worldImagery.alpha = 0.35 + t * 0.58;
+    if (this.activeImageryMode === 'nasa_hybrid' && this.layers.worldImagery) {
+      // Em órbita global (12.500 km): 55% Satélite HD + 100% NASA Blue Marble (cores oceânicas profundas e naturais)
+      // Abaixo de 2.500 km: 100% Satélite HD para nitidez máxima de crateras, montanhas e desertos
+      const t = Math.max(0, Math.min(1, (8500 - altitudeKm) / (8500 - 2000)));
+      this.layers.worldImagery.alpha = 0.55 + t * 0.45;
+    }
 
-    // Atenua as nuvens automaticamente quando muito próximo do solo (< 1.200 km) para leitura geológica limpa
-    if (this.layers.clouds && this.cloudsEnabled) {
-      const cloudFade = Math.max(0.05, Math.min(0.34, ((altitudeKm - 600) / 3500) * 0.34));
-      this.layers.clouds.alpha = cloudFade;
+    // Relevo topográfico (Hillshade) só entra quando a câmera está abaixo de 3.500 km
+    // evitando qualquer aspecto esbranquiçado na visão orbital global!
+    if (this.layers.hillshade && this.layers.hillshade.show) {
+      if (altitudeKm > 3500) {
+        this.layers.hillshade.alpha = 0.0;
+      } else {
+        const reliefFactor = Math.max(0, Math.min(1, (3500 - altitudeKm) / 2500));
+        this.layers.hillshade.alpha = reliefFactor * 0.24;
+      }
     }
   }
 
   /**
-   * Atualiza a direção da luz solar antes de cada quadro para manter um ângulo
-   * de iluminação espacial natural e um terminador suave no horizonte direito/inferior.
+   * Atualiza a direção da luz solar antes de cada quadro.
    */
   handlePreRender() {
     if (!this.viewer) return;
@@ -376,15 +357,14 @@ export class EarthGlobeController {
 
     const { camera, light } = this.viewer.scene;
     if (light && camera) {
-      // Calcula direção solar deslocada 32° à esquerda e 18° acima do eixo de visão da câmera
       const dir = camera.directionWC;
       const up = camera.upWC;
       const right = camera.rightWC;
 
       const sunDir = new Cesium.Cartesian3(
-        dir.x - right.x * 0.55 - up.x * 0.32,
-        dir.y - right.y * 0.55 - up.y * 0.32,
-        dir.z - right.z * 0.55 - up.z * 0.32
+        dir.x - right.x * 0.5 - up.x * 0.28,
+        dir.y - right.y * 0.5 - up.y * 0.28,
+        dir.z - right.z * 0.5 - up.z * 0.28
       );
       Cesium.Cartesian3.normalize(sunDir, light.direction);
     }
@@ -401,7 +381,7 @@ export class EarthGlobeController {
     controller.enableTilt = true;
     controller.enableLook = true;
 
-    controller.minimumZoomDistance = 800; // Permite aproximação até 800 metros da superfície
+    controller.minimumZoomDistance = 800;
     controller.maximumZoomDistance = 38000000;
 
     controller.inertiaSpin = 0.91;
@@ -468,8 +448,6 @@ export class EarthGlobeController {
 
   /**
    * Converte uma posição 2D da tela (pixels) em coordenadas geográficas (Lat/Lon WGS84).
-   * @param {Cesium.Cartesian2} windowPosition
-   * @returns {{ latitude: number, longitude: number } | null}
    */
   pickCoordinatesFromScreenPosition(windowPosition) {
     if (!this.viewer || !windowPosition) return null;
@@ -533,7 +511,6 @@ export class EarthGlobeController {
 
   /**
    * Ativa ou desativa a auto-rotação e notifica a interface.
-   * @param {boolean} enabled
    */
   setAutoRotation(enabled) {
     this.isAutoRotating = Boolean(enabled);

@@ -118,7 +118,7 @@ function geospatialTileProxyPlugin() {
 
           const upstreamRes = await fetch(targetUrl, {
             headers: {
-              'User-Agent': 'TERRA-ANALOG-NASA-SpaceApps-2026/1.0',
+              'User-Agent': 'Eksoterris-NASA-SpaceApps-2026/1.0',
               Accept: 'image/jpeg,image/png,image/*,*/*'
             },
             signal: controller.signal

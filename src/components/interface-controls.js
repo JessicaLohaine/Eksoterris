@@ -1,8 +1,7 @@
 /**
  * Módulo de Controles da Interface e HUD Central (src/components/interface-controls.js)
- * Responsável pelo cabeçalho superior do palco central (seletores de região, camada
- * científica de satélite, rotação, iluminação solar e camada de nuvens) e pela barra
- * inferior de telemetria geoespacial em tempo real.
+ * Foco Institucional NASA: Camadas NASA GIBS Blue Marble Next Generation, NASA VIIRS
+ * e Satélite HD Multirresolução.
  */
 import { APP_CONFIG } from '../config/constants.js';
 import { createSafeElement } from '../utils/sanitizer.js';
@@ -48,11 +47,10 @@ const PRESET_REGIONS = Object.freeze([
 ]);
 
 const IMAGERY_MODES = Object.freeze([
-  { id: 'hybrid', label: 'Camada: Híbrido Sentinel-2 + Satélite HD' },
-  { id: 'sentinel2', label: 'Camada: Sentinel-2 Cloudless (ESA)' },
-  { id: 'world_imagery', label: 'Camada: Satélite Maxar/Esri (Zoom 18)' },
-  { id: 'nasa_bluemarble', label: 'Camada: NASA GIBS Blue Marble' },
-  { id: 'nasa_viirs', label: 'Camada: NASA GIBS VIIRS True Color' }
+  { id: 'nasa_hybrid', label: 'Camada: NASA Blue Marble + Satélite HD' },
+  { id: 'nasa_bluemarble', label: 'Camada: NASA GIBS Blue Marble (Oficial)' },
+  { id: 'nasa_viirs', label: 'Camada: NASA GIBS VIIRS (Suomi NPP)' },
+  { id: 'world_imagery', label: 'Camada: Satélite Landsat/Maxar (Zoom 18)' }
 ]);
 
 /**
@@ -86,13 +84,12 @@ export function createTopHudBar() {
   titleWrap.append(appTitle, editionBadge);
   brandGroup.append(statusDot, titleWrap);
 
-  // Bloco direito: Controles de navegação, camadas científicas e atmosfera
+  // Bloco direito: Controles de navegação, camadas científicas da NASA e atmosfera
   const controlsGroup = createSafeElement('nav', {
     className: 'hud-controls-group',
     attributes: { 'aria-label': 'Controles de Navegação e Camadas do Globo' }
   });
 
-  // Seletor de transição suave (flyTo) para explorar diferentes regiões do planeta
   const regionSelect = createSafeElement('select', {
     className: 'hud-region-select',
     attributes: {
@@ -117,12 +114,11 @@ export function createTopHudBar() {
     }
   });
 
-  // Seletor de fonte científica de satélite (Sentinel-2, Maxar/Esri, NASA GIBS)
   const imagerySelect = createSafeElement('select', {
     className: 'hud-region-select',
     attributes: {
       id: 'hud-imagery-select',
-      'aria-label': 'Selecionar fonte científica de imagem de satélite'
+      'aria-label': 'Selecionar fonte científica de imagem de satélite da NASA'
     }
   });
 
@@ -150,24 +146,24 @@ export function createTopHudBar() {
   });
 
   const btnToggleLighting = createSafeElement('button', {
-    className: 'hud-control-btn is-active',
+    className: 'hud-control-btn',
     text: 'Luz Solar',
     attributes: {
       type: 'button',
       id: 'btn-toggle-lighting',
-      'aria-pressed': 'true',
+      'aria-pressed': 'false',
       title: 'Alternar iluminação direcional solar e transição dia/noite'
     }
   });
 
   const btnToggleClouds = createSafeElement('button', {
-    className: 'hud-control-btn is-active',
+    className: 'hud-control-btn',
     text: 'Nuvens',
     attributes: {
       type: 'button',
       id: 'btn-toggle-clouds',
-      'aria-pressed': 'true',
-      title: 'Mostrar ou ocultar a camada global de nuvens'
+      'aria-pressed': 'false',
+      title: 'Mostrar ou ocultar a camada global de nuvens da NASA'
     }
   });
 
@@ -235,7 +231,7 @@ export function createTopHudBar() {
 }
 
 /**
- * Constrói a barra inferior de telemetria da região central (coordenadas do cursor, altitude e datum).
+ * Constrói a barra inferior de telemetria da região central.
  * @returns {HTMLElement}
  */
 export function createBottomTelemetryBar() {
@@ -266,7 +262,11 @@ export function createBottomTelemetryBar() {
     `${APP_CONFIG.defaultCoordinates.altitudeKm.toLocaleString('pt-BR')} km`,
     'hud-telemetry-alt'
   );
-  const datumCell = createTelemetryCell('SATÉLITE / DATUM', 'SENTINEL-2 + MAXAR // WGS84', 'hud-telemetry-datum');
+  const datumCell = createTelemetryCell(
+    'FONTE / DATUM',
+    'NASA GIBS + LANDSAT HD // WGS84',
+    'hud-telemetry-datum'
+  );
 
   footer.append(latCell.cell, lonCell.cell, altCell.cell, datumCell.cell);
 
@@ -286,13 +286,12 @@ export function createBottomTelemetryBar() {
   eventBus.on('globe:change-imagery-mode', (payload) => {
     if (!payload) return;
     const labels = {
-      hybrid: 'SENTINEL-2 + MAXAR // WGS84',
-      sentinel2: 'ESA SENTINEL-2 // WGS84',
-      world_imagery: 'ESRI MAXAR HD // WGS84',
+      nasa_hybrid: 'NASA GIBS + LANDSAT HD // WGS84',
       nasa_bluemarble: 'NASA GIBS BLUE MARBLE // WGS84',
-      nasa_viirs: 'NASA GIBS VIIRS // WGS84'
+      nasa_viirs: 'NASA GIBS VIIRS // WGS84',
+      world_imagery: 'LANDSAT / MAXAR HD // WGS84'
     };
-    datumCell.val.textContent = labels[payload.mode] || 'CESIUM 3D // WGS84';
+    datumCell.val.textContent = labels[payload.mode] || 'NASA GIBS // WGS84';
   });
 
   return footer;
