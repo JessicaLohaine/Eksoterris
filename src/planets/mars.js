@@ -1,8 +1,7 @@
 /**
  * Módulo 3D de Marte (src/planets/mars.js)
- * Etapa 5: Instancia e configura o modelo tridimensional de Marte utilizando Three.js.
- *
- * Nota: Conforme a Regra 13, nenhum marcador ou ponto de interesse foi adicionado.
+ * Reestruturação Visual: Utilização do mosaico global 2K (2048x1024) baseado em dados
+ * das missões Viking e MGS MOLA da NASA, destacando Valles Marineris, Tharsis, Syrtis Major e crateras.
  */
 import { PlanetRenderer } from './planet-renderer.js';
 
@@ -23,16 +22,17 @@ export function initMarsModel(container) {
   const renderer = new PlanetRenderer(container, {
     id: MARS_METADATA.id,
     name: MARS_METADATA.name,
-    albedoUrl: '/textures/mars/mars_albedo.png',
-    bumpUrl: '/textures/mars/mars_bump.png',
-    bumpScale: 0.032,
-    roughness: 0.85,
-    metalness: 0.05,
+    albedoUrl: '/textures/mars/mars_albedo.jpg',
+    // Usa o mosaico 2K real para alinhamento topográfico exato das feições geológicas marcianas
+    bumpUrl: '/textures/mars/mars_albedo.jpg',
+    bumpScale: 0.022,
+    roughness: 0.86,
+    metalness: 0.04,
     axialTiltDeg: MARS_METADATA.axialTiltDeg,
-    rotationSpeed: 0.0024,
+    rotationSpeed: 0.0018,
     fallbackColorHex: '#c2410c',
     hasAtmosphereGlow: true,
-    atmosphereColorHex: '#fb923c' // Halo sutil de poeira e CO2 marciano no horizonte
+    atmosphereColorHex: '#fb923c'
   });
 
   return renderer.init();

@@ -1,7 +1,11 @@
 /**
  * Renderizador Base de Corpos Planetários Secundários (src/planets/planet-renderer.js)
- * Etapa 6: Refinamento de desempenho (IntersectionObserver + Visibility API),
- * transição suave de reset de câmera e gerenciamento de recursos GPU.
+ * Reestruturação Visual 3D:
+ * - Geometria de alta densidade (96x96 segmentos) para silhueta perfeitamente esférica.
+ * - Texturas reais 2K (2048x1024) baseadas em missões da NASA (LRO para Lua, Viking/MOLA para Marte).
+ * - Mapeamento de relevo (Bump Map) em registro pixel-a-pixel com as feições reais (crateras, mares e cânions).
+ * - Iluminação solar coerente com a posição da câmera (acoplada ao referencial orbital da câmera),
+ *   garantindo transição dia/noite (terminador) natural e visibilidade em qualquer ângulo de rotação.
  */
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
@@ -28,11 +32,11 @@ export class PlanetRenderer {
       name: 'Corpo Celeste',
       albedoUrl: '',
       bumpUrl: '',
-      bumpScale: 0.025,
+      bumpScale: 0.02,
       roughness: 0.88,
-      metalness: 0.04,
+      metalness: 0.03,
       axialTiltDeg: 0,
-      rotationSpeed: 0.002,
+      rotationSpeed: 0.0016,
       fallbackColorHex: '#94a3b8',
       hasAtmosphereGlow: false,
       atmosphereColorHex: '#f97316',
@@ -51,18 +55,17 @@ export class PlanetRenderer {
     this.isUserDragging = false;
     this.isVisibleInViewport = true;
     this.isDisposed = false;
-    this.defaultCameraPos = new THREE.Vector3(0, 0.15, 2.55);
+    this.defaultCameraPos = new THREE.Vector3(0, 0.12, 2.48);
   }
 
   /**
-   * Inicializa a cena Three.js, carrega texturas e inicia o loop de renderização.
+   * Inicializa a cena Three.js, carrega texturas 2K e inicia o loop de renderização.
    */
   init() {
     if (!this.container) {
       throw new Error(`Container para ${this.options.name} não encontrado.`);
     }
 
-    // Remove apenas o placeholder estático da Etapa 3 preservando dicas de UI se houver
     const placeholder = this.container.querySelector('[data-stage-placeholder="true"]');
     if (placeholder) {
       placeholder.remove();
@@ -71,12 +74,13 @@ export class PlanetRenderer {
     const width = Math.max(this.container.clientWidth, 180);
     const height = Math.max(this.container.clientHeight, 130);
 
-    // 1. Cena e Câmera Perspectiva (FOV 35° evita distorção esférica nas bordas)
+    // 1. Cena e Câmera Perspectiva (FOV 34° para proporção teleobjetiva espacial)
     this.scene = new THREE.Scene();
-    this.camera = new THREE.PerspectiveCamera(35, width / height, 0.1, 50);
+    this.camera = new THREE.PerspectiveCamera(34, width / height, 0.1, 50);
     this.camera.position.copy(this.defaultCameraPos);
+    this.scene.add(this.camera);
 
-    // 2. Renderizador WebGL otimizado
+    // 2. Renderizador WebGL de alta precisão cromática
     this.renderer = new THREE.WebGLRenderer({
       antialias: true,
       alpha: true,
@@ -86,14 +90,14 @@ export class PlanetRenderer {
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, APP_CONFIG.maxPixelRatio));
     this.renderer.outputColorSpace = THREE.SRGBColorSpace;
     this.renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    this.renderer.toneMappingExposure = 1.08;
+    this.renderer.toneMappingExposure = 1.12;
 
     this.container.insertBefore(this.renderer.domElement, this.container.firstChild);
 
-    // 3. Iluminação Coerente (Sol Principal + Luz Espacial de Preenchimento + Rim Light)
+    // 3. Iluminação Solar Coerente com a Câmera
     this.setupLighting();
 
-    // 4. Malha Esférica 3D + Texturas + Inclinação Axial
+    // 4. Malha Esférica 3D + Texturas Reais 2K + Relevo
     this.setupPlanetMesh();
 
     // 5. Controles de Interação com o Mouse (OrbitControls)
@@ -109,30 +113,33 @@ export class PlanetRenderer {
   }
 
   /**
-   * Configura iluminação tridimensional com padrão orbital realista.
+   * Configura iluminação acoplada à câmera para que a luz solar seja sempre coerente
+   * com o ponto de vista do observador, preservando um terminador suave no limbo.
    */
   setupLighting() {
-    const ambientLight = new THREE.AmbientLight(0xdbeafe, 0.34);
+    const ambientLight = new THREE.AmbientLight(0xdbeafe, 0.22);
     this.scene.add(ambientLight);
 
-    const sunLight = new THREE.DirectionalLight(0xfffbeb, 2.4);
-    sunLight.position.set(4.5, 2.0, 3.8);
-    this.scene.add(sunLight);
+    // Luz Solar Direcional principal acoplada ao referencial da câmera
+    const sunLight = new THREE.DirectionalLight(0xfffaf0, 2.65);
+    sunLight.position.set(3.8, 1.6, 3.2);
+    this.camera.add(sunLight);
 
-    const rimLight = new THREE.DirectionalLight(0x64748b, 0.58);
-    rimLight.position.set(-4.0, -1.8, -3.2);
-    this.scene.add(rimLight);
+    // Luz secundária de penumbra / contra-luz suave no limbo oposto
+    const rimLight = new THREE.DirectionalLight(0x64748b, 0.42);
+    rimLight.position.set(-3.5, -1.4, -2.0);
+    this.camera.add(rimLight);
   }
 
   /**
-   * Cria a geometria esférica do planeta e aplica texturas com fallback automático.
+   * Cria a geometria esférica do planeta e aplica texturas reais 2K com relevo alinhado.
    */
   setupPlanetMesh() {
     this.planetGroup = new THREE.Group();
     this.planetGroup.rotation.z = THREE.MathUtils.degToRad(this.options.axialTiltDeg);
     this.scene.add(this.planetGroup);
 
-    const geometry = new THREE.SphereGeometry(0.84, 64, 64);
+    const geometry = new THREE.SphereGeometry(0.85, 96, 96);
     const fallbackTexture = this.createProceduralFallbackTexture(this.options.fallbackColorHex);
 
     const material = new THREE.MeshStandardMaterial({
@@ -145,12 +152,13 @@ export class PlanetRenderer {
     this.planetMesh = new THREE.Mesh(geometry, material);
     this.planetGroup.add(this.planetMesh);
 
+    // Halo atmosférico sutil para Marte (dispersão de poeira e CO2 no horizonte)
     if (this.options.hasAtmosphereGlow) {
-      const glowGeometry = new THREE.SphereGeometry(0.874, 48, 48);
+      const glowGeometry = new THREE.SphereGeometry(0.88, 64, 64);
       const glowMaterial = new THREE.MeshBasicMaterial({
         color: new THREE.Color(this.options.atmosphereColorHex),
         transparent: true,
-        opacity: 0.12,
+        opacity: 0.09,
         side: THREE.BackSide,
         blending: THREE.AdditiveBlending,
         depthWrite: false
@@ -168,7 +176,15 @@ export class PlanetRenderer {
         (texture) => {
           texture.colorSpace = THREE.SRGBColorSpace;
           texture.anisotropy = maxAnisotropy;
+          texture.minFilter = THREE.LinearMipmapLinearFilter;
+          texture.magFilter = THREE.LinearFilter;
           material.map = texture;
+
+          // Usa o próprio mosaico fotográfico de alta resolução como micro-relevo base
+          // garantindo alinhamento 100% exato de cada cratera, cânion e monte vulcânico
+          if (!material.bumpMap) {
+            material.bumpMap = texture;
+          }
           material.needsUpdate = true;
           fallbackTexture.dispose();
         },
@@ -194,7 +210,7 @@ export class PlanetRenderer {
   }
 
   /**
-   * Gera uma textura procedural leve em Canvas 2D caso a imagem principal ainda esteja carregando ou falhe.
+   * Gera uma textura procedural leve em Canvas 2D caso a imagem principal ainda esteja carregando.
    * @param {string} baseColorHex
    * @returns {THREE.CanvasTexture}
    */
@@ -207,16 +223,6 @@ export class PlanetRenderer {
     if (ctx) {
       ctx.fillStyle = baseColorHex;
       ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      for (let i = 0; i < 180; i++) {
-        const x = (Math.sin(i * 12.9898) * 0.5 + 0.5) * canvas.width;
-        const y = (Math.cos(i * 78.233) * 0.5 + 0.5) * canvas.height;
-        const r = 2 + (i % 10);
-        ctx.fillStyle = i % 2 === 0 ? 'rgba(0, 0, 0, 0.12)' : 'rgba(255, 255, 255, 0.08)';
-        ctx.beginPath();
-        ctx.arc(x, y, r, 0, Math.PI * 2);
-        ctx.fill();
-      }
     }
 
     const texture = new THREE.CanvasTexture(canvas);
@@ -236,7 +242,7 @@ export class PlanetRenderer {
     this.controls.enableZoom = true;
     this.controls.rotateSpeed = 0.75;
     this.controls.zoomSpeed = 0.8;
-    this.controls.minDistance = 1.65;
+    this.controls.minDistance = 1.55;
     this.controls.maxDistance = 3.5;
 
     this.controls.addEventListener('start', () => {
@@ -276,7 +282,6 @@ export class PlanetRenderer {
       this.resizeObserver.observe(this.container);
     }
 
-    // Pausa renderização caso o card saia da área visível em telas menores/mobile
     if (typeof IntersectionObserver !== 'undefined') {
       this.intersectionObserver = new IntersectionObserver(
         (entries) => {
@@ -303,7 +308,7 @@ export class PlanetRenderer {
   }
 
   /**
-   * Loop de renderização com economia inteligente de GPU (aba oculta ou elemento fora da tela).
+   * Loop de renderização com economia inteligente de GPU.
    */
   animate() {
     if (this.isDisposed) return;

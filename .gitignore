@@ -10,6 +10,9 @@ dist-ssr/
 # Ativos estáticos copiados automaticamente do CesiumJS (gerados no buildStart)
 public/cesium/
 
+# Cache local de tiles de satélite (gerado dinamicamente em desenvolvimento)
+.tile-cache/
+
 # Variáveis de ambiente e segredos (NUNCA versionar credenciais)
 .env
 .env.*

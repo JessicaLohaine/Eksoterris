@@ -1,7 +1,8 @@
 /**
  * Módulo de Controles da Interface e HUD Central (src/components/interface-controls.js)
- * Responsável pelo cabeçalho superior do palco central e pela barra inferior de
- * telemetria de coordenadas/status, mantendo o Globo Terrestre 3D como protagonista.
+ * Responsável pelo cabeçalho superior do palco central (seletores de região, camada
+ * científica de satélite, rotação, iluminação solar e camada de nuvens) e pela barra
+ * inferior de telemetria geoespacial em tempo real.
  */
 import { APP_CONFIG } from '../config/constants.js';
 import { createSafeElement } from '../utils/sanitizer.js';
@@ -18,25 +19,40 @@ const PRESET_REGIONS = Object.freeze([
   },
   {
     id: 'atacama',
-    label: 'América do Sul — Atacama (1.800 km)',
+    label: 'América do Sul — Atacama (850 km)',
     latitude: -23.8634,
     longitude: -69.1328,
-    altitudeKm: 1800
+    altitudeKm: 850
   },
   {
     id: 'hawaii',
-    label: 'Pacífico — Havaí / Mauna Loa (1.400 km)',
+    label: 'Pacífico — Havaí / Mauna Loa (380 km)',
     latitude: 19.4756,
     longitude: -155.5828,
+    altitudeKm: 380
+  },
+  {
+    id: 'sahara',
+    label: 'África — Saara / Tibesti (1.400 km)',
+    latitude: 20.78,
+    longitude: 18.05,
     altitudeKm: 1400
   },
   {
     id: 'antarctica',
-    label: 'Antártida — Vales Secos (2.200 km)',
+    label: 'Antártida — Vales Secos (950 km)',
     latitude: -77.55,
     longitude: 161.8,
-    altitudeKm: 2200
+    altitudeKm: 950
   }
+]);
+
+const IMAGERY_MODES = Object.freeze([
+  { id: 'hybrid', label: 'Camada: Híbrido Sentinel-2 + Satélite HD' },
+  { id: 'sentinel2', label: 'Camada: Sentinel-2 Cloudless (ESA)' },
+  { id: 'world_imagery', label: 'Camada: Satélite Maxar/Esri (Zoom 18)' },
+  { id: 'nasa_bluemarble', label: 'Camada: NASA GIBS Blue Marble' },
+  { id: 'nasa_viirs', label: 'Camada: NASA GIBS VIIRS True Color' }
 ]);
 
 /**
@@ -70,10 +86,10 @@ export function createTopHudBar() {
   titleWrap.append(appTitle, editionBadge);
   brandGroup.append(statusDot, titleWrap);
 
-  // Bloco direito: Controles de navegação e iluminação do Globo Terrestre
+  // Bloco direito: Controles de navegação, camadas científicas e atmosfera
   const controlsGroup = createSafeElement('nav', {
     className: 'hud-controls-group',
-    attributes: { 'aria-label': 'Controles de Navegação do Globo' }
+    attributes: { 'aria-label': 'Controles de Navegação e Camadas do Globo' }
   });
 
   // Seletor de transição suave (flyTo) para explorar diferentes regiões do planeta
@@ -101,6 +117,27 @@ export function createTopHudBar() {
     }
   });
 
+  // Seletor de fonte científica de satélite (Sentinel-2, Maxar/Esri, NASA GIBS)
+  const imagerySelect = createSafeElement('select', {
+    className: 'hud-region-select',
+    attributes: {
+      id: 'hud-imagery-select',
+      'aria-label': 'Selecionar fonte científica de imagem de satélite'
+    }
+  });
+
+  for (const mode of IMAGERY_MODES) {
+    const option = createSafeElement('option', {
+      text: mode.label,
+      attributes: { value: mode.id }
+    });
+    imagerySelect.appendChild(option);
+  }
+
+  imagerySelect.addEventListener('change', () => {
+    eventBus.emit('globe:change-imagery-mode', { mode: imagerySelect.value });
+  });
+
   const btnAutoRotate = createSafeElement('button', {
     className: 'hud-control-btn is-active',
     text: 'Rotação: ON',
@@ -109,6 +146,28 @@ export function createTopHudBar() {
       id: 'btn-toggle-autorotate',
       'aria-pressed': 'true',
       title: 'Ativar ou pausar a rotação axial contínua do Globo Terrestre'
+    }
+  });
+
+  const btnToggleLighting = createSafeElement('button', {
+    className: 'hud-control-btn is-active',
+    text: 'Luz Solar',
+    attributes: {
+      type: 'button',
+      id: 'btn-toggle-lighting',
+      'aria-pressed': 'true',
+      title: 'Alternar iluminação direcional solar e transição dia/noite'
+    }
+  });
+
+  const btnToggleClouds = createSafeElement('button', {
+    className: 'hud-control-btn is-active',
+    text: 'Nuvens',
+    attributes: {
+      type: 'button',
+      id: 'btn-toggle-clouds',
+      'aria-pressed': 'true',
+      title: 'Mostrar ou ocultar a camada global de nuvens'
     }
   });
 
@@ -122,30 +181,34 @@ export function createTopHudBar() {
     }
   });
 
-  const btnToggleLighting = createSafeElement('button', {
-    className: 'hud-control-btn',
-    text: 'Luz Solar',
-    attributes: {
-      type: 'button',
-      id: 'btn-toggle-lighting',
-      'aria-pressed': 'false',
-      title: 'Alternar iluminação dia/noite no globo terrestre'
-    }
-  });
-
   btnAutoRotate.addEventListener('click', () => {
     const isPressed = btnAutoRotate.getAttribute('aria-pressed') === 'true';
     const nextState = !isPressed;
     eventBus.emit('globe:toggle-autorotate', { enabled: nextState });
   });
 
-  // Sincroniza estado visual do botão quando o usuário pausa a rotação arrastando o globo
   eventBus.on('globe:autorotate-changed', (payload) => {
     if (!payload) return;
     const active = Boolean(payload.enabled);
     btnAutoRotate.setAttribute('aria-pressed', String(active));
     btnAutoRotate.classList.toggle('is-active', active);
     btnAutoRotate.textContent = active ? 'Rotação: ON' : 'Rotação: OFF';
+  });
+
+  btnToggleLighting.addEventListener('click', () => {
+    const isPressed = btnToggleLighting.getAttribute('aria-pressed') === 'true';
+    const nextState = !isPressed;
+    btnToggleLighting.setAttribute('aria-pressed', String(nextState));
+    btnToggleLighting.classList.toggle('is-active', nextState);
+    eventBus.emit('globe:toggle-lighting', { enabled: nextState });
+  });
+
+  btnToggleClouds.addEventListener('click', () => {
+    const isPressed = btnToggleClouds.getAttribute('aria-pressed') === 'true';
+    const nextState = !isPressed;
+    btnToggleClouds.setAttribute('aria-pressed', String(nextState));
+    btnToggleClouds.classList.toggle('is-active', nextState);
+    eventBus.emit('globe:toggle-clouds', { enabled: nextState });
   });
 
   btnResetCamera.addEventListener('click', () => {
@@ -158,15 +221,14 @@ export function createTopHudBar() {
     eventBus.emit('profile:select', { profileId: 'earth_default', source: 'reset-camera' });
   });
 
-  btnToggleLighting.addEventListener('click', () => {
-    const isPressed = btnToggleLighting.getAttribute('aria-pressed') === 'true';
-    const nextState = !isPressed;
-    btnToggleLighting.setAttribute('aria-pressed', String(nextState));
-    btnToggleLighting.classList.toggle('is-active', nextState);
-    eventBus.emit('globe:toggle-lighting', { enabled: nextState });
-  });
-
-  controlsGroup.append(regionSelect, btnAutoRotate, btnResetCamera, btnToggleLighting);
+  controlsGroup.append(
+    regionSelect,
+    imagerySelect,
+    btnAutoRotate,
+    btnToggleLighting,
+    btnToggleClouds,
+    btnResetCamera
+  );
   header.append(brandGroup, controlsGroup);
 
   return header;
@@ -204,11 +266,10 @@ export function createBottomTelemetryBar() {
     `${APP_CONFIG.defaultCoordinates.altitudeKm.toLocaleString('pt-BR')} km`,
     'hud-telemetry-alt'
   );
-  const datumCell = createTelemetryCell('MOTOR / DATUM', 'CESIUM 3D // WGS84', 'hud-telemetry-datum');
+  const datumCell = createTelemetryCell('SATÉLITE / DATUM', 'SENTINEL-2 + MAXAR // WGS84', 'hud-telemetry-datum');
 
   footer.append(latCell.cell, lonCell.cell, altCell.cell, datumCell.cell);
 
-  // Escuta atualizações de coordenadas emitidas pelo Globo Terrestre (Etapa 4)
   eventBus.on('globe:pointer-move', (coords) => {
     if (!coords) return;
     if (typeof coords.latitude === 'number') {
@@ -220,6 +281,18 @@ export function createBottomTelemetryBar() {
     if (typeof coords.altitudeKm === 'number') {
       altCell.val.textContent = `${Math.round(coords.altitudeKm).toLocaleString('pt-BR')} km`;
     }
+  });
+
+  eventBus.on('globe:change-imagery-mode', (payload) => {
+    if (!payload) return;
+    const labels = {
+      hybrid: 'SENTINEL-2 + MAXAR // WGS84',
+      sentinel2: 'ESA SENTINEL-2 // WGS84',
+      world_imagery: 'ESRI MAXAR HD // WGS84',
+      nasa_bluemarble: 'NASA GIBS BLUE MARBLE // WGS84',
+      nasa_viirs: 'NASA GIBS VIIRS // WGS84'
+    };
+    datumCell.val.textContent = labels[payload.mode] || 'CESIUM 3D // WGS84';
   });
 
   return footer;
