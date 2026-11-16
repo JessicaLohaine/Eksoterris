@@ -180,5 +180,4 @@ The project brings together programming, geospatial technologies, scientific dat
 
 <p align="center">
   <strong>Eksoterris</strong><br>
-  <a href="https://github.com/JessicaLohaine/Eksoterris">GitHub Repository</a>
 </p>
