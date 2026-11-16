@@ -1,0 +1,6 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=SRTMGL1&version=003&point=-110.5471695%2C44.59824417&page_size=10",
+  "retrieved_at": "2026-11-15T12:50:22.792991+00:00",
+  "sha256": "d4feaf647ec3ea5b84598237ceadda9a44421892e6cf3be014caeeb77d251c8b",
+  "bytes": 4368
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(36.00000):1:(40.00000)%5D%5B(-112.53804):1:(-107.46196)%5D",
+  "retrieved_at": "2026-11-15T04:59:38.513261+00:00",
+  "sha256": "6f52ad17c2e041272b9e62ad7a07dd5325f8676cc122964f53aa37617e9cb2d3",
+  "bytes": 2749887
+}

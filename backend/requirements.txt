@@ -1,0 +1,5 @@
+fastapi>=0.115,<1
+uvicorn>=0.34,<1
+numpy>=2.2,<3
+google-genai>=3.3,<4
+truststore>=0.10,<1

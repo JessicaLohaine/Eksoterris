@@ -1,0 +1,2851 @@
+{
+  "catalog": [
+    {
+      "coordinate_key": "6.0000000,0.0000000",
+      "id": "coarse-220-11-50m-r00-c00",
+      "latitude": 6.000000000000001,
+      "longitude": 0.0,
+      "quality": {
+        "complete_mapped_land_footprint": false,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "coordinate_key": "6.0000000,2.0000000",
+      "id": "coarse-220-11-50m-r00-c01",
+      "latitude": 6.000000000000001,
+      "longitude": 2.0,
+      "quality": {
+        "complete_mapped_land_footprint": false,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "coordinate_key": "6.0000000,4.0000000",
+      "id": "coarse-220-11-50m-r00-c02",
+      "latitude": 6.000000000000001,
+      "longitude": 4.0,
+      "quality": {
+        "complete_mapped_land_footprint": false,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "coordinate_key": "6.0000000,6.0000000",
+      "id": "coarse-220-11-50m-r00-c03",
+      "latitude": 6.000000000000001,
+      "longitude": 6.0,
+      "quality": {
+        "complete_mapped_land_footprint": false,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "coordinate_key": "7.9893795,0.0000000",
+      "id": "coarse-220-11-50m-r01-c00",
+      "latitude": 7.989379459716191,
+      "longitude": 0.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "7.9893795,2.0000000",
+      "features": {
+        "detrended_rms_m": 36.23638180905472,
+        "mean_elevation_m": 208.36692112284973,
+        "median_slope_deg": 0.09231724464447712,
+        "relief_m": 258.9527968625896,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r01-c01",
+      "latitude": 7.989379459716191,
+      "longitude": 2.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "7.9893795,4.0000000",
+      "features": {
+        "detrended_rms_m": 59.762348350092694,
+        "mean_elevation_m": 285.8660061710492,
+        "median_slope_deg": 0.11499929402637947,
+        "relief_m": 303.9817154101364,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r01-c02",
+      "latitude": 7.989379459716191,
+      "longitude": 4.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "7.9893795,6.0000000",
+      "features": {
+        "detrended_rms_m": 98.25453774164146,
+        "mean_elevation_m": 253.34639719397023,
+        "median_slope_deg": 0.1934486149321879,
+        "relief_m": 432.34795496801786,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r01-c03",
+      "latitude": 7.989379459716191,
+      "longitude": 6.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "9.9885061,0.0000000",
+      "features": {
+        "detrended_rms_m": 50.22237955008958,
+        "mean_elevation_m": 182.27804921432855,
+        "median_slope_deg": 0.08364728586477918,
+        "relief_m": 167.35199583219048,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r02-c00",
+      "latitude": 9.988506072683276,
+      "longitude": 0.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "9.9885061,2.0000000",
+      "features": {
+        "detrended_rms_m": 59.33496714389573,
+        "mean_elevation_m": 358.2301218421745,
+        "median_slope_deg": 0.07480196104123486,
+        "relief_m": 197.79292175634433,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r02-c01",
+      "latitude": 9.988506072683276,
+      "longitude": 2.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "9.9885061,4.0000000",
+      "id": "coarse-220-11-50m-r02-c02",
+      "latitude": 9.988506072683276,
+      "longitude": 4.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "9.9885061,6.0000000",
+      "features": {
+        "detrended_rms_m": 56.39948353962334,
+        "mean_elevation_m": 284.1978721648712,
+        "median_slope_deg": 0.13626486020896802,
+        "relief_m": 381.99137764765305,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r02-c03",
+      "latitude": 9.988506072683276,
+      "longitude": 6.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "12.0000000,0.0000000",
+      "features": {
+        "detrended_rms_m": 21.093887074745215,
+        "mean_elevation_m": 272.83364506226616,
+        "median_slope_deg": 0.04000061946880642,
+        "relief_m": 111.34826643450023,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r03-c00",
+      "latitude": 12.000000000000002,
+      "longitude": 0.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "12.0000000,2.0000000",
+      "features": {
+        "detrended_rms_m": 34.2253644383887,
+        "mean_elevation_m": 245.2153669673988,
+        "median_slope_deg": 0.050058094705231426,
+        "relief_m": 107.90353611908122,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r03-c01",
+      "latitude": 12.000000000000002,
+      "longitude": 2.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "12.0000000,4.0000000",
+      "features": {
+        "detrended_rms_m": 29.793381968233774,
+        "mean_elevation_m": 229.7373831059193,
+        "median_slope_deg": 0.056174544434800466,
+        "relief_m": 104.58519930502197,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r03-c02",
+      "latitude": 12.000000000000002,
+      "longitude": 4.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "12.0000000,6.0000000",
+      "features": {
+        "detrended_rms_m": 33.58591943303455,
+        "mean_elevation_m": 401.6667643124958,
+        "median_slope_deg": 0.09472889854036541,
+        "relief_m": 294.54722848844654,
+        "valid_cells": 121
+      },
+      "id": "coarse-220-11-50m-r03-c03",
+      "latitude": 12.000000000000002,
+      "longitude": 6.0,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    }
+  ],
+  "configuration": {
+    "columns": 4,
+    "grid_size": 11,
+    "id": "coarse-220-11-50m",
+    "kind": "center_spacing",
+    "mask_scale": "50m",
+    "rows": 4,
+    "shift": false,
+    "width_m": 220000
+  },
+  "evaluated_count": 10,
+  "excluded_count": 6,
+  "exclusion_reasons": {
+    "inland_water_intersection": 2,
+    "mixed_land_or_ocean": 4
+  },
+  "generated_count": 16,
+  "masks": {
+    "glaciated_areas": {
+      "local_intersecting_features": 0,
+      "role": "glaciated_areas",
+      "scale": "1:50m",
+      "sha256": "f48644b4523482501bcd380c4b7345ba574ab79b87df753447d772ea239b7daf",
+      "source_features": 377,
+      "url": "https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_glaciated_areas.zip",
+      "version": "4.1.0"
+    },
+    "lakes": {
+      "local_intersecting_features": 3,
+      "role": "lakes",
+      "scale": "1:50m",
+      "sha256": "f28d42c286d96b57a17aac2cbeb432f8c65532c20063495711fbc64e24666df3",
+      "source_features": 412,
+      "url": "https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_lakes.zip",
+      "version": "5.0.0"
+    },
+    "land": {
+      "local_intersecting_features": 2,
+      "role": "land",
+      "scale": "1:50m",
+      "sha256": "0b8e670cf80dce9cbebe2a193bc44ba5602758c22e1fa603980553646d7ff162",
+      "source_features": 1420,
+      "url": "https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_land.zip",
+      "version": "4.1.0"
+    }
+  },
+  "model": {
+    "algorithm": "Unsupervised k-nearest-neighbor retrieval",
+    "distance": "sqrt(mean(((Earth feature - planetary feature) / Earth feature IQR)^2))",
+    "distance_is_probability": false,
+    "earth_iqr": {
+      "detrended_rms_m": 24.85531555845455,
+      "median_slope_deg": 0.049100296568466886,
+      "relief_m": 176.2738948957912
+    },
+    "earth_median": {
+      "detrended_rms_m": 43.229380679572145,
+      "median_slope_deg": 0.08798226525462816,
+      "relief_m": 228.37285930946695
+    },
+    "feature_names": [
+      "relief_m",
+      "median_slope_deg",
+      "detrended_rms_m"
+    ],
+    "k": 10,
+    "labels_used": false,
+    "normalization": "Earth training-set median and interquartile range (IQR); query uses fitted Earth scale",
+    "training_samples": 10
+  },
+  "overlap": {
+    "candidate_count": 10,
+    "intersecting_pairs": 6,
+    "iou_distribution_intersecting": {
+      "max": 0.005659154230419402,
+      "median": 0.003954275230722162,
+      "min": 0.00010463360673116742,
+      "p95": 0.0056591542304193845
+    },
+    "pairs": [
+      {
+        "first": "coarse-220-11-50m-r01-c01",
+        "fraction_of_smaller_window": 0.000209245319369917,
+        "intersection_over_union": 0.00010463360673118713,
+        "second": "coarse-220-11-50m-r01-c02"
+      },
+      {
+        "first": "coarse-220-11-50m-r01-c02",
+        "fraction_of_smaller_window": 0.00020924531936987754,
+        "intersection_over_union": 0.00010463360673116742,
+        "second": "coarse-220-11-50m-r01-c03"
+      },
+      {
+        "first": "coarse-220-11-50m-r02-c00",
+        "fraction_of_smaller_window": 0.004488695607069251,
+        "intersection_over_union": 0.002249396231025005,
+        "second": "coarse-220-11-50m-r02-c01"
+      },
+      {
+        "first": "coarse-220-11-50m-r03-c00",
+        "fraction_of_smaller_window": 0.011254616848289918,
+        "intersection_over_union": 0.005659154230419333,
+        "second": "coarse-220-11-50m-r03-c01"
+      },
+      {
+        "first": "coarse-220-11-50m-r03-c01",
+        "fraction_of_smaller_window": 0.01125461684828989,
+        "intersection_over_union": 0.0056591542304193195,
+        "second": "coarse-220-11-50m-r03-c02"
+      },
+      {
+        "first": "coarse-220-11-50m-r03-c02",
+        "fraction_of_smaller_window": 0.011254616848290053,
+        "intersection_over_union": 0.005659154230419402,
+        "second": "coarse-220-11-50m-r03-c03"
+      }
+    ],
+    "possible_pairs": 45,
+    "trial_pair_counts": {
+      "0.1": 0,
+      "0.25": 0,
+      "0.5": 0
+    },
+    "trial_thinning_iou_0_25": {
+      "northeast_first": [
+        "coarse-220-11-50m-r03-c03",
+        "coarse-220-11-50m-r03-c02",
+        "coarse-220-11-50m-r03-c01",
+        "coarse-220-11-50m-r03-c00",
+        "coarse-220-11-50m-r02-c03",
+        "coarse-220-11-50m-r02-c01",
+        "coarse-220-11-50m-r02-c00",
+        "coarse-220-11-50m-r01-c03",
+        "coarse-220-11-50m-r01-c02",
+        "coarse-220-11-50m-r01-c01"
+      ],
+      "southwest_first": [
+        "coarse-220-11-50m-r01-c01",
+        "coarse-220-11-50m-r01-c02",
+        "coarse-220-11-50m-r01-c03",
+        "coarse-220-11-50m-r02-c00",
+        "coarse-220-11-50m-r02-c01",
+        "coarse-220-11-50m-r02-c03",
+        "coarse-220-11-50m-r03-c00",
+        "coarse-220-11-50m-r03-c01",
+        "coarse-220-11-50m-r03-c02",
+        "coarse-220-11-50m-r03-c03"
+      ]
+    }
+  },
+  "references": {
+    "mars-gale": {
+      "range_diagnostics": {
+        "catalog_size": 10,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 98.25453774164146,
+            "earth_min": 21.093887074745215,
+            "position": "above",
+            "reference": 899.1597442402251
+          },
+          "median_slope_deg": {
+            "earth_max": 0.1934486149321879,
+            "earth_min": 0.04000061946880642,
+            "position": "above",
+            "reference": 2.063428816292794
+          },
+          "relief_m": {
+            "earth_max": 432.34795496801786,
+            "earth_min": 104.58519930502197,
+            "position": "above",
+            "reference": 3725.236958957934
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "7.9893795,6.0000000",
+          "distance": 30.755617857962328,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 346.10065137655505,
+                "earth": 98.25453774164146,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -32.22269315450937
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 483.48669970806526,
+                "earth": 0.1934486149321879,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -38.084906447623
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 116.32067874039114,
+                "earth": 432.34795496801786,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -18.680525587391095
+              }
+            },
+            "distance": 30.75561785796233,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 945.9080298250115
+          },
+          "features": {
+            "detrended_rms_m": 98.25453774164146,
+            "mean_elevation_m": 253.34639719397023,
+            "median_slope_deg": 0.1934486149321879,
+            "relief_m": 432.34795496801786,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c03",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "9.9885061,6.0000000",
+          "distance": 31.88470479180596,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 383.22010049916935,
+                "earth": 56.39948353962334,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -33.90664096452947
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 513.5087444623109,
+                "earth": 0.13626486020896802,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -39.24953800221007
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 119.90555469913367,
+                "earth": 381.99137764765305,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -18.966197934678448
+              }
+            },
+            "distance": 31.88470479180596,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1016.6343996606139
+          },
+          "features": {
+            "detrended_rms_m": 56.39948353962334,
+            "mean_elevation_m": 284.1978721648712,
+            "median_slope_deg": 0.13626486020896802,
+            "relief_m": 381.99137764765305,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c03",
+          "latitude": 9.988506072683276,
+          "longitude": 6.0,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "7.9893795,4.0000000",
+          "distance": 32.10355732196911,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 380.1678773054068,
+                "earth": 59.762348350092694,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -33.77134335374032
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 524.9040423097948,
+                "earth": 0.11499929402637947,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -39.682642640446524
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 125.56647310975485,
+                "earth": 303.9817154101364,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -19.408745949423537
+              }
+            },
+            "distance": 32.10355732196911,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1030.6383927249565
+          },
+          "features": {
+            "detrended_rms_m": 59.762348350092694,
+            "mean_elevation_m": 285.8660061710492,
+            "median_slope_deg": 0.11499929402637947,
+            "relief_m": 303.9817154101364,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c02",
+          "latitude": 7.989379459716191,
+          "longitude": 4.0,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "9.9885061,2.0000000",
+          "distance": 32.57027562115998,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 380.55510263975617,
+                "earth": 59.33496714389573,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -33.78853811456288
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 546.7856580884717,
+                "earth": 0.07480196104123486,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -40.501320648411145
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 133.4820933101005,
+                "earth": 197.79292175634433,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -20.011153888027085
+              }
+            },
+            "distance": 32.570275621159986,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1060.8228540383284
+          },
+          "features": {
+            "detrended_rms_m": 59.33496714389573,
+            "mean_elevation_m": 358.2301218421745,
+            "median_slope_deg": 0.07480196104123486,
+            "relief_m": 197.79292175634433,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c01",
+          "latitude": 9.988506072683276,
+          "longitude": 2.0,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "12.0000000,6.0000000",
+          "distance": 32.65564167537327,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 404.24849560116286,
+                "earth": 33.58591943303455,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -34.824495499626245
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 535.8824829915628,
+                "earth": 0.09472889854036541,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -40.095479158811514
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 126.2599546376495,
+                "earth": 294.54722848844654,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -19.46226769708372
+              }
+            },
+            "distance": 32.65564167537326,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1066.3909332303751
+          },
+          "features": {
+            "detrended_rms_m": 33.58591943303455,
+            "mean_elevation_m": 401.6667643124958,
+            "median_slope_deg": 0.09472889854036541,
+            "relief_m": 294.54722848844654,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c03",
+          "latitude": 12.000000000000002,
+          "longitude": 6.0,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "9.9885061,0.0000000",
+          "distance": 32.6586371484658,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 388.85839602316906,
+                "earth": 50.22237955008958,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -34.155163417403045
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 541.9323187307754,
+                "earth": 0.08364728586477918,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -40.32117255477978
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 135.79586564120584,
+                "earth": 167.35199583219048,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -20.183844948958996
+              }
+            },
+            "distance": 32.6586371484658,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1066.5865803951503
+          },
+          "features": {
+            "detrended_rms_m": 50.22237955008958,
+            "mean_elevation_m": 182.27804921432855,
+            "median_slope_deg": 0.08364728586477918,
+            "relief_m": 167.35199583219048,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c00",
+          "latitude": 9.988506072683276,
+          "longitude": 0.0,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "7.9893795,2.0000000",
+          "distance": 32.67822380183387,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 401.7765978428833,
+                "earth": 36.23638180905472,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -34.71785986388922
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 537.1961973239701,
+                "earth": 0.09231724464447712,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -40.14459604942999
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 128.89351567588884,
+                "earth": 258.9527968625896,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -19.664194543069048
+              }
+            },
+            "distance": 32.67822380183388,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1067.8663108427422
+          },
+          "features": {
+            "detrended_rms_m": 36.23638180905472,
+            "mean_elevation_m": 208.36692112284973,
+            "median_slope_deg": 0.09231724464447712,
+            "relief_m": 258.9527968625896,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c01",
+          "latitude": 7.989379459716191,
+          "longitude": 2.0,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "12.0000000,2.0000000",
+          "distance": 33.23402628392476,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 403.65143688195076,
+                "earth": 34.2253644383887,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -34.79876880933939
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 560.4772799763335,
+                "earth": 0.050058094705231426,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -41.00526600241731
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 140.37178618231778,
+                "earth": 107.90353611908122,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -20.52109545192345
+              }
+            },
+            "distance": 33.23402628392476,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1104.500503040602
+          },
+          "features": {
+            "detrended_rms_m": 34.2253644383887,
+            "mean_elevation_m": 245.2153669673988,
+            "median_slope_deg": 0.050058094705231426,
+            "relief_m": 107.90353611908122,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c01",
+          "latitude": 12.000000000000002,
+          "longitude": 2.0,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "12.0000000,4.0000000",
+          "distance": 33.24913893672094,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 407.7987099044131,
+                "earth": 29.793381968233774,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -34.9770800627102
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 557.0770875677916,
+                "earth": 0.056174544434800466,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -40.880695477246654
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 140.62944256116774,
+                "earth": 104.58519930502197,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -20.539920342676677
+              }
+            },
+            "distance": 33.24913893672094,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1105.5052400333725
+          },
+          "features": {
+            "detrended_rms_m": 29.793381968233774,
+            "mean_elevation_m": 229.7373831059193,
+            "median_slope_deg": 0.056174544434800466,
+            "relief_m": 104.58519930502197,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c02",
+          "latitude": 12.000000000000002,
+          "longitude": 4.0,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "12.0000000,0.0000000",
+          "distance": 33.49919957571524,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 416.0009893138385,
+                "earth": 21.093887074745215,
+                "earth_iqr": 24.85531555845455,
+                "reference": 899.1597442402251,
+                "scaled_difference": -35.32708547193662
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 566.0908171561397,
+                "earth": 0.04000061946880642,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.063428816292794,
+                "scaled_difference": -41.210101328053284
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 140.1045657436217,
+                "earth": 111.34826643450023,
+                "earth_iqr": 176.2738948957912,
+                "reference": 3725.236958957934,
+                "scaled_difference": -20.50155353213178
+              }
+            },
+            "distance": 33.49919957571524,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1122.1963722136
+          },
+          "features": {
+            "detrended_rms_m": 21.093887074745215,
+            "mean_elevation_m": 272.83364506226616,
+            "median_slope_deg": 0.04000061946880642,
+            "relief_m": 111.34826643450023,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c00",
+          "latitude": 12.000000000000002,
+          "longitude": 0.0,
+          "rank": 10
+        }
+      ],
+      "reference": {
+        "body": "mars",
+        "features": {
+          "detrended_rms_m": 899.1597442402251,
+          "mean_elevation_m": -1632.2260701131054,
+          "median_slope_deg": 2.063428816292794,
+          "relief_m": 3725.236958957934,
+          "valid_cells": 121
+        },
+        "id": "mars-gale",
+        "latitude": -5.4,
+        "longitude": 137.8,
+        "name": "Gale regional window",
+        "source_sha256": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 899.1597442402251
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 2.063428816292794
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 3725.236958957934
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r03-c03",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c01"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 899.1597442402251
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 2.063428816292794
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 3725.236958957934
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r01-c01",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c03"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        }
+      }
+    },
+    "mars-jezero": {
+      "range_diagnostics": {
+        "catalog_size": 10,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 98.25453774164146,
+            "earth_min": 21.093887074745215,
+            "position": "above",
+            "reference": 233.33309304319212
+          },
+          "median_slope_deg": {
+            "earth_max": 0.1934486149321879,
+            "earth_min": 0.04000061946880642,
+            "position": "above",
+            "reference": 0.9326093973547247
+          },
+          "relief_m": {
+            "earth_max": 432.34795496801786,
+            "earth_min": 104.58519930502197,
+            "position": "above",
+            "reference": 2894.155395237171
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "7.9893795,6.0000000",
+          "distance": 12.263829613907394,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 9.84493826234737,
+                "earth": 98.25453774164146,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -5.43459426149203
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 75.54197720810899,
+                "earth": 0.1934486149321879,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -15.054100159900855
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 65.0146013284956,
+                "earth": 432.34795496801786,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -13.965808389974667
+              }
+            },
+            "distance": 12.263829613907394,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 150.40151679895197
+          },
+          "features": {
+            "detrended_rms_m": 98.25453774164146,
+            "mean_elevation_m": 253.34639719397023,
+            "median_slope_deg": 0.1934486149321879,
+            "relief_m": 432.34795496801786,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c03",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "9.9885061,6.0000000",
+          "distance": 13.12536479308893,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.89121374129608,
+                "earth": 56.39948353962334,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -7.118542071512133
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 87.68241947551219,
+                "earth": 0.13626486020896802,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -16.21873171448793
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 67.70156773485014,
+                "earth": 381.99137764765305,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -14.251480737262021
+              }
+            },
+            "distance": 13.125364793088929,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 172.2752009516584
+          },
+          "features": {
+            "detrended_rms_m": 56.39948353962334,
+            "mean_elevation_m": 284.1978721648712,
+            "median_slope_deg": 0.13626486020896802,
+            "relief_m": 381.99137764765305,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c03",
+          "latitude": 9.988506072683276,
+          "longitude": 6.0,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "7.9893795,4.0000000",
+          "distance": 13.440781699501247,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.255234399406056,
+                "earth": 59.762348350092694,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -6.983244460722979
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 92.42788463930445,
+                "earth": 0.11499929402637947,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -16.651836352724384
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 71.97149365493718,
+                "earth": 303.9817154101364,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -14.694028752007107
+              }
+            },
+            "distance": 13.440781699501247,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 180.65461269364766
+          },
+          "features": {
+            "detrended_rms_m": 59.762348350092694,
+            "mean_elevation_m": 285.8660061710492,
+            "median_slope_deg": 0.11499929402637947,
+            "relief_m": 303.9817154101364,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c02",
+          "latitude": 7.989379459716191,
+          "longitude": 4.0,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "12.0000000,6.0000000",
+          "distance": 13.82361477516217,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.527890139571692,
+                "earth": 33.58591943303455,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -8.036396606608902
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 97.06768673243118,
+                "earth": 0.09472889854036541,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -17.06467287108937
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 72.49674858007896,
+                "earth": 294.54722848844654,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -14.747550499667287
+              }
+            },
+            "distance": 13.82361477516217,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 191.09232545208184
+          },
+          "features": {
+            "detrended_rms_m": 33.58591943303455,
+            "mean_elevation_m": 401.6667643124958,
+            "median_slope_deg": 0.09472889854036541,
+            "relief_m": 294.54722848844654,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c03",
+          "latitude": 12.000000000000002,
+          "longitude": 6.0,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "7.9893795,2.0000000",
+          "distance": 13.895440282952297,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 20.960369685054292,
+                "earth": 36.23638180905472,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -7.929760970871876
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 97.62726666931214,
+                "earth": 0.09231724464447712,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -17.11378976170785
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 74.49562430272698,
+                "earth": 258.9527968625896,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -14.949477345652621
+              }
+            },
+            "distance": 13.895440282952297,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 193.0832606570934
+          },
+          "features": {
+            "detrended_rms_m": 36.23638180905472,
+            "mean_elevation_m": 208.36692112284973,
+            "median_slope_deg": 0.09231724464447712,
+            "relief_m": 258.9527968625896,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c01",
+          "latitude": 7.989379459716191,
+          "longitude": 2.0,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "9.9885061,2.0000000",
+          "distance": 14.002452127531733,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.33538309818439,
+                "earth": 59.33496714389573,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -7.000439221545543
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 101.7396240090136,
+                "earth": 0.07480196104123486,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -17.470514360689005
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 77.99365847661996,
+                "earth": 197.79292175634433,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -15.296436690610657
+              }
+            },
+            "distance": 14.002452127531733,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 196.06866558381793
+          },
+          "features": {
+            "detrended_rms_m": 59.33496714389573,
+            "mean_elevation_m": 358.2301218421745,
+            "median_slope_deg": 0.07480196104123486,
+            "relief_m": 197.79292175634433,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c01",
+          "latitude": 9.988506072683276,
+          "longitude": 2.0,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "9.9885061,0.0000000",
+          "distance": 14.0537577270163,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.091213235487448,
+                "earth": 50.22237955008958,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -7.367064524385703
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 99.65225521633482,
+                "earth": 0.08364728586477918,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -17.29036626705763
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 79.7646377978481,
+                "earth": 167.35199583219048,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -15.469127751542564
+              }
+            },
+            "distance": 14.0537577270163,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 197.50810624967036
+          },
+          "features": {
+            "detrended_rms_m": 50.22237955008958,
+            "mean_elevation_m": 182.27804921432855,
+            "median_slope_deg": 0.08364728586477918,
+            "relief_m": 167.35199583219048,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c00",
+          "latitude": 9.988506072683276,
+          "longitude": 0.0,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "12.0000000,4.0000000",
+          "distance": 14.561536220063262,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 22.353137532528095,
+                "earth": 29.793381968233774,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -8.188981169692862
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 106.20618135943458,
+                "earth": 0.056174544434800466,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -17.849889189524504
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 83.47901819625162,
+                "earth": 104.58519930502197,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -15.825203145260248
+              }
+            },
+            "distance": 14.561536220063262,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 212.0383370882143
+          },
+          "features": {
+            "detrended_rms_m": 29.793381968233774,
+            "mean_elevation_m": 229.7373831059193,
+            "median_slope_deg": 0.056174544434800466,
+            "relief_m": 104.58519930502197,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c02",
+          "latitude": 12.000000000000002,
+          "longitude": 4.0,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "12.0000000,2.0000000",
+          "distance": 14.57273284903486,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.39027750275574,
+                "earth": 34.2253644383887,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -8.010669916322056
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 107.69373401173313,
+                "earth": 0.050058094705231426,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -17.974459714695165
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 83.28053117485078,
+                "earth": 107.90353611908122,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -15.806378254507019
+              }
+            },
+            "distance": 14.57273284903486,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 212.36454268933966
+          },
+          "features": {
+            "detrended_rms_m": 34.2253644383887,
+            "mean_elevation_m": 245.2153669673988,
+            "median_slope_deg": 0.050058094705231426,
+            "relief_m": 107.90353611908122,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c01",
+          "latitude": 12.000000000000002,
+          "longitude": 2.0,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "12.0000000,0.0000000",
+          "distance": 14.74929672241427,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 24.30476393165451,
+                "earth": 21.093887074745215,
+                "earth_iqr": 24.85531555845455,
+                "reference": 233.33309304319212,
+                "scaled_difference": -8.538986578919276
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 110.16225605446952,
+                "earth": 0.04000061946880642,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -18.179295040331144
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 83.07473381969626,
+                "earth": 111.34826643450023,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2894.155395237171,
+                "scaled_difference": -15.78683633471535
+              }
+            },
+            "distance": 14.749296722414268,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 217.5417538058203
+          },
+          "features": {
+            "detrended_rms_m": 21.093887074745215,
+            "mean_elevation_m": 272.83364506226616,
+            "median_slope_deg": 0.04000061946880642,
+            "relief_m": 111.34826643450023,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c00",
+          "latitude": 12.000000000000002,
+          "longitude": 0.0,
+          "rank": 10
+        }
+      ],
+      "reference": {
+        "body": "mars",
+        "features": {
+          "detrended_rms_m": 233.33309304319212,
+          "mean_elevation_m": -2203.208614059368,
+          "median_slope_deg": 0.9326093973547247,
+          "relief_m": 2894.155395237171,
+          "valid_cells": 121
+        },
+        "id": "mars-jezero",
+        "latitude": 18.38,
+        "longitude": 77.58,
+        "name": "Jezero regional window",
+        "source_sha256": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 233.33309304319212
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 0.9326093973547247
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 2894.155395237171
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r03-c03",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c01"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 233.33309304319212
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 0.9326093973547247
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 2894.155395237171
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r01-c01",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c03"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        }
+      }
+    },
+    "moon-tranquillitatis": {
+      "range_diagnostics": {
+        "catalog_size": 10,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 98.25453774164146,
+            "earth_min": 21.093887074745215,
+            "position": "above",
+            "reference": 250.844449708464
+          },
+          "median_slope_deg": {
+            "earth_max": 0.1934486149321879,
+            "earth_min": 0.04000061946880642,
+            "position": "above",
+            "reference": 0.5772313545520281
+          },
+          "relief_m": {
+            "earth_max": 432.34795496801786,
+            "earth_min": 104.58519930502197,
+            "position": "above",
+            "reference": 1395.3118712587225
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "7.9893795,6.0000000",
+          "distance": 6.547939834012724,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 12.56295568261694,
+                "earth": 98.25453774164146,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -6.13912591887891
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 20.36485827944426,
+                "earth": 0.1934486149321879,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -7.816301864586141
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.947702107789377,
+                "earth": 432.34795496801786,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -5.462884432547345
+              }
+            },
+            "distance": 6.547939834012724,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 42.875516069850576
+          },
+          "features": {
+            "detrended_rms_m": 98.25453774164146,
+            "mean_elevation_m": 253.34639719397023,
+            "median_slope_deg": 0.1934486149321879,
+            "relief_m": 432.34795496801786,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c03",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "9.9885061,6.0000000",
+          "distance": 7.635521215529333,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 20.400160855929965,
+                "earth": 56.39948353962334,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -7.823073728899012
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 26.885721693207426,
+                "earth": 0.13626486020896802,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -8.980933419173214
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 11.015301683661157,
+                "earth": 381.99137764765305,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -5.748556779834698
+              }
+            },
+            "distance": 7.635521215529334,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 58.30118423279855
+          },
+          "features": {
+            "detrended_rms_m": 56.39948353962334,
+            "mean_elevation_m": 284.1978721648712,
+            "median_slope_deg": 0.13626486020896802,
+            "relief_m": 381.99137764765305,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c03",
+          "latitude": 9.988506072683276,
+          "longitude": 6.0,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "7.9893795,4.0000000",
+          "distance": 7.875188733526893,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 19.70063388072676,
+                "earth": 59.762348350092694,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -7.687776118109858
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 29.541370848785874,
+                "earth": 0.11499929402637947,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -9.41403805740967
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 12.776592859156269,
+                "earth": 303.9817154101364,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -6.191104794579785
+              }
+            },
+            "distance": 7.875188733526892,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 62.0185975886689
+          },
+          "features": {
+            "detrended_rms_m": 59.762348350092694,
+            "mean_elevation_m": 285.8660061710492,
+            "median_slope_deg": 0.11499929402637947,
+            "relief_m": 303.9817154101364,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c02",
+          "latitude": 7.989379459716191,
+          "longitude": 4.0,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "9.9885061,2.0000000",
+          "distance": 8.371118395524974,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 19.788858748398887,
+                "earth": 59.33496714389573,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -7.704970878932422
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 34.90282602485637,
+                "earth": 0.07480196104123486,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -10.23271606537429
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 15.383938418641362,
+                "earth": 197.79292175634433,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -6.793512733183333
+              }
+            },
+            "distance": 8.371118395524974,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 70.07562319189663
+          },
+          "features": {
+            "detrended_rms_m": 59.33496714389573,
+            "mean_elevation_m": 358.2301218421745,
+            "median_slope_deg": 0.07480196104123486,
+            "relief_m": 197.79292175634433,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c01",
+          "latitude": 9.988506072683276,
+          "longitude": 2.0,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "12.0000000,6.0000000",
+          "distance": 8.405685605516748,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 25.467942305440094,
+                "earth": 33.58591943303455,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -8.74092826399578
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 32.189154642668754,
+                "earth": 0.09472889854036541,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -9.826874575774653
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 12.998453550682628,
+                "earth": 294.54722848844654,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -6.244626542239967
+              }
+            },
+            "distance": 8.405685605516748,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 70.65555049879147
+          },
+          "features": {
+            "detrended_rms_m": 33.58591943303455,
+            "mean_elevation_m": 401.6667643124958,
+            "median_slope_deg": 0.09472889854036541,
+            "relief_m": 294.54722848844654,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c03",
+          "latitude": 12.000000000000002,
+          "longitude": 6.0,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "7.9893795,2.0000000",
+          "distance": 8.438883560082905,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 24.850336396801165,
+                "earth": 36.23638180905472,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -8.634292628258756
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 32.51173581475666,
+                "earth": 0.09231724464447712,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -9.875991466393133
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 13.852683529079693,
+                "earth": 258.9527968625896,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -6.446553388225299
+              }
+            },
+            "distance": 8.438883560082905,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 71.21475574063751
+          },
+          "features": {
+            "detrended_rms_m": 36.23638180905472,
+            "mean_elevation_m": 208.36692112284973,
+            "median_slope_deg": 0.09231724464447712,
+            "relief_m": 258.9527968625896,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c01",
+          "latitude": 7.989379459716191,
+          "longitude": 2.0,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "9.9885061,0.0000000",
+          "distance": 8.46035426857258,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.71688830720191,
+                "earth": 50.22237955008958,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -8.071596181772582
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 33.684707608837165,
+                "earth": 0.08364728586477918,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -10.052567971742917
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 16.175998433715204,
+                "earth": 167.35199583219048,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -6.966203794115243
+              }
+            },
+            "distance": 8.46035426857258,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 71.57759434975428
+          },
+          "features": {
+            "detrended_rms_m": 50.22237955008958,
+            "mean_elevation_m": 182.27804921432855,
+            "median_slope_deg": 0.08364728586477918,
+            "relief_m": 167.35199583219048,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c00",
+          "latitude": 9.988506072683276,
+          "longitude": 0.0,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "12.0000000,2.0000000",
+          "distance": 9.029047228700696,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 25.31824615679291,
+                "earth": 34.2253644383887,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -8.715201573708937
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 38.425299478137525,
+                "earth": 0.050058094705231426,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -10.736661419380448
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 17.780148223177303,
+                "earth": 107.90353611908122,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -7.303454297079698
+              }
+            },
+            "distance": 9.029047228700696,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 81.52369385810773
+          },
+          "features": {
+            "detrended_rms_m": 34.2253644383887,
+            "mean_elevation_m": 245.2153669673988,
+            "median_slope_deg": 0.050058094705231426,
+            "relief_m": 107.90353611908122,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c01",
+          "latitude": 12.000000000000002,
+          "longitude": 2.0,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "12.0000000,4.0000000",
+          "distance": 9.042986528372388,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 26.364856801810642,
+                "earth": 29.793381968233774,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -8.893512827079743
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 37.538824382323455,
+                "earth": 0.056174544434800466,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -10.612090894209791
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 17.871924168190407,
+                "earth": 104.58519930502197,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -7.322279187832927
+              }
+            },
+            "distance": 9.042986528372388,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 81.7756053523245
+          },
+          "features": {
+            "detrended_rms_m": 29.793381968233774,
+            "mean_elevation_m": 229.7373831059193,
+            "median_slope_deg": 0.056174544434800466,
+            "relief_m": 104.58519930502197,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c02",
+          "latitude": 12.000000000000002,
+          "longitude": 4.0,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "12.0000000,0.0000000",
+          "distance": 9.27747019982889,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 28.480876461641497,
+                "earth": 21.093887074745215,
+                "earth_iqr": 24.85531555845455,
+                "reference": 250.844449708464,
+                "scaled_difference": -9.243518236306157
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 39.90545034040169,
+                "earth": 0.04000061946880642,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -10.941496745016428
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 17.685126506669906,
+                "earth": 111.34826643450023,
+                "earth_iqr": 176.2738948957912,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -7.283912377288027
+              }
+            },
+            "distance": 9.27747019982889,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 86.0714533087131
+          },
+          "features": {
+            "detrended_rms_m": 21.093887074745215,
+            "mean_elevation_m": 272.83364506226616,
+            "median_slope_deg": 0.04000061946880642,
+            "relief_m": 111.34826643450023,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c00",
+          "latitude": 12.000000000000002,
+          "longitude": 0.0,
+          "rank": 10
+        }
+      ],
+      "reference": {
+        "body": "moon",
+        "features": {
+          "detrended_rms_m": 250.844449708464,
+          "mean_elevation_m": -1648.7492149029613,
+          "median_slope_deg": 0.5772313545520281,
+          "relief_m": 1395.3118712587225,
+          "valid_cells": 121
+        },
+        "id": "moon-tranquillitatis",
+        "latitude": 0.674,
+        "longitude": 23.473,
+        "name": "Mare Tranquillitatis regional window",
+        "source_sha256": "972d66d7f330abca62abc21aae270661516c00dd1a881ec102b94df9563656b5"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 250.844449708464
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 0.5772313545520281
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 1395.3118712587225
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r03-c03",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c01"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 250.844449708464
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 0.5772313545520281
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 1395.3118712587225
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r01-c01",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c03"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        }
+      }
+    },
+    "moon-tycho": {
+      "range_diagnostics": {
+        "catalog_size": 10,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 98.25453774164146,
+            "earth_min": 21.093887074745215,
+            "position": "above",
+            "reference": 901.4829584393207
+          },
+          "median_slope_deg": {
+            "earth_max": 0.1934486149321879,
+            "earth_min": 0.04000061946880642,
+            "position": "above",
+            "reference": 2.0807141194634022
+          },
+          "relief_m": {
+            "earth_max": 432.34795496801786,
+            "earth_min": 104.58519930502197,
+            "position": "above",
+            "reference": 2827.020419980859
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "7.9893795,6.0000000",
+          "distance": 30.034891969183395,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 348.11145648157145,
+                "earth": 98.25453774164146,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -32.3161626658351
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 492.4663022166156,
+                "earth": 0.1934486149321879,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -38.43694715569704
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 61.51697690233019,
+                "earth": 432.34795496801786,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -13.584952363074027
+              }
+            },
+            "distance": 30.034891969183395,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 902.0947356005172
+          },
+          "features": {
+            "detrended_rms_m": 98.25453774164146,
+            "mean_elevation_m": 253.34639719397023,
+            "median_slope_deg": 0.1934486149321879,
+            "relief_m": 432.34795496801786,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c03",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "9.9885061,6.0000000",
+          "distance": 31.180585725591463,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 385.33583745678624,
+                "earth": 56.39948353962334,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -34.0001104758552
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 522.7616787822759,
+                "earth": 0.13626486020896802,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -39.60157871028411
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 64.13140995189592,
+                "earth": 381.99137764765305,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -13.870624710361382
+              }
+            },
+            "distance": 31.18058572559146,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 972.228926190958
+          },
+          "features": {
+            "detrended_rms_m": 56.39948353962334,
+            "mean_elevation_m": 284.1978721648712,
+            "median_slope_deg": 0.13626486020896802,
+            "relief_m": 381.99137764765305,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c03",
+          "latitude": 9.988506072683276,
+          "longitude": 6.0,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "7.9893795,4.0000000",
+          "distance": 31.38188614822774,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 382.275183461981,
+                "earth": 59.762348350092694,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -33.86481286506605
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 534.2586236054366,
+                "earth": 0.11499929402637947,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -40.034683348520566
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 68.28897115291056,
+                "earth": 303.9817154101364,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -14.313172725106467
+              }
+            },
+            "distance": 31.38188614822774,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 984.8227782203281
+          },
+          "features": {
+            "detrended_rms_m": 59.762348350092694,
+            "mean_elevation_m": 285.8660061710492,
+            "median_slope_deg": 0.11499929402637947,
+            "relief_m": 303.9817154101364,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c02",
+          "latitude": 7.989379459716191,
+          "longitude": 4.0,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "9.9885061,2.0000000",
+          "distance": 31.830080748771653,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 382.66348025359133,
+                "earth": 59.33496714389573,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -33.88200762588861
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 556.3323780411857,
+                "earth": 0.07480196104123486,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -40.85336135648519
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 74.15818217854671,
+                "earth": 197.79292175634433,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -14.915580663710017
+              }
+            },
+            "distance": 31.83008074877165,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1013.1540404733237
+          },
+          "features": {
+            "detrended_rms_m": 59.33496714389573,
+            "mean_elevation_m": 358.2301218421745,
+            "median_slope_deg": 0.07480196104123486,
+            "relief_m": 197.79292175634433,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c01",
+          "latitude": 9.988506072683276,
+          "longitude": 2.0,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "9.9885061,0.0000000",
+          "distance": 31.910996423641706,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 390.9896191622683,
+                "earth": 50.22237955008958,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -34.248632928728775
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 551.4367590418625,
+                "earth": 0.08364728586477918,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -40.673213262853814
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 75.885314545543,
+                "earth": 167.35199583219048,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -15.088271724641924
+              }
+            },
+            "distance": 31.910996423641706,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1018.3116927496737
+          },
+          "features": {
+            "detrended_rms_m": 50.22237955008958,
+            "mean_elevation_m": 182.27804921432855,
+            "median_slope_deg": 0.08364728586477918,
+            "relief_m": 167.35199583219048,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r02-c00",
+          "latitude": 9.988506072683276,
+          "longitude": 0.0,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "12.0000000,6.0000000",
+          "distance": 31.94614245863388,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 406.4214268353555,
+                "earth": 33.58591943303455,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -34.917965010951974
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 545.3339544607004,
+                "earth": 0.09472889854036541,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -40.44751986688555
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 68.80063669127459,
+                "earth": 294.54722848844654,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -14.366694472766648
+              }
+            },
+            "distance": 31.946142458633883,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1020.5560179873305
+          },
+          "features": {
+            "detrended_rms_m": 33.58591943303455,
+            "mean_elevation_m": 401.6667643124958,
+            "median_slope_deg": 0.09472889854036541,
+            "relief_m": 294.54722848844654,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c03",
+          "latitude": 12.000000000000002,
+          "longitude": 6.0,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "7.9893795,2.0000000",
+          "distance": 31.95857197825608,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 403.94288428990103,
+                "earth": 36.23638180905472,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -34.811329375214946
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 546.6591962230755,
+                "earth": 0.09231724464447712,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -40.49663675750403
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 70.74824237639824,
+                "earth": 258.9527968625896,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -14.568621318751982
+              }
+            },
+            "distance": 31.95857197825608,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1021.3503228893748
+          },
+          "features": {
+            "detrended_rms_m": 36.23638180905472,
+            "mean_elevation_m": 208.36692112284973,
+            "median_slope_deg": 0.09231724464447712,
+            "relief_m": 258.9527968625896,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r01-c01",
+          "latitude": 7.989379459716191,
+          "longitude": 2.0,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "12.0000000,2.0000000",
+          "distance": 32.485082983661506,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 405.8227650086974,
+                "earth": 34.2253644383887,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -34.89223832066513
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 570.1422727818841,
+                "earth": 0.050058094705231426,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -41.35730671049134
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 79.31557866479282,
+                "earth": 107.90353611908122,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -15.425522227606379
+              }
+            },
+            "distance": 32.485082983661506,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1055.2806164553745
+          },
+          "features": {
+            "detrended_rms_m": 34.2253644383887,
+            "mean_elevation_m": 245.2153669673988,
+            "median_slope_deg": 0.050058094705231426,
+            "relief_m": 107.90353611908122,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c01",
+          "latitude": 12.000000000000002,
+          "longitude": 2.0,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "12.0000000,4.0000000",
+          "distance": 32.49928121597742,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 409.9811491416372,
+                "earth": 29.793381968233774,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -35.07054957403593
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 566.7128444427514,
+                "earth": 0.056174544434800466,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -41.23273618532069
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 79.50928597079425,
+                "earth": 104.58519930502197,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -15.444347118359609
+              }
+            },
+            "distance": 32.49928121597742,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1056.203279555183
+          },
+          "features": {
+            "detrended_rms_m": 29.793381968233774,
+            "mean_elevation_m": 229.7373831059193,
+            "median_slope_deg": 0.056174544434800466,
+            "relief_m": 104.58519930502197,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c02",
+          "latitude": 12.000000000000002,
+          "longitude": 4.0,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "12.0000000,0.0000000",
+          "distance": 32.758569337901534,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 418.2052384407704,
+                "earth": 21.093887074745215,
+                "earth_iqr": 24.85531555845455,
+                "reference": 901.4829584393207,
+                "scaled_difference": -35.42055498326235
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 575.8038835437405,
+                "earth": 0.04000061946880642,
+                "earth_iqr": 0.049100296568466886,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -41.56214203612732
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 79.11474308159154,
+                "earth": 111.34826643450023,
+                "earth_iqr": 176.2738948957912,
+                "reference": 2827.020419980859,
+                "scaled_difference": -15.40598030781471
+              }
+            },
+            "distance": 32.758569337901534,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1073.1238650661026
+          },
+          "features": {
+            "detrended_rms_m": 21.093887074745215,
+            "mean_elevation_m": 272.83364506226616,
+            "median_slope_deg": 0.04000061946880642,
+            "relief_m": 111.34826643450023,
+            "valid_cells": 121
+          },
+          "id": "coarse-220-11-50m-r03-c00",
+          "latitude": 12.000000000000002,
+          "longitude": 0.0,
+          "rank": 10
+        }
+      ],
+      "reference": {
+        "body": "moon",
+        "features": {
+          "detrended_rms_m": 901.4829584393207,
+          "mean_elevation_m": -451.91341291359436,
+          "median_slope_deg": 2.0807141194634022,
+          "relief_m": 2827.020419980859,
+          "valid_cells": 121
+        },
+        "id": "moon-tycho",
+        "latitude": -43.31,
+        "longitude": -11.36,
+        "name": "Tycho regional window",
+        "source_sha256": "972d66d7f330abca62abc21aae270661516c00dd1a881ec102b94df9563656b5"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 901.4829584393207
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 2.0807141194634022
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 2827.020419980859
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r03-c03",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c01"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 24.85531555845455,
+            "median_slope_deg": 0.049100296568466886,
+            "relief_m": 176.2738948957912
+          },
+          "range_diagnostics": {
+            "catalog_size": 10,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 98.25453774164146,
+                "earth_min": 21.093887074745215,
+                "position": "above",
+                "reference": 901.4829584393207
+              },
+              "median_slope_deg": {
+                "earth_max": 0.1934486149321879,
+                "earth_min": 0.04000061946880642,
+                "position": "above",
+                "reference": 2.0807141194634022
+              },
+              "relief_m": {
+                "earth_max": 432.34795496801786,
+                "earth_min": 104.58519930502197,
+                "position": "above",
+                "reference": 2827.020419980859
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "coarse-220-11-50m-r01-c01",
+            "coarse-220-11-50m-r01-c02",
+            "coarse-220-11-50m-r01-c03",
+            "coarse-220-11-50m-r02-c00",
+            "coarse-220-11-50m-r02-c01",
+            "coarse-220-11-50m-r02-c03",
+            "coarse-220-11-50m-r03-c00",
+            "coarse-220-11-50m-r03-c01",
+            "coarse-220-11-50m-r03-c02",
+            "coarse-220-11-50m-r03-c03"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "7.9893795,6.0000000",
+          "winner_id": "coarse-220-11-50m-r01-c03"
+        }
+      }
+    }
+  },
+  "source": {
+    "bytes": 14186883,
+    "citation": "https://doi.org/10.7289/V5C8276M",
+    "registration": "grid nodes, one arc-minute",
+    "sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+    "title": "NOAA ETOPO1 Ice Surface via NOAA/AOML ERDDAP",
+    "unit": "m",
+    "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(4):1:(14)%5D%5B(-2):1:(8)%5D"
+  }
+}

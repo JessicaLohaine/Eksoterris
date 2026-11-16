@@ -29,7 +29,7 @@ export class PlanetRenderer {
     this.container = container;
     this.options = {
       id: 'planet',
-      name: 'Corpo Celeste',
+      name: 'Celestial Body',
       albedoUrl: '',
       bumpUrl: '',
       bumpScale: 0.02,
@@ -63,7 +63,7 @@ export class PlanetRenderer {
    */
   init() {
     if (!this.container) {
-      throw new Error(`Container para ${this.options.name} não encontrado.`);
+      throw new Error(`Container for ${this.options.name} not found.`);
     }
 
     const placeholder = this.container.querySelector('[data-stage-placeholder="true"]');
@@ -180,9 +180,9 @@ export class PlanetRenderer {
           texture.magFilter = THREE.LinearFilter;
           material.map = texture;
 
-          // Usa o próprio mosaico fotográfico de alta resolução como micro-relevo base
-          // garantindo alinhamento 100% exato de cada cratera, cânion e monte vulcânico
-          if (!material.bumpMap) {
+          // Reuses the 2K photographic mosaic as the pixel-aligned bump map when bumpUrl
+          // is identical or omitted, avoiding duplicate HTTP loads and duplicate VRAM allocation
+          if (!this.options.bumpUrl || this.options.bumpUrl === this.options.albedoUrl) {
             material.bumpMap = texture;
           }
           material.needsUpdate = true;
@@ -190,12 +190,12 @@ export class PlanetRenderer {
         },
         undefined,
         (err) => {
-          console.warn(`[PlanetRenderer] Usando textura de contingência para ${this.options.name}:`, err);
+          console.warn(`[PlanetRenderer] Using fallback texture for ${this.options.name}:`, err);
         }
       );
     }
 
-    if (this.options.bumpUrl) {
+    if (this.options.bumpUrl && this.options.bumpUrl !== this.options.albedoUrl) {
       loader.load(
         this.options.bumpUrl,
         (bumpTexture) => {
@@ -294,7 +294,7 @@ export class PlanetRenderer {
       this.intersectionObserver.observe(this.container);
     }
 
-    eventBus.on('planet:reset-view', (payload) => {
+    this.unsubscribeResetView = eventBus.on('planet:reset-view', (payload) => {
       if (payload && payload.id === this.options.id) {
         this.resetCameraView();
       }
@@ -303,7 +303,7 @@ export class PlanetRenderer {
     const canvas = this.renderer.domElement;
     canvas.addEventListener('webglcontextlost', (e) => {
       e.preventDefault();
-      console.warn(`[PlanetRenderer] Contexto WebGL perdido em ${this.options.name}.`);
+      console.warn(`[PlanetRenderer] WebGL context lost in ${this.options.name}.`);
     });
   }
 
@@ -340,6 +340,10 @@ export class PlanetRenderer {
     if (this.animationFrameId) {
       cancelAnimationFrame(this.animationFrameId);
     }
+    if (this.unsubscribeResetView) {
+      this.unsubscribeResetView();
+      this.unsubscribeResetView = null;
+    }
     if (this.resizeObserver) {
       this.resizeObserver.disconnect();
     }
@@ -351,8 +355,9 @@ export class PlanetRenderer {
     }
     if (this.planetMesh) {
       this.planetMesh.geometry.dispose();
-      if (this.planetMesh.material.map) this.planetMesh.material.map.dispose();
-      if (this.planetMesh.material.bumpMap) this.planetMesh.material.bumpMap.dispose();
+      const { map, bumpMap } = this.planetMesh.material;
+      if (map) map.dispose();
+      if (bumpMap && bumpMap !== map) bumpMap.dispose();
       this.planetMesh.material.dispose();
     }
     if (this.renderer) {

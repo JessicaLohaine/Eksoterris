@@ -1,0 +1,699 @@
+{
+  "baseline": {
+    "catalog_sha256": "f86d97a1d766b718f068f46a786c281b3237d1c9d2d6568332d2ebff1d2bb1a1",
+    "maximum_accepted_numerical_difference": 1e-08,
+    "rankings_sha256": "ca5a605a10705c069c8e3eea90aead2ba31c26b7efe73215a43373ecbd50a123",
+    "status": "reproduced_without_changing_original_files"
+  },
+  "experiments": [
+    {
+      "evaluated": 26,
+      "excluded": 23,
+      "exclusion_reasons": {
+        "inland_water_intersection": 11,
+        "mixed_land_or_ocean": 12
+      },
+      "generated": 49,
+      "id": "repeat-220-11-50m",
+      "intersecting_pairs": 84,
+      "kind": "baseline_control",
+      "thinned_counts": {
+        "northeast_first": 13,
+        "southwest_first": 13
+      },
+      "trial_pair_counts": {
+        "0.1": 56,
+        "0.25": 34,
+        "0.5": 0
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "wa-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "wa-r02-c06",
+          "largest_numerical_contributor": "relief_m",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "wa-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "wa-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 28,
+      "excluded": 21,
+      "exclusion_reasons": {
+        "inland_water_intersection": 12,
+        "mixed_land_or_ocean": 9
+      },
+      "generated": 49,
+      "id": "shift-220-11-50m",
+      "intersecting_pairs": 82,
+      "kind": "origin",
+      "thinned_counts": {
+        "northeast_first": 15,
+        "southwest_first": 15
+      },
+      "trial_pair_counts": {
+        "0.1": 57,
+        "0.25": 35,
+        "0.5": 0
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "shift-220-11-50m-r01-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.5,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,5.5000000",
+            "southwest_first": "7.4912205,5.5000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "shift-220-11-50m-r01-c06",
+          "largest_numerical_contributor": "relief_m",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.5,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,5.5000000",
+            "southwest_first": "7.4912205,5.5000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "shift-220-11-50m-r01-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.5,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,5.5000000",
+            "southwest_first": "7.4912205,5.5000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "shift-220-11-50m-r01-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.5,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,5.5000000",
+            "southwest_first": "7.4912205,5.5000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 10,
+      "excluded": 6,
+      "exclusion_reasons": {
+        "inland_water_intersection": 2,
+        "mixed_land_or_ocean": 4
+      },
+      "generated": 16,
+      "id": "coarse-220-11-50m",
+      "intersecting_pairs": 6,
+      "kind": "center_spacing",
+      "thinned_counts": {
+        "northeast_first": 10,
+        "southwest_first": 10
+      },
+      "trial_pair_counts": {
+        "0.1": 0,
+        "0.25": 0,
+        "0.5": 0
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "coarse-220-11-50m-r01-c03",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "coarse-220-11-50m-r01-c03",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "coarse-220-11-50m-r01-c03",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "coarse-220-11-50m-r01-c03",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 82,
+      "excluded": 87,
+      "exclusion_reasons": {
+        "inland_water_intersection": 45,
+        "mixed_land_or_ocean": 42
+      },
+      "generated": 169,
+      "id": "dense-220-11-50m",
+      "intersecting_pairs": 1128,
+      "kind": "center_density",
+      "thinned_counts": {
+        "northeast_first": 19,
+        "southwest_first": 19
+      },
+      "trial_pair_counts": {
+        "0.1": 735,
+        "0.25": 333,
+        "0.5": 128
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "dense-220-11-50m-r03-c12",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "dense-220-11-50m-r03-c12",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "dense-220-11-50m-r03-c12",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "dense-220-11-50m-r03-c11",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 5.5,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 28,
+      "excluded": 21,
+      "exclusion_reasons": {
+        "inland_water_intersection": 9,
+        "mixed_land_or_ocean": 12
+      },
+      "generated": 49,
+      "id": "extent-180-9-50m",
+      "intersecting_pairs": 67,
+      "kind": "window_extent",
+      "thinned_counts": {
+        "northeast_first": 28,
+        "southwest_first": 28
+      },
+      "trial_pair_counts": {
+        "0.1": 39,
+        "0.25": 0,
+        "0.5": 0
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "extent-180-9-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "extent-180-9-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "extent-180-9-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "extent-180-9-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 24,
+      "excluded": 25,
+      "exclusion_reasons": {
+        "inland_water_intersection": 11,
+        "mixed_land_or_ocean": 14
+      },
+      "generated": 49,
+      "id": "extent-260-13-50m",
+      "intersecting_pairs": 113,
+      "kind": "window_extent",
+      "thinned_counts": {
+        "northeast_first": 12,
+        "southwest_first": 11
+      },
+      "trial_pair_counts": {
+        "0.1": 51,
+        "0.25": 31,
+        "0.5": 0
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "extent-260-13-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "extent-260-13-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "extent-260-13-50m-r02-c06",
+          "largest_numerical_contributor": "relief_m",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "extent-260-13-50m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "7.9893795,6.0000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 26,
+      "excluded": 23,
+      "exclusion_reasons": {
+        "inland_water_intersection": 11,
+        "mixed_land_or_ocean": 12
+      },
+      "generated": 49,
+      "id": "repeat-220-11-10m",
+      "intersecting_pairs": 84,
+      "kind": "mask_detail",
+      "thinned_counts": {
+        "northeast_first": 13,
+        "southwest_first": 13
+      },
+      "trial_pair_counts": {
+        "0.1": 56,
+        "0.25": 34,
+        "0.5": 0
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "repeat-220-11-10m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "repeat-220-11-10m-r02-c06",
+          "largest_numerical_contributor": "relief_m",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "repeat-220-11-10m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "repeat-220-11-10m-r02-c06",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.989379459716191,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.9893795,6.0000000",
+            "southwest_first": "6.9936304,6.0000000"
+          }
+        }
+      }
+    },
+    {
+      "evaluated": 82,
+      "excluded": 87,
+      "exclusion_reasons": {
+        "inland_water_intersection": 45,
+        "mixed_land_or_ocean": 42
+      },
+      "generated": 169,
+      "id": "dense-220-11-10m",
+      "intersecting_pairs": 1128,
+      "kind": "dense_mask_detail",
+      "thinned_counts": {
+        "northeast_first": 19,
+        "southwest_first": 19
+      },
+      "trial_pair_counts": {
+        "0.1": 735,
+        "0.25": 333,
+        "0.5": 128
+      },
+      "winners": {
+        "mars-gale": {
+          "id": "dense-220-11-10m-r03-c12",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        },
+        "mars-jezero": {
+          "id": "dense-220-11-10m-r03-c12",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        },
+        "moon-tranquillitatis": {
+          "id": "dense-220-11-10m-r03-c12",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 6.0,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        },
+        "moon-tycho": {
+          "id": "dense-220-11-10m-r03-c11",
+          "largest_numerical_contributor": "median_slope_deg",
+          "latitude": 7.4912204846613895,
+          "longitude": 5.5,
+          "outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "thinning": {
+            "northeast_first": "7.4912205,6.0000000",
+            "southwest_first": "7.4912205,5.0000000"
+          }
+        }
+      }
+    }
+  ],
+  "implementation_sha256": "bc32b814795343f191fee0cc80ad89acc89220f4d6cd4a618b55fa45ce040bbd",
+  "interpretation": "Nearest rank is relative; different Earth IQR calibrations prohibit direct distance comparisons.",
+  "mask_scale_comparison": {
+    "dense_grid": {
+      "changed_centers": [],
+      "changed_count": 0,
+      "note": "Agreement between map scales does not establish ground-truth coastline, lake or current ice status."
+    },
+    "original_grid": {
+      "changed_centers": [],
+      "changed_count": 0,
+      "note": "Agreement between map scales does not establish ground-truth coastline, lake or current ice status."
+    }
+  },
+  "scope": "Bounded regional perturbations; neither a global search nor validated analog discovery.",
+  "source": {
+    "bytes": 14186883,
+    "citation": "https://doi.org/10.7289/V5C8276M",
+    "registration": "grid nodes, one arc-minute",
+    "sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+    "title": "NOAA ETOPO1 Ice Surface via NOAA/AOML ERDDAP",
+    "unit": "m",
+    "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(4):1:(14)%5D%5B(-2):1:(8)%5D"
+  },
+  "version": "terrestrial-discovery-robustness-v1"
+}

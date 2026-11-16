@@ -1,0 +1,19 @@
+{
+  "checks": [
+    "API health, catalog and invalid-input handling",
+    "moon-tranquillitatis: acquisition, checksums, feature reproduction, ranking, export",
+    "moon-tycho: acquisition, checksums, feature reproduction, ranking, export",
+    "mars-jezero: acquisition, checksums, feature reproduction, ranking, export",
+    "mars-gale: acquisition, checksums, feature reproduction, ranking, export",
+    "NASA Earthdata CMR SRTMGL1 collection metadata, live or checksum-verified cached response",
+    "SRTMGL1 v003 granule discovery and LP DAAC links, live or checksum-verified cached response",
+    "Missing Gemini credential fails explicitly; live Gemini remains untested"
+  ],
+  "run_ids": [
+    "133bfb0ef5ca26d0",
+    "49dccb1c4bca94f3",
+    "428c4e2021fd4062",
+    "041700910893a057"
+  ],
+  "live_gemini_tested": false
+}

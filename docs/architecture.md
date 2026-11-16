@@ -1,26 +1,27 @@
-# Arquitetura da Plataforma — Eksoterris (NASA Space Apps Challenge 2026)
+# Platform Architecture — Eksoterris (NASA Space Apps Challenge 2026)
 
-## 1. Visão Geral da Arquitetura Híbrida de Alta Resolução (CesiumJS + Three.js)
+## 1. Hybrid 3D Geospatial Architecture Overview (CesiumJS + Three.js)
 
-A plataforma utiliza uma arquitetura modular ES6+ com separação clara entre **motores gráficos 3D**, **proxy/cache de tiles científicos**, **barramento de eventos** e **interface científica**:
+Eksoterris uses a modular ES6+ frontend architecture separating **3D rendering engines**, **institutional satellite tile proxy/caching**, **decoupled event bus communication**, and **scientific telemetry panels**:
 
-### 1.1. Globo Terrestre Central (`src/globe/globe.js` — CesiumJS)
-Implementa uma pirâmide multirresolução de camadas geoespaciais reais com carregamento progressivo e cache em disco local (`.tile-cache/`):
-- **Camada Base 0 (Offline Instantânea):** *NASA Blue Marble Next Generation 2K* (`/textures/earth/earth_bluemarble_2k.jpg`).
-- **Camada Orbital Global:** *EOX Sentinel-2 Cloudless (ESA Copernicus 10m-15m)* (`/api-tiles/sentinel2/{z}/{y}/{x}`), proporcionando oceanos em tons reais de azul profundo e turquesa costeira, florestas, desertos e calotas polares sem nuvens.
-- **Camada de Aproximação HD:** *Esri / Maxar / Earthstar Geographics World Imagery* (`/api-tiles/arcgis/{z}/{y}/{x}`, até nível de zoom 18), mesclada dinamicamente conforme a altitude da câmera diminui (`updateHybridLODBlend`), garantindo nitidez fotográfica em aproximações regionais e locais.
-- **Camada de Relevo Topográfico:** *World Elevation Hillshade* (`/api-tiles/hillshade/{z}/{y}/{x}`) com transparência de luminância via GPU (`colorToAlpha`), evidenciando cordilheiras, vales e crateras.
-- **Camadas Adicionais Selecionáveis:** *NASA GIBS Blue Marble WMTS* e *NASA GIBS Suomi NPP VIIRS True Color*.
-- **Camada Global de Nuvens (Opcional):** Mosaico de nefanálise de satélite (`/textures/earth/earth_clouds_1k.png`) processado em GPU (`colorToAlpha`) e alternável em tempo real no HUD.
-- **Iluminação Solar Direcional Coerente:** `Cesium.DirectionalLight` sincronizada com o ângulo orbital de observação em `scene.preRender`, criando uma transição natural entre o hemisfério iluminado e a penumbra noturna com dispersão atmosférica (*SkyAtmosphere* + *GroundAtmosphere*).
+### 1.1. Central Terrestrial Globe (`src/globe/globe.js` — CesiumJS)
+Implements a multi-resolution geospatial pyramid with progressive loading and local disk caching (`.tile-cache/`):
+- **Base Layer 0 (Instant Local 4K):** *NASA GIBS Blue Marble Next Generation (`BlueMarble_NextGeneration`)* (`/textures/earth/earth_bluemarble_2k.jpg`, `4096×2048` px, `1,387,290` bytes, `SHA-256: fb253ffbdba618b3f8f62973b3c7c2081a603a1a436c2a5158b85885aac59ca3`).
+  - **Source & Processing History:** Assembled from the 50 official NASA GIBS WMTS tiles at `TileMatrix 3` (`10×5` grid of `512×512` px = `5120×2560` native mosaic, covering `-180°..+180°` longitude and `+90°..-90°` latitude at `0.0703125°/px` in `EPSG:4326` / `CRS84`) from `https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/BlueMarble_NextGeneration/default/500m/3/{TileRow}/{TileCol}.jpeg`, and downsampled via high-quality bicubic filtering to `4096×2048` (power-of-two 4K equirectangular JPEG, quality 95). Preloaded synchronously before `Cesium.Viewer` creation so Frame 1 matches the dynamic `nasa-bluemarble` layer with zero visual seam or transition.
+  - **Scientific Distinction (Composite vs. Single-Pass Observation):** `BlueMarble_NextGeneration` is a **cloud-free MODIS-derived surface reflectance composite** (assembled from multi-month NASA Terra/Aqua MODIS observations to remove atmospheric cloud cover and reveal continental and coastal surface reflectance), **not** a raw single-pass satellite photograph.
+- **Primary Orbital Layer (`nasa_bluemarble` & `nasa_hybrid` base):** *NASA GIBS Blue Marble Next Generation WMTS (`EPSG:4326`, `500m` TileMatrixSet)* (`/api-tiles/nasa-bluemarble/{z}/{y}/{x}`, `GeographicTilingScheme` `10×5` `512×512` tiles, `z = 0..4` mapping to GIBS `TileMatrix 3..7`), providing seamless full-pole coverage up to `90°N`/`90°S` with natural optical ocean reflectance and zero synthetic bathymetric shading. Rendered with neutral radiometric parameters (`brightness: 1.0, contrast: 1.0, saturation: 1.0, gamma: 1.0`).
+- **Close-Up HD Satellite Layer (`world_imagery` & `nasa_hybrid` detail):** *Landsat / Maxar / Earthstar Geographics / Esri World Imagery* (`/api-tiles/arcgis/{z}/{y}/{x}`, Web Mercator `EPSG:3857`, up to Zoom Level 18). In `nasa_hybrid` mode, contributes `24%` opacity (`alpha = 0.24`) at default orbital altitude (`12,500 km`) over `100%` `BlueMarble_NextGeneration`, transitioning progressively from `8,500 km` down to `1,800 km` (`alpha = 0.98`) with smooth polar attenuation above `76°` latitude to avoid Web Mercator (`85.0511°`) polar seams.
+- **Topographic Relief Layer (`hillshade`):** *World Elevation Hillshade* (`/api-tiles/hillshade/{z}/{y}/{x}`) with GPU luminance-to-alpha (`colorToAlpha`), dynamically activated only below `3,500 km` altitude (`alpha <= 0.22`).
+- **Single-Day Satellite Observation Layer (`nasa_viirs`):** *NASA GIBS Suomi NPP VIIRS Corrected Reflectance True Color (`VIIRS_SNPP_CorrectedReflectance_TrueColor`, `EPSG:4326`, `250m` TileMatrixSet, date `2024-06-15`)* (`/api-tiles/nasa-viirs/{z}/{y}/{x}`, `z = 0..5` mapping to GIBS `TileMatrix 3..8`). Unlike the cloud-free `BlueMarble_NextGeneration` composite, VIIRS represents **actual daily satellite swath observations**, including real atmospheric cloud systems, sea ice floes, and solar illumination geometry.
 
-### 1.2. Corpos Planetários Secundários (`src/planets/` — Three.js)
-- **Lua (`src/planets/moon.js`):** Malha esférica de `96×96` segmentos com mosaico real 2K (`2048×1024`) derivado da sonda **NASA LRO (Lunar Reconnaissance Orbiter)** e mapeamento de relevo pixel-a-pixel das crateras e mares lunares.
-- **Marte (`src/planets/mars.js`):** Malha esférica de `96×96` segmentos com mosaico real 2K (`2048×1024`) derivado das missões **NASA Viking e MGS MOLA**, destacando *Valles Marineris*, *Tharsis*, *Syrtis Major*, calotas polares e halo atmosférico sutil.
-- **Iluminação Coerente com a Câmera:** O sistema de iluminação direcional solar está acoplado ao referencial orbital da câmera (`this.camera.add(sunLight)`), garantindo sombreamento tridimensional consistente em qualquer rotação de 360°.
+### 1.2. Reference Planetary Bodies (`src/planets/` — Three.js)
+- **Moon (`src/planets/moon.js`):** `96×96` sphere mesh with a `2048×1024` (2K) global mosaic derived from **NASA LRO (Lunar Reconnaissance Orbiter)** and pixel-aligned bump relief ( reusing the single GPU texture instance for both albedo and micro-relief).
+- **Mars (`src/planets/mars.js`):** `96×96` sphere mesh with a `2048×1024` (2K) global mosaic derived from **NASA Viking and MGS MOLA**, featuring *Valles Marineris*, *Tharsis*, *Syrtis Major*, polar caps, and a subtle back-face atmospheric scattering halo.
+- **Camera-Relative Solar Illumination:** Directional lighting coupled to the camera reference frame (`this.camera.add(sunLight)`) ensures consistent 3D crater and canyon relief across 360° user rotation.
 
-## 2. Segurança e Desempenho
+## 2. Security, State Synchronization, and Performance
 
-1. **Prevenção de XSS:** Toda criação dinâmica de elementos e ícones SVG utiliza `createSafeElement`, `createElementNS` e `textContent` (`src/utils/sanitizer.js`).
-2. **Proxy e Cache de Tiles Seguro (`vite.config.js`):** Validação estrita de parâmetros numéricos (`z`, `y`, `x`) e lista fechada (*allowlist*) de provedores institucionais, com armazenamento em `.tile-cache/` para evitar downloads repetidos.
-3. **Economia de GPU:** Uso de `IntersectionObserver`, `ResizeObserver` e `visibilitychange` para pausar loops WebGL quando fora de foco.
+1. **XSS Prevention:** All dynamic DOM elements and SVG icons are constructed exclusively via `createSafeElement`, `createElementNS`, and `textContent` (`src/utils/sanitizer.js`). Inline `on*` event attributes are explicitly blocked.
+2. **Geospatial Tile Proxy & Local Cache (`vite.config.js`):** Strict allowlist validation (`Object.hasOwn(TILE_PROVIDERS, provider)`) and numeric bounds checking (`z`, `y`, `x`), with persistent disk caching in `.tile-cache/`.
+3. **GPU Resource Management:** `IntersectionObserver`, `ResizeObserver`, and `visibilitychange` pause off-screen or backgrounded WebGL loops; `dispose()` releases geometries, materials, textures, and event listeners.
+4. **Phase 1 Scope & Phase 2 Readiness:** The current repository implements the Phase 1 interactive 3D visualization and UI foundation (`LOCAL_PLACEHOLDER_ONLY` mode in `src/services/api-client.js` and `src/config/mock-data.js`). Backend raster processing (`LOLA`, `MOLA`, `ETOPO1`), quantitative analog ranking algorithms, and live Gemini API backend proxy endpoints are designated for Phase 2 implementation.

@@ -1,0 +1,292 @@
+{
+  "combined_count": 64,
+  "combined_winners": {
+    "mars-gale": {
+      "id": "south-america-elevation-gradient-r00-c06",
+      "latitude": -24.000000000000004,
+      "longitude": -65.0,
+      "outside_features": [
+        "relief_m",
+        "median_slope_deg",
+        "detrended_rms_m"
+      ],
+      "region": "South American west-central elevation gradient"
+    },
+    "mars-jezero": {
+      "id": "south-america-elevation-gradient-r05-c06",
+      "latitude": -18.983969663228947,
+      "longitude": -65.0,
+      "outside_features": [],
+      "region": "South American west-central elevation gradient"
+    },
+    "moon-tranquillitatis": {
+      "id": "south-america-elevation-gradient-r03-c05",
+      "latitude": -20.969861317812892,
+      "longitude": -66.0,
+      "outside_features": [],
+      "region": "South American west-central elevation gradient"
+    },
+    "moon-tycho": {
+      "id": "south-america-elevation-gradient-r00-c06",
+      "latitude": -24.000000000000004,
+      "longitude": -65.0,
+      "outside_features": [
+        "median_slope_deg",
+        "detrended_rms_m"
+      ],
+      "region": "South American west-central elevation gradient"
+    }
+  },
+  "implementation_sha256": "f53096a21b542576eb5a01e74ed62cbc5e53d82d02d819f417daf7f87c7cf8b8",
+  "mask_scale_comparison": {
+    "east-africa-inland-water-gradient": {
+      "changed_centers": [
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "east-africa-inland-water-gradient-r00-c04",
+          "latitude": -2.0,
+          "longitude": 36.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "east-africa-inland-water-gradient-r00-c05",
+          "latitude": -2.0,
+          "longitude": 37.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "east-africa-inland-water-gradient-r01-c05",
+          "latitude": -1.000253774402031,
+          "longitude": 37.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "east-africa-inland-water-gradient-r01-c06",
+          "latitude": -1.000253774402031,
+          "longitude": 38.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "east-africa-inland-water-gradient-r02-c05",
+          "latitude": -0.0008120657048798449,
+          "longitude": 37.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "east-africa-inland-water-gradient-r02-c06",
+          "latitude": -0.0008120657048798449,
+          "longitude": 38.0,
+          "ten_m_status": "inland_water_intersection"
+        }
+      ],
+      "changed_count": 6,
+      "fifty_m_exclusion_reasons": {
+        "inland_water_intersection": 27
+      },
+      "fifty_m_winners": {
+        "mars-gale": "-0.0008121,37.0000000",
+        "mars-jezero": "-1.0002538,37.0000000",
+        "moon-tranquillitatis": "-2.0000000,36.0000000",
+        "moon-tycho": "-0.0008121,37.0000000"
+      },
+      "ten_m_exclusion_reasons": {
+        "inland_water_intersection": 33
+      },
+      "ten_m_winners": {
+        "mars-gale": "0.9986294,35.0000000",
+        "mars-jezero": "0.9986294,36.0000000",
+        "moon-tranquillitatis": "0.9986294,37.0000000",
+        "moon-tycho": "0.9986294,35.0000000"
+      }
+    },
+    "south-america-elevation-gradient": {
+      "changed_centers": [
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r02-c02",
+          "latitude": -21.9726169476596,
+          "longitude": -69.0,
+          "ten_m_status": "mixed_land_or_ocean"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r03-c02",
+          "latitude": -20.969861317812892,
+          "longitude": -69.0,
+          "ten_m_status": "mixed_land_or_ocean"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r04-c03",
+          "latitude": -19.973787938968027,
+          "longitude": -68.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r04-c04",
+          "latitude": -19.973787938968027,
+          "longitude": -67.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r04-c05",
+          "latitude": -19.973787938968027,
+          "longitude": -66.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r05-c02",
+          "latitude": -18.983969663228947,
+          "longitude": -69.0,
+          "ten_m_status": "mapped_glaciated_area"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r05-c03",
+          "latitude": -18.983969663228947,
+          "longitude": -68.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r05-c04",
+          "latitude": -18.983969663228947,
+          "longitude": -67.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r05-c05",
+          "latitude": -18.983969663228947,
+          "longitude": -66.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r06-c02",
+          "latitude": -18.0,
+          "longitude": -69.0,
+          "ten_m_status": "mapped_glaciated_area"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r06-c03",
+          "latitude": -18.0,
+          "longitude": -68.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r06-c04",
+          "latitude": -18.0,
+          "longitude": -67.0,
+          "ten_m_status": "inland_water_intersection"
+        },
+        {
+          "fifty_m_status": "eligible_land_topography",
+          "id": "south-america-elevation-gradient-r06-c05",
+          "latitude": -18.0,
+          "longitude": -66.0,
+          "ten_m_status": "inland_water_intersection"
+        }
+      ],
+      "changed_count": 13,
+      "fifty_m_exclusion_reasons": {
+        "mixed_land_or_ocean": 14
+      },
+      "fifty_m_winners": {
+        "mars-gale": "-24.0000000,-65.0000000",
+        "mars-jezero": "-18.9839697,-65.0000000",
+        "moon-tranquillitatis": "-20.9698613,-66.0000000",
+        "moon-tycho": "-24.0000000,-65.0000000"
+      },
+      "ten_m_exclusion_reasons": {
+        "inland_water_intersection": 9,
+        "mapped_glaciated_area": 2,
+        "mixed_land_or_ocean": 16
+      },
+      "ten_m_winners": {
+        "mars-gale": "-24.0000000,-65.0000000",
+        "mars-jezero": "-18.9839697,-65.0000000",
+        "moon-tranquillitatis": "-21.9726169,-67.0000000",
+        "moon-tycho": "-24.0000000,-65.0000000"
+      }
+    }
+  },
+  "region_selection": [
+    {
+      "generated_center_count": 49,
+      "id": "south-america-elevation-gradient",
+      "region": "South American west-central elevation gradient",
+      "selection_reason": "A different continent and southern latitude with strong regional relief variation; tile bounds are fixed before candidate ranking.",
+      "tile": {
+        "east": -63,
+        "north": -16,
+        "south": -26,
+        "west": -73
+      }
+    },
+    {
+      "generated_center_count": 49,
+      "id": "east-africa-inland-water-gradient",
+      "region": "East African inland elevation and water gradient",
+      "selection_reason": "A second continent and equatorial latitude with regional relief and mapped inland water; tile bounds are fixed before candidate ranking.",
+      "tile": {
+        "east": 40,
+        "north": 6,
+        "south": -4,
+        "west": 30
+      }
+    }
+  ],
+  "regions": [
+    {
+      "evaluated": 22,
+      "excluded": 27,
+      "exclusion_reasons": {
+        "inland_water_intersection": 9,
+        "mapped_glaciated_area": 2,
+        "mixed_land_or_ocean": 16
+      },
+      "generated": 49,
+      "id": "south-america-elevation-gradient",
+      "source": {
+        "bytes": 14274948,
+        "citation": "https://doi.org/10.7289/V5C8276M",
+        "registration": "grid nodes, one arc-minute",
+        "sha256": "41ad976256e29290387d14807efc2729b7f105304f8333debd3a27ea163637ef",
+        "title": "NOAA ETOPO1 Ice Surface via NOAA/AOML ERDDAP",
+        "unit": "m",
+        "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(-26):1:(-16)%5D%5B(-73):1:(-63)%5D"
+      }
+    },
+    {
+      "evaluated": 16,
+      "excluded": 33,
+      "exclusion_reasons": {
+        "inland_water_intersection": 33
+      },
+      "generated": 49,
+      "id": "east-africa-inland-water-gradient",
+      "source": {
+        "bytes": 14469165,
+        "citation": "https://doi.org/10.7289/V5C8276M",
+        "registration": "grid nodes, one arc-minute",
+        "sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+        "title": "NOAA ETOPO1 Ice Surface via NOAA/AOML ERDDAP",
+        "unit": "m",
+        "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(-4):1:(6)%5D%5B(30):1:(40)%5D"
+      }
+    }
+  ],
+  "scope": "Three selected bounded regional tiles, with generated centers; not a global scan.",
+  "version": "terrestrial-discovery-expansion-v1"
+}

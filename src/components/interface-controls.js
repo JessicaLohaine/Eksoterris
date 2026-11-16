@@ -1,7 +1,7 @@
 /**
- * Módulo de Controles da Interface e HUD Central (src/components/interface-controls.js)
- * Foco Institucional NASA: Camadas NASA GIBS Blue Marble Next Generation, NASA VIIRS
- * e Satélite HD Multirresolução.
+ * Interface Controls and Central HUD Module (src/components/interface-controls.js)
+ * NASA Institutional Focus: NASA GIBS Blue Marble Next Generation, NASA VIIRS,
+ * and Multi-resolution HD Satellite Imagery layers.
  */
 import { APP_CONFIG } from '../config/constants.js';
 import { createSafeElement } from '../utils/sanitizer.js';
@@ -11,35 +11,35 @@ import { formatDMS } from '../utils/coordinates.js';
 const PRESET_REGIONS = Object.freeze([
   {
     id: 'global',
-    label: 'Órbita Global (12.500 km)',
+    label: 'Global Orbit (12,500 km)',
     latitude: -23.8634,
     longitude: -69.1328,
     altitudeKm: 12500
   },
   {
     id: 'atacama',
-    label: 'América do Sul — Atacama (850 km)',
+    label: 'South America — Atacama (850 km)',
     latitude: -23.8634,
     longitude: -69.1328,
     altitudeKm: 850
   },
   {
     id: 'hawaii',
-    label: 'Pacífico — Havaí / Mauna Loa (380 km)',
+    label: 'Pacific — Hawaii / Mauna Loa (380 km)',
     latitude: 19.4756,
     longitude: -155.5828,
     altitudeKm: 380
   },
   {
     id: 'sahara',
-    label: 'África — Saara / Tibesti (1.400 km)',
+    label: 'Africa — Sahara / Tibesti (1,400 km)',
     latitude: 20.78,
     longitude: 18.05,
     altitudeKm: 1400
   },
   {
     id: 'antarctica',
-    label: 'Antártida — Vales Secos (950 km)',
+    label: 'Antarctica — McMurdo Dry Valleys (950 km)',
     latitude: -77.55,
     longitude: 161.8,
     altitudeKm: 950
@@ -47,23 +47,23 @@ const PRESET_REGIONS = Object.freeze([
 ]);
 
 const IMAGERY_MODES = Object.freeze([
-  { id: 'nasa_hybrid', label: 'Camada: NASA Blue Marble + Satélite HD' },
-  { id: 'nasa_bluemarble', label: 'Camada: NASA GIBS Blue Marble (Oficial)' },
-  { id: 'nasa_viirs', label: 'Camada: NASA GIBS VIIRS (Suomi NPP)' },
-  { id: 'world_imagery', label: 'Camada: Satélite Landsat/Maxar (Zoom 18)' }
+  { id: 'nasa_hybrid', label: 'Layer: NASA Blue Marble + HD Satellite' },
+  { id: 'nasa_bluemarble', label: 'Layer: NASA GIBS Blue Marble (Official)' },
+  { id: 'nasa_viirs', label: 'Layer: NASA GIBS VIIRS (Suomi NPP)' },
+  { id: 'world_imagery', label: 'Layer: Landsat/Maxar Satellite (Zoom 18)' }
 ]);
 
 /**
- * Constrói a barra superior flutuante sobre a região central do globo.
+ * Builds the floating top HUD bar over the central globe stage.
  * @returns {HTMLElement}
  */
 export function createTopHudBar() {
   const header = createSafeElement('header', {
     className: 'central-top-hud',
-    attributes: { role: 'banner', 'aria-label': 'Identificação da Missão e Controles de Câmera' }
+    attributes: { role: 'banner', 'aria-label': 'Mission Identification and Camera Controls' }
   });
 
-  // Bloco esquerdo: Identidade da missão
+  // Left block: Mission identity
   const brandGroup = createSafeElement('div', { className: 'hud-brand-group' });
 
   const statusDot = createSafeElement('span', {
@@ -84,17 +84,17 @@ export function createTopHudBar() {
   titleWrap.append(appTitle, editionBadge);
   brandGroup.append(statusDot, titleWrap);
 
-  // Bloco direito: Controles de navegação, camadas científicas da NASA e atmosfera
+  // Right block: Navigation controls, NASA scientific layers, and atmosphere
   const controlsGroup = createSafeElement('nav', {
     className: 'hud-controls-group',
-    attributes: { 'aria-label': 'Controles de Navegação e Camadas do Globo' }
+    attributes: { 'aria-label': 'Globe Navigation and Layer Controls' }
   });
 
   const regionSelect = createSafeElement('select', {
     className: 'hud-region-select',
     attributes: {
       id: 'hud-region-select',
-      'aria-label': 'Navegar suavemente para região do planeta'
+      'aria-label': 'Fly smoothly to planetary analog region'
     }
   });
 
@@ -109,8 +109,8 @@ export function createTopHudBar() {
   regionSelect.addEventListener('change', () => {
     const selected = PRESET_REGIONS.find((r) => r.id === regionSelect.value);
     if (selected) {
-      eventBus.emit('globe:fly-to-preset', selected);
       eventBus.emit('profile:select', { profileId: 'earth_default', source: 'region-select' });
+      eventBus.emit('globe:fly-to-preset', selected);
     }
   });
 
@@ -118,7 +118,7 @@ export function createTopHudBar() {
     className: 'hud-region-select',
     attributes: {
       id: 'hud-imagery-select',
-      'aria-label': 'Selecionar fonte científica de imagem de satélite da NASA'
+      'aria-label': 'Select NASA scientific satellite imagery data source'
     }
   });
 
@@ -136,44 +136,22 @@ export function createTopHudBar() {
 
   const btnAutoRotate = createSafeElement('button', {
     className: 'hud-control-btn is-active',
-    text: 'Rotação: ON',
+    text: 'Rotation: ON',
     attributes: {
       type: 'button',
       id: 'btn-toggle-autorotate',
       'aria-pressed': 'true',
-      title: 'Ativar ou pausar a rotação axial contínua do Globo Terrestre'
-    }
-  });
-
-  const btnToggleLighting = createSafeElement('button', {
-    className: 'hud-control-btn',
-    text: 'Luz Solar',
-    attributes: {
-      type: 'button',
-      id: 'btn-toggle-lighting',
-      'aria-pressed': 'false',
-      title: 'Alternar iluminação direcional solar e transição dia/noite'
-    }
-  });
-
-  const btnToggleClouds = createSafeElement('button', {
-    className: 'hud-control-btn',
-    text: 'Nuvens',
-    attributes: {
-      type: 'button',
-      id: 'btn-toggle-clouds',
-      'aria-pressed': 'false',
-      title: 'Mostrar ou ocultar a camada global de nuvens da NASA'
+      title: 'Enable or pause continuous axial rotation of the Earth globe'
     }
   });
 
   const btnResetCamera = createSafeElement('button', {
     className: 'hud-control-btn',
-    text: 'Resetar Órbita',
+    text: 'Reset Orbit',
     attributes: {
       type: 'button',
       id: 'btn-reset-camera',
-      title: 'Retornar a câmera do globo para a posição orbital padrão'
+      title: 'Return the globe camera to the default orbital position'
     }
   });
 
@@ -188,23 +166,7 @@ export function createTopHudBar() {
     const active = Boolean(payload.enabled);
     btnAutoRotate.setAttribute('aria-pressed', String(active));
     btnAutoRotate.classList.toggle('is-active', active);
-    btnAutoRotate.textContent = active ? 'Rotação: ON' : 'Rotação: OFF';
-  });
-
-  btnToggleLighting.addEventListener('click', () => {
-    const isPressed = btnToggleLighting.getAttribute('aria-pressed') === 'true';
-    const nextState = !isPressed;
-    btnToggleLighting.setAttribute('aria-pressed', String(nextState));
-    btnToggleLighting.classList.toggle('is-active', nextState);
-    eventBus.emit('globe:toggle-lighting', { enabled: nextState });
-  });
-
-  btnToggleClouds.addEventListener('click', () => {
-    const isPressed = btnToggleClouds.getAttribute('aria-pressed') === 'true';
-    const nextState = !isPressed;
-    btnToggleClouds.setAttribute('aria-pressed', String(nextState));
-    btnToggleClouds.classList.toggle('is-active', nextState);
-    eventBus.emit('globe:toggle-clouds', { enabled: nextState });
+    btnAutoRotate.textContent = active ? 'Rotation: ON' : 'Rotation: OFF';
   });
 
   btnResetCamera.addEventListener('click', () => {
@@ -221,8 +183,6 @@ export function createTopHudBar() {
     regionSelect,
     imagerySelect,
     btnAutoRotate,
-    btnToggleLighting,
-    btnToggleClouds,
     btnResetCamera
   );
   header.append(brandGroup, controlsGroup);
@@ -231,13 +191,13 @@ export function createTopHudBar() {
 }
 
 /**
- * Constrói a barra inferior de telemetria da região central.
+ * Builds the bottom geospatial telemetry bar in the central region.
  * @returns {HTMLElement}
  */
 export function createBottomTelemetryBar() {
   const footer = createSafeElement('footer', {
     className: 'central-bottom-hud',
-    attributes: { 'aria-label': 'Telemetria Geoespacial em Tempo Real' }
+    attributes: { 'aria-label': 'Real-Time Geospatial Telemetry' }
   });
 
   const createTelemetryCell = (label, initialValue, valueId) => {
@@ -255,15 +215,15 @@ export function createBottomTelemetryBar() {
   const defaultLat = formatDMS(APP_CONFIG.defaultCoordinates.latitude, 'lat');
   const defaultLon = formatDMS(APP_CONFIG.defaultCoordinates.longitude, 'lon');
 
-  const latCell = createTelemetryCell('LATITUDE CURSOR', defaultLat, 'hud-telemetry-lat');
-  const lonCell = createTelemetryCell('LONGITUDE CURSOR', defaultLon, 'hud-telemetry-lon');
+  const latCell = createTelemetryCell('CURSOR LATITUDE', defaultLat, 'hud-telemetry-lat');
+  const lonCell = createTelemetryCell('CURSOR LONGITUDE', defaultLon, 'hud-telemetry-lon');
   const altCell = createTelemetryCell(
-    'ALTITUDE CÂMERA',
-    `${APP_CONFIG.defaultCoordinates.altitudeKm.toLocaleString('pt-BR')} km`,
+    'CAMERA ALTITUDE',
+    `${APP_CONFIG.defaultCoordinates.altitudeKm.toLocaleString('en-US')} km`,
     'hud-telemetry-alt'
   );
   const datumCell = createTelemetryCell(
-    'FONTE / DATUM',
+    'DATA SOURCE / DATUM',
     'NASA GIBS + LANDSAT HD // WGS84',
     'hud-telemetry-datum'
   );
@@ -279,7 +239,7 @@ export function createBottomTelemetryBar() {
       lonCell.val.textContent = formatDMS(coords.longitude, 'lon');
     }
     if (typeof coords.altitudeKm === 'number') {
-      altCell.val.textContent = `${Math.round(coords.altitudeKm).toLocaleString('pt-BR')} km`;
+      altCell.val.textContent = `${Math.round(coords.altitudeKm).toLocaleString('en-US')} km`;
     }
   });
 

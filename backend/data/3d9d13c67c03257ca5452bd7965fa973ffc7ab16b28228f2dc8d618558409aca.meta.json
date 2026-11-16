@@ -1,0 +1,6 @@
+{
+  "url": "https://power.larc.nasa.gov/api/temporal/climatology/point?parameters=T2M%2CPRECTOTCORR%2CPS&community=AG&latitude=-24.5&longitude=-69.0&format=JSON",
+  "retrieved_at": "2026-11-15T05:00:02.301072+00:00",
+  "sha256": "8cab3cfabcb145c778545fb852c3582b89384e798b98decda8704771eac17ff9",
+  "bytes": 1254
+}

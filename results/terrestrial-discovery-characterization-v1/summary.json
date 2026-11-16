@@ -1,0 +1,1248 @@
+{
+  "combined": {
+    "original_count": 64,
+    "references": {
+      "mars-gale": {
+        "footprint_intersection_over_union": 0.0,
+        "original_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 574.5070797040023,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 408.77731470017085,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 466.27956117314034,
+            "mask_tile_boundary_distance_km_approx": 101.03775508773327
+          },
+          "id": "south-america-elevation-gradient-r00-c06",
+          "latitude": -24.000000000000004,
+          "longitude": -65.0
+        },
+        "original_outside": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "shifted_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 128.2013830038776,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 53.91741123837154,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 418.17128818039606,
+            "mask_tile_boundary_distance_km_approx": 55.316893611229254
+          },
+          "id": "south-america-elevation-gradient-shift-r06-c05",
+          "latitude": -17.510086537710123,
+          "longitude": -65.5
+        },
+        "shifted_outside": [
+          "median_slope_deg",
+          "detrended_rms_m"
+        ]
+      },
+      "mars-jezero": {
+        "footprint_intersection_over_union": 0.1045578798512555,
+        "original_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 233.9500736526923,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 91.47652687330609,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 452.6618465170672,
+            "mask_tile_boundary_distance_km_approx": 105.35778039682936
+          },
+          "id": "south-america-elevation-gradient-r05-c06",
+          "latitude": -18.983969663228947,
+          "longitude": -65.0
+        },
+        "original_outside": [],
+        "shifted_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 382.3216637948262,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 154.18023191686206,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 499.9188912633259,
+            "mask_tile_boundary_distance_km_approx": 48.60599834674969
+          },
+          "id": "south-america-elevation-gradient-shift-r03-c06",
+          "latitude": -20.471016552007562,
+          "longitude": -64.5
+        },
+        "shifted_outside": []
+      },
+      "moon-tranquillitatis": {
+        "footprint_intersection_over_union": 0.10039027489260577,
+        "original_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 270.19068074278346,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 82.26417976485328,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 333.1247918737965,
+            "mask_tile_boundary_distance_km_approx": 214.98831094129943
+          },
+          "id": "south-america-elevation-gradient-r03-c05",
+          "latitude": -20.969861317812892,
+          "longitude": -66.0
+        },
+        "original_outside": [],
+        "shifted_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 354.4629238753327,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 239.1787587329924,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 277.5502095204083,
+            "mask_tile_boundary_distance_km_approx": 255.91106934767362
+          },
+          "id": "south-america-elevation-gradient-shift-r01-c04",
+          "latitude": -22.476640263607813,
+          "longitude": -66.5
+        },
+        "shifted_outside": []
+      },
+      "moon-tycho": {
+        "footprint_intersection_over_union": 0.0,
+        "original_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 574.5070797040023,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 408.77731470017085,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 466.27956117314034,
+            "mask_tile_boundary_distance_km_approx": 101.03775508773327
+          },
+          "id": "south-america-elevation-gradient-r00-c06",
+          "latitude": -24.000000000000004,
+          "longitude": -65.0
+        },
+        "original_outside": [
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "shifted_first": {
+          "geographic_screen": {
+            "current_ice_and_seasonal_water_status": "unverified",
+            "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+            "land_footprint_covered": true,
+            "mapped_glaciated_area_distance_km_approx": 128.2013830038776,
+            "mapped_glaciated_area_intersection": false,
+            "mapped_lake_distance_km_approx": 53.91741123837154,
+            "mapped_lake_intersection": false,
+            "mapped_land_boundary_distance_km_approx": 418.17128818039606,
+            "mask_tile_boundary_distance_km_approx": 55.316893611229254
+          },
+          "id": "south-america-elevation-gradient-shift-r06-c05",
+          "latitude": -17.510086537710123,
+          "longitude": -65.5
+        },
+        "shifted_outside": [
+          "median_slope_deg",
+          "detrended_rms_m"
+        ]
+      }
+    },
+    "shifted_count": 69
+  },
+  "implementation_sha256": "84bd01b32884a05e68dfdcf8faa328c96da2e54c6d881f0b97a4fa3e17793b97",
+  "preserved_original_combined_sha256": "c54d313bdb328509181e54c82e568cd0701889cb3cdb7268cb050a0fec4cbcbd",
+  "regions": {
+    "east-africa-inland-water-gradient": {
+      "earth_iqr": {
+        "original": {
+          "detrended_rms_m": 164.71591830768074,
+          "median_slope_deg": 0.3349706779764675,
+          "relief_m": 672.1211676226317
+        },
+        "shifted": {
+          "detrended_rms_m": 98.04744004444575,
+          "median_slope_deg": 0.13324884741378612,
+          "relief_m": 365.859212736338
+        }
+      },
+      "evaluated": 16,
+      "excluded": 33,
+      "exclusion_reasons": {
+        "inland_water_intersection": 33
+      },
+      "generated": 49,
+      "interpretation": "Each regional catalog has its own Earth IQR; compare ranks, coordinates and descriptors, not raw distances across catalogs.",
+      "leaders": {
+        "mars-gale": {
+          "footprint_intersection_over_union": 0.09939852253469289,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 2.382096789499301,
+                "earth": 458.8321513973068,
+                "earth_iqr": 164.71591830768074,
+                "reference": 899.1597442402251,
+                "scaled_difference": -2.673254639666394
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 4.785072669745552,
+                "earth": 0.7942825149067242,
+                "earth_iqr": 0.3349706779764675,
+                "reference": 2.063428816292794,
+                "scaled_difference": -3.788828052213066
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 3.4985366446311446,
+                "earth": 1547.770800081738,
+                "earth_iqr": 672.1211676226317,
+                "reference": 3725.236958957934,
+                "scaled_difference": -3.239692876476632
+              }
+            },
+            "features": {
+              "detrended_rms_m": 458.8321513973068,
+              "mean_elevation_m": 1571.422483789581,
+              "median_slope_deg": 0.7942825149067242,
+              "relief_m": 1547.770800081738,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 0.794591780142705,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 444.9534275032999,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-r03-c03",
+            "latitude": 0.9986293958677728,
+            "longitude": 35.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 9.988477769408737,
+                "earth": 362.4412752243094,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -5.474069172765924
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 30.075418011352596,
+                "earth": 0.7977313095855368,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -9.498750130099106
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.994598480696101,
+                "earth": 1721.8847986470741,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -5.475746108256692
+              }
+            },
+            "features": {
+              "detrended_rms_m": 362.4412752243094,
+              "mean_elevation_m": 1715.608218660247,
+              "median_slope_deg": 0.7977313095855368,
+              "relief_m": 1721.8847986470741,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 31.770940143619008,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 279.15113776815355,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-shift-r02-c04",
+            "latitude": 0.4988896889035925,
+            "longitude": 36.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ]
+        },
+        "mars-jezero": {
+          "footprint_intersection_over_union": 0.09939852253469474,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.2914345477995986,
+                "earth": 387.3494036813764,
+                "earth_iqr": 164.71591830768074,
+                "reference": 233.33309304319212,
+                "scaled_difference": 0.9350420543477154
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.0667884162372294,
+                "earth": 0.7826692296804183,
+                "earth_iqr": 0.3349706779764675,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -0.4476217697026008
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 1.1274913064634597,
+                "earth": 1658.0235311009963,
+                "earth_iqr": 672.1211676226317,
+                "reference": 2894.155395237171,
+                "scaled_difference": -1.8391503253922392
+              }
+            },
+            "features": {
+              "detrended_rms_m": 387.3494036813764,
+              "mean_elevation_m": 1511.3791438053431,
+              "median_slope_deg": 0.7826692296804183,
+              "relief_m": 1658.0235311009963,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 32.27277564241731,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 334.7195572664864,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-r03-c04",
+            "latitude": 0.9986293958677728,
+            "longitude": 36.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [
+            "relief_m",
+            "median_slope_deg"
+          ],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.46550728693007,
+                "earth": 349.20019062302646,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": 1.1817452605321546
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.0917956127058244,
+                "earth": 0.6914552357929544,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -1.8098029832325597
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.3361724287859293,
+                "earth": 1925.594189722148,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -2.6473604375599837
+              }
+            },
+            "features": {
+              "detrended_rms_m": 349.20019062302646,
+              "mean_elevation_m": 1293.565498054139,
+              "median_slope_deg": 0.6914552357929544,
+              "relief_m": 1925.594189722148,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 28.173046381591522,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 167.95605753462016,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-shift-r02-c05",
+            "latitude": 0.4988896889035925,
+            "longitude": 37.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": [
+            "relief_m",
+            "median_slope_deg"
+          ]
+        },
+        "moon-tranquillitatis": {
+          "footprint_intersection_over_union": 0.09944496737252055,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.0900987758370095,
+                "earth": 336.480305933901,
+                "earth_iqr": 164.71591830768074,
+                "reference": 250.844449708464,
+                "scaled_difference": 0.5199003053576988
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 7.875745309167234e-06,
+                "earth": 0.5788595751750923,
+                "earth_iqr": 0.3349706779764675,
+                "reference": 0.5772313545520281,
+                "scaled_difference": 0.004860785525766561
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.018420153686013876,
+                "earth": 1553.3110484221122,
+                "earth_iqr": 672.1211676226317,
+                "reference": 1395.3118712587225,
+                "scaled_difference": 0.23507543695171904
+              }
+            },
+            "features": {
+              "detrended_rms_m": 336.480305933901,
+              "mean_elevation_m": 1233.2950659945923,
+              "median_slope_deg": 0.5788595751750923,
+              "relief_m": 1553.3110484221122,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 45.182250975141656,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 223.52447703295294,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-r03-c05",
+            "latitude": 0.9986293958677728,
+            "longitude": 37.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.4463186249418903,
+                "earth": 364.2983398134799,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": 1.157132609006276
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.039530384059458114,
+                "earth": 0.5313443608866308,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -0.34437066103019626
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.4843069752212565,
+                "earth": 1836.308211034082,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": 1.2053716960605012
+              }
+            },
+            "features": {
+              "detrended_rms_m": 364.2983398134799,
+              "mean_elevation_m": 1320.469083447638,
+              "median_slope_deg": 0.5313443608866308,
+              "relief_m": 1836.308211034082,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 3.9600375322856762,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 389.4189409429888,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-shift-r03-c03",
+            "latitude": 1.4984450953063875,
+            "longitude": 35.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": []
+        },
+        "moon-tycho": {
+          "footprint_intersection_over_union": 0.09939852253469289,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 2.407299481651818,
+                "earth": 458.8321513973068,
+                "earth_iqr": 164.71591830768074,
+                "reference": 901.4829584393207,
+                "scaled_difference": -2.6873590093166664
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 4.91630211311564,
+                "earth": 0.7942825149067242,
+                "earth_iqr": 0.3349706779764675,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -3.840430488805509
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 1.2075196092811014,
+                "earth": 1547.770800081738,
+                "earth_iqr": 672.1211676226317,
+                "reference": 2827.020419980859,
+                "scaled_difference": -1.9033020852831808
+              }
+            },
+            "features": {
+              "detrended_rms_m": 458.8321513973068,
+              "mean_elevation_m": 1571.422483789581,
+              "median_slope_deg": 0.7942825149067242,
+              "relief_m": 1547.770800081738,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 0.794591780142705,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 444.9534275032999,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-r03-c03",
+            "latitude": 0.9986293958677728,
+            "longitude": 35.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 10.075136222825233,
+                "earth": 362.4412752243094,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -5.497763969876817
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 30.90249166965282,
+                "earth": 0.7977313095855368,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -9.62847210147895
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 3.041458600550781,
+                "earth": 1721.8847986470741,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -3.020658173586072
+              }
+            },
+            "features": {
+              "detrended_rms_m": 362.4412752243094,
+              "mean_elevation_m": 1715.608218660247,
+              "median_slope_deg": 0.7977313095855368,
+              "relief_m": 1721.8847986470741,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": null,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 31.770940143619008,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 279.15113776815355,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "east-africa-inland-water-gradient-shift-r02-c04",
+            "latitude": 0.4988896889035925,
+            "longitude": 36.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ]
+        }
+      },
+      "original_evaluated": 16,
+      "original_exclusion_reasons": {
+        "inland_water_intersection": 33
+      },
+      "ranges": {
+        "original": {
+          "detrended_rms_m": {
+            "max": 458.8321513973068,
+            "min": 145.42706067073198
+          },
+          "median_slope_deg": {
+            "max": 0.8402290058996252,
+            "min": 0.15684147692259903
+          },
+          "relief_m": {
+            "max": 1852.6836550982523,
+            "min": 524.8600055225097
+          }
+        },
+        "shifted": {
+          "detrended_rms_m": {
+            "max": 368.305896032017,
+            "min": 118.12280978501022
+          },
+          "median_slope_deg": {
+            "max": 0.7977313095855368,
+            "min": 0.13731545666615788
+          },
+          "relief_m": {
+            "max": 1925.594189722148,
+            "min": 476.3867195554266
+          }
+        }
+      }
+    },
+    "south-america-elevation-gradient": {
+      "earth_iqr": {
+        "original": {
+          "detrended_rms_m": 202.52144541258986,
+          "median_slope_deg": 0.30204787194656135,
+          "relief_m": 1732.961904397563
+        },
+        "shifted": {
+          "detrended_rms_m": 238.39098781727154,
+          "median_slope_deg": 0.32660347667416423,
+          "relief_m": 1061.1880853864122
+        }
+      },
+      "evaluated": 27,
+      "excluded": 22,
+      "exclusion_reasons": {
+        "inland_water_intersection": 7,
+        "mapped_glaciated_area": 1,
+        "mixed_land_or_ocean": 14
+      },
+      "generated": 49,
+      "interpretation": "Each regional catalog has its own Earth IQR; compare ranks, coordinates and descriptors, not raw distances across catalogs.",
+      "leaders": {
+        "mars-gale": {
+          "footprint_intersection_over_union": 0.0,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.6229754057241069,
+                "earth": 622.2953570224893,
+                "earth_iqr": 202.52144541258986,
+                "reference": 899.1597442402251,
+                "scaled_difference": -1.3670867628546188
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 2.980928844789164,
+                "earth": 1.1601699933806173,
+                "earth_iqr": 0.30204787194656135,
+                "reference": 2.063428816292794,
+                "scaled_difference": -2.9904492194932004
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.0033995333628916748,
+                "earth": 3550.228396710514,
+                "earth_iqr": 1732.961904397563,
+                "reference": 3725.236958957934,
+                "scaled_difference": -0.10098811855201098
+              }
+            },
+            "features": {
+              "detrended_rms_m": 622.2953570224893,
+              "mean_elevation_m": 1853.4402251344563,
+              "median_slope_deg": 1.1601699933806173,
+              "relief_m": 3550.228396710514,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 574.5070797040023,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 408.77731470017085,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 101.03775508773327,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-r00-c06",
+            "latitude": -24.000000000000004,
+            "longitude": -65.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [
+            "relief_m",
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.9581172938828636,
+                "earth": 494.9937219214149,
+                "earth_iqr": 238.39098781727154,
+                "reference": 899.1597442402251,
+                "scaled_difference": -1.6953913653338544
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.9184853331094196,
+                "earth": 1.2798897179472526,
+                "earth_iqr": 0.32660347667416423,
+                "reference": 2.063428816292794,
+                "scaled_difference": -2.3990531464159477
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.01606492398835439,
+                "earth": 3492.2710731330253,
+                "earth_iqr": 1061.1880853864122,
+                "reference": 3725.236958957934,
+                "scaled_difference": -0.21953307715481776
+              }
+            },
+            "features": {
+              "detrended_rms_m": 494.9937219214149,
+              "mean_elevation_m": 3200.7099223131,
+              "median_slope_deg": 1.2798897179472526,
+              "relief_m": 3492.2710731330253,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 315.57406647692085,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 243.8205912456505,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 55.35847814245899,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-shift-r01-c02",
+            "latitude": -22.476640263607813,
+            "longitude": -68.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": [
+            "median_slope_deg",
+            "detrended_rms_m"
+          ]
+        },
+        "mars-jezero": {
+          "footprint_intersection_over_union": 0.1045578798512555,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.03774032967340935,
+                "earth": 301.47817064799915,
+                "earth_iqr": 202.52144541258986,
+                "reference": 233.33309304319212,
+                "scaled_difference": 0.3364832670731608
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.006313836566619256,
+                "earth": 0.8910391053025106,
+                "earth_iqr": 0.30204787194656135,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -0.13762815736562692
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.019521972552853217,
+                "earth": 2474.7717482530734,
+                "earth_iqr": 1732.961904397563,
+                "reference": 2894.155395237171,
+                "scaled_difference": -0.24200396207202818
+              }
+            },
+            "features": {
+              "detrended_rms_m": 301.47817064799915,
+              "mean_elevation_m": 2660.608250968068,
+              "median_slope_deg": 0.8910391053025106,
+              "relief_m": 2474.7717482530734,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 233.9500736526923,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 91.47652687330609,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 105.35778039682936,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-r05-c06",
+            "latitude": -18.983969663228947,
+            "longitude": -65.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.051188924645054666,
+                "earth": 326.7527920468266,
+                "earth_iqr": 238.39098781727154,
+                "reference": 233.33309304319212,
+                "scaled_difference": 0.3918759675396847
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.002013731533548953,
+                "earth": 0.9579946924473963,
+                "earth_iqr": 0.32660347667416423,
+                "reference": 0.9326093973547247,
+                "scaled_difference": 0.077725122069038
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.008032016141422063,
+                "earth": 2729.428209479099,
+                "earth_iqr": 1061.1880853864122,
+                "reference": 2894.155395237171,
+                "scaled_difference": -0.15522901927238408
+              }
+            },
+            "features": {
+              "detrended_rms_m": 326.7527920468266,
+              "mean_elevation_m": 2190.0526619529574,
+              "median_slope_deg": 0.9579946924473963,
+              "relief_m": 2729.428209479099,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 382.3216637948262,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 154.18023191686206,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 48.60599834674969,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-shift-r03-c06",
+            "latitude": -20.471016552007562,
+            "longitude": -64.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": []
+        },
+        "moon-tranquillitatis": {
+          "footprint_intersection_over_union": 0.39950142490583646,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.007828188755156767,
+                "earth": 281.8802029438926,
+                "earth_iqr": 202.52144541258986,
+                "reference": 250.844449708464,
+                "scaled_difference": 0.15324674960817375
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 9.954767500282936e-05,
+                "earth": 0.5720115773252172,
+                "earth_iqr": 0.30204787194656135,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -0.017281291184644974
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.010708425760093206,
+                "earth": 1084.7039992988393,
+                "earth_iqr": 1732.961904397563,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -0.17923525680032826
+              }
+            },
+            "features": {
+              "detrended_rms_m": 281.8802029438926,
+              "mean_elevation_m": 4288.59757392274,
+              "median_slope_deg": 0.5720115773252172,
+              "relief_m": 1084.7039992988393,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 283.9076105325129,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 187.0211156482679,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 221.9331912754215,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-r02-c04",
+            "latitude": -21.9726169476596,
+            "longitude": -67.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 6.0551455600261445e-06,
+                "earth": 249.82840514971886,
+                "earth_iqr": 238.39098781727154,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.00426209299289427
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.0019743482679077558,
+                "earth": 0.5520955198120723,
+                "earth_iqr": 0.32660347667416423,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -0.07696132017918655
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.003411369774198631,
+                "earth": 1287.9580788164449,
+                "earth_iqr": 1061.1880853864122,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -0.10116377475458245
+              }
+            },
+            "features": {
+              "detrended_rms_m": 249.82840514971886,
+              "mean_elevation_m": 4133.839048010682,
+              "median_slope_deg": 0.5520955198120723,
+              "relief_m": 1287.9580788164449,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 354.4629238753327,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 239.1787587329924,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 255.91106934767356,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-shift-r01-c04",
+            "latitude": -22.476640263607813,
+            "longitude": -66.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": []
+        },
+        "moon-tycho": {
+          "footprint_intersection_over_union": 0.0,
+          "original": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.6334742467649453,
+                "earth": 622.2953570224893,
+                "earth_iqr": 202.52144541258986,
+                "reference": 901.4829584393207,
+                "scaled_difference": -1.3785582107023395
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 3.0961101775493822,
+                "earth": 1.1601699933806173,
+                "earth_iqr": 0.30204787194656135,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -3.0476762512852553
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.0580533290142389,
+                "earth": 3550.228396710514,
+                "earth_iqr": 1732.961904397563,
+                "reference": 2827.020419980859,
+                "scaled_difference": 0.41732479802033895
+              }
+            },
+            "features": {
+              "detrended_rms_m": 622.2953570224893,
+              "mean_elevation_m": 1853.4402251344563,
+              "median_slope_deg": 1.1601699933806173,
+              "relief_m": 3550.228396710514,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 574.5070797040023,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 408.77731470017085,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 101.03775508773327,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-r00-c06",
+            "latitude": -24.000000000000004,
+            "longitude": -65.0,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "original_outside_features": [
+            "median_slope_deg",
+            "detrended_rms_m"
+          ],
+          "shifted": {
+            "distance_contributions": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.9691637898052826,
+                "earth": 494.9937219214149,
+                "earth_iqr": 238.39098781727154,
+                "reference": 901.4829584393207,
+                "scaled_difference": -1.7051367597397717
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 2.0040646800752504,
+                "earth": 1.2798897179472526,
+                "earth_iqr": 0.32660347667416423,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -2.4519775774312764
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.13099799061137188,
+                "earth": 3492.2710731330253,
+                "earth_iqr": 1061.1880853864122,
+                "reference": 2827.020419980859,
+                "scaled_difference": 0.6268923127891389
+              }
+            },
+            "features": {
+              "detrended_rms_m": 494.9937219214149,
+              "mean_elevation_m": 3200.7099223131,
+              "median_slope_deg": 1.2798897179472526,
+              "relief_m": 3492.2710731330253,
+              "valid_cells": 121
+            },
+            "geographic_screen": {
+              "current_ice_and_seasonal_water_status": "unverified",
+              "distance_method": "Spherical Lambert cylindrical equal-area approximation within the clipped tile; artificial tile edges excluded from land boundary; nearest features outside the tile are not assessed.",
+              "land_footprint_covered": true,
+              "mapped_glaciated_area_distance_km_approx": 315.57406647692085,
+              "mapped_glaciated_area_intersection": false,
+              "mapped_lake_distance_km_approx": 243.8205912456505,
+              "mapped_lake_intersection": false,
+              "mapped_land_boundary_distance_km_approx": 55.35847814245899,
+              "mask_tile_boundary_distance_km_approx": null
+            },
+            "id": "south-america-elevation-gradient-shift-r01-c02",
+            "latitude": -22.476640263607813,
+            "longitude": -68.5,
+            "quality": {
+              "complete_mapped_land_footprint": true,
+              "current_ice_and_seasonal_snow_status": "not_established",
+              "expected_queries": 3025,
+              "expected_source_node_checks": 12100,
+              "mapped_glaciated_area_intersects": false,
+              "mapped_inland_water_intersects": false,
+              "valid_land_node_checks": 12100
+            }
+          },
+          "shifted_outside_features": [
+            "median_slope_deg",
+            "detrended_rms_m"
+          ]
+        }
+      },
+      "original_evaluated": 22,
+      "original_exclusion_reasons": {
+        "inland_water_intersection": 9,
+        "mapped_glaciated_area": 2,
+        "mixed_land_or_ocean": 16
+      },
+      "ranges": {
+        "original": {
+          "detrended_rms_m": {
+            "max": 690.3961454242914,
+            "min": 216.5860311549718
+          },
+          "median_slope_deg": {
+            "max": 1.1601699933806173,
+            "min": 0.3970940300432597
+          },
+          "relief_m": {
+            "max": 3607.284713081188,
+            "min": 932.7831770208518
+          }
+        },
+        "shifted": {
+          "detrended_rms_m": {
+            "max": 750.833893385579,
+            "min": 218.75340539235506
+          },
+          "median_slope_deg": {
+            "max": 1.2798897179472526,
+            "min": 0.2802639934429089
+          },
+          "relief_m": {
+            "max": 3781.753317771137,
+            "min": 704.0140839405462
+          }
+        }
+      }
+    }
+  },
+  "scope": "Two shifted regional grids and a separately recalibrated combined comparison; no analog validation.",
+  "version": "terrestrial-discovery-characterization-v1"
+}

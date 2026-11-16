@@ -1,0 +1,4542 @@
+{
+  "catalog": [
+    {
+      "coordinate_key": "-1.5000698,32.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c00",
+      "latitude": -1.50006978290496,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-1.5000698,33.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c01",
+      "latitude": -1.50006978290496,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-1.5000698,34.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c02",
+      "latitude": -1.50006978290496,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-1.5000698,35.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c03",
+      "latitude": -1.50006978290496,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-1.5000698,36.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c04",
+      "latitude": -1.50006978290496,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-1.5000698,37.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c05",
+      "latitude": -1.50006978290496,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-1.5000698,38.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r00-c06",
+      "latitude": -1.50006978290496,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,32.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c00",
+      "latitude": -0.5005138820839027,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,33.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c01",
+      "latitude": -0.5005138820839027,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,34.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c02",
+      "latitude": -0.5005138820839027,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,35.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c03",
+      "latitude": -0.5005138820839027,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,36.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c04",
+      "latitude": -0.5005138820839027,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,37.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c05",
+      "latitude": -0.5005138820839027,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "-0.5005139,38.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r01-c06",
+      "latitude": -0.5005138820839027,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "0.4988897,32.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r02-c00",
+      "latitude": 0.4988896889035925,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "0.4988897,33.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r02-c01",
+      "latitude": 0.4988896889035925,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "0.4988897,34.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r02-c02",
+      "latitude": 0.4988896889035925,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "0.4988897,35.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r02-c03",
+      "latitude": 0.4988896889035925,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "0.4988897,36.5000000",
+      "features": {
+        "detrended_rms_m": 362.4412752243094,
+        "mean_elevation_m": 1715.608218660247,
+        "median_slope_deg": 0.7977313095855368,
+        "relief_m": 1721.8847986470741,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r02-c04",
+      "latitude": 0.4988896889035925,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "0.4988897,37.5000000",
+      "features": {
+        "detrended_rms_m": 349.20019062302646,
+        "mean_elevation_m": 1293.565498054139,
+        "median_slope_deg": 0.6914552357929544,
+        "relief_m": 1925.594189722148,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r02-c05",
+      "latitude": 0.4988896889035925,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "0.4988897,38.5000000",
+      "features": {
+        "detrended_rms_m": 188.90735367559532,
+        "mean_elevation_m": 553.9343379098387,
+        "median_slope_deg": 0.2551860290716521,
+        "relief_m": 1072.4486790066062,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r02-c06",
+      "latitude": 0.4988896889035925,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "1.4984451,32.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r03-c00",
+      "latitude": 1.4984450953063875,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "1.4984451,33.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r03-c01",
+      "latitude": 1.4984450953063875,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "1.4984451,34.5000000",
+      "features": {
+        "detrended_rms_m": 368.305896032017,
+        "mean_elevation_m": 1408.7454224286982,
+        "median_slope_deg": 0.4096409467823709,
+        "relief_m": 1322.5080729733195,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r03-c02",
+      "latitude": 1.4984450953063875,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "1.4984451,35.5000000",
+      "features": {
+        "detrended_rms_m": 364.2983398134799,
+        "mean_elevation_m": 1320.469083447638,
+        "median_slope_deg": 0.5313443608866308,
+        "relief_m": 1836.308211034082,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r03-c03",
+      "latitude": 1.4984450953063875,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "1.4984451,36.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r03-c04",
+      "latitude": 1.4984450953063875,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "1.4984451,37.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r03-c05",
+      "latitude": 1.4984450953063875,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "1.4984451,38.5000000",
+      "features": {
+        "detrended_rms_m": 119.00586306365513,
+        "mean_elevation_m": 458.0980461695662,
+        "median_slope_deg": 0.14993241083938413,
+        "relief_m": 655.4502490530457,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r03-c06",
+      "latitude": 1.4984450953063875,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "2.4984569,32.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r04-c00",
+      "latitude": 2.4984569186487637,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "2.4984569,33.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r04-c01",
+      "latitude": 2.4984569186487637,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "2.4984569,34.5000000",
+      "features": {
+        "detrended_rms_m": 232.13685449938032,
+        "mean_elevation_m": 1136.2775280673363,
+        "median_slope_deg": 0.31570684732147547,
+        "relief_m": 918.1758158094575,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r04-c02",
+      "latitude": 2.4984569186487637,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "2.4984569,35.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r04-c03",
+      "latitude": 2.4984569186487637,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "2.4984569,36.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r04-c04",
+      "latitude": 2.4984569186487637,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "2.4984569,37.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r04-c05",
+      "latitude": 2.4984569186487637,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "2.4984569,38.5000000",
+      "features": {
+        "detrended_rms_m": 118.12280978501022,
+        "mean_elevation_m": 517.5471287732726,
+        "median_slope_deg": 0.13731545666615788,
+        "relief_m": 476.3867195554266,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r04-c06",
+      "latitude": 2.4984569186487637,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "3.4992310,32.5000000",
+      "features": {
+        "detrended_rms_m": 163.38097405437978,
+        "mean_elevation_m": 929.9931370376057,
+        "median_slope_deg": 0.25775901092897663,
+        "relief_m": 485.3870017089363,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r05-c00",
+      "latitude": 3.499230993812349,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "3.4992310,33.5000000",
+      "features": {
+        "detrended_rms_m": 218.60408797038852,
+        "mean_elevation_m": 1117.2115983588471,
+        "median_slope_deg": 0.2848053158512191,
+        "relief_m": 806.3833111296411,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r05-c01",
+      "latitude": 3.499230993812349,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "3.4992310,34.5000000",
+      "features": {
+        "detrended_rms_m": 201.93794082889215,
+        "mean_elevation_m": 979.7716356228298,
+        "median_slope_deg": 0.3820592409850246,
+        "relief_m": 962.6374335599552,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r05-c02",
+      "latitude": 3.499230993812349,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "3.4992310,35.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r05-c03",
+      "latitude": 3.499230993812349,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "3.4992310,36.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r05-c04",
+      "latitude": 3.499230993812349,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "3.4992310,37.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r05-c05",
+      "latitude": 3.499230993812349,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "3.4992310,38.5000000",
+      "features": {
+        "detrended_rms_m": 163.27807178024509,
+        "mean_elevation_m": 863.3552299290023,
+        "median_slope_deg": 0.255879083670216,
+        "relief_m": 960.0737071239317,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r05-c06",
+      "latitude": 3.499230993812349,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "4.5010753,32.5000000",
+      "features": {
+        "detrended_rms_m": 162.70225627596392,
+        "mean_elevation_m": 707.9765837993885,
+        "median_slope_deg": 0.24433268356729446,
+        "relief_m": 657.2673256588625,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r06-c00",
+      "latitude": 4.501075255701051,
+      "longitude": 32.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "4.5010753,33.5000000",
+      "features": {
+        "detrended_rms_m": 203.36315415920066,
+        "mean_elevation_m": 822.1917191920693,
+        "median_slope_deg": 0.3306263844538739,
+        "relief_m": 1044.833483269215,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r06-c01",
+      "latitude": 4.501075255701051,
+      "longitude": 33.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "4.5010753,34.5000000",
+      "features": {
+        "detrended_rms_m": 220.26704930013452,
+        "mean_elevation_m": 723.3626326752122,
+        "median_slope_deg": 0.27682064294961867,
+        "relief_m": 971.7493863240195,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r06-c02",
+      "latitude": 4.501075255701051,
+      "longitude": 34.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    },
+    {
+      "coordinate_key": "4.5010753,35.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r06-c03",
+      "latitude": 4.501075255701051,
+      "longitude": 35.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "4.5010753,36.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r06-c04",
+      "latitude": 4.501075255701051,
+      "longitude": 36.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "4.5010753,37.5000000",
+      "id": "east-africa-inland-water-gradient-shift-r06-c05",
+      "latitude": 4.501075255701051,
+      "longitude": 37.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": true
+      },
+      "region": "East African inland elevation and water gradient",
+      "status": "inland_water_intersection"
+    },
+    {
+      "coordinate_key": "4.5010753,38.5000000",
+      "features": {
+        "detrended_rms_m": 229.7882575936471,
+        "mean_elevation_m": 1220.5019259486603,
+        "median_slope_deg": 0.3719739375496121,
+        "relief_m": 818.6579986030438,
+        "valid_cells": 121
+      },
+      "id": "east-africa-inland-water-gradient-shift-r06-c06",
+      "latitude": 4.501075255701051,
+      "longitude": 38.5,
+      "quality": {
+        "complete_mapped_land_footprint": true,
+        "current_ice_and_seasonal_snow_status": "not_established",
+        "expected_queries": 3025,
+        "expected_source_node_checks": 12100,
+        "mapped_glaciated_area_intersects": false,
+        "mapped_inland_water_intersects": false,
+        "valid_land_node_checks": 12100
+      },
+      "region": "East African inland elevation and water gradient",
+      "source_sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+      "status": "eligible_land_topography"
+    }
+  ],
+  "configuration": {
+    "center_rule": "sin(latitude) and longitude half-step offset from the original 7x7 lattice",
+    "columns": 7,
+    "grid_size": 11,
+    "id": "east-africa-inland-water-gradient-shifted",
+    "kind": "half_step_origin",
+    "mask_scale": "10m",
+    "rows": 7,
+    "tile": {
+      "east": 40,
+      "north": 6,
+      "south": -4,
+      "west": 30
+    },
+    "width_m": 220000
+  },
+  "evaluated_count": 16,
+  "excluded_count": 33,
+  "exclusion_reasons": {
+    "inland_water_intersection": 33
+  },
+  "generated_count": 49,
+  "masks": {
+    "glaciated_areas": {
+      "local_intersecting_features": 0,
+      "scale": "1:10m",
+      "sha256": "de6ff396ab7eee8cbe2146030cc29278ef67c468e5675c748b1372e241ecbbff",
+      "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_glaciated_areas.zip",
+      "version": "4.1.0"
+    },
+    "lakes": {
+      "local_intersecting_features": 16,
+      "scale": "1:10m",
+      "sha256": "0803a06f9c3cb4671d89b68c48b142aad9366ba40f665245e12a913fbc61722a",
+      "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_lakes.zip",
+      "version": "5.0.0"
+    },
+    "land": {
+      "local_intersecting_features": 10,
+      "scale": "1:10m",
+      "sha256": "e547d749445eaa0964aba76738090ec88f5e63c4585122170f98c67a7ea922dc",
+      "url": "https://naturalearth.s3.amazonaws.com/10m_physical/ne_10m_land.zip",
+      "version": "5.1.1"
+    }
+  },
+  "model": {
+    "algorithm": "Unsupervised k-nearest-neighbor retrieval",
+    "distance": "sqrt(mean(((Earth feature - planetary feature) / Earth feature IQR)^2))",
+    "distance_is_probability": false,
+    "earth_iqr": {
+      "detrended_rms_m": 98.04744004444575,
+      "median_slope_deg": 0.13324884741378612,
+      "relief_m": 365.859212736338
+    },
+    "earth_median": {
+      "detrended_rms_m": 210.9836210647946,
+      "median_slope_deg": 0.3002560815863473,
+      "relief_m": 961.3555703419435
+    },
+    "feature_names": [
+      "relief_m",
+      "median_slope_deg",
+      "detrended_rms_m"
+    ],
+    "k": 16,
+    "labels_used": false,
+    "normalization": "Earth training-set median and interquartile range (IQR); query uses fitted Earth scale",
+    "training_samples": 16
+  },
+  "overlap": {
+    "candidate_count": 16,
+    "intersecting_pairs": 24,
+    "iou_distribution_intersecting": {
+      "max": 0.3298399651695655,
+      "median": 0.3279482618161542,
+      "min": 0.13944003159424123,
+      "p95": 0.3297607260634801
+    },
+    "pairs": [
+      {
+        "first": "east-africa-inland-water-gradient-shift-r02-c04",
+        "fraction_of_smaller_window": 0.49459485465904884,
+        "intersection_over_union": 0.3285460104808068,
+        "second": "east-africa-inland-water-gradient-shift-r02-c05"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r02-c04",
+        "fraction_of_smaller_window": 0.24475411385887397,
+        "intersection_over_union": 0.13944149678853918,
+        "second": "east-africa-inland-water-gradient-shift-r03-c03"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r02-c05",
+        "fraction_of_smaller_window": 0.494594854659049,
+        "intersection_over_union": 0.3285460104808068,
+        "second": "east-africa-inland-water-gradient-shift-r02-c06"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r02-c05",
+        "fraction_of_smaller_window": 0.24475411385887486,
+        "intersection_over_union": 0.1394414967885398,
+        "second": "east-africa-inland-water-gradient-shift-r03-c06"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r02-c06",
+        "fraction_of_smaller_window": 0.49480355939586007,
+        "intersection_over_union": 0.32873022113726996,
+        "second": "east-africa-inland-water-gradient-shift-r03-c06"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r03-c02",
+        "fraction_of_smaller_window": 0.4947299066916417,
+        "intersection_over_union": 0.3286652069226322,
+        "second": "east-africa-inland-water-gradient-shift-r03-c03"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r03-c02",
+        "fraction_of_smaller_window": 0.49457287927062243,
+        "intersection_over_union": 0.3285266162781375,
+        "second": "east-africa-inland-water-gradient-shift-r04-c02"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r03-c03",
+        "fraction_of_smaller_window": 0.24475408587760963,
+        "intersection_over_union": 0.13944147847337357,
+        "second": "east-africa-inland-water-gradient-shift-r04-c02"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r03-c06",
+        "fraction_of_smaller_window": 0.4945728792706225,
+        "intersection_over_union": 0.3285266162781375,
+        "second": "east-africa-inland-water-gradient-shift-r04-c06"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r04-c02",
+        "fraction_of_smaller_window": 0.24475356993410985,
+        "intersection_over_union": 0.13944114338996078,
+        "second": "east-africa-inland-water-gradient-shift-r05-c01"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r04-c02",
+        "fraction_of_smaller_window": 0.4941876251982252,
+        "intersection_over_union": 0.32818671940664507,
+        "second": "east-africa-inland-water-gradient-shift-r05-c02"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r04-c06",
+        "fraction_of_smaller_window": 0.49418762519822595,
+        "intersection_over_union": 0.3281867194066457,
+        "second": "east-africa-inland-water-gradient-shift-r05-c06"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c00",
+        "fraction_of_smaller_window": 0.4954619798454905,
+        "intersection_over_union": 0.3293117044623494,
+        "second": "east-africa-inland-water-gradient-shift-r05-c01"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c00",
+        "fraction_of_smaller_window": 0.49364673580477947,
+        "intersection_over_union": 0.32770980422566254,
+        "second": "east-africa-inland-water-gradient-shift-r06-c00"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c00",
+        "fraction_of_smaller_window": 0.24475185750874706,
+        "intersection_over_union": 0.13944003159424123,
+        "second": "east-africa-inland-water-gradient-shift-r06-c01"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c01",
+        "fraction_of_smaller_window": 0.49546197984549395,
+        "intersection_over_union": 0.3293117044623527,
+        "second": "east-africa-inland-water-gradient-shift-r05-c02"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c01",
+        "fraction_of_smaller_window": 0.24475185750874762,
+        "intersection_over_union": 0.13944003159424126,
+        "second": "east-africa-inland-water-gradient-shift-r06-c00"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c01",
+        "fraction_of_smaller_window": 0.49364673580478,
+        "intersection_over_union": 0.32770980422566337,
+        "second": "east-africa-inland-water-gradient-shift-r06-c01"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c01",
+        "fraction_of_smaller_window": 0.24475185750874942,
+        "intersection_over_union": 0.13944003159424267,
+        "second": "east-africa-inland-water-gradient-shift-r06-c02"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c02",
+        "fraction_of_smaller_window": 0.24475185750874906,
+        "intersection_over_union": 0.1394400315942424,
+        "second": "east-africa-inland-water-gradient-shift-r06-c01"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c02",
+        "fraction_of_smaller_window": 0.49364673580478013,
+        "intersection_over_union": 0.3277098042256634,
+        "second": "east-africa-inland-water-gradient-shift-r06-c02"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r05-c06",
+        "fraction_of_smaller_window": 0.4936467358047793,
+        "intersection_over_union": 0.3277098042256628,
+        "second": "east-africa-inland-water-gradient-shift-r06-c06"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r06-c00",
+        "fraction_of_smaller_window": 0.49605963696166344,
+        "intersection_over_union": 0.32983996516956143,
+        "second": "east-africa-inland-water-gradient-shift-r06-c01"
+      },
+      {
+        "first": "east-africa-inland-water-gradient-shift-r06-c01",
+        "fraction_of_smaller_window": 0.4960596369616673,
+        "intersection_over_union": 0.3298399651695655,
+        "second": "east-africa-inland-water-gradient-shift-r06-c02"
+      }
+    ],
+    "possible_pairs": 120,
+    "trial_pair_counts": {
+      "0.1": 24,
+      "0.25": 16,
+      "0.5": 0
+    },
+    "trial_thinning_iou_0_25": {
+      "northeast_first": [
+        "east-africa-inland-water-gradient-shift-r06-c06",
+        "east-africa-inland-water-gradient-shift-r06-c02",
+        "east-africa-inland-water-gradient-shift-r06-c00",
+        "east-africa-inland-water-gradient-shift-r05-c01",
+        "east-africa-inland-water-gradient-shift-r04-c06",
+        "east-africa-inland-water-gradient-shift-r04-c02",
+        "east-africa-inland-water-gradient-shift-r03-c03",
+        "east-africa-inland-water-gradient-shift-r02-c06",
+        "east-africa-inland-water-gradient-shift-r02-c04"
+      ],
+      "southwest_first": [
+        "east-africa-inland-water-gradient-shift-r02-c04",
+        "east-africa-inland-water-gradient-shift-r02-c06",
+        "east-africa-inland-water-gradient-shift-r03-c02",
+        "east-africa-inland-water-gradient-shift-r04-c06",
+        "east-africa-inland-water-gradient-shift-r05-c00",
+        "east-africa-inland-water-gradient-shift-r05-c02",
+        "east-africa-inland-water-gradient-shift-r06-c01",
+        "east-africa-inland-water-gradient-shift-r06-c06"
+      ]
+    }
+  },
+  "references": {
+    "mars-gale": {
+      "range_diagnostics": {
+        "catalog_size": 16,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 368.305896032017,
+            "earth_min": 118.12280978501022,
+            "position": "above",
+            "reference": 899.1597442402251
+          },
+          "median_slope_deg": {
+            "earth_max": 0.7977313095855368,
+            "earth_min": 0.13731545666615788,
+            "position": "above",
+            "reference": 2.063428816292794
+          },
+          "relief_m": {
+            "earth_max": 1925.594189722148,
+            "earth_min": 476.3867195554266,
+            "position": "above",
+            "reference": 3725.236958957934
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "0.4988897,36.5000000",
+          "distance": 7.075202771755552,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 9.988477769408737,
+                "earth": 362.4412752243094,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -5.474069172765924
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 30.075418011352596,
+                "earth": 0.7977313095855368,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -9.498750130099106
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.994598480696101,
+                "earth": 1721.8847986470741,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -5.475746108256692
+              }
+            },
+            "distance": 7.075202771755551,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 50.05849426145743
+          },
+          "features": {
+            "detrended_rms_m": 362.4412752243094,
+            "mean_elevation_m": 1715.608218660247,
+            "median_slope_deg": 0.7977313095855368,
+            "relief_m": 1721.8847986470741,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c04",
+          "latitude": 0.4988896889035925,
+          "longitude": 36.5,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "0.4988897,37.5000000",
+          "distance": 7.341039460363805,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 10.487397491209238,
+                "earth": 349.20019062302646,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -5.609116906753479
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 35.33811013231216,
+                "earth": 0.6914552357929544,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -10.296326063064265
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.065352735097116,
+                "earth": 1925.594189722148,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -4.918948892323577
+              }
+            },
+            "distance": 7.341039460363805,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 53.89086035861851
+          },
+          "features": {
+            "detrended_rms_m": 349.20019062302646,
+            "mean_elevation_m": 1293.565498054139,
+            "median_slope_deg": 0.6914552357929544,
+            "relief_m": 1925.594189722148,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c05",
+          "latitude": 0.4988896889035925,
+          "longitude": 37.5,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "1.4984451,35.5000000",
+          "distance": 7.92920914192626,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 9.919476388194257,
+                "earth": 364.2983398134799,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -5.455128702843112
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 44.06738050099406,
+                "earth": 0.5313443608866308,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -11.49791900749793
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.885500727218668,
+                "earth": 1836.308211034082,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -5.1629935291123505
+              }
+            },
+            "distance": 7.92920914192626,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 62.87235761640699
+          },
+          "features": {
+            "detrended_rms_m": 364.2983398134799,
+            "mean_elevation_m": 1320.469083447638,
+            "median_slope_deg": 0.5313443608866308,
+            "relief_m": 1836.308211034082,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c03",
+          "latitude": 1.4984450953063875,
+          "longitude": 35.5,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "1.4984451,34.5000000",
+          "distance": 8.688768069315842,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 9.771385945228923,
+                "earth": 368.305896032017,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -5.414255058240863
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 51.34656876537229,
+                "earth": 0.4096409467823709,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -12.411273355144381
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 14.376735851761325,
+                "earth": 1322.5080729733195,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -6.567359252795904
+              }
+            },
+            "distance": 8.688768069315842,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 75.49469056236254
+          },
+          "features": {
+            "detrended_rms_m": 368.305896032017,
+            "mean_elevation_m": 1408.7454224286982,
+            "median_slope_deg": 0.4096409467823709,
+            "relief_m": 1322.5080729733195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c02",
+          "latitude": 1.4984450953063875,
+          "longitude": 34.5,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "3.4992310,34.5000000",
+          "distance": 9.430542377434874,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.855752547875618,
+                "earth": 201.93794082889215,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.1110658584790825
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 53.073556628670396,
+                "earth": 0.3820592409850246,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -12.618267309183587
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 19.005820356048982,
+                "earth": 962.6374335599552,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.550990734211435
+              }
+            },
+            "distance": 9.430542377434874,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 88.935129532595
+          },
+          "features": {
+            "detrended_rms_m": 201.93794082889215,
+            "mean_elevation_m": 979.7716356228298,
+            "median_slope_deg": 0.3820592409850246,
+            "relief_m": 962.6374335599552,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c02",
+          "latitude": 3.499230993812349,
+          "longitude": 34.5,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "4.5010753,38.5000000",
+          "distance": 9.501932824605332,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 15.536051229908395,
+                "earth": 229.7882575936471,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -6.827016455943634
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 53.712164886857515,
+                "earth": 0.3719739375496121,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -12.693955044058276
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 21.03851128654636,
+                "earth": 818.6579986030438,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.944528548607468
+              }
+            },
+            "distance": 9.501932824605332,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 90.28672740331227
+          },
+          "features": {
+            "detrended_rms_m": 229.7882575936471,
+            "mean_elevation_m": 1220.5019259486603,
+            "median_slope_deg": 0.3719739375496121,
+            "relief_m": 818.6579986030438,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c06",
+          "latitude": 4.501075255701051,
+          "longitude": 38.5,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "4.5010753,33.5000000",
+          "distance": 9.541951374733706,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.786912216228806,
+                "earth": 203.36315415920066,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.096529901908849
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 56.370244767520575,
+                "earth": 0.3306263844538739,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.004258314204687
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 17.891679054033084,
+                "earth": 1044.833483269215,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.326324942431864
+              }
+            },
+            "distance": 9.541951374733706,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 91.04883603778248
+          },
+          "features": {
+            "detrended_rms_m": 203.36315415920066,
+            "mean_elevation_m": 822.1917191920693,
+            "median_slope_deg": 0.3306263844538739,
+            "relief_m": 1044.833483269215,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c01",
+          "latitude": 4.501075255701051,
+          "longitude": 33.5,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "2.4984569,34.5000000",
+          "distance": 9.612224231283372,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 15.427221049005682,
+                "earth": 232.13685449938032,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -6.803062776942239
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 57.345126327040134,
+                "earth": 0.31570684732147547,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.116225790261481
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 19.622507296425397,
+                "earth": 918.1758158094575,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.672517311109581
+              }
+            },
+            "distance": 9.612224231283372,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 92.39485467247121
+          },
+          "features": {
+            "detrended_rms_m": 232.13685449938032,
+            "mean_elevation_m": 1136.2775280673363,
+            "median_slope_deg": 0.31570684732147547,
+            "relief_m": 918.1758158094575,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c02",
+          "latitude": 2.4984569186487637,
+          "longitude": 34.5,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "4.5010753,34.5000000",
+          "distance": 9.735869383668446,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 15.981167317026262,
+                "earth": 220.26704930013452,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -6.924124634282574
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 59.92533298740205,
+                "earth": 0.27682064294961867,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.408057240413548
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 18.880652351424292,
+                "earth": 971.7493863240195,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.526085108093907
+              }
+            },
+            "distance": 9.735869383668446,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 94.78715265585261
+          },
+          "features": {
+            "detrended_rms_m": 220.26704930013452,
+            "mean_elevation_m": 723.3626326752122,
+            "median_slope_deg": 0.27682064294961867,
+            "relief_m": 971.7493863240195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c02",
+          "latitude": 4.501075255701051,
+          "longitude": 34.5,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "0.4988897,38.5000000",
+          "distance": 9.818453574230713,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 17.491684510126394,
+                "earth": 188.90735367559532,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.243966698596783
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 61.3854305003926,
+                "earth": 0.2551860290716521,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.570419724576606
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 17.524915578804862,
+                "earth": 1072.4486790066062,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.250844553320295
+              }
+            },
+            "distance": 9.818453574230713,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 96.40203058932386
+          },
+          "features": {
+            "detrended_rms_m": 188.90735367559532,
+            "mean_elevation_m": 553.9343379098387,
+            "median_slope_deg": 0.2551860290716521,
+            "relief_m": 1072.4486790066062,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c06",
+          "latitude": 0.4988896889035925,
+          "longitude": 38.5,
+          "rank": 10
+        },
+        {
+          "coordinate_key": "3.4992310,33.5000000",
+          "distance": 9.831939384578302,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.059555588845466,
+                "earth": 218.60408797038852,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -6.941085417032152
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 59.390895751907244,
+                "earth": 0.2848053158512191,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.34813422376782
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 21.216580721269242,
+                "earth": 806.3833111296411,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.978078851691535
+              }
+            },
+            "distance": 9.831939384578302,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 96.66703206202196
+          },
+          "features": {
+            "detrended_rms_m": 218.60408797038852,
+            "mean_elevation_m": 1117.2115983588471,
+            "median_slope_deg": 0.2848053158512191,
+            "relief_m": 806.3833111296411,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c01",
+          "latitude": 3.499230993812349,
+          "longitude": 33.5,
+          "rank": 11
+        },
+        {
+          "coordinate_key": "3.4992310,38.5000000",
+          "distance": 9.957726814181811,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.776826817652772,
+                "earth": 163.27807178024509,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.505363445760526
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 61.338384492778665,
+                "earth": 0.255879083670216,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.565218519372845
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 19.041111995444005,
+                "earth": 960.0737071239317,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -7.557998146753677
+              }
+            },
+            "distance": 9.957726814181811,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 99.15632330587545
+          },
+          "features": {
+            "detrended_rms_m": 163.27807178024509,
+            "mean_elevation_m": 863.3552299290023,
+            "median_slope_deg": 0.255879083670216,
+            "relief_m": 960.0737071239317,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c06",
+          "latitude": 3.499230993812349,
+          "longitude": 38.5,
+          "rank": 12
+        },
+        {
+          "coordinate_key": "4.5010753,32.5000000",
+          "distance": 10.216188074789029,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.806223440806882,
+                "earth": 162.70225627596392,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.511236271241948
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 62.12453115560945,
+                "earth": 0.24433268356729446,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.651871427274298
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 23.439744183045207,
+                "earth": 657.2673256588625,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -8.385656357682183
+              }
+            },
+            "distance": 10.216188074789027,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 104.37049877946154
+          },
+          "features": {
+            "detrended_rms_m": 162.70225627596392,
+            "mean_elevation_m": 707.9765837993885,
+            "median_slope_deg": 0.24433268356729446,
+            "relief_m": 657.2673256588625,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c00",
+          "latitude": 4.501075255701051,
+          "longitude": 32.5,
+          "rank": 13
+        },
+        {
+          "coordinate_key": "3.4992310,32.5000000",
+          "distance": 10.301559822343041,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.771575856365207,
+                "earth": 163.38097405437978,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.504313930606556
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 61.21086187534544,
+                "earth": 0.25775901092897663,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -13.551110125227243
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 26.13969704160176,
+                "earth": 485.3870017089363,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -8.855455444233531
+              }
+            },
+            "distance": 10.301559822343041,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 106.1221347733124
+          },
+          "features": {
+            "detrended_rms_m": 163.38097405437978,
+            "mean_elevation_m": 929.9931370376057,
+            "median_slope_deg": 0.25775901092897663,
+            "relief_m": 485.3870017089363,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c00",
+          "latitude": 3.499230993812349,
+          "longitude": 32.5,
+          "rank": 14
+        },
+        {
+          "coordinate_key": "1.4984451,38.5000000",
+          "distance": 10.64477498449266,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.104096987333165,
+                "earth": 119.00586306365513,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.956902095790767
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 68.73961960681945,
+                "earth": 0.14993241083938413,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -14.360322378709272
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 23.467517876328102,
+                "earth": 655.4502490530457,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -8.390622958337737
+              }
+            },
+            "distance": 10.64477498449266,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 113.31123447048071
+          },
+          "features": {
+            "detrended_rms_m": 119.00586306365513,
+            "mean_elevation_m": 458.0980461695662,
+            "median_slope_deg": 0.14993241083938413,
+            "relief_m": 655.4502490530457,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c06",
+          "latitude": 1.4984450953063875,
+          "longitude": 38.5,
+          "rank": 15
+        },
+        {
+          "coordinate_key": "2.4984569,38.5000000",
+          "distance": 10.820634459623196,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.151899323566486,
+                "earth": 118.12280978501022,
+                "earth_iqr": 98.04744004444575,
+                "reference": 899.1597442402251,
+                "scaled_difference": -7.965908483700994
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 69.64910019964152,
+                "earth": 0.13731545666615788,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.063428816292794,
+                "scaled_difference": -14.45500953299321
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 26.28513058557699,
+                "earth": 476.3867195554266,
+                "earth_iqr": 365.859212736338,
+                "reference": 3725.236958957934,
+                "scaled_difference": -8.880055841982694
+              }
+            },
+            "distance": 10.820634459623196,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 117.086130108785
+          },
+          "features": {
+            "detrended_rms_m": 118.12280978501022,
+            "mean_elevation_m": 517.5471287732726,
+            "median_slope_deg": 0.13731545666615788,
+            "relief_m": 476.3867195554266,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c06",
+          "latitude": 2.4984569186487637,
+          "longitude": 38.5,
+          "rank": 16
+        }
+      ],
+      "reference": {
+        "body": "mars",
+        "features": {
+          "detrended_rms_m": 899.1597442402251,
+          "mean_elevation_m": -1632.2260701131054,
+          "median_slope_deg": 2.063428816292794,
+          "relief_m": 3725.236958957934,
+          "valid_cells": 121
+        },
+        "id": "mars-gale",
+        "latitude": -5.4,
+        "longitude": 137.8,
+        "name": "Gale regional window",
+        "source_sha256": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 43.229500823785,
+            "median_slope_deg": 0.11678790847796,
+            "relief_m": 266.06536787696507
+          },
+          "range_diagnostics": {
+            "catalog_size": 9,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 364.2983398134799,
+                "earth_min": 118.12280978501022,
+                "position": "above",
+                "reference": 899.1597442402251
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "above",
+                "reference": 2.063428816292794
+              },
+              "relief_m": {
+                "earth_max": 1836.308211034082,
+                "earth_min": 476.3867195554266,
+                "position": "above",
+                "reference": 3725.236958957934
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r06-c06",
+            "east-africa-inland-water-gradient-shift-r06-c02",
+            "east-africa-inland-water-gradient-shift-r06-c00",
+            "east-africa-inland-water-gradient-shift-r05-c01",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r04-c02",
+            "east-africa-inland-water-gradient-shift-r03-c03",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r02-c04"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "0.4988897,36.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r02-c04"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 80.42575323102125,
+            "median_slope_deg": 0.13183890196971565,
+            "relief_m": 399.62327811876764
+          },
+          "range_diagnostics": {
+            "catalog_size": 8,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 368.305896032017,
+                "earth_min": 118.12280978501022,
+                "position": "above",
+                "reference": 899.1597442402251
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "above",
+                "reference": 2.063428816292794
+              },
+              "relief_m": {
+                "earth_max": 1721.8847986470741,
+                "earth_min": 476.3867195554266,
+                "position": "above",
+                "reference": 3725.236958957934
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r02-c04",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r03-c02",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r05-c00",
+            "east-africa-inland-water-gradient-shift-r05-c02",
+            "east-africa-inland-water-gradient-shift-r06-c01",
+            "east-africa-inland-water-gradient-shift-r06-c06"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "0.4988897,36.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r02-c04"
+        }
+      }
+    },
+    "mars-jezero": {
+      "range_diagnostics": {
+        "catalog_size": 16,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 368.305896032017,
+            "earth_min": 118.12280978501022,
+            "position": "within",
+            "reference": 233.33309304319212
+          },
+          "median_slope_deg": {
+            "earth_max": 0.7977313095855368,
+            "earth_min": 0.13731545666615788,
+            "position": "above",
+            "reference": 0.9326093973547247
+          },
+          "relief_m": {
+            "earth_max": 1925.594189722148,
+            "earth_min": 476.3867195554266,
+            "position": "above",
+            "reference": 2894.155395237171
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "0.4988897,37.5000000",
+          "distance": 1.973189126369245,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.46550728693007,
+                "earth": 349.20019062302646,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": 1.1817452605321546
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.0917956127058244,
+                "earth": 0.6914552357929544,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -1.8098029832325597
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.3361724287859293,
+                "earth": 1925.594189722148,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -2.6473604375599837
+              }
+            },
+            "distance": 1.973189126369245,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 3.893475328421824
+          },
+          "features": {
+            "detrended_rms_m": 349.20019062302646,
+            "mean_elevation_m": 1293.565498054139,
+            "median_slope_deg": 0.6914552357929544,
+            "relief_m": 1925.594189722148,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c05",
+          "latitude": 0.4988896889035925,
+          "longitude": 37.5,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "0.4988897,36.5000000",
+          "distance": 2.083680530547459,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.57798126347206,
+                "earth": 362.4412752243094,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": 1.316792994519708
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.3415345337643485,
+                "earth": 0.7977313095855368,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -1.012227050267402
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 3.4222087561461314,
+                "earth": 1721.8847986470741,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -3.204157653493098
+              }
+            },
+            "distance": 2.083680530547459,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 4.34172455338254
+          },
+          "features": {
+            "detrended_rms_m": 362.4412752243094,
+            "mean_elevation_m": 1715.608218660247,
+            "median_slope_deg": 0.7977313095855368,
+            "relief_m": 1721.8847986470741,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c04",
+          "latitude": 0.4988896889035925,
+          "longitude": 36.5,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "1.4984451,35.5000000",
+          "distance": 2.530672679029964,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.5947279626772056,
+                "earth": 364.2983398134799,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": 1.33573346444252
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 3.022835144388243,
+                "earth": 0.5313443608866308,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -3.011395927666226
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.7867411013232464,
+                "earth": 1836.308211034082,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -2.8914050743487567
+              }
+            },
+            "distance": 2.530672679029964,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 6.4043042083886945
+          },
+          "features": {
+            "detrended_rms_m": 364.2983398134799,
+            "mean_elevation_m": 1320.469083447638,
+            "median_slope_deg": 0.5313443608866308,
+            "relief_m": 1836.308211034082,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c03",
+          "latitude": 1.4984450953063875,
+          "longitude": 35.5,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "1.4984451,34.5000000",
+          "distance": 3.4521664022015064,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.6316823775575333,
+                "earth": 368.305896032017,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": 1.3766071090447702
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 5.13455490785564,
+                "earth": 0.4096409467823709,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -3.9247502753126753
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 6.151215583075718,
+                "earth": 1322.5080729733195,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -4.2957707980323105
+              }
+            },
+            "distance": 3.4521664022015064,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 11.917452868488892
+          },
+          "features": {
+            "detrended_rms_m": 368.305896032017,
+            "mean_elevation_m": 1408.7454224286982,
+            "median_slope_deg": 0.4096409467823709,
+            "relief_m": 1322.5080729733195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c02",
+          "latitude": 1.4984450953063875,
+          "longitude": 34.5,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "3.4992310,34.5000000",
+          "distance": 3.8749593205983275,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.034176801284636675,
+                "earth": 201.93794082889215,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.3202036911934496
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 5.690436792260859,
+                "earth": 0.3820592409850246,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -4.131744229351882
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.290696142746357,
+                "earth": 962.6374335599552,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.279402279447842
+              }
+            },
+            "distance": 3.874959320598328,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 15.015309736291854
+          },
+          "features": {
+            "detrended_rms_m": 201.93794082889215,
+            "mean_elevation_m": 979.7716356228298,
+            "median_slope_deg": 0.3820592409850246,
+            "relief_m": 962.6374335599552,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c02",
+          "latitude": 3.499230993812349,
+          "longitude": 34.5,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "4.5010753,33.5000000",
+          "distance": 3.9180660778692746,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.031144254663229884,
+                "earth": 203.36315415920066,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.3056677346232174
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 6.803310549298369,
+                "earth": 0.3306263844538739,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -4.517735234372982
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.516786986588324,
+                "earth": 1044.833483269215,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.054736487668271
+              }
+            },
+            "distance": 3.9180660778692746,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 15.351241790549922
+          },
+          "features": {
+            "detrended_rms_m": 203.36315415920066,
+            "mean_elevation_m": 822.1917191920693,
+            "median_slope_deg": 0.3306263844538739,
+            "relief_m": 1044.833483269215,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c01",
+          "latitude": 4.501075255701051,
+          "longitude": 33.5,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "4.5010753,38.5000000",
+          "distance": 4.0778278602921745,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.0004357108627887065,
+                "earth": 229.7882575936471,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.036154288658001826
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 5.900827911198484,
+                "earth": 0.3719739375496121,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -4.20743196422657
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 10.72741643611378,
+                "earth": 818.6579986030438,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.672940093843874
+              }
+            },
+            "distance": 4.0778278602921745,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 16.628680058175053
+          },
+          "features": {
+            "detrended_rms_m": 229.7882575936471,
+            "mean_elevation_m": 1220.5019259486603,
+            "median_slope_deg": 0.3719739375496121,
+            "relief_m": 818.6579986030438,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c06",
+          "latitude": 4.501075255701051,
+          "longitude": 38.5,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "2.4984569,34.5000000",
+          "distance": 4.107080412862142,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 4.9618291997625784e-05,
+                "earth": 232.13685449938032,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.0122006096566064
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 7.144715728986937,
+                "earth": 0.31570684732147547,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -4.629702710429775
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.723344170436926,
+                "earth": 918.1758158094575,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.400928856345987
+              }
+            },
+            "distance": 4.107080412862142,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 16.868109517715858
+          },
+          "features": {
+            "detrended_rms_m": 232.13685449938032,
+            "mean_elevation_m": 1136.2775280673363,
+            "median_slope_deg": 0.31570684732147547,
+            "relief_m": 918.1758158094575,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c02",
+          "latitude": 2.4984569186487637,
+          "longitude": 34.5,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "0.4988897,38.5000000",
+          "distance": 4.116807019432952,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.06843457209823271,
+                "earth": 188.90735367559532,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.45310453131115136
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 8.615335031482822,
+                "earth": 0.2551860290716521,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -5.083896644744901
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.26433043167137,
+                "earth": 1072.4486790066062,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -4.979256098556702
+              }
+            },
+            "distance": 4.116807019432952,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 16.948100035252423
+          },
+          "features": {
+            "detrended_rms_m": 188.90735367559532,
+            "mean_elevation_m": 553.9343379098387,
+            "median_slope_deg": 0.2551860290716521,
+            "relief_m": 1072.4486790066062,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c06",
+          "latitude": 0.4988896889035925,
+          "longitude": 38.5,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "4.5010753,34.5000000",
+          "distance": 4.157282464092122,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.005919628370037022,
+                "earth": 220.26704930013452,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.13326246699694205
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 8.07383283125801,
+                "earth": 0.27682064294961867,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -4.921534160581843
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.203245026619824,
+                "earth": 971.7493863240195,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.254496653330314
+              }
+            },
+            "distance": 4.157282464092122,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 17.282997486247872
+          },
+          "features": {
+            "detrended_rms_m": 220.26704930013452,
+            "mean_elevation_m": 723.3626326752122,
+            "median_slope_deg": 0.27682064294961867,
+            "relief_m": 971.7493863240195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c02",
+          "latitude": 4.501075255701051,
+          "longitude": 34.5,
+          "rank": 10
+        },
+        {
+          "coordinate_key": "3.4992310,38.5000000",
+          "distance": 4.252441921066253,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.17017069231408613,
+                "earth": 163.27807178024509,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.7145012784748943
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 8.597715789205322,
+                "earth": 0.255879083670216,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -5.078695439541139
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.315375810522232,
+                "earth": 960.0737071239317,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.286409691990084
+              }
+            },
+            "distance": 4.252441921066253,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 18.083262292041642
+          },
+          "features": {
+            "detrended_rms_m": 163.27807178024509,
+            "mean_elevation_m": 863.3552299290023,
+            "median_slope_deg": 0.255879083670216,
+            "relief_m": 960.0737071239317,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c06",
+          "latitude": 3.499230993812349,
+          "longitude": 38.5,
+          "rank": 11
+        },
+        {
+          "coordinate_key": "3.4992310,33.5000000",
+          "distance": 4.329043874030347,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.007522341588134986,
+                "earth": 218.60408797038852,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.1502232497465188
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 7.878420971614605,
+                "earth": 0.2848053158512191,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -4.8616111439361145
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 10.854677550076937,
+                "earth": 806.3833111296411,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -5.706490396927942
+              }
+            },
+            "distance": 4.329043874030347,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 18.740620863279677
+          },
+          "features": {
+            "detrended_rms_m": 218.60408797038852,
+            "mean_elevation_m": 1117.2115983588471,
+            "median_slope_deg": 0.2848053158512191,
+            "relief_m": 806.3833111296411,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c01",
+          "latitude": 3.499230993812349,
+          "longitude": 33.5,
+          "rank": 12
+        },
+        {
+          "coordinate_key": "4.5010753,32.5000000",
+          "distance": 4.639740966964215,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.1729796165502883,
+                "earth": 162.70225627596392,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.7203741039563158
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 8.893607850142638,
+                "earth": 0.24433268356729446,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -5.165348347442592
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 12.460608773833103,
+                "earth": 657.2673256588625,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -6.114067902918589
+              }
+            },
+            "distance": 4.639740966964215,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 21.52719624052603
+          },
+          "features": {
+            "detrended_rms_m": 162.70225627596392,
+            "mean_elevation_m": 707.9765837993885,
+            "median_slope_deg": 0.24433268356729446,
+            "relief_m": 657.2673256588625,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c00",
+          "latitude": 4.501075255701051,
+          "longitude": 32.5,
+          "rank": 13
+        },
+        {
+          "coordinate_key": "3.4992310,32.5000000",
+          "distance": 4.8133965794785,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.16967113952857837,
+                "earth": 163.38097405437978,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -0.7134517633209235
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 8.550013980129437,
+                "earth": 0.25775901092897663,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -5.064587045395538
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 14.449101511677307,
+                "earth": 485.3870017089363,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -6.583866989469937
+              }
+            },
+            "distance": 4.8133965794785,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 23.168786631335323
+          },
+          "features": {
+            "detrended_rms_m": 163.38097405437978,
+            "mean_elevation_m": 929.9931370376057,
+            "median_slope_deg": 0.25775901092897663,
+            "relief_m": 485.3870017089363,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c00",
+          "latitude": 3.499230993812349,
+          "longitude": 32.5,
+          "rank": 14
+        },
+        {
+          "coordinate_key": "1.4984451,38.5000000",
+          "distance": 4.943134989534938,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.45321637162275313,
+                "earth": 119.00586306365513,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -1.1660399285051346
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 11.500506067831525,
+                "earth": 0.14993241083938413,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -5.873799298877565
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 12.480861085310293,
+                "earth": 655.4502490530457,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -6.119034503574144
+              }
+            },
+            "distance": 4.943134989534938,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 24.43458352476457
+          },
+          "features": {
+            "detrended_rms_m": 119.00586306365513,
+            "mean_elevation_m": 458.0980461695662,
+            "median_slope_deg": 0.14993241083938413,
+            "relief_m": 655.4502490530457,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c06",
+          "latitude": 1.4984450953063875,
+          "longitude": 38.5,
+          "rank": 15
+        },
+        {
+          "coordinate_key": "2.4984569,38.5000000",
+          "distance": 5.18573060089679,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.460244615240436,
+                "earth": 118.12280978501022,
+                "earth_iqr": 98.04744004444575,
+                "reference": 233.33309304319212,
+                "scaled_difference": -1.1750463164153606
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 11.874276847190798,
+                "earth": 0.13731545666615788,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.9326093973547247,
+                "scaled_difference": -5.968486453161504
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 14.557280402646144,
+                "earth": 476.3867195554266,
+                "earth_iqr": 365.859212736338,
+                "reference": 2894.155395237171,
+                "scaled_difference": -6.6084673872190995
+              }
+            },
+            "distance": 5.18573060089679,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 26.89180186507738
+          },
+          "features": {
+            "detrended_rms_m": 118.12280978501022,
+            "mean_elevation_m": 517.5471287732726,
+            "median_slope_deg": 0.13731545666615788,
+            "relief_m": 476.3867195554266,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c06",
+          "latitude": 2.4984569186487637,
+          "longitude": 38.5,
+          "rank": 16
+        }
+      ],
+      "reference": {
+        "body": "mars",
+        "features": {
+          "detrended_rms_m": 233.33309304319212,
+          "mean_elevation_m": -2203.208614059368,
+          "median_slope_deg": 0.9326093973547247,
+          "relief_m": 2894.155395237171,
+          "valid_cells": 121
+        },
+        "id": "mars-jezero",
+        "latitude": 18.38,
+        "longitude": 77.58,
+        "name": "Jezero regional window",
+        "source_sha256": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 43.229500823785,
+            "median_slope_deg": 0.11678790847796,
+            "relief_m": 266.06536787696507
+          },
+          "range_diagnostics": {
+            "catalog_size": 9,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 364.2983398134799,
+                "earth_min": 118.12280978501022,
+                "position": "within",
+                "reference": 233.33309304319212
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "above",
+                "reference": 0.9326093973547247
+              },
+              "relief_m": {
+                "earth_max": 1836.308211034082,
+                "earth_min": 476.3867195554266,
+                "position": "above",
+                "reference": 2894.155395237171
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r06-c06",
+            "east-africa-inland-water-gradient-shift-r06-c02",
+            "east-africa-inland-water-gradient-shift-r06-c00",
+            "east-africa-inland-water-gradient-shift-r05-c01",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r04-c02",
+            "east-africa-inland-water-gradient-shift-r03-c03",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r02-c04"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "0.4988897,36.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r02-c04"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 80.42575323102125,
+            "median_slope_deg": 0.13183890196971565,
+            "relief_m": 399.62327811876764
+          },
+          "range_diagnostics": {
+            "catalog_size": 8,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 368.305896032017,
+                "earth_min": 118.12280978501022,
+                "position": "within",
+                "reference": 233.33309304319212
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "above",
+                "reference": 0.9326093973547247
+              },
+              "relief_m": {
+                "earth_max": 1721.8847986470741,
+                "earth_min": 476.3867195554266,
+                "position": "above",
+                "reference": 2894.155395237171
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r02-c04",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r03-c02",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r05-c00",
+            "east-africa-inland-water-gradient-shift-r05-c02",
+            "east-africa-inland-water-gradient-shift-r06-c01",
+            "east-africa-inland-water-gradient-shift-r06-c06"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "0.4988897,36.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r02-c04"
+        }
+      }
+    },
+    "moon-tranquillitatis": {
+      "range_diagnostics": {
+        "catalog_size": 16,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 368.305896032017,
+            "earth_min": 118.12280978501022,
+            "position": "within",
+            "reference": 250.844449708464
+          },
+          "median_slope_deg": {
+            "earth_max": 0.7977313095855368,
+            "earth_min": 0.13731545666615788,
+            "position": "within",
+            "reference": 0.5772313545520281
+          },
+          "relief_m": {
+            "earth_max": 1925.594189722148,
+            "earth_min": 476.3867195554266,
+            "position": "within",
+            "reference": 1395.3118712587225
+          }
+        },
+        "interpretation": "The reference lies within each separate observed Earth descriptor range. This does not establish a close multivariate match or validate a planetary analog.",
+        "outside_features": [],
+        "status": "within_observed_feature_ranges"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "1.4984451,35.5000000",
+          "distance": 0.9849649659874228,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.4463186249418903,
+                "earth": 364.2983398134799,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": 1.157132609006276
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.039530384059458114,
+                "earth": 0.5313443608866308,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -0.34437066103019626
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.4843069752212565,
+                "earth": 1836.308211034082,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": 1.2053716960605012
+              }
+            },
+            "distance": 0.9849649659874228,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 0.9701559842226049
+          },
+          "features": {
+            "detrended_rms_m": 364.2983398134799,
+            "mean_elevation_m": 1320.469083447638,
+            "median_slope_deg": 0.5313443608866308,
+            "relief_m": 1836.308211034082,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c03",
+          "latitude": 1.4984450953063875,
+          "longitude": 35.5,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "1.4984451,34.5000000",
+          "distance": 1.0094040823121744,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.4784063278950452,
+                "earth": 368.305896032017,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": 1.1980062536085259
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.5272907324835564,
+                "earth": 0.4096409467823709,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -1.257725008676646
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.01319954100988136,
+                "earth": 1322.5080729733195,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -0.19899402762305224
+              }
+            },
+            "distance": 1.0094040823121744,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1.018896601388483
+          },
+          "features": {
+            "detrended_rms_m": 368.305896032017,
+            "mean_elevation_m": 1408.7454224286982,
+            "median_slope_deg": 0.4096409467823709,
+            "relief_m": 1322.5080729733195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c02",
+          "latitude": 1.4984450953063875,
+          "longitude": 34.5,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "3.4992310,34.5000000",
+          "distance": 1.1243977217613916,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.08293532524615145,
+                "earth": 201.93794082889215,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.49880454662969376
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.7151338799131332,
+                "earth": 0.3820592409850246,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -1.4647189627158512
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.4662010315429233,
+                "earth": 962.6374335599552,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -1.182625509038584
+              }
+            },
+            "distance": 1.1243977217613916,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1.264270236702208
+          },
+          "features": {
+            "detrended_rms_m": 201.93794082889215,
+            "mean_elevation_m": 979.7716356228298,
+            "median_slope_deg": 0.3820592409850246,
+            "relief_m": 962.6374335599552,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c02",
+          "latitude": 3.499230993812349,
+          "longitude": 34.5,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "0.4988897,37.5000000",
+          "distance": 1.1316560794648,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.3354328991584092,
+                "earth": 349.20019062302646,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": 1.0031444050959102
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.24494334772115303,
+                "earth": 0.6914552357929544,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": 0.8572222834034701
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.7002692353100796,
+                "earth": 1925.594189722148,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": 1.4494163328492744
+              }
+            },
+            "distance": 1.1316560794648,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 1.2806454821896418
+          },
+          "features": {
+            "detrended_rms_m": 349.20019062302646,
+            "mean_elevation_m": 1293.565498054139,
+            "median_slope_deg": 0.6914552357929544,
+            "relief_m": 1925.594189722148,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c05",
+          "latitude": 0.4988896889035925,
+          "longitude": 37.5,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "4.5010753,33.5000000",
+          "distance": 1.23522336332207,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.07817202243939296,
+                "earth": 203.36315415920066,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.4842685900594616
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.141709128226971,
+                "earth": 0.3306263844538739,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -1.8507099677369527
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.3058956066303226,
+                "earth": 1044.833483269215,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -0.9579597172590129
+              }
+            },
+            "distance": 1.23522336332207,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1.5257767572966865
+          },
+          "features": {
+            "detrended_rms_m": 203.36315415920066,
+            "mean_elevation_m": 822.1917191920693,
+            "median_slope_deg": 0.3306263844538739,
+            "relief_m": 1044.833483269215,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c01",
+          "latitude": 4.501075255701051,
+          "longitude": 33.5,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "0.4988897,36.5000000",
+          "distance": 1.2689375306731179,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.43182711515713046,
+                "earth": 362.4412752243094,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": 1.138192139083464
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.9127857122989308,
+                "earth": 0.7977313095855368,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": 1.654798216368628
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.2655896292947287,
+                "earth": 1721.8847986470741,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": 0.8926191169161604
+              }
+            },
+            "distance": 1.2689375306731179,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1.61020245675079
+          },
+          "features": {
+            "detrended_rms_m": 362.4412752243094,
+            "mean_elevation_m": 1715.608218660247,
+            "median_slope_deg": 0.7977313095855368,
+            "relief_m": 1721.8847986470741,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c04",
+          "latitude": 0.4988896889035925,
+          "longitude": 36.5,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "4.5010753,38.5000000",
+          "distance": 1.2784448088774614,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.015373257304980126,
+                "earth": 229.7882575936471,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.21475514409424604
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 0.7909509313272641,
+                "earth": 0.3719739375496121,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -1.5404066975905397
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.8280969407134845,
+                "earth": 818.6579986030438,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -1.576163323434616
+              }
+            },
+            "distance": 1.2784448088774614,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 1.6344211293457287
+          },
+          "features": {
+            "detrended_rms_m": 229.7882575936471,
+            "mean_elevation_m": 1220.5019259486603,
+            "median_slope_deg": 0.3719739375496121,
+            "relief_m": 818.6579986030438,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c06",
+          "latitude": 4.501075255701051,
+          "longitude": 38.5,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "2.4984569,34.5000000",
+          "distance": 1.3649567283387234,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.012135066360526095,
+                "earth": 232.13685449938032,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.1908014650928506
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.2840342494589176,
+                "earth": 0.31570684732147547,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -1.962677443793746
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.5669375544177078,
+                "earth": 918.1758158094575,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -1.3041520859367297
+              }
+            },
+            "distance": 1.3649567283387234,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 1.8631068702371516
+          },
+          "features": {
+            "detrended_rms_m": 232.13685449938032,
+            "mean_elevation_m": 1136.2775280673363,
+            "median_slope_deg": 0.31570684732147547,
+            "relief_m": 918.1758158094575,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c02",
+          "latitude": 2.4984569186487637,
+          "longitude": 34.5,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "4.5010753,34.5000000",
+          "distance": 1.4742664178126677,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.032419577293021834,
+                "earth": 220.26704930013452,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.31186332243318626
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.6942701176269255,
+                "earth": 0.27682064294961867,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -2.2545088939458138
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.44677177577024785,
+                "earth": 971.7493863240195,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -1.157719882921056
+              }
+            },
+            "distance": 1.4742664178126677,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 2.1734614706901954
+          },
+          "features": {
+            "detrended_rms_m": 220.26704930013452,
+            "mean_elevation_m": 723.3626326752122,
+            "median_slope_deg": 0.27682064294961867,
+            "relief_m": 971.7493863240195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c02",
+          "latitude": 4.501075255701051,
+          "longitude": 34.5,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "0.4988897,38.5000000",
+          "distance": 1.5296065636381921,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.13301723188189218,
+                "earth": 188.90735367559532,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.6317053867473955
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.9470890861072923,
+                "earth": 0.2551860290716521,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -2.4168713781088718
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.2595899215358546,
+                "earth": 1072.4486790066062,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -0.8824793281474438
+              }
+            },
+            "distance": 1.5296065636381921,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 2.339696239525039
+          },
+          "features": {
+            "detrended_rms_m": 188.90735367559532,
+            "mean_elevation_m": 553.9343379098387,
+            "median_slope_deg": 0.2551860290716521,
+            "relief_m": 1072.4486790066062,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c06",
+          "latitude": 0.4988896889035925,
+          "longitude": 38.5,
+          "rank": 10
+        },
+        {
+          "coordinate_key": "3.4992310,33.5000000",
+          "distance": 1.582772927954203,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.03604176404974826,
+                "earth": 218.60408797038852,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.328824105182763
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.6054023909483286,
+                "earth": 0.2848053158512191,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -2.1945858773000855
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.8637259864666444,
+                "earth": 806.3833111296411,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -1.609713626518684
+              }
+            },
+            "distance": 1.5827729279542033,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 2.5051701414647214
+          },
+          "features": {
+            "detrended_rms_m": 218.60408797038852,
+            "mean_elevation_m": 1117.2115983588471,
+            "median_slope_deg": 0.2848053158512191,
+            "relief_m": 806.3833111296411,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c01",
+          "latitude": 3.499230993812349,
+          "longitude": 33.5,
+          "rank": 11
+        },
+        {
+          "coordinate_key": "3.4992310,38.5000000",
+          "distance": 1.6359513982782536,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.26587714053220973,
+                "earth": 163.27807178024509,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.8931021339111385
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.9387176742933867,
+                "earth": 0.255879083670216,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -2.4116701729051093
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 0.47174216270297736,
+                "earth": 960.0737071239317,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -1.1896329215808261
+              }
+            },
+            "distance": 1.6359513982782539,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 2.6763369775285737
+          },
+          "features": {
+            "detrended_rms_m": 163.27807178024509,
+            "mean_elevation_m": 863.3552299290023,
+            "median_slope_deg": 0.255879083670216,
+            "relief_m": 960.0737071239317,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c06",
+          "latitude": 3.499230993812349,
+          "longitude": 38.5,
+          "rank": 12
+        },
+        {
+          "coordinate_key": "4.5010753,32.5000000",
+          "distance": 1.9252045525091988,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.2693853258716183,
+                "earth": 162.70225627596392,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.89897495939256
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 2.0805394053635977,
+                "earth": 0.24433268356729446,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -2.4983230808065624
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 1.356487837766928,
+                "earth": 657.2673256588625,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -2.017291132509332
+              }
+            },
+            "distance": 1.9252045525091988,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 3.7064125690021443
+          },
+          "features": {
+            "detrended_rms_m": 162.70225627596392,
+            "mean_elevation_m": 707.9765837993885,
+            "median_slope_deg": 0.24433268356729446,
+            "relief_m": 657.2673256588625,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c00",
+          "latitude": 4.501075255701051,
+          "longitude": 32.5,
+          "rank": 13
+        },
+        {
+          "coordinate_key": "3.4992310,32.5000000",
+          "distance": 2.0599092306334987,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.26525262487717355,
+                "earth": 163.38097405437978,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -0.8920526187571677
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 1.9161008276561542,
+                "earth": 0.25775901092897663,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -2.3975617787595094
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.0618725859157645,
+                "earth": 485.3870017089363,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -2.4870902190606783
+              }
+            },
+            "distance": 2.0599092306334987,
+            "largest_numerical_contributor": "relief_m",
+            "squared_distance": 4.243226038449092
+          },
+          "features": {
+            "detrended_rms_m": 163.38097405437978,
+            "mean_elevation_m": 929.9931370376057,
+            "median_slope_deg": 0.25775901092897663,
+            "relief_m": 485.3870017089363,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c00",
+          "latitude": 3.499230993812349,
+          "longitude": 32.5,
+          "rank": 14
+        },
+        {
+          "coordinate_key": "1.4984451,38.5000000",
+          "distance": 2.322425805850591,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.6026862792794953,
+                "earth": 119.00586306365513,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -1.3446407839413788
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 3.4277998979528785,
+                "earth": 0.14993241083938413,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -3.2067740322415355
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 1.3631754464483947,
+                "earth": 655.4502490530457,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -2.0222577331648863
+              }
+            },
+            "distance": 2.322425805850591,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 5.393661623680768
+          },
+          "features": {
+            "detrended_rms_m": 119.00586306365513,
+            "mean_elevation_m": 458.0980461695662,
+            "median_slope_deg": 0.14993241083938413,
+            "relief_m": 655.4502490530457,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c06",
+          "latitude": 1.4984450953063875,
+          "longitude": 38.5,
+          "rank": 15
+        },
+        {
+          "coordinate_key": "2.4984569,38.5000000",
+          "distance": 2.519298605205203,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 0.610786888620616,
+                "earth": 118.12280978501022,
+                "earth_iqr": 98.04744004444575,
+                "reference": 250.844449708464,
+                "scaled_difference": -1.3536471718516048
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 3.633215322044732,
+                "earth": 0.13731545666615788,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 0.5772313545520281,
+                "scaled_difference": -3.301461186525475
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.1028632515235333,
+                "earth": 476.3867195554266,
+                "earth_iqr": 365.859212736338,
+                "reference": 1395.3118712587225,
+                "scaled_difference": -2.511690616809841
+              }
+            },
+            "distance": 2.5192986052052033,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 6.346865462188882
+          },
+          "features": {
+            "detrended_rms_m": 118.12280978501022,
+            "mean_elevation_m": 517.5471287732726,
+            "median_slope_deg": 0.13731545666615788,
+            "relief_m": 476.3867195554266,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c06",
+          "latitude": 2.4984569186487637,
+          "longitude": 38.5,
+          "rank": 16
+        }
+      ],
+      "reference": {
+        "body": "moon",
+        "features": {
+          "detrended_rms_m": 250.844449708464,
+          "mean_elevation_m": -1648.7492149029613,
+          "median_slope_deg": 0.5772313545520281,
+          "relief_m": 1395.3118712587225,
+          "valid_cells": 121
+        },
+        "id": "moon-tranquillitatis",
+        "latitude": 0.674,
+        "longitude": 23.473,
+        "name": "Mare Tranquillitatis regional window",
+        "source_sha256": "972d66d7f330abca62abc21aae270661516c00dd1a881ec102b94df9563656b5"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 43.229500823785,
+            "median_slope_deg": 0.11678790847796,
+            "relief_m": 266.06536787696507
+          },
+          "range_diagnostics": {
+            "catalog_size": 9,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 364.2983398134799,
+                "earth_min": 118.12280978501022,
+                "position": "within",
+                "reference": 250.844449708464
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "within",
+                "reference": 0.5772313545520281
+              },
+              "relief_m": {
+                "earth_max": 1836.308211034082,
+                "earth_min": 476.3867195554266,
+                "position": "within",
+                "reference": 1395.3118712587225
+              }
+            },
+            "interpretation": "The reference lies within each separate observed Earth descriptor range. This does not establish a close multivariate match or validate a planetary analog.",
+            "outside_features": [],
+            "status": "within_observed_feature_ranges"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r06-c06",
+            "east-africa-inland-water-gradient-shift-r06-c02",
+            "east-africa-inland-water-gradient-shift-r06-c00",
+            "east-africa-inland-water-gradient-shift-r05-c01",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r04-c02",
+            "east-africa-inland-water-gradient-shift-r03-c03",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r02-c04"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "4.5010753,38.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r06-c06"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 80.42575323102125,
+            "median_slope_deg": 0.13183890196971565,
+            "relief_m": 399.62327811876764
+          },
+          "range_diagnostics": {
+            "catalog_size": 8,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 368.305896032017,
+                "earth_min": 118.12280978501022,
+                "position": "within",
+                "reference": 250.844449708464
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "within",
+                "reference": 0.5772313545520281
+              },
+              "relief_m": {
+                "earth_max": 1721.8847986470741,
+                "earth_min": 476.3867195554266,
+                "position": "within",
+                "reference": 1395.3118712587225
+              }
+            },
+            "interpretation": "The reference lies within each separate observed Earth descriptor range. This does not establish a close multivariate match or validate a planetary analog.",
+            "outside_features": [],
+            "status": "within_observed_feature_ranges"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r02-c04",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r03-c02",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r05-c00",
+            "east-africa-inland-water-gradient-shift-r05-c02",
+            "east-africa-inland-water-gradient-shift-r06-c01",
+            "east-africa-inland-water-gradient-shift-r06-c06"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "3.4992310,34.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r05-c02"
+        }
+      }
+    },
+    "moon-tycho": {
+      "range_diagnostics": {
+        "catalog_size": 16,
+        "descriptors": {
+          "detrended_rms_m": {
+            "earth_max": 368.305896032017,
+            "earth_min": 118.12280978501022,
+            "position": "above",
+            "reference": 901.4829584393207
+          },
+          "median_slope_deg": {
+            "earth_max": 0.7977313095855368,
+            "earth_min": 0.13731545666615788,
+            "position": "above",
+            "reference": 2.0807141194634022
+          },
+          "relief_m": {
+            "earth_max": 1925.594189722148,
+            "earth_min": 476.3867195554266,
+            "position": "above",
+            "reference": 2827.020419980859
+          }
+        },
+        "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+        "outside_features": [
+          "relief_m",
+          "median_slope_deg",
+          "detrended_rms_m"
+        ],
+        "status": "insufficient_catalog_evidence"
+      },
+      "ranking": [
+        {
+          "coordinate_key": "0.4988897,36.5000000",
+          "distance": 6.634688123267653,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 10.075136222825233,
+                "earth": 362.4412752243094,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -5.497763969876817
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 30.90249166965282,
+                "earth": 0.7977313095855368,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -9.62847210147895
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 3.041458600550781,
+                "earth": 1721.8847986470741,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -3.020658173586072
+              }
+            },
+            "distance": 6.634688123267652,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 44.01908649302884
+          },
+          "features": {
+            "detrended_rms_m": 362.4412752243094,
+            "mean_elevation_m": 1715.608218660247,
+            "median_slope_deg": 0.7977313095855368,
+            "relief_m": 1721.8847986470741,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c04",
+          "latitude": 0.4988896889035925,
+          "longitude": 36.5,
+          "rank": 1
+        },
+        {
+          "coordinate_key": "0.4988897,37.5000000",
+          "distance": 6.988124596446314,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 10.576189230397144,
+                "earth": 349.20019062302646,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -5.632811703864371
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 36.23415920551196,
+                "earth": 0.6914552357929544,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -10.42604803444411
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.02353693954885,
+                "earth": 1925.594189722148,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -2.4638609576529578
+              }
+            },
+            "distance": 6.988124596446314,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 48.83388537545795
+          },
+          "features": {
+            "detrended_rms_m": 349.20019062302646,
+            "mean_elevation_m": 1293.565498054139,
+            "median_slope_deg": 0.6914552357929544,
+            "relief_m": 1925.594189722148,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c05",
+          "latitude": 0.4988896889035925,
+          "longitude": 37.5,
+          "rank": 2
+        },
+        {
+          "coordinate_key": "1.4984451,35.5000000",
+          "distance": 7.584024753513901,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 10.005835647882753,
+                "earth": 364.2983398134799,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -5.4788234999540055
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 45.067344911225895,
+                "earth": 0.5313443608866308,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -11.627640978877775
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 2.4442509028029415,
+                "earth": 1836.308211034082,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -2.707905594441731
+              }
+            },
+            "distance": 7.584024753513901,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 57.51743146191159
+          },
+          "features": {
+            "detrended_rms_m": 364.2983398134799,
+            "mean_elevation_m": 1320.469083447638,
+            "median_slope_deg": 0.5313443608866308,
+            "relief_m": 1836.308211034082,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c03",
+          "latitude": 1.4984450953063875,
+          "longitude": 35.5,
+          "rank": 3
+        },
+        {
+          "coordinate_key": "1.4984451,34.5000000",
+          "distance": 8.241331563186023,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 9.857099543106726,
+                "earth": 368.305896032017,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -5.437949855351755
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 52.42552125996749,
+                "earth": 0.4096409467823709,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -12.540995326524225
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 5.636925131291954,
+                "earth": 1322.5080729733195,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -4.112271318125284
+              }
+            },
+            "distance": 8.241331563186023,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 67.91954593436617
+          },
+          "features": {
+            "detrended_rms_m": 368.305896032017,
+            "mean_elevation_m": 1408.7454224286982,
+            "median_slope_deg": 0.4096409467823709,
+            "relief_m": 1322.5080729733195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c02",
+          "latitude": 1.4984450953063875,
+          "longitude": 34.5,
+          "rank": 4
+        },
+        {
+          "coordinate_key": "3.4992310,34.5000000",
+          "distance": 8.932791009389371,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.968269870851564,
+                "earth": 201.93794082889215,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.134760655589975
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 54.17041023245338,
+                "earth": 0.3820592409850246,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -12.74798928056343
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.65607511412264,
+                "earth": 962.6374335599552,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.0959027995408155
+              }
+            },
+            "distance": 8.932791009389371,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 79.79475521742759
+          },
+          "features": {
+            "detrended_rms_m": 201.93794082889215,
+            "mean_elevation_m": 979.7716356228298,
+            "median_slope_deg": 0.3820592409850246,
+            "relief_m": 962.6374335599552,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c02",
+          "latitude": 3.499230993812349,
+          "longitude": 34.5,
+          "rank": 5
+        },
+        {
+          "coordinate_key": "4.5010753,38.5000000",
+          "distance": 8.972418758301155,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 15.644081557575975,
+                "earth": 229.7882575936471,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -6.850711253054527
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 54.81556406542531,
+                "earth": 0.3719739375496121,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -12.82367701543812
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 10.044652751313121,
+                "earth": 818.6579986030438,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.489440613936848
+              }
+            },
+            "distance": 8.972418758301153,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 80.5042983743144
+          },
+          "features": {
+            "detrended_rms_m": 229.7882575936471,
+            "mean_elevation_m": 1220.5019259486603,
+            "median_slope_deg": 0.3719739375496121,
+            "relief_m": 818.6579986030438,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c06",
+          "latitude": 4.501075255701051,
+          "longitude": 38.5,
+          "rank": 6
+        },
+        {
+          "coordinate_key": "4.5010753,33.5000000",
+          "distance": 9.072448914018688,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.89919992151026,
+                "earth": 203.36315415920066,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.120224699019742
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 57.50047938070771,
+                "earth": 0.3306263844538739,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.133980285584531
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 7.909649995260909,
+                "earth": 1044.833483269215,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -4.871237007761245
+              }
+            },
+            "distance": 9.072448914018688,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 82.30932929747888
+          },
+          "features": {
+            "detrended_rms_m": 203.36315415920066,
+            "mean_elevation_m": 822.1917191920693,
+            "median_slope_deg": 0.3306263844538739,
+            "relief_m": 1044.833483269215,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c01",
+          "latitude": 4.501075255701051,
+          "longitude": 33.5,
+          "rank": 7
+        },
+        {
+          "coordinate_key": "2.4984569,34.5000000",
+          "distance": 9.115578613508323,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 15.5348729916306,
+                "earth": 232.13685449938032,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -6.826757574053132
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 58.48504403471028,
+                "earth": 0.31570684732147547,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.245947761641325
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 9.073856432709418,
+                "earth": 918.1758158094575,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.217429376438962
+              }
+            },
+            "distance": 9.11557861350832,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 83.09377345905028
+          },
+          "features": {
+            "detrended_rms_m": 232.13685449938032,
+            "mean_elevation_m": 1136.2775280673363,
+            "median_slope_deg": 0.31570684732147547,
+            "relief_m": 918.1758158094575,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c02",
+          "latitude": 2.4984569186487637,
+          "longitude": 34.5,
+          "rank": 8
+        },
+        {
+          "coordinate_key": "4.5010753,34.5000000",
+          "distance": 9.260285689822263,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.090731617082877,
+                "earth": 220.26704930013452,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -6.947819431393467
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 61.09048866242177,
+                "earth": 0.27682064294961867,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.537779211793392
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.571670777622327,
+                "earth": 971.7493863240195,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.070997173423288
+              }
+            },
+            "distance": 9.260285689822263,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 85.75289105712697
+          },
+          "features": {
+            "detrended_rms_m": 220.26704930013452,
+            "mean_elevation_m": 723.3626326752122,
+            "median_slope_deg": 0.27682064294961867,
+            "relief_m": 971.7493863240195,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c02",
+          "latitude": 4.501075255701051,
+          "longitude": 34.5,
+          "rank": 9
+        },
+        {
+          "coordinate_key": "3.4992310,33.5000000",
+          "distance": 9.321376860348014,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 16.169387810439478,
+                "earth": 218.60408797038852,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -6.964780214143045
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 60.550869205693424,
+                "earth": 0.2848053158512191,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.477856195147664
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 10.167809556498513,
+                "earth": 806.3833111296411,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.522990917020916
+              }
+            },
+            "distance": 9.321376860348014,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 86.88806657263142
+          },
+          "features": {
+            "detrended_rms_m": 218.60408797038852,
+            "mean_elevation_m": 1117.2115983588471,
+            "median_slope_deg": 0.2848053158512191,
+            "relief_m": 806.3833111296411,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c01",
+          "latitude": 3.499230993812349,
+          "longitude": 33.5,
+          "rank": 10
+        },
+        {
+          "coordinate_key": "0.4988897,38.5000000",
+          "distance": 9.372158549853898,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 17.606301205397312,
+                "earth": 188.90735367559532,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.267661495707676
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 62.56462749642816,
+                "earth": 0.2551860290716521,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.70014169595645
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 7.666427181774059,
+                "earth": 1072.4486790066062,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -4.795756618649676
+              }
+            },
+            "distance": 9.372158549853898,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 87.83735588359953
+          },
+          "features": {
+            "detrended_rms_m": 188.90735367559532,
+            "mean_elevation_m": 553.9343379098387,
+            "median_slope_deg": 0.2551860290716521,
+            "relief_m": 1072.4486790066062,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r02-c06",
+          "latitude": 0.4988896889035925,
+          "longitude": 38.5,
+          "rank": 11
+        },
+        {
+          "coordinate_key": "3.4992310,38.5000000",
+          "distance": 9.49171227444218,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.89557267485002,
+                "earth": 163.27807178024509,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.529058242871419
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 62.517131681752495,
+                "earth": 0.255879083670216,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.694940490752689
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 8.679897544193855,
+                "earth": 960.0737071239317,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.102910212083058
+              }
+            },
+            "distance": 9.49171227444218,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 90.09260190079637
+          },
+          "features": {
+            "detrended_rms_m": 163.27807178024509,
+            "mean_elevation_m": 863.3552299290023,
+            "median_slope_deg": 0.255879083670216,
+            "relief_m": 960.0737071239317,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c06",
+          "latitude": 3.499230993812349,
+          "longitude": 38.5,
+          "rank": 12
+        },
+        {
+          "coordinate_key": "4.5010753,32.5000000",
+          "distance": 9.693281945599887,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.925062068276294,
+                "earth": 162.70225627596392,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.534931068352841
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 63.31077220194248,
+                "earth": 0.24433268356729446,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.781593398654142
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 11.723880606673953,
+                "earth": 657.2673256588625,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.930568423011564
+              }
+            },
+            "distance": 9.693281945599887,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 93.95971487689272
+          },
+          "features": {
+            "detrended_rms_m": 162.70225627596392,
+            "mean_elevation_m": 707.9765837993885,
+            "median_slope_deg": 0.24433268356729446,
+            "relief_m": 657.2673256588625,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r06-c00",
+          "latitude": 4.501075255701051,
+          "longitude": 32.5,
+          "rank": 13
+        },
+        {
+          "coordinate_key": "3.4992310,32.5000000",
+          "distance": 9.743387270650341,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 18.89030513486336,
+                "earth": 163.38097405437978,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.528008727717449
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 62.388388951851574,
+                "earth": 0.25775901092897663,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -13.680832096607089
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 13.65490141915618,
+                "earth": 485.3870017089363,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -6.400367509562911
+              }
+            },
+            "distance": 9.743387270650341,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 94.93359550587112
+          },
+          "features": {
+            "detrended_rms_m": 163.38097405437978,
+            "mean_elevation_m": 929.9931370376057,
+            "median_slope_deg": 0.25775901092897663,
+            "relief_m": 485.3870017089363,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r05-c00",
+          "latitude": 3.499230993812349,
+          "longitude": 32.5,
+          "rank": 14
+        },
+        {
+          "coordinate_key": "1.4984451,38.5000000",
+          "distance": 10.146951727024888,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.22997558899721,
+                "earth": 119.00586306365513,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.9805968929016595
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 69.9871284225165,
+                "earth": 0.14993241083938413,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -14.490044350089116
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 11.743525339059671,
+                "earth": 655.4502490530457,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -5.935535023667118
+              }
+            },
+            "distance": 10.14695172702489,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 102.96062935057338
+          },
+          "features": {
+            "detrended_rms_m": 119.00586306365513,
+            "mean_elevation_m": 458.0980461695662,
+            "median_slope_deg": 0.14993241083938413,
+            "relief_m": 655.4502490530457,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r03-c06",
+          "latitude": 1.4984450953063875,
+          "longitude": 38.5,
+          "rank": 15
+        },
+        {
+          "coordinate_key": "2.4984569,38.5000000",
+          "distance": 10.29285134206264,
+          "distance_explanation": {
+            "descriptors": {
+              "detrended_rms_m": {
+                "contribution_to_squared_distance": 21.277920194920018,
+                "earth": 118.12280978501022,
+                "earth_iqr": 98.04744004444575,
+                "reference": 901.4829584393207,
+                "scaled_difference": -7.989603280811886
+              },
+              "median_slope_deg": {
+                "contribution_to_squared_distance": 70.90479768488397,
+                "earth": 0.13731545666615788,
+                "earth_iqr": 0.13324884741378612,
+                "reference": 2.0807141194634022,
+                "scaled_difference": -14.584731504373055
+              },
+              "relief_m": {
+                "contribution_to_squared_distance": 13.760070869996698,
+                "earth": 476.3867195554266,
+                "earth_iqr": 365.859212736338,
+                "reference": 2827.020419980859,
+                "scaled_difference": -6.424967907312074
+              }
+            },
+            "distance": 10.29285134206264,
+            "largest_numerical_contributor": "median_slope_deg",
+            "squared_distance": 105.94278874980068
+          },
+          "features": {
+            "detrended_rms_m": 118.12280978501022,
+            "mean_elevation_m": 517.5471287732726,
+            "median_slope_deg": 0.13731545666615788,
+            "relief_m": 476.3867195554266,
+            "valid_cells": 121
+          },
+          "id": "east-africa-inland-water-gradient-shift-r04-c06",
+          "latitude": 2.4984569186487637,
+          "longitude": 38.5,
+          "rank": 16
+        }
+      ],
+      "reference": {
+        "body": "moon",
+        "features": {
+          "detrended_rms_m": 901.4829584393207,
+          "mean_elevation_m": -451.91341291359436,
+          "median_slope_deg": 2.0807141194634022,
+          "relief_m": 2827.020419980859,
+          "valid_cells": 121
+        },
+        "id": "moon-tycho",
+        "latitude": -43.31,
+        "longitude": -11.36,
+        "name": "Tycho regional window",
+        "source_sha256": "972d66d7f330abca62abc21aae270661516c00dd1a881ec102b94df9563656b5"
+      },
+      "trial_spatial_thinning": {
+        "northeast_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 43.229500823785,
+            "median_slope_deg": 0.11678790847796,
+            "relief_m": 266.06536787696507
+          },
+          "range_diagnostics": {
+            "catalog_size": 9,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 364.2983398134799,
+                "earth_min": 118.12280978501022,
+                "position": "above",
+                "reference": 901.4829584393207
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "above",
+                "reference": 2.0807141194634022
+              },
+              "relief_m": {
+                "earth_max": 1836.308211034082,
+                "earth_min": 476.3867195554266,
+                "position": "above",
+                "reference": 2827.020419980859
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r06-c06",
+            "east-africa-inland-water-gradient-shift-r06-c02",
+            "east-africa-inland-water-gradient-shift-r06-c00",
+            "east-africa-inland-water-gradient-shift-r05-c01",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r04-c02",
+            "east-africa-inland-water-gradient-shift-r03-c03",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r02-c04"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "0.4988897,36.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r02-c04"
+        },
+        "southwest_first": {
+          "earth_iqr": {
+            "detrended_rms_m": 80.42575323102125,
+            "median_slope_deg": 0.13183890196971565,
+            "relief_m": 399.62327811876764
+          },
+          "range_diagnostics": {
+            "catalog_size": 8,
+            "descriptors": {
+              "detrended_rms_m": {
+                "earth_max": 368.305896032017,
+                "earth_min": 118.12280978501022,
+                "position": "above",
+                "reference": 901.4829584393207
+              },
+              "median_slope_deg": {
+                "earth_max": 0.7977313095855368,
+                "earth_min": 0.13731545666615788,
+                "position": "above",
+                "reference": 2.0807141194634022
+              },
+              "relief_m": {
+                "earth_max": 1721.8847986470741,
+                "earth_min": 476.3867195554266,
+                "position": "above",
+                "reference": 2827.020419980859
+              }
+            },
+            "interpretation": "The reference is outside the observed Earth range for at least one descriptor. The nearest available candidate is only a relative result; this catalog does not support a confident comparison.",
+            "outside_features": [
+              "relief_m",
+              "median_slope_deg",
+              "detrended_rms_m"
+            ],
+            "status": "insufficient_catalog_evidence"
+          },
+          "selected_ids": [
+            "east-africa-inland-water-gradient-shift-r02-c04",
+            "east-africa-inland-water-gradient-shift-r02-c06",
+            "east-africa-inland-water-gradient-shift-r03-c02",
+            "east-africa-inland-water-gradient-shift-r04-c06",
+            "east-africa-inland-water-gradient-shift-r05-c00",
+            "east-africa-inland-water-gradient-shift-r05-c02",
+            "east-africa-inland-water-gradient-shift-r06-c01",
+            "east-africa-inland-water-gradient-shift-r06-c06"
+          ],
+          "status": "computed",
+          "winner_coordinate_key": "0.4988897,36.5000000",
+          "winner_id": "east-africa-inland-water-gradient-shift-r02-c04"
+        }
+      }
+    }
+  },
+  "source": {
+    "bytes": 14469165,
+    "citation": "https://doi.org/10.7289/V5C8276M",
+    "registration": "grid nodes, one arc-minute",
+    "sha256": "66f67b42d611a2bf69a0dd38c7fb7ecf93b54096bb27b47e5d7c07311ae10172",
+    "title": "NOAA ETOPO1 Ice Surface via NOAA/AOML ERDDAP",
+    "unit": "m",
+    "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(-4):1:(6)%5D%5B(30):1:(40)%5D"
+  }
+}

@@ -45,7 +45,7 @@ const SCIENTIFIC_ICON_PATHS = Object.freeze({
  * @param {number} maxLength
  * @returns {string}
  */
-export function sanitizeText(value, fallback = 'N/D', maxLength = 500) {
+export function sanitizeText(value, fallback = 'N/A', maxLength = 500) {
   if (value === null || value === undefined) {
     return fallback;
   }
@@ -57,7 +57,7 @@ export function sanitizeText(value, fallback = 'N/D', maxLength = 500) {
 }
 
 /**
- * Cria um elemento HTML de forma segura utilizando textContent e atributos validados.
+ * Safely creates an HTML element using textContent and validated attributes.
  * @param {string} tagName
  * @param {Object} options
  * @param {string} [options.className]
@@ -74,9 +74,9 @@ export function createSafeElement(tagName, { className = '', text = '', attribut
     element.textContent = sanitizeText(text, '');
   }
   for (const [key, val] of Object.entries(attributes)) {
-    // Bloqueia atributos de eventos inline (ex: onclick, onerror) para prevenção de XSS
+    // Blocks inline event attributes (e.g. onclick, onerror) for XSS prevention
     if (key.toLowerCase().startsWith('on')) {
-      console.warn(`[Security] Tentativa bloqueada de definir atributo de evento inline: ${key}`);
+      console.warn(`[Security] Blocked attempt to set inline event attribute: ${key}`);
       continue;
     }
     element.setAttribute(key, String(val));

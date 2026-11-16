@@ -1,0 +1,61 @@
+# Bounded terrestrial topographic discovery experiment
+
+**Status:** Executed regional discovery; separate from the seven-site production baseline. This is neither a global search nor validation of planetary analog environments.
+
+## Scope and reproducibility
+
+The fixed acquisition tile is 4–14°N, 2°W–8°E. The generator places 49 candidate centers on seven equally spaced `sin(latitude)` rows between 6°N and 12°N and seven integer longitude columns from 0°E to 6°E. The rule, tile, and product checksums were set before ranking. This regional lattice reduces latitude-dependent area variation within the bounded tile; it does not guarantee complete coverage or independent 220 km windows. Overlapping windows share source measurements. No center is selected from the original seven terrestrial locations.
+
+The [NOAA ETOPO1 Ice Surface](https://doi.org/10.7289/V5C8276M) elevations were acquired through [NOAA/AOML ERDDAP](https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.html) as a node-registered, one-arc-minute CSV subset: [exact subset URL](https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(4):1:(14)%5D%5B(-2):1:(8)%5D). The 601 × 601 nodes have latitude, longitude, and altitude in degrees north, degrees east, and metres. Source size is 14,186,883 bytes and SHA-256 is `8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f`. The script verifies all coordinates and the SHA-256 before processing. Grid spacing is not effective terrain resolution.
+
+Three [Natural Earth 1:50m physical layers](https://www.naturalearthdata.com/downloads/50m-physical-vectors/) independently screen the full nominal 220 km footprint and every source node participating in bilinear interpolation:
+
+| Layer | Version declared in downloaded archive | SHA-256 of ZIP |
+| --- | --- | --- |
+| [Land](https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_land.zip) | 4.1.0 | `0b8e670cf80dce9cbebe2a193bc44ba5602758c22e1fa603980553646d7ff162` |
+| [Lakes](https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_lakes.zip) | 5.0.0 | `f28d42c286d96b57a17aac2cbeb432f8c65532c20063495711fbc64e24666df3` |
+| [Glaciated areas](https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_glaciated_areas.zip) | 4.1.0 | `f48644b4523482501bcd380c4b7345ba574ab79b87df753447d772ea239b7daf` |
+
+The current downloads declare these versions even when a layer's descriptive web page mentions an earlier version. The exact archive bytes, rather than a page title, are pinned. Natural Earth is public domain. These generalized maps can omit small lakes or ice and may have generalized coastlines; the glaciated-areas layer also contains some recently deglaciated regions. Passing this screen does not establish year-round exposed ground or directly observed elevation at every node.
+
+## Eligibility and calculations
+
+An eligible center requires complete land-polygon coverage of its densified physical footprint, no mapped lake or glaciated-area intersection, all 3,025 bilinear query positions inside the source tile, all 12,100 contributing source-node checks on mapped land and outside mapped lakes/glaciated areas, and complete finite output elevations. No arbitrary land-fraction cutoff or water-to-land filling is used. A strict boundary contact can exclude a center. ETOPO1's terrestrial source grid is finite in this tile; completeness is a data check, not a quality guarantee. The original spherical local-coordinate mapping, 11 × 11 output, 20 km spacing and 25 subcell queries per cell are reused without altering the production implementation.
+
+| Category | Centers |
+| --- | ---: |
+| Generated | 49 |
+| Eligible and evaluated | 26 |
+| Excluded: mixed land/ocean footprint | 12 |
+| Excluded: mapped inland-water intersection | 11 |
+| Excluded: mapped glaciated area or insufficient raster coverage | 0 |
+
+The three existing descriptors are P95–P5 elevation range, median slope, and detrended RMS relief. `TerrainKNN` fits each descriptor's IQR on **only these 26 generated Earth windows** and computes `sqrt(mean(((Earth − reference)/Earth IQR)^2))`. The original seven-site Earth calibration remains separate, and distances across these differently calibrated catalogs must not be compared numerically. The planetary references are the existing NASA LOLA LDEM_4 and MOLA MEGT90N000CB windows; absolute elevation is not included in the distance. The complete catalog stores every excluded center and its reason; each ranking contains every eligible center, original features, per-descriptor scaled differences and squared-distance contributions, coordinates, eligibility diagnostics and range-based extrapolation diagnostics.
+
+## Observed results
+
+All four reference searches selected the same relative nearest center, `wa-r02-c06` at **7.98937946°N, 6.00000000°E**, in the bounded West Africa tile. Its measured-derived descriptors are **432.348 m** P95–P5, **0.193449°** median slope, and **98.255 m** detrended RMS. The coordinate is generated by the lattice and used to extract actual ETOPO1 elevations; it is not one of the seven manually predefined sites.
+
+| Reference | Relative nearest | Distance | Second and third IDs | Reference outside generated Earth range |
+| --- | --- | ---: | --- | --- |
+| Mare Tranquillitatis | `wa-r02-c06` | 6.874003 | `wa-r02-c05`, `wa-r01-c06` | All three descriptors |
+| Tycho | `wa-r02-c06` | 30.686092 | `wa-r02-c05`, `wa-r01-c06` | All three descriptors |
+| Jezero | `wa-r02-c06` | 13.394803 | `wa-r01-c06`, `wa-r02-c05` | All three descriptors |
+| Gale | `wa-r02-c06` | 31.685729 | `wa-r02-c05`, `wa-r01-c06` | All three descriptors |
+
+**Interpretation:** every reference extrapolates beyond this restricted catalog for every descriptor. The nearest-center result is therefore **inconclusive as evidence of meaningful planetary topographic similarity**. No distance here is a probability, confidence level or percentage. The common winner reflects this catalog and its fitted IQR; it must not be advertised as a validated lunar or Martian analog. In particular, the 26 overlapping candidates are not representative samples of Earth's terrain diversity. No geology, environment, safety, current ice state, or operational suitability was evaluated.
+
+## Files, reproduction and limitations
+
+Generated, machine-readable results are `results/terrestrial-discovery/catalog.json` and `results/terrestrial-discovery/rankings.json` (reviewable outputs in the development copy). Each includes input hashes, spatial scope, parameters, method metadata, and an implementation hash. The script pins all four acquired inputs and fails if bytes, versions, CSV registration, or units change. On a fresh machine, access to the NOAA and Natural Earth URLs is necessary; the existing LOLA/MOLA products are also required. Raw downloads remain in ignored `backend/data`. The optional spatial dependencies are isolated in `backend/requirements-discovery.txt`.
+
+In PowerShell, from the development-copy root:
+
+```powershell
+backend/.venv/Scripts/python.exe -m pip install -r backend/requirements-discovery.txt
+backend/.venv/Scripts/python.exe backend/terrestrial_discovery.py
+backend/.venv/Scripts/python.exe -m unittest discover -s backend -p test_terrestrial_discovery.py -v
+Get-FileHash results/terrestrial-discovery/catalog.json,results/terrestrial-discovery/rankings.json -Algorithm SHA256
+```
+
+Re-running with the same source bytes, script and dependency environment should produce identical JSON; retrieval time is deliberately excluded. The pinned downloads remain in the existing ignored backend cache. This is a deliberately bounded feasibility experiment, not the approved global HEALPix design. Before broadening it, validate coast and inland-water geometry against finer controls, verify ice eligibility where relevant, test center-grid shifts and window overlap, perform source-resolution sensitivity checks, and independently reproduce discovered windows and their features. This result does not alter the production API or frontend ranking.

@@ -1,7 +1,7 @@
 /**
- * Ponto de Entrada Principal (src/main.js)
- * Inicialização imediata da interface de 3 regiões seguida da montagem
- * dos motores 3D (Three.js para Lua/Marte e CesiumJS para o Globo Terrestre).
+ * Main Entry Point (src/main.js)
+ * Immediate initialization of the 3-region interface followed by mounting
+ * the 3D engines (Three.js for Moon/Mars and CesiumJS for the Terrestrial Globe).
  */
 import { createLeftSidebar } from './components/sidebar.js';
 import { createTopHudBar, createBottomTelemetryBar } from './components/interface-controls.js';
@@ -10,9 +10,11 @@ import { EarthGlobeController } from './globe/globe.js';
 import { initMoonModel } from './planets/moon.js';
 import { initMarsModel } from './planets/mars.js';
 import { createSafeElement } from './utils/sanitizer.js';
+import { eventBus } from './utils/event-bus.js';
+import './science.css';
 
 /**
- * Constrói a Região Central (Protagonista: Palco do Globo Terrestre 3D).
+ * Builds the Central Region (Protagonist: 3D Terrestrial Globe Stage).
  * @returns {{ main: HTMLElement, globeViewport: HTMLElement }}
  */
 function createCenterGlobeRegion() {
@@ -20,19 +22,19 @@ function createCenterGlobeRegion() {
     className: 'region-center-stage',
     attributes: {
       id: 'center-globe-stage',
-      'aria-label': 'Visualização Tridimensional do Planeta Terra'
+      'aria-label': 'Three-Dimensional Planet Earth Visualization'
     }
   });
 
   const topHud = createTopHudBar();
 
-  // Container principal do Globo Terrestre 3D (CesiumJS)
+  // Main container for the 3D Terrestrial Globe (CesiumJS)
   const globeViewport = createSafeElement('div', {
     className: 'cesium-globe-viewport',
     attributes: {
       id: 'cesium-globe-container',
       role: 'region',
-      'aria-label': 'Globo Terrestre 3D Interativo'
+      'aria-label': 'Interactive 3D Terrestrial Globe'
     }
   });
 
@@ -43,7 +45,7 @@ function createCenterGlobeRegion() {
 }
 
 /**
- * Inicializa os modelos tridimensionais da Lua e de Marte na barra lateral esquerda.
+ * Initializes the three-dimensional Moon and Mars models in the left sidebar.
  */
 function mountSidebarPlanets() {
   const moonContainer = document.getElementById('moon-three-viewport');
@@ -53,7 +55,7 @@ function mountSidebarPlanets() {
     try {
       initMoonModel(moonContainer);
     } catch (error) {
-      console.error('[App] Falha ao inicializar o modelo 3D da Lua:', error);
+      console.error('[App] Failed to initialize 3D Moon model:', error);
     }
   }
 
@@ -61,13 +63,13 @@ function mountSidebarPlanets() {
     try {
       initMarsModel(marsContainer);
     } catch (error) {
-      console.error('[App] Falha ao inicializar o modelo 3D de Marte:', error);
+      console.error('[App] Failed to initialize 3D Mars model:', error);
     }
   }
 }
 
 /**
- * Inicializa a interface e monta os três ambientes 3D (Terra, Lua e Marte).
+ * Initializes the interface and mounts the three 3D environments (Earth, Moon, and Mars).
  */
 async function bootstrapApplication() {
   const appRoot = document.getElementById('app');
@@ -84,26 +86,27 @@ async function bootstrapApplication() {
   workspaceGrid.append(leftRegion, centerRegion, rightRegion);
   appRoot.replaceChildren(workspaceGrid);
 
-  // 1. Inicializa os modelos 3D da Lua e de Marte (Three.js) na lateral esquerda
+  // 1. Initialize 3D Moon and Mars models (Three.js) in the left sidebar
   mountSidebarPlanets();
 
-  // 2. Inicializa o Globo Terrestre 3D (CesiumJS) no palco central
+  // 2. Initialize 3D Terrestrial Globe (CesiumJS) on the central stage
   try {
     const earthGlobe = new EarthGlobeController(globeViewport);
     await earthGlobe.init();
+    eventBus.emit('globe:ready', {});
   } catch (error) {
-    console.error('[App] Falha ao inicializar o Globo Terrestre 3D:', error);
+    console.error('[App] Failed to initialize 3D Terrestrial Globe:', error);
     const fallbackBox = createSafeElement('div', {
       className: 'stage-label-box',
-      text: 'Aviso: Não foi possível inicializar o contexto WebGL do Globo Terrestre neste dispositivo.'
+      text: 'Notice: Unable to initialize the WebGL context for the Terrestrial Globe on this device.'
     });
     globeViewport.appendChild(fallbackBox);
   }
 }
 
-// Em módulos ES6 com dependências grandes (CesiumJS), o evento DOMContentLoaded
-// pode já ter disparado quando o script termina de carregar. Esta verificação
-// garante que a interface seja montada em 100% dos casos.
+// In ES6 modules with large dependencies (CesiumJS), the DOMContentLoaded event
+// may have already fired by the time the script finishes loading. This check
+// guarantees the interface mounts in 100% of cases.
 if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', () => {
     bootstrapApplication();

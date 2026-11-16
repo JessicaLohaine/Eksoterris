@@ -1,6 +1,6 @@
 /**
- * Módulo da Região Esquerda — Lua e Marte (src/components/sidebar.js)
- * Etapa 6: Refinamento visual, dicas discretas de interação 3D e botão de reset orbital.
+ * Left Region Module — Moon and Mars (src/components/sidebar.js)
+ * Stage 6: Visual refinement, subtle 3D interaction hints, and orbital reset button.
  */
 import { MOON_METADATA } from '../planets/moon.js';
 import { MARS_METADATA } from '../planets/mars.js';
@@ -8,7 +8,7 @@ import { createSafeElement } from '../utils/sanitizer.js';
 import { eventBus } from '../utils/event-bus.js';
 
 /**
- * Cria um cartão de corpo celeste para a barra lateral esquerda.
+ * Creates a celestial body card for the left sidebar.
  * @param {Object} config
  * @returns {HTMLElement}
  */
@@ -18,11 +18,11 @@ function createCelestialCard(config) {
     attributes: {
       id: `card-${config.id}`,
       'data-profile-id': config.profileId,
-      'aria-label': `Visualizador 3D — ${config.title}`
+      'aria-label': `3D Viewer — ${config.title}`
     }
   });
 
-  // Cabeçalho do Card
+  // Card Header
   const cardHeader = createSafeElement('header', { className: 'celestial-card-header' });
   const titleGroup = createSafeElement('div', { className: 'celestial-title-group' });
   const codeSpan = createSafeElement('span', { className: 'celestial-code', text: config.code });
@@ -36,8 +36,8 @@ function createCelestialCard(config) {
     text: 'Reset 3D',
     attributes: {
       type: 'button',
-      title: `Reposicionar câmera 3D de ${config.title}`,
-      'aria-label': `Reposicionar câmera 3D de ${config.title}`
+      title: `Reset 3D camera for ${config.title}`,
+      'aria-label': `Reset 3D camera for ${config.title}`
     }
   });
 
@@ -47,11 +47,11 @@ function createCelestialCard(config) {
 
   const inspectBtn = createSafeElement('button', {
     className: 'celestial-inspect-btn',
-    text: 'Ver Dados',
+    text: 'View Data',
     attributes: {
       type: 'button',
-      title: `Exibir parâmetros demonstrativos de ${config.title} no painel direito`,
-      'aria-label': `Exibir dados demonstrativos de ${config.title} no painel direito`
+      title: `Display reference parameters for ${config.title} in the right panel`,
+      'aria-label': `Display reference data for ${config.title} in the right panel`
     }
   });
 
@@ -65,17 +65,17 @@ function createCelestialCard(config) {
   actionsGroup.append(resetViewBtn, inspectBtn);
   cardHeader.append(titleGroup, actionsGroup);
 
-  // Viewport 3D (Recebe o canvas do Three.js)
+  // 3D Viewport (Receives the Three.js canvas)
   const viewportContainer = createSafeElement('div', {
     className: 'celestial-viewport',
     attributes: {
       id: config.viewportId,
       role: 'img',
-      'aria-label': `Modelo 3D interativo de ${config.title}`
+      'aria-label': `Interactive 3D model of ${config.title}`
     }
   });
 
-  // Placeholder inicial (removido automaticamente pelo PlanetRenderer.init)
+  // Initial placeholder (automatically removed by PlanetRenderer.init)
   const stagePlaceholder = createSafeElement('div', {
     className: `celestial-stage-placeholder placeholder-${config.id}`,
     attributes: { 'data-stage-placeholder': 'true' }
@@ -85,16 +85,16 @@ function createCelestialCard(config) {
   });
   stagePlaceholder.appendChild(spherePreview);
 
-  // Legenda sutil de interatividade sobre o viewport 3D
+  // Subtle interactivity hint over the 3D viewport
   const interactionHint = createSafeElement('span', {
     className: 'celestial-interaction-hint',
-    text: 'Arraste 360° • Scroll Zoom',
+    text: 'Drag 360° • Scroll Zoom',
     attributes: { 'aria-hidden': 'true' }
   });
 
   viewportContainer.append(stagePlaceholder, interactionHint);
 
-  // Rodapé compacto com parâmetros físicos de referência
+  // Compact footer with physical reference parameters
   const metricsFooter = createSafeElement('footer', { className: 'celestial-metrics' });
   for (const [label, value] of config.metrics) {
     const metricItem = createSafeElement('div', { className: 'celestial-metric-item' });
@@ -109,7 +109,7 @@ function createCelestialCard(config) {
 }
 
 /**
- * Inicializa e retorna a região esquerda (Lua e Marte empilhados).
+ * Initializes and returns the left region (stacked Moon and Mars cards).
  * @returns {HTMLElement}
  */
 export function createLeftSidebar() {
@@ -117,18 +117,18 @@ export function createLeftSidebar() {
     className: 'region-left-sidebar',
     attributes: {
       id: 'left-sidebar',
-      'aria-label': 'Corpos Celestes de Comparação: Lua e Marte'
+      'aria-label': 'Reference Celestial Bodies: Moon and Mars'
     }
   });
 
   const sectionHeader = createSafeElement('div', { className: 'sidebar-section-header' });
   const sectionTag = createSafeElement('span', {
     className: 'sidebar-section-tag',
-    text: 'ASTROS DE REFERÊNCIA // 3D'
+    text: 'REFERENCE BODIES // 3D'
   });
   const sectionDesc = createSafeElement('p', {
     className: 'sidebar-section-desc',
-    text: 'Modelos tridimensionais interativos para comparação com ambientes terrestres.'
+    text: 'Interactive three-dimensional models for comparison with terrestrial analog environments.'
   });
   sectionHeader.append(sectionTag, sectionDesc);
 
@@ -136,29 +136,29 @@ export function createLeftSidebar() {
 
   const moonCard = createCelestialCard({
     id: 'moon',
-    code: 'SATÉLITE // TERRA-I',
+    code: 'SATELLITE // EARTH-I',
     title: MOON_METADATA.name,
-    subtitle: 'Referência Selenológica',
+    subtitle: 'Selenological Reference',
     viewportId: 'moon-three-viewport',
     profileId: 'moon_reference',
     accentClass: 'accent-moon',
     metrics: [
-      ['RAIO MÉDIO', `${MOON_METADATA.meanRadiusKm.toLocaleString('pt-BR')} km`],
-      ['GRAVIDADE', `${MOON_METADATA.surfaceGravityMs2.toLocaleString('pt-BR')} m/s²`]
+      ['MEAN RADIUS', `${MOON_METADATA.meanRadiusKm.toLocaleString('en-US')} km`],
+      ['GRAVITY', `${MOON_METADATA.surfaceGravityMs2.toLocaleString('en-US')} m/s²`]
     ]
   });
 
   const marsCard = createCelestialCard({
     id: 'mars',
-    code: 'PLANETA // SOL-IV',
+    code: 'PLANET // SOL-IV',
     title: MARS_METADATA.name,
-    subtitle: 'Referência Areológica',
+    subtitle: 'Areological Reference',
     viewportId: 'mars-three-viewport',
     profileId: 'mars_reference',
     accentClass: 'accent-mars',
     metrics: [
-      ['RAIO MÉDIO', `${MARS_METADATA.meanRadiusKm.toLocaleString('pt-BR')} km`],
-      ['GRAVIDADE', `${MARS_METADATA.surfaceGravityMs2.toLocaleString('pt-BR')} m/s²`]
+      ['MEAN RADIUS', `${MARS_METADATA.meanRadiusKm.toLocaleString('en-US')} km`],
+      ['GRAVITY', `${MARS_METADATA.surfaceGravityMs2.toLocaleString('en-US')} m/s²`]
     ]
   });
 

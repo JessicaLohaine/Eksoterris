@@ -1,0 +1,153 @@
+{
+  "evidence_file": "evidence.json",
+  "interpretation": "Earth context does not provide an independently measured Earth-Moon or Earth-Mars similarity. Original and shifted distances have different Earth IQR calibration.",
+  "references": {
+    "mars-gale": {
+      "analog_validation": "not_established",
+      "earth_context_evidence_ids": [],
+      "research_relevance": "No terrestrial study region endorsed: topographic extrapolation and shifted-center instability remain.",
+      "selected_study_groups": {},
+      "supported_differences": [],
+      "supported_similarity_claims_beyond_topography": [],
+      "unknown_or_unverified": [
+        "Independent NASADEM elevation is unavailable without Earthdata authentication.",
+        "Ice, lithology, mineralogy, surface process and comparable planetary environmental evidence were not measured."
+      ]
+    },
+    "mars-jezero": {
+      "analog_validation": "not_established",
+      "earth_context_evidence_ids": [
+        "south-america-elevation-gradient-r05-c06",
+        "south-america-elevation-gradient-shift-r03-c06"
+      ],
+      "research_relevance": "Review hydrology and land-cover at each whole window before proposing a material or operational study.",
+      "selected_study_groups": {
+        "jezero_original": [
+          {
+            "distance_in_separate_calibration": 0.21004849419042151,
+            "evidence_id": "south-america-elevation-gradient-r05-c06",
+            "rank_in_separate_catalog": 1,
+            "ranking_catalog": "original_64",
+            "reference_features": {
+              "detrended_rms_m": 233.33309304319212,
+              "mean_elevation_m": -2203.208614059368,
+              "median_slope_deg": 0.9326093973547247,
+              "relief_m": 2894.155395237171,
+              "valid_cells": 121
+            },
+            "reference_outside_earth_ranges": [],
+            "terrain_features": {
+              "detrended_rms_m": 301.47817064799915,
+              "mean_elevation_m": 2660.608250968068,
+              "median_slope_deg": 0.8910391053025106,
+              "relief_m": 2474.7717482530734,
+              "valid_cells": 121
+            }
+          }
+        ],
+        "jezero_shifted": [
+          {
+            "distance_in_separate_calibration": 0.1850341325152617,
+            "evidence_id": "south-america-elevation-gradient-shift-r03-c06",
+            "rank_in_separate_catalog": 1,
+            "ranking_catalog": "shifted_69",
+            "reference_features": {
+              "detrended_rms_m": 233.33309304319212,
+              "mean_elevation_m": -2203.208614059368,
+              "median_slope_deg": 0.9326093973547247,
+              "relief_m": 2894.155395237171,
+              "valid_cells": 121
+            },
+            "reference_outside_earth_ranges": [],
+            "terrain_features": {
+              "detrended_rms_m": 326.7527920468266,
+              "mean_elevation_m": 2190.0526619529574,
+              "median_slope_deg": 0.9579946924473963,
+              "relief_m": 2729.428209479099,
+              "valid_cells": 121
+            }
+          }
+        ]
+      },
+      "supported_differences": [],
+      "supported_similarity_claims_beyond_topography": [],
+      "unknown_or_unverified": [
+        "Independent NASADEM elevation is unavailable without Earthdata authentication.",
+        "Ice, lithology, mineralogy, surface process and comparable planetary environmental evidence were not measured."
+      ]
+    },
+    "moon-tranquillitatis": {
+      "analog_validation": "not_established",
+      "earth_context_evidence_ids": [
+        "south-america-elevation-gradient-r02-c04",
+        "south-america-elevation-gradient-shift-r01-c04"
+      ],
+      "research_relevance": "Review hydrology and land-cover at each whole window before proposing a material or operational study.",
+      "selected_study_groups": {
+        "tranquillitatis_shared": [
+          {
+            "distance_in_separate_calibration": 0.1367901093606914,
+            "evidence_id": "south-america-elevation-gradient-r02-c04",
+            "rank_in_separate_catalog": 2,
+            "ranking_catalog": "original_64",
+            "reference_features": {
+              "detrended_rms_m": 250.844449708464,
+              "mean_elevation_m": -1648.7492149029613,
+              "median_slope_deg": 0.5772313545520281,
+              "relief_m": 1395.3118712587225,
+              "valid_cells": 121
+            },
+            "reference_outside_earth_ranges": [],
+            "terrain_features": {
+              "detrended_rms_m": 281.8802029438926,
+              "mean_elevation_m": 4288.59757392274,
+              "median_slope_deg": 0.5720115773252172,
+              "relief_m": 1084.7039992988393,
+              "valid_cells": 121
+            }
+          },
+          {
+            "distance_in_separate_calibration": 0.0387686696735945,
+            "evidence_id": "south-america-elevation-gradient-shift-r01-c04",
+            "rank_in_separate_catalog": 1,
+            "ranking_catalog": "shifted_69",
+            "reference_features": {
+              "detrended_rms_m": 250.844449708464,
+              "mean_elevation_m": -1648.7492149029613,
+              "median_slope_deg": 0.5772313545520281,
+              "relief_m": 1395.3118712587225,
+              "valid_cells": 121
+            },
+            "reference_outside_earth_ranges": [],
+            "terrain_features": {
+              "detrended_rms_m": 249.82840514971886,
+              "mean_elevation_m": 4133.839048010682,
+              "median_slope_deg": 0.5520955198120723,
+              "relief_m": 1287.9580788164449,
+              "valid_cells": 121
+            }
+          }
+        ]
+      },
+      "supported_differences": [],
+      "supported_similarity_claims_beyond_topography": [],
+      "unknown_or_unverified": [
+        "Independent NASADEM elevation is unavailable without Earthdata authentication.",
+        "Ice, lithology, mineralogy, surface process and comparable planetary environmental evidence were not measured."
+      ]
+    },
+    "moon-tycho": {
+      "analog_validation": "not_established",
+      "earth_context_evidence_ids": [],
+      "research_relevance": "No terrestrial study region endorsed: topographic extrapolation and shifted-center instability remain.",
+      "selected_study_groups": {},
+      "supported_differences": [],
+      "supported_similarity_claims_beyond_topography": [],
+      "unknown_or_unverified": [
+        "Independent NASADEM elevation is unavailable without Earthdata authentication.",
+        "Ice, lithology, mineralogy, surface process and comparable planetary environmental evidence were not measured."
+      ]
+    }
+  },
+  "version": "regional-characterization-v1"
+}

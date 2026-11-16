@@ -40,38 +40,75 @@ export class EarthGlobeController {
     this.isAutoRotating = true;
     this.isUserInteracting = false;
     this.activeImageryMode = 'nasa_hybrid';
-    this.cloudsEnabled = false;
-    this.solarLightingEnabled = false; // Inicia com iluminação global plena para cores vivas e naturais em todo o globo
     this.layers = {
       baseBlueMarble: null,
       nasaGibsBlueMarble: null,
+      arcticSeaIce: null,
       worldImagery: null,
       nasaGibsViirs: null,
-      hillshade: null,
-      clouds: null
+      hillshade: null
     };
     this.lastPointerEmitTime = 0;
     this.lastClockTickTime = performance.now();
     this.boundOnTick = this.handleSceneTick.bind(this);
     this.boundPreRender = this.handlePreRender.bind(this);
+    this.discoveredCandidates = new Map();
+    this.discoveryEntities = [];
+    this.scienceEntities = [];
+    this.investigationEntities = [];
+    this.pendingDiscoveryPayload = null;
+    this.pendingSciencePayload = null;
+    this.registerEarlyDataListeners();
   }
 
   /**
-   * Inicializa o motor CesiumJS priorizando fontes oficiais da NASA.
+   * Captures candidate payloads emitted before the Cesium Viewer finishes initializing.
+   */
+  registerEarlyDataListeners() {
+    eventBus.on('discovery:results', (payload) => {
+      this.pendingDiscoveryPayload = payload;
+      if (this.viewer && !this.viewer.isDestroyed()) {
+        this.renderDiscoveryCandidates(payload);
+      }
+    });
+
+    eventBus.on('science:results', (run) => {
+      this.pendingSciencePayload = run;
+      if (this.viewer && !this.viewer.isDestroyed()) {
+        this.renderScienceCandidates(run);
+      }
+    });
+  }
+
+  /**
+   * Initializes the CesiumJS engine prioritizing official NASA data sources.
    */
   async init() {
     if (!this.container) {
-      throw new Error('Container do Globo Terrestre (#cesium-globe-container) não encontrado.');
+      throw new Error('Terrestrial Globe container (#cesium-globe-container) not found.');
     }
 
     Cesium.Ion.defaultAccessToken = '';
 
-    // 1. Camada Base 0: NASA Blue Marble Next Generation 2K local
-    const baseBlueMarbleLayer = Cesium.ImageryLayer.fromProviderAsync(
+    // 1. Camada Base 0 + Gelo Marinho Ártico (AMSRU2 / NSIDC 2024-06-15):
+    // Decodificados localmente (~25ms) antes da criação do Viewer para que o quadro 1
+    // já exiba Blue Marble Next Generation e gelo marinho ártico sem pop-in ou halo artificial.
+    const [baseBlueMarbleProvider, arcticSeaIceProvider] = await Promise.all([
       Cesium.SingleTileImageryProvider.fromUrl('/textures/earth/earth_bluemarble_2k.jpg', {
         rectangle: Cesium.Rectangle.MAX_VALUE
+      }),
+      Cesium.SingleTileImageryProvider.fromUrl('/textures/earth/arctic_sea_ice_amsr2_20240615.png', {
+        rectangle: Cesium.Rectangle.fromDegrees(-180, 45, 180, 90),
+        credit: 'NASA GIBS / NSIDC GCOM-W1 AMSR2 Sea Ice Concentration 12km (2024-06-15)'
       })
-    );
+    ]);
+    const baseBlueMarbleLayer = new Cesium.ImageryLayer(baseBlueMarbleProvider, {
+      brightness: 1.0,
+      contrast: 1.0,
+      saturation: 1.0,
+      gamma: 1.0
+    });
+    this.preloadedArcticSeaIceProvider = arcticSeaIceProvider;
 
     // 2. Instancia o Viewer em modo 3D de alta precisão
     this.viewer = new Cesium.Viewer(this.container, {
@@ -106,18 +143,27 @@ export class EarthGlobeController {
 
     this.configureVisualQuality();
     this.configureCameraControls();
-    await this.setupScientificImageryLayers();
-    this.setupPointerTelemetry();
-    this.setupEventBusSubscriptions();
-    this.setupWebGLContextGuard();
 
-    // Posiciona a câmera inicialmente em órbita global
+    // Posiciona a câmera imediatamente de forma síncrona antes do primeiro quadro renderizado
     this.flyToRegion({
       latitude: APP_CONFIG.defaultCoordinates.latitude,
       longitude: APP_CONFIG.defaultCoordinates.longitude,
       altitudeKm: APP_CONFIG.defaultCoordinates.altitudeKm,
       duration: 0
     });
+
+    this.setupScientificImageryLayers();
+    this.setupPointerTelemetry();
+    this.setupEventBusSubscriptions();
+    this.setupWebGLContextGuard();
+
+    this.viewer.entities.show = true;
+    if (this.pendingDiscoveryPayload) {
+      this.renderDiscoveryCandidates(this.pendingDiscoveryPayload);
+    }
+    if (this.pendingSciencePayload) {
+      this.renderScienceCandidates(this.pendingSciencePayload);
+    }
 
     this.viewer.clock.onTick.addEventListener(this.boundOnTick);
     this.viewer.scene.preRender.addEventListener(this.boundPreRender);
@@ -143,13 +189,6 @@ export class EarthGlobeController {
     scene.backgroundColor = Cesium.Color.fromCssColorString('#05070c');
     scene.highDynamicRange = false;
 
-    // Luz Solar Direcional controlada para iluminação natural quando ativada pelo usuário
-    scene.light = new Cesium.DirectionalLight({
-      direction: new Cesium.Cartesian3(1.0, 0.0, 0.0),
-      color: Cesium.Color.fromCssColorString('#ffffff'),
-      intensity: 2.85
-    });
-
     // Halo atmosférico externo sutil apenas na borda espacial do planeta
     if (scene.skyAtmosphere) {
       scene.skyAtmosphere.show = true;
@@ -159,14 +198,10 @@ export class EarthGlobeController {
       scene.skyAtmosphere.brightnessShift = 0.02;
     }
 
-    // IMPORTANTE: Desativa showGroundAtmosphere para eliminar o véu esbranquiçado/leitoso
-    // sobre os oceanos e continentes quando o globo é visto em distância orbital (12.500 km).
+    // IMPORTANTE: Desativa showGroundAtmosphere e sombreamento direcional para manter
+    // fidelidade radiométrica uniforme nas imagens de satélite em todo o globo.
     scene.globe.showGroundAtmosphere = false;
-    scene.globe.enableLighting = this.solarLightingEnabled;
-    scene.globe.lightingFadeOutDistance = 14000000.0;
-    scene.globe.lightingFadeInDistance = 32000000.0;
-    scene.globe.nightFadeOutDistance = 12000000.0;
-    scene.globe.nightFadeInDistance = 30000000.0;
+    scene.globe.enableLighting = false;
 
     scene.globe.baseColor = Cesium.Color.fromCssColorString('#041026');
     scene.globe.maximumScreenSpaceError = 1.3;
@@ -179,13 +214,14 @@ export class EarthGlobeController {
   }
 
   /**
-   * Cria um provedor de tiles resiliente com suporte ao cache local.
+   * Cria um provedor de tiles resiliente com suporte ao cache local e esquemas de projeção customizados.
    */
-  createTileProvider(urlTemplate, maxLevel, creditText) {
+  createTileProvider(urlTemplate, maxLevel, creditText, options = {}) {
     const provider = new Cesium.UrlTemplateImageryProvider({
       url: urlTemplate,
       maximumLevel: maxLevel,
-      credit: creditText
+      credit: creditText,
+      ...options
     });
     provider.errorEvent.addEventListener((err) => {
       err.retry = false;
@@ -194,31 +230,43 @@ export class EarthGlobeController {
   }
 
   /**
-   * Configura as camadas científicas priorizando NASA GIBS Blue Marble + Satélite HD.
+   * Configura as camadas científicas priorizando NASA GIBS Blue Marble (EPSG:4326) + Satélite HD.
    */
-  async setupScientificImageryLayers() {
+  setupScientificImageryLayers() {
     const imageryLayers = this.viewer.imageryLayers;
 
-    // Calibração cromática natural na camada base 0 (NASA Blue Marble 2K local)
+    // Esquema Geográfico Oficial NASA GIBS EPSG:4326 (TileMatrix 3 = 10x5 tiles de 512x512, cobrindo -90° a +90° sem corte polar)
+    const nasaGeographicTilingScheme = new Cesium.GeographicTilingScheme({
+      numberOfLevelZeroTilesX: 10,
+      numberOfLevelZeroTilesY: 5
+    });
+
+    // Parâmetros radiométricos neutros (1.0) sem distorção cromática artificial
     if (this.layers.baseBlueMarble) {
-      this.layers.baseBlueMarble.brightness = 1.12;
-      this.layers.baseBlueMarble.contrast = 1.06;
-      this.layers.baseBlueMarble.saturation = 1.14;
-      this.layers.baseBlueMarble.gamma = 1.08;
+      this.layers.baseBlueMarble.brightness = 1.0;
+      this.layers.baseBlueMarble.contrast = 1.0;
+      this.layers.baseBlueMarble.saturation = 1.0;
+      this.layers.baseBlueMarble.gamma = 1.0;
     }
 
-    // 1. Camada Principal Orbital: NASA GIBS Blue Marble Next Generation (WMTS Oficial da NASA)
+    // 1. Camada Principal Orbital: NASA GIBS Blue Marble Next Generation (MODIS Cloud-Free Composite EPSG:4326)
     const gibsBlueMarbleProvider = this.createTileProvider(
       '/api-tiles/nasa-bluemarble/{z}/{y}/{x}',
-      8,
-      'NASA GIBS / Earthdata Blue Marble Next Generation'
+      4,
+      'NASA GIBS / Earthdata Blue Marble Next Generation (MODIS EPSG:4326)',
+      {
+        tilingScheme: nasaGeographicTilingScheme,
+        tileWidth: 512,
+        tileHeight: 512,
+        minimumLevel: 0
+      }
     );
     this.layers.nasaGibsBlueMarble = imageryLayers.addImageryProvider(gibsBlueMarbleProvider);
     this.layers.nasaGibsBlueMarble.alpha = 1.0;
-    this.layers.nasaGibsBlueMarble.brightness = 1.18;
-    this.layers.nasaGibsBlueMarble.contrast = 1.06;
-    this.layers.nasaGibsBlueMarble.saturation = 1.16;
-    this.layers.nasaGibsBlueMarble.gamma = 1.12;
+    this.layers.nasaGibsBlueMarble.brightness = 1.0;
+    this.layers.nasaGibsBlueMarble.contrast = 1.0;
+    this.layers.nasaGibsBlueMarble.saturation = 1.0;
+    this.layers.nasaGibsBlueMarble.gamma = 1.0;
 
     // 2. Camada de Satélite de Alta Resolução (Landsat / Maxar / World Imagery até nível 18)
     const worldImageryProvider = this.createTileProvider(
@@ -227,50 +275,58 @@ export class EarthGlobeController {
       'NASA Landsat / Maxar / Earthstar Geographics / Esri'
     );
     this.layers.worldImagery = imageryLayers.addImageryProvider(worldImageryProvider);
-    this.layers.worldImagery.alpha = 0.55;
-    this.layers.worldImagery.brightness = 1.08;
-    this.layers.worldImagery.contrast = 1.08;
-    this.layers.worldImagery.saturation = 1.14;
-    this.layers.worldImagery.gamma = 1.04;
+    this.layers.worldImagery.alpha = 0.0;
+    this.layers.worldImagery.show = false;
+    this.layers.worldImagery.brightness = 1.0;
+    this.layers.worldImagery.contrast = 1.0;
+    this.layers.worldImagery.saturation = 1.0;
+    this.layers.worldImagery.gamma = 1.0;
 
-    // 3. Camada NASA GIBS / Worldview VIIRS True Color (Satélite NASA/NOAA Suomi NPP)
+    // 2.5 Camada Científica de Gelo Marinho Ártico (NASA GIBS / NSIDC GCOM-W1 AMSR2 12km, 2024-06-15)
+    if (this.preloadedArcticSeaIceProvider) {
+      this.layers.arcticSeaIce = imageryLayers.addImageryProvider(this.preloadedArcticSeaIceProvider);
+      this.layers.arcticSeaIce.alpha = 1.0;
+      this.layers.arcticSeaIce.show = true;
+      this.layers.arcticSeaIce.brightness = 1.0;
+      this.layers.arcticSeaIce.contrast = 1.0;
+      this.layers.arcticSeaIce.saturation = 1.0;
+      this.layers.arcticSeaIce.gamma = 1.0;
+    }
+
+    // 3. Camada NASA GIBS / Worldview VIIRS True Color (Satélite NASA/NOAA Suomi NPP em EPSG:4326)
     const gibsViirsProvider = this.createTileProvider(
       '/api-tiles/nasa-viirs/{z}/{y}/{x}',
-      9,
-      'NASA GIBS / Suomi NPP VIIRS True Color'
+      5,
+      'NASA GIBS / Suomi NPP VIIRS True Color (EPSG:4326)',
+      {
+        tilingScheme: nasaGeographicTilingScheme,
+        tileWidth: 512,
+        tileHeight: 512,
+        minimumLevel: 0
+      }
     );
     this.layers.nasaGibsViirs = imageryLayers.addImageryProvider(gibsViirsProvider);
     this.layers.nasaGibsViirs.show = false;
-    this.layers.nasaGibsViirs.brightness = 0.96;
-    this.layers.nasaGibsViirs.contrast = 1.12;
+    this.layers.nasaGibsViirs.brightness = 1.0;
+    this.layers.nasaGibsViirs.contrast = 1.0;
+    this.layers.nasaGibsViirs.saturation = 1.0;
+    this.layers.nasaGibsViirs.gamma = 1.0;
 
     // 4. Camada de Relevo Topográfico (Ativada apenas quando a câmera se aproxima < 3.500 km)
     const hillshadeProvider = this.createTileProvider(
       '/api-tiles/hillshade/{z}/{y}/{x}',
       15,
-      'World Elevation Hillshade'
+      'World Elevation Hillshade',
+      {
+        minimumLevel: 3
+      }
     );
     this.layers.hillshade = imageryLayers.addImageryProvider(hillshadeProvider);
     this.layers.hillshade.colorToAlpha = Cesium.Color.WHITE;
     this.layers.hillshade.colorToAlphaThreshold = 0.35;
-    this.layers.hillshade.alpha = 0.0; // Em órbita global fica 0.0 para não esbranquiçar o globo!
-    this.layers.hillshade.contrast = 1.4;
-
-    // 5. Camada Global de Nuvens da NASA (Opcional, desligada por padrão na abertura)
-    try {
-      const cloudsProvider = await Cesium.SingleTileImageryProvider.fromUrl(
-        '/textures/earth/earth_clouds_1k.png',
-        { rectangle: Cesium.Rectangle.MAX_VALUE }
-      );
-      this.layers.clouds = imageryLayers.addImageryProvider(cloudsProvider);
-      this.layers.clouds.colorToAlpha = Cesium.Color.BLACK;
-      this.layers.clouds.colorToAlphaThreshold = 0.48;
-      this.layers.clouds.alpha = 0.32;
-      this.layers.clouds.brightness = 1.1;
-      this.layers.clouds.show = this.cloudsEnabled;
-    } catch (err) {
-      console.warn('[Globe] Camada de nuvens opcional indisponível:', err);
-    }
+    this.layers.hillshade.alpha = 0.0;
+    this.layers.hillshade.show = false;
+    this.layers.hillshade.contrast = 1.35;
 
     this.applyImageryMode(this.activeImageryMode);
   }
@@ -281,26 +337,41 @@ export class EarthGlobeController {
    */
   applyImageryMode(mode) {
     this.activeImageryMode = mode;
-    const { nasaGibsBlueMarble, worldImagery, nasaGibsViirs, hillshade } = this.layers;
+    const { nasaGibsBlueMarble, arcticSeaIce, worldImagery, nasaGibsViirs, hillshade } = this.layers;
 
     if (!nasaGibsBlueMarble || !worldImagery) return;
 
     nasaGibsBlueMarble.show = false;
+    if (arcticSeaIce) arcticSeaIce.show = false;
     worldImagery.show = false;
     if (nasaGibsViirs) nasaGibsViirs.show = false;
     if (hillshade) hillshade.show = false;
 
     switch (mode) {
       case 'nasa_bluemarble':
+        // Visualização pura do compósito NASA GIBS Blue Marble Next Generation + Gelo Marinho AMSR2 (EPSG:4326)
         nasaGibsBlueMarble.show = true;
         nasaGibsBlueMarble.alpha = 1.0;
+        if (arcticSeaIce) {
+          arcticSeaIce.show = true;
+          arcticSeaIce.alpha = 1.0;
+        }
         break;
       case 'world_imagery':
+        // Mantém a base polar EPSG:4326 e o gelo marinho ártico sob a camada Web Mercator para cobertura contínua até 90°N/S
+        nasaGibsBlueMarble.show = true;
+        nasaGibsBlueMarble.alpha = 1.0;
+        if (arcticSeaIce) {
+          arcticSeaIce.show = true;
+          arcticSeaIce.alpha = 1.0;
+        }
         worldImagery.show = true;
         worldImagery.alpha = 1.0;
         if (hillshade) hillshade.show = true;
+        this.updateHybridLODBlend();
         break;
       case 'nasa_viirs':
+        // VIIRS Suomi NPP (2024-06-15) já captura cobertura de nuvens e gelo marinho ótico em tempo real
         if (nasaGibsViirs) {
           nasaGibsViirs.show = true;
           nasaGibsViirs.alpha = 1.0;
@@ -308,18 +379,22 @@ export class EarthGlobeController {
         break;
       case 'nasa_hybrid':
       default:
-        // Combina NASA GIBS Blue Marble Next Generation com Satélite HD multirresolução
+        // Em órbita (>= 6.000 km): Blue Marble Next Generation + Gelo Marinho Ártico AMSR2 puros.
+        // Abaixo de 6.000 km: transição gradual para Satélite HD (Landsat / Maxar).
         nasaGibsBlueMarble.show = true;
         nasaGibsBlueMarble.alpha = 1.0;
-        worldImagery.show = true;
-        if (hillshade) hillshade.show = true;
+        if (arcticSeaIce) {
+          arcticSeaIce.show = true;
+          arcticSeaIce.alpha = 1.0;
+        }
+        worldImagery.show = false;
         this.updateHybridLODBlend();
         break;
     }
   }
 
   /**
-   * Ajusta dinamicamente a fusão entre o NASA GIBS Blue Marble (órbita global) e os tiles
+   * Ajusta dinamicamente a fusão entre o NASA GIBS Blue Marble Next Generation e os tiles
    * de satélite de alta resolução + relevo topográfico conforme a câmera se aproxima.
    */
   updateHybridLODBlend() {
@@ -327,47 +402,49 @@ export class EarthGlobeController {
 
     const carto = this.viewer.camera.positionCartographic;
     const altitudeKm = carto ? carto.height / 1000 : 12500;
+    const absLatDeg = carto ? Math.abs(Cesium.Math.toDegrees(carto.latitude)) : 0;
+
+    // Estima a latitude máxima no campo de visão para que o limite Web Mercator (±85.0511°)
+    // da camada de aproximação se atenue totalmente antes de entrar no disco visível.
+    const viewMarginDeg = Math.min(28.0, (altitudeKm * 0.75) / 111.0);
+    const effectiveMaxLat = Math.min(90.0, absLatDeg + viewMarginDeg);
+    const polarFade = Math.max(0, Math.min(1, (80.0 - effectiveMaxLat) / (80.0 - 70.0)));
 
     if (this.activeImageryMode === 'nasa_hybrid' && this.layers.worldImagery) {
-      // Em órbita global (12.500 km): 55% Satélite HD + 100% NASA Blue Marble (cores oceânicas profundas e naturais)
-      // Abaixo de 2.500 km: 100% Satélite HD para nitidez máxima de crateras, montanhas e desertos
-      const t = Math.max(0, Math.min(1, (8500 - altitudeKm) / (8500 - 2000)));
-      this.layers.worldImagery.alpha = 0.55 + t * 0.45;
+      // Em órbita (>= 6.000 km): 0% World Imagery (sem batimetria Esri nos oceanos/Ártico).
+      // Abaixo de 6.000 km até 1.600 km: transição progressiva até 98% World Imagery (Zoom 18).
+      const zoomBlend = Math.max(0, Math.min(1, (6000 - altitudeKm) / (6000 - 1600)));
+      const targetAlpha = zoomBlend * 0.98 * polarFade;
+      this.layers.worldImagery.alpha = targetAlpha;
+      this.layers.worldImagery.show = targetAlpha > 0.01;
+    } else if (this.activeImageryMode === 'world_imagery' && this.layers.worldImagery) {
+      this.layers.worldImagery.alpha = polarFade;
+      this.layers.worldImagery.show = polarFade > 0.01;
     }
 
     // Relevo topográfico (Hillshade) só entra quando a câmera está abaixo de 3.500 km
-    // evitando qualquer aspecto esbranquiçado na visão orbital global!
-    if (this.layers.hillshade && this.layers.hillshade.show) {
-      if (altitudeKm > 3500) {
+    if (this.layers.hillshade) {
+      const hillshadeAllowed =
+        this.activeImageryMode === 'nasa_hybrid' || this.activeImageryMode === 'world_imagery';
+      if (!hillshadeAllowed || altitudeKm >= 3500) {
         this.layers.hillshade.alpha = 0.0;
+        this.layers.hillshade.show = false;
       } else {
         const reliefFactor = Math.max(0, Math.min(1, (3500 - altitudeKm) / 2500));
-        this.layers.hillshade.alpha = reliefFactor * 0.24;
+        const targetReliefAlpha = reliefFactor * 0.22 * polarFade;
+        this.layers.hillshade.alpha = targetReliefAlpha;
+        this.layers.hillshade.show = targetReliefAlpha > 0.01;
       }
     }
   }
 
   /**
-   * Atualiza a direção da luz solar antes de cada quadro.
+   * Atualiza o balanceamento dinâmico de resolução (LOD) antes de cada quadro.
    */
   handlePreRender() {
     if (!this.viewer) return;
 
     this.updateHybridLODBlend();
-
-    const { camera, light } = this.viewer.scene;
-    if (light && camera) {
-      const dir = camera.directionWC;
-      const up = camera.upWC;
-      const right = camera.rightWC;
-
-      const sunDir = new Cesium.Cartesian3(
-        dir.x - right.x * 0.5 - up.x * 0.28,
-        dir.y - right.y * 0.5 - up.y * 0.28,
-        dir.z - right.z * 0.5 - up.z * 0.28
-      );
-      Cesium.Cartesian3.normalize(sunDir, light.direction);
-    }
   }
 
   /**
@@ -432,6 +509,21 @@ export class EarthGlobeController {
     }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
 
     this.eventHandler.setInputAction((click) => {
+      const picked = this.viewer.scene.pick(click.position);
+      const entityId = picked?.id?.id;
+      if (typeof entityId === 'string' && entityId.startsWith('investigation-')) {
+        eventBus.emit('discovery:select-evidence', {
+          id: entityId.slice('investigation-'.length).replace(/-center$/, '')
+        });
+      } else if (typeof entityId === 'string' && entityId.startsWith('discovered-')) {
+        const candidate = this.discoveredCandidates?.get(entityId.slice('discovered-'.length));
+        if (candidate) {
+          eventBus.emit('discovery:focus-candidate', candidate);
+        }
+      } else if (typeof entityId === 'string' && entityId.startsWith('candidate-')) {
+        eventBus.emit('science:select-candidate', { id: entityId.slice('candidate-'.length) });
+      }
+
       const coords = this.pickCoordinatesFromScreenPosition(click.position);
       if (!coords) return;
 
@@ -468,23 +560,32 @@ export class EarthGlobeController {
   }
 
   /**
-   * Executa transição suave de câmera (flyTo) para uma região do planeta.
+   * Executa transição suave de câmera (flyTo) ou posicionamento síncrono imediato (duration <= 0).
    */
   flyToRegion({ latitude, longitude, altitudeKm = 12500, duration = 2.0 }) {
     if (!this.viewer || !isValidCoordinate(latitude, longitude)) return;
 
     const heightMeters = Math.max(0.8, altitudeKm) * 1000;
+    const destination = Cesium.Cartesian3.fromDegrees(longitude, latitude, heightMeters);
+    const orientation = {
+      heading: Cesium.Math.toRadians(0.0),
+      pitch: Cesium.Math.toRadians(-90.0),
+      roll: 0.0
+    };
 
-    this.viewer.camera.flyTo({
-      destination: Cesium.Cartesian3.fromDegrees(longitude, latitude, heightMeters),
-      orientation: {
-        heading: Cesium.Math.toRadians(0.0),
-        pitch: Cesium.Math.toRadians(-90.0),
-        roll: 0.0
-      },
-      duration,
-      easingFunction: Cesium.EasingFunction.QUADRATIC_IN_OUT
-    });
+    if (duration <= 0) {
+      this.viewer.camera.setView({
+        destination,
+        orientation
+      });
+    } else {
+      this.viewer.camera.flyTo({
+        destination,
+        orientation,
+        duration,
+        easingFunction: Cesium.EasingFunction.QUADRATIC_IN_OUT
+      });
+    }
 
     eventBus.emit('globe:pointer-move', {
       latitude,
@@ -518,9 +619,210 @@ export class EarthGlobeController {
   }
 
   /**
+   * Removes previously rendered entities belonging to a single visual layer group.
+   * @param {Cesium.Entity[]} entityList
+   */
+  clearEntityGroup(entityList) {
+    if (!this.viewer || this.viewer.isDestroyed() || !Array.isArray(entityList)) return;
+    if (entityList.length === 0) return;
+
+    this.viewer.entities.suspendEvents();
+    try {
+      for (const entity of entityList) {
+        this.viewer.entities.remove(entity);
+      }
+      entityList.length = 0;
+    } finally {
+      this.viewer.entities.resumeEvents();
+    }
+  }
+
+  /**
+   * Renders the active discovery experiment candidates onto viewer.entities.
+   * @param {{ candidates?: Array<Object>, experimentId?: string }} payload
+   */
+  renderDiscoveryCandidates(payload) {
+    if (!this.viewer || this.viewer.isDestroyed() || !payload || !Array.isArray(payload.candidates)) {
+      return;
+    }
+
+    const { candidates, experimentId } = payload;
+    this.clearEntityGroup(this.discoveryEntities);
+    this.discoveredCandidates = new Map();
+    this.viewer.entities.show = true;
+
+    this.viewer.entities.suspendEvents();
+    try {
+      for (const candidate of candidates) {
+        if (!candidate || !isValidCoordinate(candidate.latitude, candidate.longitude)) {
+          continue;
+        }
+        this.discoveredCandidates.set(candidate.id, candidate);
+
+        const isTopRank = candidate.rank === 1;
+        const isTopTen = typeof candidate.rank === 'number' && candidate.rank <= 10;
+        const pointColor = isTopRank
+          ? Cesium.Color.fromCssColorString('#ff7a18')
+          : isTopTen
+            ? Cesium.Color.fromCssColorString('#22e58a')
+            : Cesium.Color.fromCssColorString('#84ff4d');
+
+        const entity = this.viewer.entities.add({
+          id: `discovered-${candidate.id}`,
+          name: `${experimentId || 'discovery'} #${candidate.rank ?? ''}`,
+          show: true,
+          position: Cesium.Cartesian3.fromDegrees(candidate.longitude, candidate.latitude, 5000),
+          point: {
+            show: true,
+            pixelSize: isTopRank ? 15 : isTopTen ? 11 : 8,
+            color: pointColor,
+            outlineColor: isTopRank ? Cesium.Color.WHITE : Cesium.Color.BLACK,
+            outlineWidth: 2
+          },
+          label: {
+            text: `#${candidate.rank} · generated`,
+            font: '600 11px Inter, sans-serif',
+            fillColor: Cesium.Color.WHITE,
+            backgroundColor: Cesium.Color.fromCssColorString('rgba(5, 10, 20, 0.82)'),
+            showBackground: true,
+            pixelOffset: new Cesium.Cartesian2(0, -18),
+            distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, isTopRank ? 2400000 : 800000),
+            show: typeof candidate.rank === 'number' && candidate.rank <= 3
+          }
+        });
+        this.discoveryEntities.push(entity);
+      }
+    } finally {
+      this.viewer.entities.resumeEvents();
+    }
+  }
+
+  /**
+   * Renders the seven-site baseline candidates onto viewer.entities separately from discovery catalogs.
+   * @param {{ candidates?: Array<Object> }} run
+   */
+  renderScienceCandidates(run) {
+    if (!this.viewer || this.viewer.isDestroyed() || !run || !Array.isArray(run.candidates)) {
+      return;
+    }
+
+    this.clearEntityGroup(this.scienceEntities);
+    this.viewer.entities.show = true;
+
+    this.viewer.entities.suspendEvents();
+    try {
+      for (const candidate of run.candidates) {
+        if (!candidate || !isValidCoordinate(candidate.latitude, candidate.longitude)) {
+          continue;
+        }
+        const isTopRank = candidate.rank === 1;
+        const entity = this.viewer.entities.add({
+          id: `candidate-${candidate.id}`,
+          name: candidate.name || candidate.id,
+          show: true,
+          position: Cesium.Cartesian3.fromDegrees(candidate.longitude, candidate.latitude, 3500),
+          point: {
+            show: true,
+            pixelSize: isTopRank ? 16 : 11,
+            color: isTopRank ? Cesium.Color.GOLD : Cesium.Color.CYAN,
+            outlineColor: Cesium.Color.BLACK,
+            outlineWidth: 2
+          },
+          label: {
+            text: `${candidate.rank}. ${candidate.name}`,
+            font: '600 12px Inter, sans-serif',
+            fillColor: Cesium.Color.WHITE,
+            backgroundColor: Cesium.Color.fromCssColorString('rgba(5, 10, 20, 0.82)'),
+            showBackground: true,
+            pixelOffset: new Cesium.Cartesian2(0, -22),
+            distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 12000000),
+            show: true
+          }
+        });
+        this.scienceEntities.push(entity);
+      }
+    } finally {
+      this.viewer.entities.resumeEvents();
+    }
+  }
+
+  /**
+   * Renders an analyzed Earth investigation window polygon and center marker onto viewer.entities.
+   * @param {Object} record
+   */
+  renderInvestigationWindow(record) {
+    if (!this.viewer || this.viewer.isDestroyed() || !record) return;
+
+    this.clearEntityGroup(this.investigationEntities);
+    const ring = record.footprint_geojson?.coordinates?.[0];
+    if (!Array.isArray(ring) || ring.length === 0) return;
+
+    const positions = ring.map(([longitude, latitude]) =>
+      Cesium.Cartesian3.fromDegrees(longitude, latitude)
+    );
+
+    this.viewer.entities.suspendEvents();
+    try {
+      const footprintEntity = this.viewer.entities.add({
+        id: `investigation-${record.id}`,
+        show: true,
+        polygon: {
+          show: true,
+          hierarchy: new Cesium.PolygonHierarchy(positions),
+          material: Cesium.Color.ORANGE.withAlpha(0.22),
+          outline: true,
+          outlineColor: Cesium.Color.ORANGE,
+          outlineWidth: 2,
+          height: 1000
+        }
+      });
+      this.investigationEntities.push(footprintEntity);
+
+      if (isValidCoordinate(record.latitude, record.longitude)) {
+        const centerEntity = this.viewer.entities.add({
+          id: `investigation-${record.id}-center`,
+          show: true,
+          position: Cesium.Cartesian3.fromDegrees(record.longitude, record.latitude, 4500),
+          point: {
+            show: true,
+            pixelSize: 13,
+            color: Cesium.Color.ORANGE,
+            outlineColor: Cesium.Color.WHITE,
+            outlineWidth: 2
+          }
+        });
+        this.investigationEntities.push(centerEntity);
+      }
+    } finally {
+      this.viewer.entities.resumeEvents();
+    }
+
+    if (isValidCoordinate(record.latitude, record.longitude)) {
+      this.setAutoRotation(false);
+      this.flyToRegion({ latitude: record.latitude, longitude: record.longitude, altitudeKm: 500 });
+    }
+  }
+
+  /**
    * Inscreve o controlador do globo nos eventos emitidos pelos botões da interface.
    */
   setupEventBusSubscriptions() {
+    eventBus.on('discovery:focus-candidate', (candidate) => {
+      if (!candidate || !isValidCoordinate(candidate.latitude, candidate.longitude)) return;
+      this.setAutoRotation(false);
+      this.flyToRegion({ latitude: candidate.latitude, longitude: candidate.longitude, altitudeKm: 650 });
+    });
+
+    eventBus.on('discovery:focus-evidence', (record) => {
+      this.renderInvestigationWindow(record);
+    });
+
+    eventBus.on('science:focus-candidate', (candidate) => {
+      if (!candidate || !isValidCoordinate(candidate.latitude, candidate.longitude)) return;
+      this.setAutoRotation(false);
+      this.flyToRegion({ latitude: candidate.latitude, longitude: candidate.longitude, altitudeKm: 1200 });
+    });
+
     eventBus.on('globe:reset-camera', (coords) => {
       const target = coords || APP_CONFIG.defaultCoordinates;
       this.flyToRegion({
@@ -542,20 +844,6 @@ export class EarthGlobeController {
       });
     });
 
-    eventBus.on('globe:toggle-lighting', (payload) => {
-      if (!this.viewer || !payload) return;
-      this.solarLightingEnabled = Boolean(payload.enabled);
-      this.viewer.scene.globe.enableLighting = this.solarLightingEnabled;
-    });
-
-    eventBus.on('globe:toggle-clouds', (payload) => {
-      if (!payload) return;
-      this.cloudsEnabled = Boolean(payload.enabled);
-      if (this.layers.clouds) {
-        this.layers.clouds.show = this.cloudsEnabled;
-      }
-    });
-
     eventBus.on('globe:change-imagery-mode', (payload) => {
       if (!payload || !payload.mode) return;
       this.applyImageryMode(payload.mode);
@@ -568,14 +856,14 @@ export class EarthGlobeController {
   }
 
   /**
-   * Monitora perda de contexto WebGL, redimensionamento responsivo e visibilidade da aba.
+   * Monitors WebGL context loss, responsive resizing, and tab visibility.
    */
   setupWebGLContextGuard() {
     const canvas = this.viewer?.scene?.canvas;
     if (canvas) {
       canvas.addEventListener('webglcontextlost', (event) => {
         event.preventDefault();
-        console.warn('[Globe] Contexto WebGL perdido temporariamente.');
+        console.warn('[Globe] WebGL context temporarily lost.');
       });
     }
 

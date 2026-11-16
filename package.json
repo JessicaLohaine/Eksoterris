@@ -2,7 +2,7 @@
   "name": "eksoterris-nasa-space-apps-2026",
   "version": "0.1.0",
   "private": true,
-  "description": "Plataforma Geoespacial 3D para Identificação de Ambientes Análogos Terrestres (Lua e Marte) — NASA Space Apps Challenge 2026",
+  "description": "3D Geospatial Platform for Terrestrial Planetary Analog Identification (Moon & Mars) — NASA Space Apps Challenge 2026",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -1,20 +1,20 @@
 /**
- * Módulo 3D de Marte (src/planets/mars.js)
- * Reestruturação Visual: Utilização do mosaico global 2K (2048x1024) baseado em dados
- * das missões Viking e MGS MOLA da NASA, destacando Valles Marineris, Tharsis, Syrtis Major e crateras.
+ * 3D Mars Module (src/planets/mars.js)
+ * Visual Architecture: Global 2K mosaic (2048x1024) based on NASA Viking and
+ * MGS MOLA mission data, highlighting Valles Marineris, Tharsis, Syrtis Major, and craters.
  */
 import { PlanetRenderer } from './planet-renderer.js';
 
 export const MARS_METADATA = Object.freeze({
   id: 'mars',
-  name: 'Marte',
+  name: 'Mars',
   meanRadiusKm: 3389.5,
   surfaceGravityMs2: 3.72,
   axialTiltDeg: 25.19
 });
 
 /**
- * Inicializa o modelo 3D interativo de Marte no container especificado.
+ * Initializes the interactive 3D Mars model in the specified container.
  * @param {HTMLElement} container
  * @returns {PlanetRenderer}
  */
@@ -23,7 +23,7 @@ export function initMarsModel(container) {
     id: MARS_METADATA.id,
     name: MARS_METADATA.name,
     albedoUrl: '/textures/mars/mars_albedo.jpg',
-    // Usa o mosaico 2K real para alinhamento topográfico exato das feições geológicas marcianas
+    // Uses the 2K mosaic for exact topographic alignment of Martian geological features
     bumpUrl: '/textures/mars/mars_albedo.jpg',
     bumpScale: 0.022,
     roughness: 0.86,

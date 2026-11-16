@@ -1,0 +1,6 @@
+{
+  "url": "https://cmr.earthdata.nasa.gov/search/granules.json?short_name=NASADEM_HGT&version=001&bounding_box=-69%2C-24%2C-63%2C-17&page_size=100",
+  "retrieved_at": "2026-11-16T01:21:48.549223+00:00",
+  "sha256": "042f78e8e9aeab41367ccf5ba679d634205c4f86c8834617470840bb2f91658d",
+  "bytes": 282039
+}

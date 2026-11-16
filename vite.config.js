@@ -36,21 +36,18 @@ function cesiumStaticAssetsPlugin() {
 
 /**
  * Mapa de provedores científicos e institucionais de imagens de satélite por tiles.
- * - sentinel2: EOX Sentinel-2 Cloudless (ESA Copernicus 10m-15m Global Mosaic)
  * - arcgis: Esri / Maxar / Earthstar Geographics World Imagery (Nível orbital a sub-métrico)
- * - nasa-bluemarble: NASA GIBS Blue Marble Next Generation (WMTS Oficial da NASA)
- * - nasa-viirs: NASA GIBS / Worldview VIIRS True Color
+ * - nasa-bluemarble: NASA GIBS Blue Marble Next Generation (MODIS Cloud-Free Composite EPSG:4326)
+ * - nasa-viirs: NASA GIBS / Worldview VIIRS True Color (Suomi NPP EPSG:4326)
  * - hillshade: Esri World Elevation Hillshade (Sombreado de Relevo Topográfico)
  */
 const TILE_PROVIDERS = Object.freeze({
-  sentinel2: (z, y, x) =>
-    `https://tiles.maps.eox.at/wmts/1.0.0/s2cloudless-2020_3857/default/GoogleMapsCompatible/${z}/${y}/${x}.jpg`,
   arcgis: (z, y, x) =>
     `https://services.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/${z}/${y}/${x}`,
   'nasa-bluemarble': (z, y, x) =>
-    `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/BlueMarble_NextGeneration/default/GoogleMapsCompatible_Level8/${z}/${y}/${x}.jpeg`,
+    `https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/BlueMarble_NextGeneration/default/500m/${z + 3}/${y}/${x}.jpeg`,
   'nasa-viirs': (z, y, x) =>
-    `https://gibs.earthdata.nasa.gov/wmts/epsg3857/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/2024-06-15/GoogleMapsCompatible_Level9/${z}/${y}/${x}.jpg`,
+    `https://gibs.earthdata.nasa.gov/wmts/epsg4326/best/VIIRS_SNPP_CorrectedReflectance_TrueColor/default/2024-06-15/250m/${z + 3}/${y}/${x}.jpg`,
   hillshade: (z, y, x) =>
     `https://services.arcgisonline.com/ArcGIS/rest/services/Elevation/World_Hillshade/MapServer/tile/${z}/${y}/${x}`
 });
@@ -80,7 +77,7 @@ function geospatialTileProxyPlugin() {
         }
 
         const [provider, zStr, yStr, xStr] = parts;
-        const buildUrl = TILE_PROVIDERS[provider];
+        const buildUrl = Object.hasOwn(TILE_PROVIDERS, provider) ? TILE_PROVIDERS[provider] : null;
         if (!buildUrl || !/^\d+$/.test(zStr) || !/^\d+$/.test(yStr) || !/^\d+$/.test(xStr)) {
           res.statusCode = 400;
           res.end('Invalid tile parameters');
@@ -103,7 +100,13 @@ function geospatialTileProxyPlugin() {
           // 1. Verifica cache em disco local
           if (fs.existsSync(cacheFile)) {
             const cachedBuffer = fs.readFileSync(cacheFile);
-            res.setHeader('Content-Type', 'image/jpeg');
+            const isPng =
+              cachedBuffer.length >= 4 &&
+              cachedBuffer[0] === 0x89 &&
+              cachedBuffer[1] === 0x50 &&
+              cachedBuffer[2] === 0x4e &&
+              cachedBuffer[3] === 0x47;
+            res.setHeader('Content-Type', isPng ? 'image/png' : 'image/jpeg');
             res.setHeader('Cache-Control', 'public, max-age=604800, immutable');
             res.setHeader('X-Tile-Cache', 'HIT');
             res.statusCode = 200;
@@ -158,6 +161,7 @@ export default defineConfig({
   },
   plugins: [cesiumStaticAssetsPlugin(), geospatialTileProxyPlugin()],
   server: {
+    proxy: { '/api/': { target: 'http://127.0.0.1:8000', changeOrigin: true } },
     host: '127.0.0.1',
     port: 5173,
     strictPort: false,

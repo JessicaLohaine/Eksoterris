@@ -1,0 +1,9 @@
+{
+  "bytes": 48298813,
+  "etag": "f56315beeaaa444f80c9545076666783-1",
+  "license": "Copernicus free use with attribution; source EC JRC/Google",
+  "product": "EC JRC Global Surface Water v1.5, occurrence, 1984-2024",
+  "retrieved_at": "2026-11-16T01:19:12.156110+00:00",
+  "sha256": "de776e8eceb80afdd7d633778634fa70d34ab7924a8c1401564ee2c5609a084b",
+  "url": "https://s3.waw4-1.cloudferro.com/swift/v1/global-surface-water/download2024/Aggregated/VER1-5/occurrence/occurrence_70W_10S_v1_5_2024.tif"
+}

@@ -1,0 +1,6 @@
+{
+  "url": "https://landsatlook.usgs.gov/stac-server/collections/landsat-c2l2-sr/items?bbox=-68.1%2C-23.5%2C-63.4%2C-17.9&datetime=2024-01-01T00%3A00%3A00Z%2F2024-12-31T23%3A59%3A59Z&limit=50",
+  "retrieved_at": "2026-11-16T01:26:18.742164+00:00",
+  "sha256": "91e92bbc459cb10477509d9c61ef10a8e9f2a72b8c65c2a763dfb0f8a8d6ce15",
+  "bytes": 1199149
+}

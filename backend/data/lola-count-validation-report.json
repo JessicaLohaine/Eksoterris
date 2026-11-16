@@ -1,0 +1,3839 @@
+{
+  "version": "lola-count-validation-v1",
+  "sources": {
+    "LDEM_4": {
+      "label": {
+        "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_4.LBL",
+        "sha256": "b5a197b4d417e3b5e0e84f8fe15f9a1d2203b8eb5d7213236c0ffbc86e940cc6",
+        "bytes": 5107
+      },
+      "image": {
+        "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEM_4.IMG",
+        "sha256": "972d66d7f330abca62abc21aae270661516c00dd1a881ec102b94df9563656b5",
+        "bytes": 2073600
+      }
+    },
+    "LDEC_4": {
+      "label": {
+        "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEC_4.LBL",
+        "sha256": "ab220f2b95482f9d4a6e94a8714897e822492fe731aedaa1b275ba758869da13",
+        "bytes": 3942
+      },
+      "image": {
+        "url": "https://imbrium.mit.edu/DATA/LOLA_GDR/CYLINDRICAL/IMG/LDEC_4.IMG",
+        "sha256": "10ccc1253a7adab1ecb651d26b00ef6cbfa41107fd40f8998b5ab9fa5f9ee943",
+        "bytes": 2073600
+      }
+    }
+  },
+  "registration": {
+    "matching_fields": [
+      "DATA_SET_ID",
+      "PRODUCT_VERSION_ID",
+      "START_TIME",
+      "STOP_TIME",
+      "PRODUCT_CREATION_TIME",
+      "PRODUCER_ID",
+      "INSTRUMENT_ID",
+      "TARGET_NAME",
+      "LINES",
+      "LINE_SAMPLES",
+      "SAMPLE_TYPE",
+      "SAMPLE_BITS",
+      "MAP_PROJECTION_TYPE",
+      "MAP_RESOLUTION",
+      "A_AXIS_RADIUS",
+      "B_AXIS_RADIUS",
+      "C_AXIS_RADIUS",
+      "POSITIVE_LONGITUDE_DIRECTION",
+      "CENTER_LATITUDE",
+      "CENTER_LONGITUDE",
+      "MAXIMUM_LATITUDE",
+      "MINIMUM_LATITUDE",
+      "WESTERNMOST_LONGITUDE",
+      "EASTERNMOST_LONGITUDE",
+      "LINE_PROJECTION_OFFSET",
+      "SAMPLE_PROJECTION_OFFSET",
+      "COORDINATE_SYSTEM_TYPE",
+      "COORDINATE_SYSTEM_NAME"
+    ],
+    "elevation_map_scale_m": 7580.84,
+    "count_map_scale_m": 7580.837606,
+    "map_scale_difference_m_per_pixel": 0.002394
+  },
+  "gdal": {
+    "LDEM_4": {
+      "driver": "PDS",
+      "shape": [
+        720,
+        1440
+      ],
+      "transform": [
+        7580.84,
+        0.0,
+        -5458204.8,
+        0.0,
+        -7580.84,
+        2729102.4
+      ],
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "nodata": -32768.0,
+      "nodata_count": 0,
+      "scale": 0.5,
+      "offset": 1737400.0
+    },
+    "LDEC_4": {
+      "driver": "PDS",
+      "shape": [
+        720,
+        1440
+      ],
+      "transform": [
+        7580.837606,
+        0.0,
+        -5458203.07632,
+        0.0,
+        -7580.837606,
+        2729101.53816
+      ],
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "nodata": -32768.0,
+      "nodata_count": 0,
+      "scale": 1.0,
+      "offset": 0.0
+    }
+  },
+  "projected_affine_origin_difference_m": {
+    "x": 1.723679999820888,
+    "y": -0.861839999910444
+  },
+  "whole_count_grid": {
+    "shape": [
+      720,
+      1440
+    ],
+    "minimum": 64,
+    "maximum": 26671,
+    "zero_count_bins": 0
+  },
+  "controls": {
+    "tycho_center": {
+      "requested_latitude": -43.31,
+      "requested_longitude": -11.36,
+      "north_up_row": 533,
+      "column": 1394,
+      "pixel_center_latitude": -43.375,
+      "pixel_center_longitude": 348.625,
+      "height_m": -1858.5,
+      "observations": 12410
+    },
+    "tranquillitatis_center": {
+      "requested_latitude": 0.674,
+      "requested_longitude": 23.473,
+      "north_up_row": 357,
+      "column": 93,
+      "pixel_center_latitude": 0.625,
+      "pixel_center_longitude": 23.375,
+      "height_m": -1883.0,
+      "observations": 8755
+    },
+    "south_strip_edge": {
+      "requested_latitude": -45.125,
+      "requested_longitude": 348.875,
+      "north_up_row": 540,
+      "column": 1395,
+      "pixel_center_latitude": -45.125,
+      "pixel_center_longitude": 348.875,
+      "height_m": 316.0,
+      "observations": 16601
+    },
+    "north_strip_edge": {
+      "requested_latitude": -44.875,
+      "requested_longitude": 348.875,
+      "north_up_row": 539,
+      "column": 1395,
+      "pixel_center_latitude": -44.875,
+      "pixel_center_longitude": 348.875,
+      "height_m": 657.5,
+      "observations": 16737
+    },
+    "west_seam": {
+      "requested_latitude": 0.125,
+      "requested_longitude": 359.875,
+      "north_up_row": 359,
+      "column": 1439,
+      "pixel_center_latitude": 0.125,
+      "pixel_center_longitude": 359.875,
+      "height_m": -768.5,
+      "observations": 4966
+    },
+    "east_seam": {
+      "requested_latitude": 0.125,
+      "requested_longitude": 0.125,
+      "north_up_row": 359,
+      "column": 0,
+      "pixel_center_latitude": 0.125,
+      "pixel_center_longitude": 0.125,
+      "height_m": -796.0,
+      "observations": 5550
+    }
+  },
+  "windows": {
+    "baseline-220km-11": {
+      "moon-tycho": {
+        "queries": 3025,
+        "queries_south_of_45_s": 795,
+        "unique_source_bins": {
+          "source_bins": 1237,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6985.0,
+          "p25": 9229.0,
+          "median": 11028.0,
+          "p75": 12648.0,
+          "p95": 15809.400000000001,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_south_of_45_s": {
+          "source_bins": 344,
+          "zero_count_bins": 0,
+          "minimum": 5709,
+          "p5": 7224.8,
+          "p25": 9425.75,
+          "median": 11656.5,
+          "p75": 13622.25,
+          "p95": 16685.399999999998,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 545,
+            "column": 1406,
+            "latitude": -46.375,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_north_of_45_s": {
+          "source_bins": 893,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6898.8,
+          "p25": 9169.0,
+          "median": 10763.0,
+          "p75": 12286.0,
+          "p95": 15053.199999999997,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_north_row": {
+          "source_bins": 43,
+          "zero_count_bins": 0,
+          "minimum": 6009,
+          "p5": 7283.0,
+          "p25": 9601.5,
+          "median": 11898.0,
+          "p75": 13064.0,
+          "p95": 16579.899999999998,
+          "maximum": 18258,
+          "minimum_bin": {
+            "row": 539,
+            "column": 1406,
+            "latitude": -44.875,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 539,
+            "column": 1403,
+            "latitude": -44.875,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_south_row": {
+          "source_bins": 43,
+          "zero_count_bins": 0,
+          "minimum": 6231,
+          "p5": 7425.0,
+          "p25": 9334.5,
+          "median": 11653.0,
+          "p75": 13350.5,
+          "p95": 16445.399999999998,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 540,
+            "column": 1406,
+            "latitude": -45.125,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "paired_45_s_row_counts": {
+          "columns": 43,
+          "median_signed_south_minus_north": 15.0,
+          "median_absolute_difference": 340.0,
+          "maximum_absolute_difference": 2445
+        },
+        "output_cell_minimum_counts": [
+          [
+            7342,
+            7886,
+            6922,
+            6922,
+            6905,
+            6905,
+            8261,
+            6675,
+            5709,
+            8032,
+            10196
+          ],
+          [
+            7217,
+            8205,
+            7594,
+            7381,
+            6905,
+            6905,
+            7782,
+            6297,
+            5709,
+            7527,
+            10076
+          ],
+          [
+            7217,
+            8782,
+            7795,
+            7798,
+            6465,
+            6465,
+            7303,
+            6731,
+            5875,
+            7260,
+            9276
+          ],
+          [
+            7498,
+            8068,
+            8800,
+            7904,
+            4875,
+            4875,
+            5512,
+            6981,
+            5589,
+            7260,
+            8242
+          ],
+          [
+            7580,
+            7960,
+            8800,
+            7904,
+            4590,
+            4590,
+            5512,
+            5664,
+            5589,
+            7516,
+            7516
+          ],
+          [
+            7808,
+            8294,
+            8430,
+            7968,
+            5012,
+            5012,
+            6066,
+            5547,
+            5708,
+            9067,
+            8913
+          ],
+          [
+            7103,
+            7687,
+            8430,
+            7948,
+            5332,
+            5332,
+            6459,
+            5946,
+            6103,
+            7097,
+            8913
+          ],
+          [
+            7801,
+            8042,
+            8785,
+            8316,
+            5734,
+            5734,
+            6549,
+            7529,
+            6341,
+            6341,
+            9054
+          ],
+          [
+            9327,
+            8893,
+            7833,
+            7973,
+            7101,
+            7101,
+            7990,
+            8257,
+            6341,
+            6341,
+            9400
+          ],
+          [
+            8200,
+            8200,
+            7833,
+            7973,
+            6369,
+            6369,
+            8909,
+            8542,
+            6986,
+            6986,
+            9293
+          ],
+          [
+            7516,
+            7516,
+            7284,
+            8296,
+            6369,
+            6369,
+            7834,
+            8663,
+            7723,
+            8745,
+            8792
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 4,
+              "column": 6,
+              "latitude": -43.96592508516257,
+              "longitude": -10.443634395690689,
+              "value": -2201.756352189111
+            },
+            "contributing_output_cells": [
+              [
+                4,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 5512,
+              "p5": 5885.35,
+              "p25": 6631.25,
+              "median": 7648.5,
+              "p75": 11162.5,
+              "p95": 11931.800000000001,
+              "maximum": 12365,
+              "minimum_bin": {
+                "row": 536,
+                "column": 1396,
+                "latitude": -44.125,
+                "longitude": 349.125
+              },
+              "maximum_bin": {
+                "row": 537,
+                "column": 1399,
+                "latitude": -44.375,
+                "longitude": 349.875
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 3,
+              "column": 6,
+              "latitude": -44.62542712689768,
+              "longitude": -10.43334504856697,
+              "value": 625.2640677917327
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 25,
+              "zero_count_bins": 0,
+              "minimum": 5512,
+              "p5": 6704.2,
+              "p25": 8120.0,
+              "median": 9425.0,
+              "p75": 11909.0,
+              "p95": 12823.8,
+              "maximum": 13270,
+              "minimum_bin": {
+                "row": 536,
+                "column": 1396,
+                "latitude": -44.125,
+                "longitude": 349.125
+              },
+              "maximum_bin": {
+                "row": 540,
+                "column": 1397,
+                "latitude": -45.125,
+                "longitude": 349.375
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 6,
+              "column": 6,
+              "latitude": -42.64691644696959,
+              "longitude": -10.463307503304932,
+              "value": 7.469693149601964
+            },
+            "contributing_output_cells": [
+              [
+                5,
+                6
+              ],
+              [
+                6,
+                5
+              ],
+              [
+                6,
+                7
+              ],
+              [
+                7,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 74,
+              "zero_count_bins": 0,
+              "minimum": 5332,
+              "p5": 6024.0,
+              "p25": 7156.5,
+              "median": 10210.0,
+              "p75": 12058.75,
+              "p95": 18011.64999999999,
+              "maximum": 20641,
+              "minimum_bin": {
+                "row": 532,
+                "column": 1392,
+                "latitude": -43.125,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 532,
+                "column": 1403,
+                "latitude": -43.125,
+                "longitude": 350.875
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 5,
+              "column": 6,
+              "latitude": -43.30642150359991,
+              "longitude": -10.45361770884822,
+              "value": -2862.7873438127003
+            },
+            "contributing_output_cells": [
+              [
+                5,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 6066,
+              "p5": 6355.75,
+              "p25": 6868.25,
+              "median": 7594.0,
+              "p75": 10864.0,
+              "p95": 11282.95,
+              "maximum": 11681,
+              "minimum_bin": {
+                "row": 534,
+                "column": 1400,
+                "latitude": -43.625,
+                "longitude": 350.125
+              },
+              "maximum_bin": {
+                "row": 533,
+                "column": 1399,
+                "latitude": -43.375,
+                "longitude": 349.875
+              }
+            }
+          }
+        }
+      },
+      "moon-tranquillitatis": {
+        "queries": 3025,
+        "queries_south_of_45_s": 0,
+        "unique_source_bins": {
+          "source_bins": 930,
+          "zero_count_bins": 0,
+          "minimum": 1904,
+          "p5": 3312.85,
+          "p25": 4680.0,
+          "median": 6555.5,
+          "p75": 7484.25,
+          "p95": 9081.749999999998,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 342,
+            "column": 84,
+            "latitude": 4.375,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_south_of_45_s": null,
+        "source_bins_north_of_45_s": {
+          "source_bins": 930,
+          "zero_count_bins": 0,
+          "minimum": 1904,
+          "p5": 3312.85,
+          "p25": 4680.0,
+          "median": 6555.5,
+          "p75": 7484.25,
+          "p95": 9081.749999999998,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 342,
+            "column": 84,
+            "latitude": 4.375,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_at_45_s_north_row": null,
+        "source_bins_at_45_s_south_row": null,
+        "paired_45_s_row_counts": null,
+        "output_cell_minimum_counts": [
+          [
+            5194,
+            3722,
+            3722,
+            4067,
+            4405,
+            3408,
+            3408,
+            5475,
+            4533,
+            2949,
+            2949
+          ],
+          [
+            4584,
+            4060,
+            4060,
+            4722,
+            4359,
+            3352,
+            3243,
+            4936,
+            4434,
+            4106,
+            4106
+          ],
+          [
+            4520,
+            4142,
+            4142,
+            4722,
+            3655,
+            3476,
+            2934,
+            4796,
+            4434,
+            4434,
+            4451
+          ],
+          [
+            3849,
+            3849,
+            4142,
+            4776,
+            3457,
+            3457,
+            2934,
+            4757,
+            4581,
+            4430,
+            4428
+          ],
+          [
+            3784,
+            3204,
+            3204,
+            4800,
+            3191,
+            3191,
+            2905,
+            4757,
+            4568,
+            4420,
+            4415
+          ],
+          [
+            3972,
+            3204,
+            3204,
+            4183,
+            3143,
+            3143,
+            2884,
+            5200,
+            4765,
+            4172,
+            4172
+          ],
+          [
+            4031,
+            3770,
+            3770,
+            4029,
+            3161,
+            3156,
+            2645,
+            5789,
+            5584,
+            4172,
+            4172
+          ],
+          [
+            4031,
+            3640,
+            3640,
+            4029,
+            3301,
+            3301,
+            2600,
+            5810,
+            5044,
+            4204,
+            4204
+          ],
+          [
+            4279,
+            3515,
+            3515,
+            3973,
+            3374,
+            3374,
+            2588,
+            5676,
+            4872,
+            4211,
+            4211
+          ],
+          [
+            4285,
+            3497,
+            3497,
+            3973,
+            3079,
+            3079,
+            2588,
+            5604,
+            4857,
+            4247,
+            4247
+          ],
+          [
+            4677,
+            1904,
+            1904,
+            4034,
+            3033,
+            3033,
+            2658,
+            5189,
+            4871,
+            4288,
+            4288
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 2,
+              "column": 10,
+              "latitude": -1.3046969326525166,
+              "longitude": 26.77098825003365,
+              "value": -2165.0588238343967
+            },
+            "contributing_output_cells": [
+              [
+                2,
+                10
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 4451,
+              "p5": 4756.25,
+              "p25": 6483.5,
+              "median": 7132.5,
+              "p75": 7281.5,
+              "p95": 7700.5,
+              "maximum": 8035,
+              "minimum_bin": {
+                "row": 363,
+                "column": 106,
+                "latitude": -0.875,
+                "longitude": 26.625
+              },
+              "maximum_bin": {
+                "row": 363,
+                "column": 107,
+                "latitude": -0.875,
+                "longitude": 26.875
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 7,
+              "column": 0,
+              "latitude": 1.9912702124263097,
+              "longitude": 20.17350843355714,
+              "value": -769.7469525756736
+            },
+            "contributing_output_cells": [
+              [
+                7,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 4031,
+              "p5": 4047.5,
+              "p25": 5529.25,
+              "median": 6687.0,
+              "p75": 7286.25,
+              "p95": 7882.75,
+              "maximum": 8020,
+              "minimum_bin": {
+                "row": 353,
+                "column": 81,
+                "latitude": 1.625,
+                "longitude": 20.375
+              },
+              "maximum_bin": {
+                "row": 352,
+                "column": 82,
+                "latitude": 1.875,
+                "longitude": 20.625
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 1,
+              "column": 6,
+              "latitude": -1.964217278984821,
+              "longitude": 24.132712314846685,
+              "value": 1.4385771329391104
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                6
+              ],
+              [
+                1,
+                5
+              ],
+              [
+                1,
+                7
+              ],
+              [
+                2,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 65,
+              "zero_count_bins": 0,
+              "minimum": 2934,
+              "p5": 3264.8,
+              "p25": 3653.0,
+              "median": 6554.0,
+              "p75": 7501.0,
+              "p95": 11615.39999999999,
+              "maximum": 12831,
+              "minimum_bin": {
+                "row": 363,
+                "column": 96,
+                "latitude": -0.875,
+                "longitude": 24.125
+              },
+              "maximum_bin": {
+                "row": 368,
+                "column": 93,
+                "latitude": -2.125,
+                "longitude": 23.375
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 0,
+              "column": 5,
+              "latitude": -2.623788621680806,
+              "longitude": 23.473000000000003,
+              "value": 636.7128081279085
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                5
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 3408,
+              "p5": 3435.55,
+              "p25": 4206.25,
+              "median": 6442.5,
+              "p75": 9926.25,
+              "p95": 13065.8,
+              "maximum": 13138,
+              "minimum_bin": {
+                "row": 368,
+                "column": 95,
+                "latitude": -2.125,
+                "longitude": 23.875
+              },
+              "maximum_bin": {
+                "row": 371,
+                "column": 93,
+                "latitude": -2.875,
+                "longitude": 23.375
+              }
+            }
+          }
+        }
+      }
+    },
+    "density-220km-7": {
+      "moon-tycho": {
+        "queries": 1225,
+        "queries_south_of_45_s": 315,
+        "unique_source_bins": {
+          "source_bins": 1226,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6982.25,
+          "p25": 9229.25,
+          "median": 11053.5,
+          "p75": 12647.75,
+          "p95": 15731.0,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_south_of_45_s": {
+          "source_bins": 343,
+          "zero_count_bins": 0,
+          "minimum": 5709,
+          "p5": 7222.2,
+          "p25": 9422.5,
+          "median": 11653.0,
+          "p75": 13567.5,
+          "p95": 16643.3,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 545,
+            "column": 1406,
+            "latitude": -46.375,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_north_of_45_s": {
+          "source_bins": 883,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6874.8,
+          "p25": 9169.5,
+          "median": 10814.0,
+          "p75": 12289.5,
+          "p95": 14979.2,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_north_row": {
+          "source_bins": 42,
+          "zero_count_bins": 0,
+          "minimum": 6009,
+          "p5": 7271.5,
+          "p25": 9596.25,
+          "median": 11893.5,
+          "p75": 13028.0,
+          "p95": 15107.349999999995,
+          "maximum": 18258,
+          "minimum_bin": {
+            "row": 539,
+            "column": 1406,
+            "latitude": -44.875,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 539,
+            "column": 1403,
+            "latitude": -44.875,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_south_row": {
+          "source_bins": 42,
+          "zero_count_bins": 0,
+          "minimum": 6231,
+          "p5": 7422.0,
+          "p25": 9323.25,
+          "median": 11556.5,
+          "p75": 13264.5,
+          "p95": 15033.449999999999,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 540,
+            "column": 1406,
+            "latitude": -45.125,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "paired_45_s_row_counts": {
+          "columns": 42,
+          "median_signed_south_minus_north": 15.5,
+          "median_absolute_difference": 338.0,
+          "maximum_absolute_difference": 2445
+        },
+        "output_cell_minimum_counts": [
+          [
+            7342,
+            6922,
+            7381,
+            6905,
+            6297,
+            5709,
+            7527
+          ],
+          [
+            7217,
+            7594,
+            7381,
+            6465,
+            6297,
+            5875,
+            7260
+          ],
+          [
+            7498,
+            7960,
+            7904,
+            4590,
+            5905,
+            5589,
+            7260
+          ],
+          [
+            7103,
+            7960,
+            7629,
+            4590,
+            5547,
+            5708,
+            8913
+          ],
+          [
+            7103,
+            8430,
+            7332,
+            5734,
+            6401,
+            6341,
+            9054
+          ],
+          [
+            8893,
+            7833,
+            7973,
+            6646,
+            7920,
+            6341,
+            9400
+          ],
+          [
+            7516,
+            7284,
+            7007,
+            6369,
+            7834,
+            7723,
+            8745
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 4,
+              "column": 1,
+              "latitude": -42.23902845010721,
+              "longitude": -14.160249214862576,
+              "value": -1584.9120397293889
+            },
+            "contributing_output_cells": [
+              [
+                4,
+                1
+              ]
+            ],
+            "count_support": {
+              "source_bins": 42,
+              "zero_count_bins": 0,
+              "minimum": 8430,
+              "p5": 8752.7,
+              "p25": 9233.0,
+              "median": 10332.5,
+              "p75": 11576.5,
+              "p95": 14394.849999999999,
+              "maximum": 14627,
+              "minimum_bin": {
+                "row": 531,
+                "column": 1383,
+                "latitude": -42.875,
+                "longitude": 345.875
+              },
+              "maximum_bin": {
+                "row": 527,
+                "column": 1381,
+                "latitude": -41.875,
+                "longitude": 345.375
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 5,
+              "column": 3,
+              "latitude": -41.23710429494349,
+              "longitude": -11.36,
+              "value": 463.690502050094
+            },
+            "contributing_output_cells": [
+              [
+                5,
+                3
+              ]
+            ],
+            "count_support": {
+              "source_bins": 42,
+              "zero_count_bins": 0,
+              "minimum": 6646,
+              "p5": 7111.4,
+              "p25": 8721.0,
+              "median": 11464.5,
+              "p75": 13326.25,
+              "p95": 16160.9,
+              "maximum": 16550,
+              "minimum_bin": {
+                "row": 522,
+                "column": 1392,
+                "latitude": -40.625,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 522,
+                "column": 1393,
+                "latitude": -40.625,
+                "longitude": 348.375
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 4,
+              "column": 3,
+              "latitude": -42.27355214747175,
+              "longitude": -11.36,
+              "value": 3.3681513599669404
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                4,
+                4
+              ],
+              [
+                5,
+                3
+              ]
+            ],
+            "count_support": {
+              "source_bins": 143,
+              "zero_count_bins": 0,
+              "minimum": 4590,
+              "p5": 6453.3,
+              "p25": 7995.0,
+              "median": 10597.0,
+              "p75": 12220.0,
+              "p95": 15136.800000000001,
+              "maximum": 16550,
+              "minimum_bin": {
+                "row": 535,
+                "column": 1392,
+                "latitude": -43.875,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 522,
+                "column": 1393,
+                "latitude": -40.625,
+                "longitude": 348.375
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 3,
+              "column": 3,
+              "latitude": -43.31000000000001,
+              "longitude": -11.359999999999998,
+              "value": -2769.0865637200145
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                3
+              ]
+            ],
+            "count_support": {
+              "source_bins": 35,
+              "zero_count_bins": 0,
+              "minimum": 4590,
+              "p5": 5234.6,
+              "p25": 6950.5,
+              "median": 11137.0,
+              "p75": 13062.0,
+              "p95": 15057.6,
+              "maximum": 16051,
+              "minimum_bin": {
+                "row": 535,
+                "column": 1392,
+                "latitude": -43.875,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 531,
+                "column": 1394,
+                "latitude": -42.875,
+                "longitude": 348.625
+              }
+            }
+          }
+        }
+      },
+      "moon-tranquillitatis": {
+        "queries": 1225,
+        "queries_south_of_45_s": 0,
+        "unique_source_bins": {
+          "source_bins": 900,
+          "zero_count_bins": 0,
+          "minimum": 1904,
+          "p5": 3306.7,
+          "p25": 4679.25,
+          "median": 6549.0,
+          "p75": 7438.5,
+          "p95": 9093.75,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 342,
+            "column": 84,
+            "latitude": 4.375,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_south_of_45_s": null,
+        "source_bins_north_of_45_s": {
+          "source_bins": 900,
+          "zero_count_bins": 0,
+          "minimum": 1904,
+          "p5": 3306.7,
+          "p25": 4679.25,
+          "median": 6549.0,
+          "p75": 7438.5,
+          "p95": 9093.75,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 342,
+            "column": 84,
+            "latitude": 4.375,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_at_45_s_north_row": null,
+        "source_bins_at_45_s_south_row": null,
+        "paired_45_s_row_counts": null,
+        "output_cell_minimum_counts": [
+          [
+            4584,
+            3857,
+            4067,
+            3352,
+            3352,
+            4477,
+            3448
+          ],
+          [
+            4520,
+            4142,
+            4333,
+            2934,
+            2934,
+            4434,
+            4451
+          ],
+          [
+            3784,
+            3763,
+            4578,
+            2905,
+            2905,
+            4568,
+            4415
+          ],
+          [
+            3784,
+            3204,
+            4183,
+            2884,
+            2884,
+            4568,
+            4172
+          ],
+          [
+            4031,
+            3640,
+            4029,
+            2606,
+            2606,
+            5200,
+            4204
+          ],
+          [
+            4191,
+            3515,
+            3973,
+            2588,
+            2588,
+            4857,
+            4204
+          ],
+          [
+            4285,
+            1904,
+            3973,
+            2601,
+            2601,
+            4857,
+            4260
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 5,
+              "column": 4,
+              "latitude": 2.7466721753047745,
+              "longitude": 24.510413675476613,
+              "value": -2155.9899368141178
+            },
+            "contributing_output_cells": [
+              [
+                5,
+                4
+              ]
+            ],
+            "count_support": {
+              "source_bins": 36,
+              "zero_count_bins": 0,
+              "minimum": 2588,
+              "p5": 2598.25,
+              "p25": 3654.75,
+              "median": 6058.5,
+              "p75": 6844.5,
+              "p95": 7154.0,
+              "maximum": 7191,
+              "minimum_bin": {
+                "row": 348,
+                "column": 96,
+                "latitude": 2.875,
+                "longitude": 24.125
+              },
+              "maximum_bin": {
+                "row": 351,
+                "column": 97,
+                "latitude": 2.125,
+                "longitude": 24.375
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 2,
+              "column": 0,
+              "latitude": -0.3629314178917757,
+              "longitude": 20.363763778151135,
+              "value": -776.3915603736942
+            },
+            "contributing_output_cells": [
+              [
+                2,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 25,
+              "zero_count_bins": 0,
+              "minimum": 3784,
+              "p5": 3845.0,
+              "p25": 6283.0,
+              "median": 7139.0,
+              "p75": 7448.0,
+              "p95": 7891.599999999999,
+              "maximum": 7966,
+              "minimum_bin": {
+                "row": 359,
+                "column": 81,
+                "latitude": 0.125,
+                "longitude": 20.375
+              },
+              "maximum_bin": {
+                "row": 361,
+                "column": 82,
+                "latitude": -0.375,
+                "longitude": 20.625
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 4,
+              "column": 1,
+              "latitude": 1.709780470186384,
+              "longitude": 21.399293748195408,
+              "value": 0.9101065500047671
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                1
+              ],
+              [
+                4,
+                0
+              ],
+              [
+                4,
+                2
+              ],
+              [
+                5,
+                1
+              ]
+            ],
+            "count_support": {
+              "source_bins": 101,
+              "zero_count_bins": 0,
+              "minimum": 3204,
+              "p5": 3593.0,
+              "p25": 4520.0,
+              "median": 6345.0,
+              "p75": 7187.0,
+              "p95": 8824.0,
+              "maximum": 9605,
+              "minimum_bin": {
+                "row": 358,
+                "column": 84,
+                "latitude": 0.375,
+                "longitude": 21.125
+              },
+              "maximum_bin": {
+                "row": 355,
+                "column": 86,
+                "latitude": 1.125,
+                "longitude": 21.625
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 0,
+              "column": 5,
+              "latitude": -2.435106153751972,
+              "longitude": 25.546751306337022,
+              "value": -524.0622811235933
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                5
+              ]
+            ],
+            "count_support": {
+              "source_bins": 25,
+              "zero_count_bins": 0,
+              "minimum": 4477,
+              "p5": 4579.2,
+              "p25": 5475.0,
+              "median": 6224.0,
+              "p75": 7830.0,
+              "p95": 8401.4,
+              "maximum": 8500,
+              "minimum_bin": {
+                "row": 367,
+                "column": 102,
+                "latitude": -1.875,
+                "longitude": 25.625
+              },
+              "maximum_bin": {
+                "row": 367,
+                "column": 101,
+                "latitude": -1.875,
+                "longitude": 25.375
+              }
+            }
+          }
+        }
+      }
+    },
+    "density-220km-5": {
+      "moon-tycho": {
+        "queries": 625,
+        "queries_south_of_45_s": 167,
+        "unique_source_bins": {
+          "source_bins": 1215,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6968.7,
+          "p25": 9229.5,
+          "median": 11055.0,
+          "p75": 12654.5,
+          "p95": 15697.499999999998,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_south_of_45_s": {
+          "source_bins": 339,
+          "zero_count_bins": 0,
+          "minimum": 5709,
+          "p5": 7216.9,
+          "p25": 9414.5,
+          "median": 11616.0,
+          "p75": 13520.5,
+          "p95": 16549.699999999997,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 545,
+            "column": 1406,
+            "latitude": -46.375,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_north_of_45_s": {
+          "source_bins": 876,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6868.25,
+          "p25": 9179.75,
+          "median": 10831.0,
+          "p75": 12320.25,
+          "p95": 14989.5,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_north_row": {
+          "source_bins": 41,
+          "zero_count_bins": 0,
+          "minimum": 6009,
+          "p5": 7260.0,
+          "p25": 9591.0,
+          "median": 11898.0,
+          "p75": 13037.0,
+          "p95": 15166.0,
+          "maximum": 18258,
+          "minimum_bin": {
+            "row": 539,
+            "column": 1406,
+            "latitude": -44.875,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 539,
+            "column": 1403,
+            "latitude": -44.875,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_south_row": {
+          "source_bins": 41,
+          "zero_count_bins": 0,
+          "minimum": 6231,
+          "p5": 7419.0,
+          "p25": 9312.0,
+          "median": 11653.0,
+          "p75": 13270.0,
+          "p95": 15045.0,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 540,
+            "column": 1406,
+            "latitude": -45.125,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "paired_45_s_row_counts": {
+          "columns": 41,
+          "median_signed_south_minus_north": 15.0,
+          "median_absolute_difference": 340.0,
+          "maximum_absolute_difference": 2445
+        },
+        "output_cell_minimum_counts": [
+          [
+            7217,
+            6922,
+            6905,
+            5709,
+            7527
+          ],
+          [
+            7217,
+            7795,
+            4875,
+            5589,
+            7260
+          ],
+          [
+            7687,
+            7904,
+            4590,
+            5547,
+            5708
+          ],
+          [
+            8042,
+            7833,
+            5734,
+            6432,
+            6341
+          ],
+          [
+            7516,
+            7284,
+            6369,
+            7723,
+            6986
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 2,
+              "column": 0,
+              "latitude": -43.2407717245951,
+              "longitude": -15.345213513020056,
+              "value": -1436.0091574851924
+            },
+            "contributing_output_cells": [
+              [
+                2,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 52,
+              "zero_count_bins": 0,
+              "minimum": 7687,
+              "p5": 7992.35,
+              "p25": 9041.75,
+              "median": 11074.5,
+              "p75": 12849.5,
+              "p95": 14669.099999999999,
+              "maximum": 15687,
+              "minimum_bin": {
+                "row": 530,
+                "column": 1378,
+                "latitude": -42.625,
+                "longitude": 344.625
+              },
+              "maximum_bin": {
+                "row": 531,
+                "column": 1377,
+                "latitude": -42.875,
+                "longitude": 344.375
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 0,
+              "column": 4,
+              "latitude": -46.137993355618114,
+              "longitude": -7.171723397389408,
+              "value": 422.4580435812904
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                4
+              ]
+            ],
+            "count_support": {
+              "source_bins": 62,
+              "zero_count_bins": 0,
+              "minimum": 7527,
+              "p5": 8525.2,
+              "p25": 10106.0,
+              "median": 11430.5,
+              "p75": 12661.0,
+              "p95": 15173.8,
+              "maximum": 16234,
+              "minimum_bin": {
+                "row": 543,
+                "column": 1410,
+                "latitude": -45.875,
+                "longitude": 352.625
+              },
+              "maximum_bin": {
+                "row": 546,
+                "column": 1409,
+                "latitude": -46.625,
+                "longitude": 352.375
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 3,
+              "column": 2,
+              "latitude": -41.858973006460445,
+              "longitude": -11.359999999999998,
+              "value": 2.1092031347034705
+            },
+            "contributing_output_cells": [
+              [
+                2,
+                2
+              ],
+              [
+                3,
+                1
+              ],
+              [
+                3,
+                3
+              ],
+              [
+                4,
+                2
+              ]
+            ],
+            "count_support": {
+              "source_bins": 234,
+              "zero_count_bins": 0,
+              "minimum": 4590,
+              "p5": 6579.9,
+              "p25": 8363.5,
+              "median": 10431.5,
+              "p75": 11942.0,
+              "p95": 16025.65,
+              "maximum": 19057,
+              "minimum_bin": {
+                "row": 535,
+                "column": 1392,
+                "latitude": -43.875,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 530,
+                "column": 1403,
+                "latitude": -42.625,
+                "longitude": 350.875
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 2,
+              "column": 2,
+              "latitude": -43.31000000000001,
+              "longitude": -11.359999999999998,
+              "value": -2681.4687337264877
+            },
+            "contributing_output_cells": [
+              [
+                2,
+                2
+              ]
+            ],
+            "count_support": {
+              "source_bins": 63,
+              "zero_count_bins": 0,
+              "minimum": 4590,
+              "p5": 5330.2,
+              "p25": 7091.0,
+              "median": 10763.0,
+              "p75": 12436.0,
+              "p95": 15002.0,
+              "maximum": 16658,
+              "minimum_bin": {
+                "row": 535,
+                "column": 1392,
+                "latitude": -43.875,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 530,
+                "column": 1394,
+                "latitude": -42.625,
+                "longitude": 348.625
+              }
+            }
+          }
+        }
+      },
+      "moon-tranquillitatis": {
+        "queries": 625,
+        "queries_south_of_45_s": 0,
+        "unique_source_bins": {
+          "source_bins": 900,
+          "zero_count_bins": 0,
+          "minimum": 1904,
+          "p5": 3306.7,
+          "p25": 4679.25,
+          "median": 6549.0,
+          "p75": 7438.5,
+          "p95": 9093.75,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 342,
+            "column": 84,
+            "latitude": 4.375,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_south_of_45_s": null,
+        "source_bins_north_of_45_s": {
+          "source_bins": 900,
+          "zero_count_bins": 0,
+          "minimum": 1904,
+          "p5": 3306.7,
+          "p25": 4679.25,
+          "median": 6549.0,
+          "p75": 7438.5,
+          "p95": 9093.75,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 342,
+            "column": 84,
+            "latitude": 4.375,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_at_45_s_north_row": null,
+        "source_bins_at_45_s_south_row": null,
+        "paired_45_s_row_counts": null,
+        "output_cell_minimum_counts": [
+          [
+            3857,
+            4067,
+            3243,
+            3243,
+            3448
+          ],
+          [
+            3844,
+            4776,
+            2905,
+            2905,
+            4415
+          ],
+          [
+            3204,
+            4046,
+            2776,
+            2776,
+            4172
+          ],
+          [
+            3519,
+            4008,
+            2588,
+            2588,
+            4204
+          ],
+          [
+            1904,
+            3973,
+            2588,
+            2588,
+            4247
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 3,
+              "column": 3,
+              "latitude": 2.124655556713521,
+              "longitude": 24.92487017895789,
+              "value": -2117.0844256673954
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                3
+              ]
+            ],
+            "count_support": {
+              "source_bins": 49,
+              "zero_count_bins": 0,
+              "minimum": 2588,
+              "p5": 2602.4,
+              "p25": 5739.0,
+              "median": 6240.0,
+              "p75": 7132.0,
+              "p95": 7577.4,
+              "maximum": 7634,
+              "minimum_bin": {
+                "row": 348,
+                "column": 96,
+                "latitude": 2.875,
+                "longitude": 24.125
+              },
+              "maximum_bin": {
+                "row": 353,
+                "column": 101,
+                "latitude": 1.625,
+                "longitude": 25.375
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 0,
+              "column": 0,
+              "latitude": -2.2276774004178193,
+              "longitude": 20.569992171943625,
+              "value": -762.5916621928031
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 42,
+              "zero_count_bins": 0,
+              "minimum": 3857,
+              "p5": 4062.9,
+              "p25": 5232.25,
+              "median": 6375.0,
+              "p75": 7806.75,
+              "p95": 8101.599999999999,
+              "maximum": 8220,
+              "minimum_bin": {
+                "row": 370,
+                "column": 84,
+                "latitude": -2.625,
+                "longitude": 21.125
+              },
+              "maximum_bin": {
+                "row": 370,
+                "column": 83,
+                "latitude": -2.625,
+                "longitude": 20.875
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 1,
+              "column": 2,
+              "latitude": -0.7770269935395543,
+              "longitude": 23.473,
+              "value": 0.7317882201788813
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                2
+              ],
+              [
+                1,
+                1
+              ],
+              [
+                1,
+                3
+              ],
+              [
+                2,
+                2
+              ]
+            ],
+            "count_support": {
+              "source_bins": 155,
+              "zero_count_bins": 0,
+              "minimum": 2776,
+              "p5": 2963.4,
+              "p25": 4298.5,
+              "median": 5220.0,
+              "p75": 8300.0,
+              "p95": 10354.999999999998,
+              "maximum": 13138,
+              "minimum_bin": {
+                "row": 354,
+                "column": 96,
+                "latitude": 1.375,
+                "longitude": 24.125
+              },
+              "maximum_bin": {
+                "row": 371,
+                "column": 93,
+                "latitude": -2.875,
+                "longitude": 23.375
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 1,
+              "column": 0,
+              "latitude": -0.7772710161139874,
+              "longitude": 20.570989274790502,
+              "value": 394.40161999695533
+            },
+            "contributing_output_cells": [
+              [
+                1,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 42,
+              "zero_count_bins": 0,
+              "minimum": 3844,
+              "p5": 4079.5,
+              "p25": 4548.0,
+              "median": 6188.5,
+              "p75": 7331.75,
+              "p95": 7916.3,
+              "maximum": 7970,
+              "minimum_bin": {
+                "row": 360,
+                "column": 81,
+                "latitude": -0.125,
+                "longitude": 20.375
+              },
+              "maximum_bin": {
+                "row": 365,
+                "column": 82,
+                "latitude": -1.375,
+                "longitude": 20.625
+              }
+            }
+          }
+        }
+      }
+    },
+    "extent-180km-9": {
+      "moon-tycho": {
+        "queries": 2025,
+        "queries_south_of_45_s": 430,
+        "unique_source_bins": {
+          "source_bins": 863,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6646.8,
+          "p25": 9011.5,
+          "median": 10971.0,
+          "p75": 12622.0,
+          "p95": 15678.6,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_south_of_45_s": {
+          "source_bins": 210,
+          "zero_count_bins": 0,
+          "minimum": 5709,
+          "p5": 6939.2,
+          "p25": 9212.0,
+          "median": 11630.0,
+          "p75": 13442.25,
+          "p95": 16431.149999999998,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 545,
+            "column": 1406,
+            "latitude": -46.375,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_north_of_45_s": {
+          "source_bins": 653,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 6515.400000000001,
+          "p25": 8996.0,
+          "median": 10735.0,
+          "p75": 12251.0,
+          "p95": 15070.799999999997,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_north_row": {
+          "source_bins": 35,
+          "zero_count_bins": 0,
+          "minimum": 6009,
+          "p5": 7021.5,
+          "p25": 9901.5,
+          "median": 12346.0,
+          "p75": 13142.5,
+          "p95": 15637.299999999996,
+          "maximum": 18258,
+          "minimum_bin": {
+            "row": 539,
+            "column": 1406,
+            "latitude": -44.875,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 539,
+            "column": 1403,
+            "latitude": -44.875,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_south_row": {
+          "source_bins": 35,
+          "zero_count_bins": 0,
+          "minimum": 6231,
+          "p5": 7287.6,
+          "p25": 9466.0,
+          "median": 11735.0,
+          "p75": 13350.5,
+          "p95": 15511.799999999996,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 540,
+            "column": 1406,
+            "latitude": -45.125,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "paired_45_s_row_counts": {
+          "columns": 35,
+          "median_signed_south_minus_north": 15.0,
+          "median_absolute_difference": 340.0,
+          "maximum_absolute_difference": 2445
+        },
+        "output_cell_minimum_counts": [
+          [
+            8205,
+            7594,
+            7381,
+            6905,
+            6905,
+            7782,
+            6297,
+            5709,
+            7527
+          ],
+          [
+            8782,
+            7795,
+            7798,
+            6465,
+            6465,
+            7303,
+            6731,
+            5875,
+            7260
+          ],
+          [
+            8068,
+            8800,
+            7904,
+            4875,
+            4875,
+            5512,
+            6981,
+            5589,
+            7260
+          ],
+          [
+            7960,
+            8800,
+            7904,
+            4590,
+            4590,
+            5512,
+            5664,
+            5589,
+            7516
+          ],
+          [
+            8294,
+            8430,
+            7968,
+            5012,
+            5012,
+            6066,
+            5547,
+            5708,
+            9067
+          ],
+          [
+            7687,
+            8430,
+            7948,
+            5332,
+            5332,
+            6459,
+            5946,
+            6103,
+            7097
+          ],
+          [
+            8042,
+            8785,
+            8316,
+            5734,
+            5734,
+            6549,
+            7529,
+            6341,
+            6341
+          ],
+          [
+            8893,
+            7833,
+            7973,
+            7101,
+            7101,
+            7990,
+            8257,
+            6341,
+            6341
+          ],
+          [
+            8200,
+            7833,
+            7973,
+            6369,
+            6369,
+            8909,
+            8542,
+            6986,
+            6986
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 4,
+              "column": 3,
+              "latitude": -43.30642150359991,
+              "longitude": -12.266382291151773,
+              "value": -2670.3088684914123
+            },
+            "contributing_output_cells": [
+              [
+                4,
+                3
+              ]
+            ],
+            "count_support": {
+              "source_bins": 19,
+              "zero_count_bins": 0,
+              "minimum": 5012,
+              "p5": 5298.2,
+              "p25": 7688.5,
+              "median": 8437.0,
+              "p75": 9378.5,
+              "p95": 11129.699999999999,
+              "maximum": 11631,
+              "minimum_bin": {
+                "row": 534,
+                "column": 1392,
+                "latitude": -43.625,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 532,
+                "column": 1390,
+                "latitude": -43.125,
+                "longitude": 347.625
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 2,
+              "column": 6,
+              "latitude": -44.61436405439431,
+              "longitude": -9.506923701308033,
+              "value": 605.3918756612652
+            },
+            "contributing_output_cells": [
+              [
+                2,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 22,
+              "zero_count_bins": 0,
+              "minimum": 6981,
+              "p5": 7056.6,
+              "p25": 8058.75,
+              "median": 11930.5,
+              "p75": 13317.25,
+              "p95": 18254.55,
+              "maximum": 18622,
+              "minimum_bin": {
+                "row": 540,
+                "column": 1402,
+                "latitude": -45.125,
+                "longitude": 350.625
+              },
+              "maximum_bin": {
+                "row": 538,
+                "column": 1403,
+                "latitude": -44.625,
+                "longitude": 350.875
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 5,
+              "column": 5,
+              "latitude": -42.64691644696959,
+              "longitude": -10.463307503304932,
+              "value": 7.469693149601964
+            },
+            "contributing_output_cells": [
+              [
+                4,
+                5
+              ],
+              [
+                5,
+                4
+              ],
+              [
+                5,
+                6
+              ],
+              [
+                6,
+                5
+              ]
+            ],
+            "count_support": {
+              "source_bins": 74,
+              "zero_count_bins": 0,
+              "minimum": 5332,
+              "p5": 6024.0,
+              "p25": 7156.5,
+              "median": 10210.0,
+              "p75": 12058.75,
+              "p95": 18011.64999999999,
+              "maximum": 20641,
+              "minimum_bin": {
+                "row": 532,
+                "column": 1392,
+                "latitude": -43.125,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 532,
+                "column": 1403,
+                "latitude": -43.125,
+                "longitude": 350.875
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 4,
+              "column": 5,
+              "latitude": -43.30642150359991,
+              "longitude": -10.45361770884822,
+              "value": -2881.247059284582
+            },
+            "contributing_output_cells": [
+              [
+                4,
+                5
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 6066,
+              "p5": 6355.75,
+              "p25": 6868.25,
+              "median": 7594.0,
+              "p75": 10864.0,
+              "p95": 11282.95,
+              "maximum": 11681,
+              "minimum_bin": {
+                "row": 534,
+                "column": 1400,
+                "latitude": -43.625,
+                "longitude": 350.125
+              },
+              "maximum_bin": {
+                "row": 533,
+                "column": 1399,
+                "latitude": -43.375,
+                "longitude": 349.875
+              }
+            }
+          }
+        }
+      },
+      "moon-tranquillitatis": {
+        "queries": 2025,
+        "queries_south_of_45_s": 0,
+        "unique_source_bins": {
+          "source_bins": 648,
+          "zero_count_bins": 0,
+          "minimum": 2588,
+          "p5": 3252.1,
+          "p25": 4477.75,
+          "median": 6270.5,
+          "p75": 7504.0,
+          "p95": 9187.199999999999,
+          "maximum": 12831,
+          "minimum_bin": {
+            "row": 348,
+            "column": 96,
+            "latitude": 2.875,
+            "longitude": 24.125
+          },
+          "maximum_bin": {
+            "row": 368,
+            "column": 93,
+            "latitude": -2.125,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_south_of_45_s": null,
+        "source_bins_north_of_45_s": {
+          "source_bins": 648,
+          "zero_count_bins": 0,
+          "minimum": 2588,
+          "p5": 3252.1,
+          "p25": 4477.75,
+          "median": 6270.5,
+          "p75": 7504.0,
+          "p95": 9187.199999999999,
+          "maximum": 12831,
+          "minimum_bin": {
+            "row": 348,
+            "column": 96,
+            "latitude": 2.875,
+            "longitude": 24.125
+          },
+          "maximum_bin": {
+            "row": 368,
+            "column": 93,
+            "latitude": -2.125,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_at_45_s_north_row": null,
+        "source_bins_at_45_s_south_row": null,
+        "paired_45_s_row_counts": null,
+        "output_cell_minimum_counts": [
+          [
+            4060,
+            4060,
+            4722,
+            4359,
+            3352,
+            3243,
+            4936,
+            4434,
+            4106
+          ],
+          [
+            4142,
+            4142,
+            4722,
+            3655,
+            3476,
+            2934,
+            4796,
+            4434,
+            4434
+          ],
+          [
+            3849,
+            4142,
+            4776,
+            3457,
+            3457,
+            2934,
+            4757,
+            4581,
+            4430
+          ],
+          [
+            3204,
+            3204,
+            4800,
+            3191,
+            3191,
+            2905,
+            4757,
+            4568,
+            4420
+          ],
+          [
+            3204,
+            3204,
+            4183,
+            3143,
+            3143,
+            2884,
+            5200,
+            4765,
+            4172
+          ],
+          [
+            3770,
+            3770,
+            4029,
+            3161,
+            3156,
+            2645,
+            5789,
+            5584,
+            4172
+          ],
+          [
+            3640,
+            3640,
+            4029,
+            3301,
+            3301,
+            2600,
+            5810,
+            5044,
+            4204
+          ],
+          [
+            3515,
+            3515,
+            3973,
+            3374,
+            3374,
+            2588,
+            5676,
+            4872,
+            4211
+          ],
+          [
+            3497,
+            3497,
+            3973,
+            3079,
+            3079,
+            2588,
+            5604,
+            4857,
+            4247
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 8,
+              "column": 6,
+              "latitude": 3.311818659729536,
+              "longitude": 24.7938555866523,
+              "value": -2149.898477024492
+            },
+            "contributing_output_cells": [
+              [
+                8,
+                6
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 5604,
+              "p5": 5637.0,
+              "p25": 6129.25,
+              "median": 6630.5,
+              "p75": 6840.25,
+              "p95": 7108.25,
+              "maximum": 7142,
+              "minimum_bin": {
+                "row": 345,
+                "column": 100,
+                "latitude": 3.625,
+                "longitude": 25.125
+              },
+              "maximum_bin": {
+                "row": 347,
+                "column": 97,
+                "latitude": 3.125,
+                "longitude": 24.375
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 0,
+              "column": 0,
+              "latitude": -1.9640129778974824,
+              "longitude": 20.834150777029237,
+              "value": -904.8132021220167
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 4060,
+              "p5": 4103.5,
+              "p25": 4546.25,
+              "median": 6551.0,
+              "p75": 7928.75,
+              "p95": 8073.0,
+              "maximum": 8181,
+              "minimum_bin": {
+                "row": 369,
+                "column": 84,
+                "latitude": -2.375,
+                "longitude": 21.125
+              },
+              "maximum_bin": {
+                "row": 369,
+                "column": 83,
+                "latitude": -2.375,
+                "longitude": 20.875
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 6,
+              "column": 1,
+              "latitude": 1.9924510645397002,
+              "longitude": 21.493304339013804,
+              "value": 1.3521506383698587
+            },
+            "contributing_output_cells": [
+              [
+                5,
+                1
+              ],
+              [
+                6,
+                0
+              ],
+              [
+                6,
+                2
+              ],
+              [
+                7,
+                1
+              ]
+            ],
+            "count_support": {
+              "source_bins": 60,
+              "zero_count_bins": 0,
+              "minimum": 3515,
+              "p5": 3637.65,
+              "p25": 4054.5,
+              "median": 6248.0,
+              "p75": 7630.75,
+              "p95": 9482.3,
+              "maximum": 9605,
+              "minimum_bin": {
+                "row": 347,
+                "column": 84,
+                "latitude": 3.125,
+                "longitude": 21.125
+              },
+              "maximum_bin": {
+                "row": 355,
+                "column": 86,
+                "latitude": 1.125,
+                "longitude": 21.625
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 1,
+              "column": 0,
+              "latitude": -1.3046884084948858,
+              "longitude": 20.834609430728648,
+              "value": 487.0417091492403
+            },
+            "contributing_output_cells": [
+              [
+                1,
+                0
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 4142,
+              "p5": 4243.25,
+              "p25": 4493.75,
+              "median": 6044.0,
+              "p75": 7861.75,
+              "p95": 7931.75,
+              "maximum": 7970,
+              "minimum_bin": {
+                "row": 363,
+                "column": 84,
+                "latitude": -0.875,
+                "longitude": 21.125
+              },
+              "maximum_bin": {
+                "row": 365,
+                "column": 82,
+                "latitude": -1.375,
+                "longitude": 20.625
+              }
+            }
+          }
+        }
+      }
+    },
+    "extent-260km-13": {
+      "moon-tycho": {
+        "queries": 4225,
+        "queries_south_of_45_s": 1260,
+        "unique_source_bins": {
+          "source_bins": 1746,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 7216.25,
+          "p25": 9418.5,
+          "median": 11058.5,
+          "p75": 12705.25,
+          "p95": 16050.5,
+          "maximum": 21825,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 542,
+            "column": 1369,
+            "latitude": -45.625,
+            "longitude": 342.375
+          }
+        },
+        "source_bins_south_of_45_s": {
+          "source_bins": 560,
+          "zero_count_bins": 0,
+          "minimum": 5503,
+          "p5": 7294.65,
+          "p25": 9625.25,
+          "median": 11603.5,
+          "p75": 13983.0,
+          "p95": 16692.05,
+          "maximum": 21825,
+          "minimum_bin": {
+            "row": 549,
+            "column": 1372,
+            "latitude": -47.375,
+            "longitude": 343.125
+          },
+          "maximum_bin": {
+            "row": 542,
+            "column": 1369,
+            "latitude": -45.625,
+            "longitude": 342.375
+          }
+        },
+        "source_bins_north_of_45_s": {
+          "source_bins": 1186,
+          "zero_count_bins": 0,
+          "minimum": 4590,
+          "p5": 7164.0,
+          "p25": 9352.5,
+          "median": 10779.5,
+          "p75": 12251.75,
+          "p95": 15084.0,
+          "maximum": 20641,
+          "minimum_bin": {
+            "row": 535,
+            "column": 1392,
+            "latitude": -43.875,
+            "longitude": 348.125
+          },
+          "maximum_bin": {
+            "row": 532,
+            "column": 1403,
+            "latitude": -43.125,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_north_row": {
+          "source_bins": 49,
+          "zero_count_bins": 0,
+          "minimum": 6009,
+          "p5": 7352.0,
+          "p25": 9630.0,
+          "median": 11898.0,
+          "p75": 13037.0,
+          "p95": 16108.599999999991,
+          "maximum": 18258,
+          "minimum_bin": {
+            "row": 539,
+            "column": 1406,
+            "latitude": -44.875,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 539,
+            "column": 1403,
+            "latitude": -44.875,
+            "longitude": 350.875
+          }
+        },
+        "source_bins_at_45_s_south_row": {
+          "source_bins": 50,
+          "zero_count_bins": 0,
+          "minimum": 6231,
+          "p5": 7446.0,
+          "p25": 9323.25,
+          "median": 11429.5,
+          "p75": 13264.5,
+          "p95": 15900.799999999996,
+          "maximum": 18691,
+          "minimum_bin": {
+            "row": 540,
+            "column": 1406,
+            "latitude": -45.125,
+            "longitude": 351.625
+          },
+          "maximum_bin": {
+            "row": 540,
+            "column": 1403,
+            "latitude": -45.125,
+            "longitude": 350.875
+          }
+        },
+        "paired_45_s_row_counts": {
+          "columns": 49,
+          "median_signed_south_minus_north": 12.0,
+          "median_absolute_difference": 377.0,
+          "maximum_absolute_difference": 2445
+        },
+        "output_cell_minimum_counts": [
+          [
+            5503,
+            7342,
+            7578,
+            6922,
+            6922,
+            8161,
+            9184,
+            7745,
+            7842,
+            5752,
+            9155,
+            9280,
+            9705
+          ],
+          [
+            6569,
+            7342,
+            7886,
+            6922,
+            6922,
+            6905,
+            6905,
+            8261,
+            6675,
+            5709,
+            8032,
+            10196,
+            9247
+          ],
+          [
+            7121,
+            7217,
+            8205,
+            7594,
+            7381,
+            6905,
+            6905,
+            7782,
+            6297,
+            5709,
+            7527,
+            10076,
+            9247
+          ],
+          [
+            8257,
+            7217,
+            8782,
+            7795,
+            7798,
+            6465,
+            6465,
+            7303,
+            6731,
+            5875,
+            7260,
+            9276,
+            8816
+          ],
+          [
+            8452,
+            7498,
+            8068,
+            8800,
+            7904,
+            4875,
+            4875,
+            5512,
+            6981,
+            5589,
+            7260,
+            8242,
+            9312
+          ],
+          [
+            8452,
+            7580,
+            7960,
+            8800,
+            7904,
+            4590,
+            4590,
+            5512,
+            5664,
+            5589,
+            7516,
+            7516,
+            9193
+          ],
+          [
+            7808,
+            7808,
+            8294,
+            8430,
+            7968,
+            5012,
+            5012,
+            6066,
+            5547,
+            5708,
+            9067,
+            8913,
+            9183
+          ],
+          [
+            7103,
+            7103,
+            7687,
+            8430,
+            7948,
+            5332,
+            5332,
+            6459,
+            5946,
+            6103,
+            7097,
+            8913,
+            9183
+          ],
+          [
+            7801,
+            7801,
+            8042,
+            8785,
+            8316,
+            5734,
+            5734,
+            6549,
+            7529,
+            6341,
+            6341,
+            9054,
+            8721
+          ],
+          [
+            8438,
+            9327,
+            8893,
+            7833,
+            7973,
+            7101,
+            7101,
+            7990,
+            8257,
+            6341,
+            6341,
+            9400,
+            8721
+          ],
+          [
+            8438,
+            8200,
+            8200,
+            7833,
+            7973,
+            6369,
+            6369,
+            8909,
+            8542,
+            6986,
+            6986,
+            9293,
+            9293
+          ],
+          [
+            8729,
+            7516,
+            7516,
+            7284,
+            8296,
+            6369,
+            6369,
+            7834,
+            8663,
+            7723,
+            8745,
+            8792,
+            9169
+          ],
+          [
+            8729,
+            5873,
+            9129,
+            7284,
+            8315,
+            7007,
+            7307,
+            7909,
+            9601,
+            8907,
+            8558,
+            8558,
+            9107
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 12,
+              "column": 8,
+              "latitude": -39.33952467811619,
+              "longitude": -9.655656159852363,
+              "value": -1871.5129723322325
+            },
+            "contributing_output_cells": [
+              [
+                12,
+                8
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 9601,
+              "p5": 9775.8,
+              "p25": 10400.0,
+              "median": 10941.0,
+              "p75": 11868.25,
+              "p95": 12876.25,
+              "maximum": 13812,
+              "minimum_bin": {
+                "row": 518,
+                "column": 1400,
+                "latitude": -39.625,
+                "longitude": 350.125
+              },
+              "maximum_bin": {
+                "row": 515,
+                "column": 1402,
+                "latitude": -38.875,
+                "longitude": 350.625
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 3,
+              "column": 4,
+              "latitude": -45.27369269928555,
+              "longitude": -13.234282547555374,
+              "value": 659.8989648531725
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                4
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 7798,
+              "p5": 8613.1,
+              "p25": 9198.0,
+              "median": 10681.0,
+              "p75": 13118.75,
+              "p95": 14697.2,
+              "maximum": 16544,
+              "minimum_bin": {
+                "row": 542,
+                "column": 1385,
+                "latitude": -45.625,
+                "longitude": 346.375
+              },
+              "maximum_bin": {
+                "row": 542,
+                "column": 1387,
+                "latitude": -45.625,
+                "longitude": 346.875
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 7,
+              "column": 7,
+              "latitude": -42.64691644696959,
+              "longitude": -10.463307503304932,
+              "value": 7.469693149601964
+            },
+            "contributing_output_cells": [
+              [
+                6,
+                7
+              ],
+              [
+                7,
+                6
+              ],
+              [
+                7,
+                8
+              ],
+              [
+                8,
+                7
+              ]
+            ],
+            "count_support": {
+              "source_bins": 74,
+              "zero_count_bins": 0,
+              "minimum": 5332,
+              "p5": 6024.0,
+              "p25": 7156.5,
+              "median": 10210.0,
+              "p75": 12058.75,
+              "p95": 18011.64999999999,
+              "maximum": 20641,
+              "minimum_bin": {
+                "row": 532,
+                "column": 1392,
+                "latitude": -43.125,
+                "longitude": 348.125
+              },
+              "maximum_bin": {
+                "row": 532,
+                "column": 1403,
+                "latitude": -43.125,
+                "longitude": 350.875
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 6,
+              "column": 7,
+              "latitude": -43.30642150359991,
+              "longitude": -10.45361770884822,
+              "value": -2920.965222159716
+            },
+            "contributing_output_cells": [
+              [
+                6,
+                7
+              ]
+            ],
+            "count_support": {
+              "source_bins": 20,
+              "zero_count_bins": 0,
+              "minimum": 6066,
+              "p5": 6355.75,
+              "p25": 6868.25,
+              "median": 7594.0,
+              "p75": 10864.0,
+              "p95": 11282.95,
+              "maximum": 11681,
+              "minimum_bin": {
+                "row": 534,
+                "column": 1400,
+                "latitude": -43.625,
+                "longitude": 350.125
+              },
+              "maximum_bin": {
+                "row": 533,
+                "column": 1399,
+                "latitude": -43.375,
+                "longitude": 349.875
+              }
+            }
+          }
+        }
+      },
+      "moon-tranquillitatis": {
+        "queries": 4225,
+        "queries_south_of_45_s": 0,
+        "unique_source_bins": {
+          "source_bins": 1296,
+          "zero_count_bins": 0,
+          "minimum": 1834,
+          "p5": 3347.0,
+          "p25": 4662.0,
+          "median": 6568.5,
+          "p75": 7618.75,
+          "p95": 9087.0,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 340,
+            "column": 84,
+            "latitude": 4.875,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_south_of_45_s": null,
+        "source_bins_north_of_45_s": {
+          "source_bins": 1296,
+          "zero_count_bins": 0,
+          "minimum": 1834,
+          "p5": 3347.0,
+          "p25": 4662.0,
+          "median": 6568.5,
+          "p75": 7618.75,
+          "p95": 9087.0,
+          "maximum": 13138,
+          "minimum_bin": {
+            "row": 340,
+            "column": 84,
+            "latitude": 4.875,
+            "longitude": 21.125
+          },
+          "maximum_bin": {
+            "row": 371,
+            "column": 93,
+            "latitude": -2.875,
+            "longitude": 23.375
+          }
+        },
+        "source_bins_at_45_s_north_row": null,
+        "source_bins_at_45_s_south_row": null,
+        "paired_45_s_row_counts": null,
+        "output_cell_minimum_counts": [
+          [
+            3551,
+            5258,
+            3722,
+            3722,
+            4067,
+            4505,
+            3360,
+            3360,
+            5483,
+            4771,
+            2809,
+            2809,
+            3990
+          ],
+          [
+            3487,
+            5194,
+            3722,
+            3722,
+            4067,
+            4405,
+            3408,
+            3408,
+            5475,
+            4533,
+            2949,
+            2949,
+            3329
+          ],
+          [
+            3221,
+            4584,
+            4060,
+            4060,
+            4722,
+            4359,
+            3352,
+            3243,
+            4936,
+            4434,
+            4106,
+            4106,
+            3309
+          ],
+          [
+            3221,
+            4520,
+            4142,
+            4142,
+            4722,
+            3655,
+            3476,
+            2934,
+            4796,
+            4434,
+            4434,
+            4451,
+            3323
+          ],
+          [
+            3489,
+            3849,
+            3849,
+            4142,
+            4776,
+            3457,
+            3457,
+            2934,
+            4757,
+            4581,
+            4430,
+            4428,
+            3323
+          ],
+          [
+            3489,
+            3784,
+            3204,
+            3204,
+            4800,
+            3191,
+            3191,
+            2905,
+            4757,
+            4568,
+            4420,
+            4415,
+            3563
+          ],
+          [
+            4044,
+            3972,
+            3204,
+            3204,
+            4183,
+            3143,
+            3143,
+            2884,
+            5200,
+            4765,
+            4172,
+            4172,
+            4200
+          ],
+          [
+            4420,
+            4031,
+            3770,
+            3770,
+            4029,
+            3161,
+            3156,
+            2645,
+            5789,
+            5584,
+            4172,
+            4172,
+            4175
+          ],
+          [
+            4179,
+            4031,
+            3640,
+            3640,
+            4029,
+            3301,
+            3301,
+            2600,
+            5810,
+            5044,
+            4204,
+            4204,
+            4189
+          ],
+          [
+            4179,
+            4279,
+            3515,
+            3515,
+            3973,
+            3374,
+            3374,
+            2588,
+            5676,
+            4872,
+            4211,
+            4211,
+            4647
+          ],
+          [
+            4163,
+            4285,
+            3497,
+            3497,
+            3973,
+            3079,
+            3079,
+            2588,
+            5604,
+            4857,
+            4247,
+            4247,
+            4819
+          ],
+          [
+            3656,
+            4677,
+            1904,
+            1904,
+            4034,
+            3033,
+            3033,
+            2658,
+            5189,
+            4871,
+            4288,
+            4288,
+            4550
+          ],
+          [
+            3515,
+            4564,
+            1834,
+            1834,
+            3876,
+            3053,
+            3053,
+            2775,
+            4884,
+            4884,
+            4292,
+            4292,
+            4508
+          ]
+        ],
+        "influential_cells": {
+          "p5": {
+            "cell": {
+              "row": 3,
+              "column": 12,
+              "latitude": -1.3047073062918004,
+              "longitude": 27.43058595640634,
+              "value": -2239.0075758784833
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                12
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 3323,
+              "p5": 3326.0,
+              "p25": 5694.0,
+              "median": 6719.0,
+              "p75": 7371.0,
+              "p95": 8273.25,
+              "maximum": 8304,
+              "minimum_bin": {
+                "row": 364,
+                "column": 110,
+                "latitude": -1.125,
+                "longitude": 27.625
+              },
+              "maximum_bin": {
+                "row": 366,
+                "column": 111,
+                "latitude": -1.625,
+                "longitude": 27.875
+              }
+            }
+          },
+          "p95": {
+            "cell": {
+              "row": 3,
+              "column": 1,
+              "latitude": -1.3046969326525168,
+              "longitude": 20.17501174996635,
+              "value": -332.6976951481836
+            },
+            "contributing_output_cells": [
+              [
+                3,
+                1
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 4520,
+              "p5": 4532.75,
+              "p25": 5483.0,
+              "median": 6375.5,
+              "p75": 7141.75,
+              "p95": 7919.75,
+              "maximum": 7970,
+              "minimum_bin": {
+                "row": 365,
+                "column": 81,
+                "latitude": -1.375,
+                "longitude": 20.375
+              },
+              "maximum_bin": {
+                "row": 365,
+                "column": 82,
+                "latitude": -1.375,
+                "longitude": 20.625
+              }
+            }
+          },
+          "steepest_interior_cell": {
+            "cell": {
+              "row": 1,
+              "column": 5,
+              "latitude": -2.6237604190345114,
+              "longitude": 22.81311459585169,
+              "value": 2.483645314830874
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                5
+              ],
+              [
+                1,
+                4
+              ],
+              [
+                1,
+                6
+              ],
+              [
+                2,
+                5
+              ]
+            ],
+            "count_support": {
+              "source_bins": 60,
+              "zero_count_bins": 0,
+              "minimum": 3408,
+              "p5": 3532.2,
+              "p25": 4520.0,
+              "median": 6272.0,
+              "p75": 8251.5,
+              "p95": 12772.1,
+              "maximum": 13138,
+              "minimum_bin": {
+                "row": 368,
+                "column": 95,
+                "latitude": -2.125,
+                "longitude": 23.875
+              },
+              "maximum_bin": {
+                "row": 371,
+                "column": 93,
+                "latitude": -2.875,
+                "longitude": 23.375
+              }
+            }
+          },
+          "largest_plane_residual_cell": {
+            "cell": {
+              "row": 0,
+              "column": 5,
+              "latitude": -3.2833035437731373,
+              "longitude": 22.81288298278942,
+              "value": 1396.2804742615817
+            },
+            "contributing_output_cells": [
+              [
+                0,
+                5
+              ]
+            ],
+            "count_support": {
+              "source_bins": 16,
+              "zero_count_bins": 0,
+              "minimum": 4505,
+              "p5": 4520.75,
+              "p25": 4564.25,
+              "median": 5549.5,
+              "p75": 6985.0,
+              "p95": 8564.75,
+              "maximum": 8648,
+              "minimum_bin": {
+                "row": 371,
+                "column": 91,
+                "latitude": -2.875,
+                "longitude": 22.875
+              },
+              "maximum_bin": {
+                "row": 374,
+                "column": 89,
+                "latitude": -3.625,
+                "longitude": 22.375
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "interpretation": "Count support per source bin only; no elevation accuracy or effective resolution is inferred."
+}

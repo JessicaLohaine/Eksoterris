@@ -1,0 +1,140 @@
+{
+  "decoder": "Rasterio 1.5.2 / GDAL 3.12.2",
+  "products": {
+    "moon": {
+      "product_id": "LDEM_4",
+      "source_label": "C:\\Users\\jessi\\Documents\\Codex\\2026-11-14\\new-chat-2\\Eksoterris\\backend\\data\\validation-pds\\LDEM_4.LBL",
+      "driver": "PDS",
+      "dimensions": [
+        720,
+        1440
+      ],
+      "gdal_options": {},
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MOON\",GEOGCS[\"GCS_MOON\",DATUM[\"D_MOON\",SPHEROID[\"MOON\",1737400,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "transform": [
+        7580.84,
+        0.0,
+        -5458204.8,
+        0.0,
+        -7580.84,
+        2729102.4
+      ],
+      "bounds_m": [
+        -5458204.8,
+        -2729102.4,
+        5458204.8,
+        2729102.4
+      ],
+      "nodata": -32768.0,
+      "nodata_pixel_count": 0,
+      "raw_scale": 0.5,
+      "raw_offset": 1737400.0,
+      "maximum_source_pixel_difference_m": 0.0,
+      "image_sha256": "972d66d7f330abca62abc21aae270661516c00dd1a881ec102b94df9563656b5"
+    },
+    "mars": {
+      "product_id": "megt90n000cb",
+      "source_label": "C:\\Users\\jessi\\Documents\\Codex\\2026-11-14\\new-chat-2\\Eksoterris\\backend\\data\\validation-pds\\megt90n000cb.lbl",
+      "driver": "PDS",
+      "dimensions": [
+        720,
+        1440
+      ],
+      "gdal_options": {
+        "PDS_SampleProjOffset_Shift": "-0.5",
+        "PDS_LineProjOffset_Shift": "-0.5"
+      },
+      "crs": "PROJCS[\"SIMPLE_CYLINDRICAL MARS\",GEOGCS[\"GCS_MARS\",DATUM[\"D_MARS\",SPHEROID[\"MARS\",3396000,0]],PRIMEM[\"Reference_Meridian\",0],UNIT[\"degree\",0.0174532925199433,AUTHORITY[\"EPSG\",\"9122\"]]],PROJECTION[\"Equirectangular\"],PARAMETER[\"standard_parallel_1\",0],PARAMETER[\"central_meridian\",180],PARAMETER[\"false_easting\",0],PARAMETER[\"false_northing\",0],UNIT[\"metre\",1,AUTHORITY[\"EPSG\",\"9001\"]],AXIS[\"Easting\",EAST],AXIS[\"Northing\",NORTH]]",
+      "transform": [
+        14818.0,
+        0.0,
+        -10668960.0,
+        0.0,
+        -14818.0,
+        5334480.0
+      ],
+      "bounds_m": [
+        -10668960.0,
+        -5334480.0,
+        10668960.0,
+        5334480.0
+      ],
+      "nodata": -32768.0,
+      "nodata_pixel_count": 0,
+      "raw_scale": 1.0,
+      "raw_offset": 0.0,
+      "maximum_source_pixel_difference_m": 0.0,
+      "image_sha256": "25f16fb7aaf857898dcf98bc4f841341a24f8b9f7e98453ca083bc45d897ca2c"
+    }
+  },
+  "controls": {
+    "moon-tranquillitatis": {
+      "requested_latitude": 0.674,
+      "requested_longitude": 23.473,
+      "north_up_row": 357,
+      "column": 93,
+      "gdal_pixel_center": {
+        "latitude": 0.6250001973695557,
+        "longitude_east_0_360": 23.374950539186244
+      },
+      "raw_digital_number": -3766,
+      "gdal_pixel_height_m": -1883.0,
+      "production_pixel_height_m": -1883.0,
+      "pixel_value_difference_m": 0.0,
+      "gdal_bilinear_height_m": -1921.454341314549,
+      "production_bilinear_height_m": -1921.4418720000015,
+      "bilinear_difference_m": 0.012469314547615795
+    },
+    "moon-tycho": {
+      "requested_latitude": -43.31,
+      "requested_longitude": -11.36,
+      "north_up_row": 533,
+      "column": 1394,
+      "gdal_pixel_center": {
+        "latitude": -43.375013697448026,
+        "longitude_east_0_360": 348.62505325030946
+      },
+      "raw_digital_number": -3717,
+      "gdal_pixel_height_m": -1858.5,
+      "production_pixel_height_m": -1858.5,
+      "pixel_value_difference_m": 0.0,
+      "gdal_bilinear_height_m": -2303.427118409004,
+      "production_bilinear_height_m": -2303.519199999943,
+      "bilinear_difference_m": -0.09208159093896029
+    },
+    "mars-jezero": {
+      "requested_latitude": 18.38,
+      "requested_longitude": 77.58,
+      "north_up_row": 286,
+      "column": 310,
+      "gdal_pixel_center": {
+        "latitude": 18.375191775802932,
+        "longitude_east_0_360": 77.62393153481223
+      },
+      "raw_digital_number": -2651,
+      "gdal_pixel_height_m": -2651.0,
+      "production_pixel_height_m": -2651.0,
+      "pixel_value_difference_m": 0.0,
+      "gdal_bilinear_height_m": -2617.191989915118,
+      "production_bilinear_height_m": -2616.303600000002,
+      "bilinear_difference_m": 0.8883899151160222
+    },
+    "mars-gale": {
+      "requested_latitude": -5.4,
+      "requested_longitude": 137.8,
+      "north_up_row": 381,
+      "column": 551,
+      "gdal_pixel_center": {
+        "latitude": -5.375056097683851,
+        "longitude_east_0_360": 137.87456035071028
+      },
+      "raw_digital_number": -893,
+      "gdal_pixel_height_m": -893.0,
+      "production_pixel_height_m": -893.0,
+      "pixel_value_difference_m": 0.0,
+      "gdal_bilinear_height_m": -1577.5480195837183,
+      "production_bilinear_height_m": -1580.6699999999705,
+      "bilinear_difference_m": -3.1219804162521996
+    }
+  }
+}

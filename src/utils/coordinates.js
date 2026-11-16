@@ -28,21 +28,33 @@ export function isValidCoordinate(latitude, longitude) {
  * @returns {string}
  */
 export function formatDMS(decimalDegrees, type = 'lat') {
-  if (!Number.isFinite(decimalDegrees)) {
+  if (typeof decimalDegrees !== 'number' || !Number.isFinite(decimalDegrees)) {
     return '00° 00\' 00"';
   }
-  const absolute = Math.abs(decimalDegrees);
-  const degrees = Math.floor(absolute);
+  const maxDeg = type === 'lat' ? 90 : 180;
+  const clamped = Math.max(-maxDeg, Math.min(maxDeg, decimalDegrees));
+  const absolute = Math.abs(clamped);
+
+  let degrees = Math.floor(absolute);
   const minutesFloat = (absolute - degrees) * 60;
-  const minutes = Math.floor(minutesFloat);
-  const seconds = Math.round((minutesFloat - minutes) * 60);
+  let minutes = Math.floor(minutesFloat);
+  let seconds = Math.round((minutesFloat - minutes) * 60);
+
+  if (seconds === 60) {
+    seconds = 0;
+    minutes += 1;
+  }
+  if (minutes === 60) {
+    minutes = 0;
+    degrees += 1;
+  }
 
   const hemisphere =
     type === 'lat'
-      ? decimalDegrees >= 0
+      ? clamped >= 0
         ? 'N'
         : 'S'
-      : decimalDegrees >= 0
+      : clamped >= 0
         ? 'E'
         : 'W';
 

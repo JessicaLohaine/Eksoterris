@@ -16,7 +16,7 @@ class EventBus {
    */
   on(eventName, callback) {
     if (typeof eventName !== 'string' || typeof callback !== 'function') {
-      throw new TypeError('EventBus.on requer um nome de evento (string) e um callback (function).');
+      throw new TypeError('EventBus.on requires an event name (string) and a callback (function).');
     }
     if (!this.listeners.has(eventName)) {
       this.listeners.set(eventName, new Set());
@@ -27,7 +27,7 @@ class EventBus {
   }
 
   /**
-   * Remove um ouvinte específico.
+   * Removes a specific listener.
    * @param {string} eventName
    * @param {Function} callback
    */
@@ -39,7 +39,7 @@ class EventBus {
   }
 
   /**
-   * Emite um evento com dados opcionais (payload).
+   * Emits an event with optional payload data.
    * @param {string} eventName
    * @param {any} payload
    */
@@ -50,7 +50,7 @@ class EventBus {
       try {
         callback(payload);
       } catch (error) {
-        console.error(`[EventBus] Erro ao processar evento "${eventName}":`, error);
+        console.error(`[EventBus] Error processing event "${eventName}":`, error);
       }
     }
   }

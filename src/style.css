@@ -399,7 +399,8 @@ body {
 .hud-controls-group {
   display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: flex-end;
+  gap: 8px;
   flex-wrap: wrap;
 }
 

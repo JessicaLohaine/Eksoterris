@@ -1,0 +1,1111 @@
+{
+  "candidates": [
+    {
+      "id": "wa-r00-c00",
+      "latitude": 6.000000000000001,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r00-c01",
+      "latitude": 6.000000000000001,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r00-c02",
+      "latitude": 6.000000000000001,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r00-c03",
+      "latitude": 6.000000000000001,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r00-c04",
+      "latitude": 6.000000000000001,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r00-c05",
+      "latitude": 6.000000000000001,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r00-c06",
+      "latitude": 6.000000000000001,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r01-c00",
+      "latitude": 6.993630422191095,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "id": "wa-r01-c01",
+      "latitude": 6.993630422191095,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r01-c02",
+      "latitude": 6.993630422191095,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r01-c03",
+      "latitude": 6.993630422191095,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r01-c04",
+      "latitude": 6.993630422191095,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "id": "wa-r01-c05",
+      "latitude": 6.993630422191095,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": false,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "mixed_land_or_ocean"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 86.11180840620398,
+        "mean_elevation_m": 200.32465401428522,
+        "median_slope_deg": 0.16923715809605072,
+        "relief_m": 444.3853700648194,
+        "valid_cells": 121
+      },
+      "id": "wa-r01-c06",
+      "latitude": 6.993630422191095,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "id": "wa-r02-c00",
+      "latitude": 7.989379459716191,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "id": "wa-r02-c01",
+      "latitude": 7.989379459716191,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 36.23638180905472,
+        "mean_elevation_m": 208.36692112284973,
+        "median_slope_deg": 0.09231724464447712,
+        "relief_m": 258.9527968625896,
+        "valid_cells": 121
+      },
+      "id": "wa-r02-c02",
+      "latitude": 7.989379459716191,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 30.248726193838134,
+        "mean_elevation_m": 222.47719406227125,
+        "median_slope_deg": 0.10178462564757193,
+        "relief_m": 309.86532437448045,
+        "valid_cells": 121
+      },
+      "id": "wa-r02-c03",
+      "latitude": 7.989379459716191,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 59.762348350092694,
+        "mean_elevation_m": 285.8660061710492,
+        "median_slope_deg": 0.11499929402637947,
+        "relief_m": 303.9817154101364,
+        "valid_cells": 121
+      },
+      "id": "wa-r02-c04",
+      "latitude": 7.989379459716191,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 107.63320154591455,
+        "mean_elevation_m": 313.80250270028733,
+        "median_slope_deg": 0.16363451605099286,
+        "relief_m": 378.502461479823,
+        "valid_cells": 121
+      },
+      "id": "wa-r02-c05",
+      "latitude": 7.989379459716191,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 98.25453774164146,
+        "mean_elevation_m": 253.34639719397023,
+        "median_slope_deg": 0.1934486149321879,
+        "relief_m": 432.34795496801786,
+        "valid_cells": 121
+      },
+      "id": "wa-r02-c06",
+      "latitude": 7.989379459716191,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "id": "wa-r03-c00",
+      "latitude": 8.987563570523557,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "id": "wa-r03-c01",
+      "latitude": 8.987563570523557,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 39.00376475473505,
+        "mean_elevation_m": 317.3006913800146,
+        "median_slope_deg": 0.0839761791588582,
+        "relief_m": 226.7859067811741,
+        "valid_cells": 121
+      },
+      "id": "wa-r03-c02",
+      "latitude": 8.987563570523557,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 43.84921749176158,
+        "mean_elevation_m": 326.0526904781978,
+        "median_slope_deg": 0.07820035487900087,
+        "relief_m": 224.43055894824494,
+        "valid_cells": 121
+      },
+      "id": "wa-r03-c03",
+      "latitude": 8.987563570523557,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "id": "wa-r03-c04",
+      "latitude": 8.987563570523557,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "id": "wa-r03-c05",
+      "latitude": 8.987563570523557,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 96.14185317912234,
+        "mean_elevation_m": 203.5908471464267,
+        "median_slope_deg": 0.15251422086704586,
+        "relief_m": 312.4021537638743,
+        "valid_cells": 121
+      },
+      "id": "wa-r03-c06",
+      "latitude": 8.987563570523557,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 50.22237955008958,
+        "mean_elevation_m": 182.27804921432855,
+        "median_slope_deg": 0.08364728586477918,
+        "relief_m": 167.35199583219048,
+        "valid_cells": 121
+      },
+      "id": "wa-r04-c00",
+      "latitude": 9.988506072683276,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 70.56459132330723,
+        "mean_elevation_m": 283.9323329195585,
+        "median_slope_deg": 0.12365840766056356,
+        "relief_m": 328.2944007237677,
+        "valid_cells": 121
+      },
+      "id": "wa-r04-c01",
+      "latitude": 9.988506072683276,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 59.33496714389573,
+        "mean_elevation_m": 358.2301218421745,
+        "median_slope_deg": 0.07480196104123486,
+        "relief_m": 197.79292175634433,
+        "valid_cells": 121
+      },
+      "id": "wa-r04-c02",
+      "latitude": 9.988506072683276,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 34.62896698709247,
+        "mean_elevation_m": 337.72715535250785,
+        "median_slope_deg": 0.06951056159506129,
+        "relief_m": 125.79280828675576,
+        "valid_cells": 121
+      },
+      "id": "wa-r04-c03",
+      "latitude": 9.988506072683276,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "id": "wa-r04-c04",
+      "latitude": 9.988506072683276,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "id": "wa-r04-c05",
+      "latitude": 9.988506072683276,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 56.39948353962334,
+        "mean_elevation_m": 284.1978721648712,
+        "median_slope_deg": 0.13626486020896802,
+        "relief_m": 381.99137764765305,
+        "valid_cells": 121
+      },
+      "id": "wa-r04-c06",
+      "latitude": 9.988506072683276,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 35.6575408448888,
+        "mean_elevation_m": 220.26277146451008,
+        "median_slope_deg": 0.07754998462646587,
+        "relief_m": 157.66196823153058,
+        "valid_cells": 121
+      },
+      "id": "wa-r05-c00",
+      "latitude": 10.992538162964289,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 80.89529869870879,
+        "mean_elevation_m": 253.20104848662345,
+        "median_slope_deg": 0.09145249786355372,
+        "relief_m": 274.2340213943155,
+        "valid_cells": 121
+      },
+      "id": "wa-r05-c01",
+      "latitude": 10.992538162964289,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 57.80218386141493,
+        "mean_elevation_m": 296.07311518189925,
+        "median_slope_deg": 0.07249395615234118,
+        "relief_m": 271.2946247119954,
+        "valid_cells": 121
+      },
+      "id": "wa-r05-c02",
+      "latitude": 10.992538162964289,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 20.963545706198335,
+        "mean_elevation_m": 285.1595456158754,
+        "median_slope_deg": 0.0672294745365728,
+        "relief_m": 171.3473536142069,
+        "valid_cells": 121
+      },
+      "id": "wa-r05-c03",
+      "latitude": 10.992538162964289,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "id": "wa-r05-c04",
+      "latitude": 10.992538162964289,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "id": "wa-r05-c05",
+      "latitude": 10.992538162964289,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": true,
+        "mapped_glaciated_area_intersects": false
+      },
+      "region": "Bounded West Africa search tile",
+      "status": "inland_water_intersection"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 52.8684185948433,
+        "mean_elevation_m": 407.9791302722657,
+        "median_slope_deg": 0.11796579342465063,
+        "relief_m": 346.0504305178656,
+        "valid_cells": 121
+      },
+      "id": "wa-r05-c06",
+      "latitude": 10.992538162964289,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 21.093887074745215,
+        "mean_elevation_m": 272.83364506226616,
+        "median_slope_deg": 0.04000061946880642,
+        "relief_m": 111.34826643450023,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c00",
+      "latitude": 12.000000000000002,
+      "longitude": 0.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 29.99853859421878,
+        "mean_elevation_m": 253.12467835784733,
+        "median_slope_deg": 0.047054386910203166,
+        "relief_m": 114.79868959595908,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c01",
+      "latitude": 12.000000000000002,
+      "longitude": 1.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 34.2253644383887,
+        "mean_elevation_m": 245.2153669673988,
+        "median_slope_deg": 0.050058094705231426,
+        "relief_m": 107.90353611908122,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c02",
+      "latitude": 12.000000000000002,
+      "longitude": 2.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 23.790262080117383,
+        "mean_elevation_m": 237.04022958852806,
+        "median_slope_deg": 0.05284937558468099,
+        "relief_m": 105.97111434220048,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c03",
+      "latitude": 12.000000000000002,
+      "longitude": 3.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 29.793381968233774,
+        "mean_elevation_m": 229.7373831059193,
+        "median_slope_deg": 0.056174544434800466,
+        "relief_m": 104.58519930502197,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c04",
+      "latitude": 12.000000000000002,
+      "longitude": 4.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 36.91402692119419,
+        "mean_elevation_m": 286.70672519062725,
+        "median_slope_deg": 0.0726862237127027,
+        "relief_m": 227.3711834483356,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c05",
+      "latitude": 12.000000000000002,
+      "longitude": 5.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    },
+    {
+      "features": {
+        "detrended_rms_m": 33.58591943303455,
+        "mean_elevation_m": 401.6667643124958,
+        "median_slope_deg": 0.09472889854036541,
+        "relief_m": 294.54722848844654,
+        "valid_cells": 121
+      },
+      "id": "wa-r06-c06",
+      "latitude": 12.000000000000002,
+      "longitude": 6.0,
+      "quality": {
+        "expected_cells": 121,
+        "expected_queries": 3025,
+        "footprint_complete_land": true,
+        "ice_inventory_note": "Natural Earth glaciated areas are generalized and include some deglaciated land; no current ice-free or seasonal-snow status is established.",
+        "inland_water_intersects": false,
+        "mapped_glaciated_area_intersects": false,
+        "source_node_checks": 12100,
+        "valid_land_node_checks": 12100
+      },
+      "region": "Bounded West Africa search tile",
+      "source_sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "status": "eligible_land_topography"
+    }
+  ],
+  "evaluated_count": 26,
+  "excluded_count": 23,
+  "generated_count": 49,
+  "provenance": {
+    "baseline_catalog": "Seven predefined Earth windows remain a separate production analysis.",
+    "center_generation": "uniform sin(latitude) and 1-degree longitude steps",
+    "center_latitude_bounds": [
+      6.0,
+      12.0
+    ],
+    "center_longitudes_deg": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "earth_source": {
+      "bytes": 14186883,
+      "citation": "https://doi.org/10.7289/V5C8276M",
+      "registration": "grid nodes, one arc-minute",
+      "sha256": "8e3f767b8e5246f59a8a27b68d0ce2e139bb5f5c4aea798df01ce37c905fd06f",
+      "title": "NOAA ETOPO1 Ice Surface via NOAA/AOML ERDDAP",
+      "unit": "m",
+      "url": "https://oceanwatch.aoml.noaa.gov/erddap/griddap/etopo180.csv?altitude%5B(4):1:(14)%5D%5B(-2):1:(8)%5D"
+    },
+    "feature_names": [
+      "relief_m",
+      "median_slope_deg",
+      "detrended_rms_m"
+    ],
+    "implementation_sha256": "d6ddeaf9524f0b186374fd790f4673a3f7da0ff0c988c71b9d8e404354861efb",
+    "latitude_rows": 7,
+    "masks": {
+      "glaciated_areas": {
+        "local_intersecting_features": 0,
+        "role": "glaciated_areas",
+        "scale": "1:50m",
+        "sha256": "f48644b4523482501bcd380c4b7345ba574ab79b87df753447d772ea239b7daf",
+        "source_features": 377,
+        "url": "https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_glaciated_areas.zip",
+        "version": "4.1.0"
+      },
+      "lakes": {
+        "local_intersecting_features": 3,
+        "role": "lakes",
+        "scale": "1:50m",
+        "sha256": "f28d42c286d96b57a17aac2cbeb432f8c65532c20063495711fbc64e24666df3",
+        "source_features": 412,
+        "url": "https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_lakes.zip",
+        "version": "5.0.0"
+      },
+      "land": {
+        "local_intersecting_features": 2,
+        "role": "land",
+        "scale": "1:50m",
+        "sha256": "0b8e670cf80dce9cbebe2a193bc44ba5602758c22e1fa603980553646d7ff162",
+        "source_features": 1420,
+        "url": "https://naturalearth.s3.amazonaws.com/50m_physical/ne_50m_land.zip",
+        "version": "4.1.0"
+      }
+    },
+    "method": "bounded-equal-area-lattice-v1",
+    "model": {
+      "algorithm": "Unsupervised k-nearest-neighbor retrieval",
+      "distance": "sqrt(mean(((Earth feature - planetary feature) / Earth feature IQR)^2))",
+      "distance_is_probability": false,
+      "earth_iqr": {
+        "detrended_rms_m": 25.909722364170364,
+        "median_slope_deg": 0.04696775834070159,
+        "relief_m": 151.68347128483026
+      },
+      "earth_median": {
+        "detrended_rms_m": 41.42649112324831,
+        "median_slope_deg": 0.0838117325118187,
+        "relief_m": 243.1619901554626
+      },
+      "feature_names": [
+        "relief_m",
+        "median_slope_deg",
+        "detrended_rms_m"
+      ],
+      "k": 26,
+      "labels_used": false,
+      "normalization": "Earth training-set median and interquartile range (IQR); query uses fitted Earth scale",
+      "training_samples": 26
+    },
+    "sampling": {
+      "bilinear_queries_per_cell": 25,
+      "cell_spacing_m": 20000.0,
+      "grid_shape": [
+        11,
+        11
+      ],
+      "window_width_m": 220000
+    },
+    "scope_limitations": [
+      "Bounded regional search, not global or representative of all terrestrial terrain.",
+      "Natural Earth 1:50m mask omits small water features and has generalized shorelines.",
+      "The glaciated-area screen is historical and cannot establish absence of seasonal snow or current ice.",
+      "ETOPO1 grid spacing and interpolation do not establish effective terrain resolution.",
+      "Nearest within generated windows is not a validated planetary analog."
+    ],
+    "tile": {
+      "east": 8.0,
+      "north": 14.0,
+      "south": 4.0,
+      "west": -2.0
+    }
+  }
+}
